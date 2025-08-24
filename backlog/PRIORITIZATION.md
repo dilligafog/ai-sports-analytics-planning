@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-24  
-**Total Stories**: 54  
+**Total Stories**: 53  
 
 ## Quick Start for Implementation Agents
 
@@ -26,14 +26,7 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. BACKTESTING_ROI_TRACKING** - User Story: Backtesting & ROI Tracking
-- **File**: `backlog/models/BACKTESTING_ROI_TRACKING.md`
-- **Owner**: TBD
-- **Estimate**: Not specified
-- **Epic**: backtesting
-- **Tags**: backtesting, roi
-
-**2. EVAL-001** - EVAL-001: Offline evaluation harness & metrics tracking
+**1. EVAL-001** - EVAL-001: Offline evaluation harness & metrics tracking
 - **File**: `backlog/llm/evaluation/01-offline-eval-metrics.md`
 - **Owner**: evaluation-team
 - **Estimate**: 3sp

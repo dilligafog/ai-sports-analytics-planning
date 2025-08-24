@@ -13,7 +13,8 @@ Stories move through the following stages:
 
 ## Current Status
 
-**Stories in completed/**: 0  
+**Stories in completed/**: 1  
+- BACKTESTING_ROI_TRACKING (2025-08-24) - Comprehensive ROI analysis and backtesting system
 **Recently moved to accepted/**: 19 stories (2025-01-27)
 
 All previously completed stories have been reviewed and formally accepted. They are now located in the `accepted/` directory.

@@ -1,7 +1,7 @@
 ---
 id: BACKTESTING_ROI_TRACKING
 epic: backtesting
-status: in_progress
+status: completed
 owner: ai-agent
 priority: high
 estimate: null
@@ -11,11 +11,29 @@ market: null
 layer: Analysis
 last_updated: 2025-08-24
 started_date: 2025-08-24
+completed_date: 2025-08-24
+implementation_commit: d8639ab
+implementation_notes: |
+  Comprehensive backtesting system implemented with:
+  - Multiple betting strategies (flat, Kelly criterion, percentage bankroll, value betting, martingale)
+  - ROI and risk metrics (Sharpe ratio, max drawdown, profit factor, Kelly criterion)
+  - Multi-market support (moneyline, ATS, over/under)
+  - Interactive HTML reports with Plotly charts
+  - CLI integration via `busta backtest` command
+  - Sample data generation for testing
+  - Historical data validation using spreadspoke scores
+  
+  Key deliverables:
+  - packages/backtesting/ - Complete backtesting module
+  - CLI integration in bin/busta
+  - Feature documentation in docs/features/BACKTESTING_SYSTEM.md
+  - Updated main README with backtesting examples
 emit_metadata:
-  source_id: null
+  source_id: backtesting_engine
   layer: Analysis
-  input_path: null
-  notes: Development started - implementing backtesting engine
+  input_path: data/predictions/
+  output_path: data/backtests/
+  notes: Production ready with comprehensive reporting
 ---
 
 # User Story: Backtesting & ROI Tracking
