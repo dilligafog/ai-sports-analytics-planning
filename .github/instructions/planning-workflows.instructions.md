@@ -9,6 +9,7 @@ Purpose: Define exact responsibilities and safe procedures for the Planning Agen
 Primary responsibilities
 - Review and update proposals (migrate into `proposals/` when accepted)
 - Update roadmaps, stories and priorities
+- Maintain the story prioritization list (`backlog/PRIORITIZATION.md`) for implementation agents
 - Groom the backlog and prepare stories for implementation
 - Move stories from `completed/` to `accepted/` when they meet acceptance criteria and update related docs
 - Never modify files inside `active/` (stories currently being implemented)
@@ -17,7 +18,7 @@ Primary responsibilities
 Story lifecycle actions (Planning Agent)
 1. New proposals: create a file under `proposals/` using the proposal template. Assign an owner and priority.
 2. When a proposal is approved: create or update related stories in `backlog/` and the `roadmaps/` mapping.
-3. Backlog grooming: reorder and split/merge backlog items, add acceptance criteria and estimates.
+3. Backlog grooming: reorder and split/merge backlog items, add acceptance criteria and estimates. Update prioritization list as needed.
 4. Acceptance: when an implementation completes and the Implementation Agent signals success, move the story from `completed/` to `accepted/`. Update the story with outcome notes and references to implementation PRs and release notes.
 
 Rules and constraints
