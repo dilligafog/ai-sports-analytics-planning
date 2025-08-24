@@ -1,22 +1,40 @@
-# Completed Features Documentation
+# Completed Stories (Awaiting Acceptance Review)
 
-This directory contains documentation for features and processes that have been fully implemented in the NFL Predictions system.
+This directory contains documentation for stories that have been completed in implementation but are awaiting final acceptance review and migration to the `accepted/` directory.
 
-## Contents
+## Story Lifecycle
 
-1. [Performance Tracking System](./PERFORMANCE_TRACKING_FINAL.md) - Comprehensive tracking capabilities for results, analysis, and reporting
-2. [Web Deployment Guide](./WEB_DEPLOYMENT_GUIDE.md) - Process for deploying the web interface to GitHub Pages
-3. [UI Build Process Analysis](./UI_BUILD_PROCESS_ANALYSIS.md) - Analysis of the UI build process
-4. [Web Build Process Update](./WEB_BUILD_PROCESS_UPDATE.md) - Updates to the web build process
-5. [End-to-End Kaggle NFL Scores](./END_TO_END_KAGGLE_NFL_SCORES.md) - End-to-end process for Kaggle NFL scores
-6. [End-to-End Summary](./END_TO_END_SUMMARY.md) - Summary of end-to-end processes
+Stories move through the following stages:
+1. **Creation** → `backlog/` - New story with basic structure
+2. **Refinement** → Stay in `backlog/` until ready
+3. **Ready** → Move to `active/` when implementation starts
+4. **Completion** → Move to `completed/` with outcome notes ← **This Stage**
+5. **Acceptance** → Move to `accepted/` when verified and meeting all criteria
 
-## Using Completed Documentation
+## Current Status
 
-These documents serve as reference materials for features that have been fully implemented and tested. They can be used for:
+**Stories in completed/**: 0  
+**Recently moved to accepted/**: 19 stories (2025-01-27)
 
-1. Onboarding new team members
-2. Reviewing implementation details
-3. Understanding how completed features integrate with the rest of the system
+All previously completed stories have been reviewed and formally accepted. They are now located in the `accepted/` directory.
 
-For information about features in development, please refer to the main documentation directory.
+## Next Steps for New Completed Stories
+
+When implementation agents complete new stories, they should:
+
+1. **Move story to completed/** with implementation outcome notes
+2. **Include links** to implementation PRs and commits
+3. **Document verification steps** completed
+4. **Note any follow-up items** or technical debt identified
+5. **Request planning agent review** for formal acceptance
+
+## For Planning Agents
+
+Review completed stories for:
+- ✅ All acceptance criteria met and verified
+- ✅ Implementation outcome notes and PR links included
+- ✅ Verification steps documented
+- ✅ Any lessons learned captured
+- ✅ Follow-up items identified and planned
+
+Once reviewed and validated, move stories to `accepted/` directory with updated status.
