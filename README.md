@@ -63,6 +63,11 @@ Automated workflows watch the main repository for:
 3. Initialize story agent prompts
 4. Establish workflow with implementation repo
 
+Import branch
+--------------
+
+When migrating stories from the implementation repo, use the `feature/import-stories-from-impl` branch. Place incoming stories into `backlog/` and open a PR for the planning agent to review and assign.
+
 ## Usage
 
 ### For Planning Agent

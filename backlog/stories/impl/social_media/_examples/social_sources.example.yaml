@@ -1,0 +1,40 @@
+# Example social_sources.yaml
+x:
+  enabled: true
+  credentials:
+    bearer_token: ${X_BEARER_TOKEN}
+  accounts:
+    - rapSheet
+    - AdamSchefter
+    - JayMorrisonATH
+  options:
+    include_retweets: false
+    include_replies: false
+    lookback_minutes: 90
+    per_account_limit: 100
+  search:
+    queries:
+      - "(injury OR questionable OR out) (Bengals OR CIN)"
+      - "(inactive OR starters) (preseason OR PS)"
+    language: "en"
+    per_query_limit: 200
+    cooldown_seconds: 10
+
+bluesky:
+  enabled: true
+  credentials:
+    handle: ${BLUESKY_HANDLE}
+    app_password: ${BLUESKY_APP_PASSWORD}
+  accounts:
+    - did:plc:replace_me
+    - "replace_me.example"  # Quoted to handle special characters
+  options:
+    lookback_minutes: 90
+    per_account_limit: 100
+  search:
+    queries:
+      - "Bengals injury"
+      - "inactive starters"
+    language: "en"
+    per_query_limit: 200
+    cooldown_seconds: 10
