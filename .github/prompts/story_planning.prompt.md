@@ -74,6 +74,12 @@ As a [user type], I want [functionality] so that [benefit].
 3. **Split complex stories** into smaller, manageable pieces
 4. **Update estimates** based on actual implementation time
 
+### Workflow Rules (enforced by Planning Agent)
+- The Planning Agent will use `proposals/`, `backlog/`, `active/`, `completed/`, and `accepted/` directories to manage story lifecycle.
+- The Planning Agent may move stories from `completed/` to `accepted/` only after receiving verification from the Implementation Agent.
+- The Planning Agent must not edit files inside `active/`.
+- All planning repo changes must be done via PR with clear changelog frontmatter in the story files.
+
 ### Roadmap Evolution
 1. **Monitor story completion** rates and feedback
 2. **Adjust priorities** based on user feedback and business value
