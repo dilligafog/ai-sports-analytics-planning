@@ -344,4 +344,4 @@ This file is auto-generated from story metadata. To regenerate:
 python3 scripts/regenerate_prioritization.py
 ```
 
-**Last Generated**: 2025-08-24 17:46:58
+**Last Generated**: 2025-08-24 20:20:43

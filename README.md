@@ -8,6 +8,9 @@ This repository manages strategic planning, story development, and roadmap evolu
 
 ## Repository Structure
 
+### ✅ **Accepted** (`accepted/`)
+Formally accepted stories that have been completed, verified, and meet all acceptance criteria. These stories serve as reference materials and provide complete implementation history.
+
 ### 📋 **Active Stories** (`active/`)
 Current iteration stories being actively developed. Stories move here from backlog when development begins.
 
@@ -52,10 +55,11 @@ Automated workflows watch the main repository for:
 
 ## Current Status
 
-**Last Updated**: 2025-08-24  
-**Active Stories**: 0  
-**Backlog Stories**: 0 (migrating from main repo)  
+**Last Updated**: 2025-01-27  
+**Active Stories**: 1 (migration summary)  
+**Backlog Stories**: 54+ (organized by theme)  
 **Completed Stories**: 0  
+**Accepted Stories**: 19 (migrated from implementation repo)  
 
 **Next Actions**:
 1. Migrate existing stories from main repo
