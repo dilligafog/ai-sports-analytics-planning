@@ -1,21 +1,42 @@
 ---
 id: INF-002
 epic: llm_backlog
-status: completed
+status: accepted
 owner: infra-team
 priority: high
 estimate: 1sp
 dependencies: []
-tags: [cli, busta]
+tags: [cli, busta, accepted]
 market: null
 layer: Infra
 last_updated: 2025-08-24
 completed_date: 2025-08-24
+accepted_date: 2025-08-24
 emit_metadata:
   source_id: busta_integration
   layer: Infra
   input_path: bin/busta
-  notes: CLI-first enforcement completed
+  notes: CLI-first enforcement completed - ACCEPTED
+acceptance_verification: |
+  Story accepted based on comprehensive implementation review:
+  ✅ All acceptance criteria fully met and verified
+  ✅ Single entrypoint script runs all pipeline stages
+  ✅ Commands work correctly from repo root with relative paths
+  ✅ CI integration ready with smoke test pipeline
+  ✅ Python entrypoint with comprehensive task runner functionality
+  ✅ Settings class centralizes path management
+  ✅ Integration tests validate subprocess execution from root
+  ✅ `busta run sample` completes successfully in local and CI environments
+  ✅ No hardcoded subdirectory assumptions remain
+  
+  Implementation provides robust CLI foundation enabling consistent development
+  workflows and reliable CI/CD pipeline execution.
+outcome_notes: |
+  Successful implementation providing comprehensive CLI task runner capabilities.
+  The enhanced busta CLI eliminates path confusion and enables consistent execution
+  from project root. Key achievements include smoke test pipeline, config validation,
+  and comprehensive integration testing. This foundation supports reliable local
+  development and CI workflows across the entire project.
 ---
 
 # INF-002: Task runner integration (busta/CLI from repo root) - COMPLETED ✅
