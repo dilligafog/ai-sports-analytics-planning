@@ -1,17 +1,42 @@
 # Strategic Roadmaps
 
-**Purpose**: High-level planning and release coordination
+**Purpose**: High-level planning and release coordination around major feature improvements
 
 **Last Updated**: 2025-08-24
 
-## Files
-- `current_quarter.md` - Q4 2025 objectives and milestones
-- `technology_evolution.md` - Platform architecture roadmap
-- `release_planning.md` - Feature delivery timeline
+## Current Roadmaps
 
-## Planning Horizons
+### Quarterly Execution Plans
+- `q1_2025_pick_accuracy.md` - Pick accuracy & user confidence (Jan-Mar 2025)
+- `q2_2025_platform_expansion.md` - Advanced features & platform expansion (Apr-Jun 2025)
+
+### Long-Term Vision  
+- `strategic_vision_2025_2026.md` - Strategic direction and technology evolution (6-12 months)
+
+## Planning Framework
+
+Based on stakeholder direction to focus on pick accuracy and user confidence:
+
+### Core Themes
+1. **Pick Accuracy Improvements**: Advanced statistics, injury data, weather factors
+2. **User Confidence & Information**: AI explanations, transparency, educational content  
+3. **Platform Reliability**: Automation, monitoring, infrastructure stability
+
+### Planning Horizons
 - **3 months**: Detailed execution plans with story-level granularity
-- **6 months**: Feature themes and major milestone planning
+- **6 months**: Feature themes and major milestone planning  
 - **12 months**: Strategic direction and technology evolution
 
-**Current Roadmap Count**: 0 (to be established)
+## Roadmap Coordination
+
+### Cross-Repository Links
+- Planning stories reference specific implementation milestones
+- Implementation PRs link back to roadmap objectives
+- Progress tracked through story status updates
+
+### Stakeholder Communication
+- Quarterly roadmap reviews and adjustments
+- Monthly milestone progress updates
+- Weekly execution status synchronization
+
+**Current Roadmap Count**: 3 roadmaps covering immediate execution through strategic vision

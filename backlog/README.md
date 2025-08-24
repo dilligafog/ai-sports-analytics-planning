@@ -5,19 +5,26 @@
 **Last Updated**: 2025-08-24
 
 ## Organization
-Stories are organized by functional area and priority:
+Stories are organized by functional area and priority, migrated from implementation repository and reorganized into planning-focused themes:
 
-### Directories (To Be Created)
-- `llm/` - LLM pipeline and feature stories (24 stories)
+### Themed Directories
+- `llm/` - LLM pipeline and feature stories (~30 stories across ingestion, modeling, evaluation, UI)
 - `social_media/` - Twitter/X and Bluesky integration (12 stories)
-- `infrastructure/` - Platform and operational improvements
-- `models/` - ML model enhancements and new markets
-- `ui/` - User interface and experience improvements
+- `models/` - ML model enhancements and prediction accuracy (8 stories)
+- `infrastructure/` - Platform and operational improvements (3 stories)
+- `ui/` - User interface and experience improvements (1 story)
 
 ## Priority Levels
+Prioritization focuses on pick accuracy and user confidence per stakeholder direction:
+
 - **P0**: Critical dependencies blocking other work
-- **P1**: High-impact features for current quarter  
-- **P2**: Medium-impact features for next quarter
+- **P1**: High-impact features for pick accuracy and user confidence
+- **P2**: Medium-impact features for platform stability  
 - **P3**: Nice-to-have features for future consideration
 
-**Current Backlog Count**: 0 (pending migration from main repository)
+## Strategic Themes
+1. **Pick Accuracy**: Model improvements, advanced statistics, data integration
+2. **User Confidence**: Explanations, transparency, educational content
+3. **Platform Reliability**: Infrastructure, automation, monitoring
+
+**Current Backlog Count**: 54+ stories organized by theme and priority
