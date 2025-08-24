@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-24  
-**Total Stories**: 53  
+**Total Stories**: 52  
 
 ## Quick Start for Implementation Agents
 
@@ -26,63 +26,63 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. EVAL-001** - EVAL-001: Offline evaluation harness & metrics tracking
-- **File**: `backlog/llm/evaluation/01-offline-eval-metrics.md`
-- **Owner**: evaluation-team
-- **Estimate**: 3sp
-- **Epic**: llm_backlog
-- **Tags**: evaluation, metrics
-
-**3. GOLD_FEATURE_STORE** - User Story: Gold Feature Store
+**1. GOLD_FEATURE_STORE** - User Story: Gold Feature Store
 - **File**: `backlog/infrastructure/GOLD_FEATURE_STORE.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
 - **Epic**: feature_store
 - **Tags**: feature-store, schema
 
-**4. INF-002** - INF-002: Task runner integration (busta/CLI from repo root)
+**2. INF-002** - INF-002: Task runner integration (busta/CLI from repo root)
 - **File**: `backlog/llm/infra/02-task-runner-busta.md`
 - **Owner**: infra-team
 - **Estimate**: 1sp
 - **Epic**: llm_backlog
 - **Tags**: cli, busta
 
-**5. INF-004** - INF-004: Secrets management & key rotation
+**3. INF-004** - INF-004: Secrets management & key rotation
 - **File**: `backlog/llm/infra/04-secrets-management.md`
 - **Owner**: infra-team
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 - **Tags**: secrets, security
 
-**6. ING-001** - ING-001: Expand and standardize News RSS sources
+**4. EVAL-002** - EVAL-002: Ablation studies for LLM feature lift
+- **File**: `backlog/llm/evaluation/02-ablation-llm-lift.md`
+- **Owner**: evaluation-team
+- **Estimate**: 2sp
+- **Epic**: llm_backlog
+- **Tags**: evaluation, ablation
+
+**5. ING-001** - ING-001: Expand and standardize News RSS sources
 - **File**: `backlog/llm/ingestion/01-news-rss-sources.md`
 - **Owner**: team-data
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 - **Tags**: ingestion, rss
 
-**7. ING-003** - ING-003: Odds API integration (moneyline, spread, totals, props)
+**6. ING-003** - ING-003: Odds API integration (moneyline, spread, totals, props)
 - **File**: `backlog/llm/ingestion/03-odds-api-integration.md`
 - **Owner**: team-data
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 - **Tags**: ingestion, odds
 
-**8. MOD-005** - MOD-005: Feature store schema & lineage
+**7. MOD-005** - MOD-005: Feature store schema & lineage
 - **File**: `backlog/llm/modeling/05-feature-store-schema.md`
 - **Owner**: feature-store-team
 - **Estimate**: 4sp
 - **Epic**: llm_backlog
 - **Tags**: feature-store, schema
 
-**9. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
+**8. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
 - **File**: `backlog/models/MODEL_TRAINING_EVALUATION.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
 - **Epic**: modeling
 - **Tags**: modeling, evaluation
 
-**10. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
+**9. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
 - **File**: `backlog/models/NFL_PLAYER_INJURY_DATA_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
@@ -239,10 +239,6 @@ Stories are prioritized by:
 
 These stories require other work to be completed first:
 
-**EVAL-002** - EVAL-002: Ablation studies for LLM feature lift (high)
-- **Dependencies**: EVAL-001
-- **File**: `backlog/llm/evaluation/02-ablation-llm-lift.md`
-
 **INF-005** - INF-005: LLM provider failover and model versioning (high)
 - **Dependencies**: LLM-001
 - **File**: `backlog/llm/infra/05-llm-provider-failover.md`
@@ -268,7 +264,7 @@ These stories require other work to be completed first:
 - **File**: `backlog/llm/modeling/01-base-ats-model.md`
 
 **MOD-006** - MOD-006: Production model calibration monitoring (high)
-- **Dependencies**: MOD-001, MOD-002, EVAL-001
+- **Dependencies**: MOD-001, MOD-002
 - **File**: `backlog/llm/modeling/06-calibration-monitoring.md`
 
 **QLT-003** - QLT-003: Feature store monitoring and drift detection (high)

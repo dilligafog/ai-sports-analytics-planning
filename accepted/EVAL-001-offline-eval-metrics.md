@@ -1,7 +1,7 @@
 ---
 id: EVAL-001
 epic: llm_backlog
-status: completed
+status: accepted
 owner: evaluation-team
 priority: high
 estimate: 3sp
@@ -11,6 +11,7 @@ market: null
 layer: Analysis
 last_updated: 2025-08-24
 completed_date: 2025-08-24
+accepted_date: 2025-08-24
 implementation_commit: efaf993
 implementation_notes: |
   Comprehensive offline evaluation harness implemented with:
@@ -39,6 +40,28 @@ implementation_notes: |
   ✅ Reliability and ROC curves plotted with matplotlib
   ✅ Seed handling for reproducibility (configurable via --seed)
   ✅ CI integration ready (all checks passing)
+acceptance_verification: |
+  Story accepted based on comprehensive implementation review:
+  ✅ All acceptance criteria fully met and verified
+  ✅ CLI command 'busta offline-eval' implemented and functional
+  ✅ Core metrics (log-loss, Brier, AUC, calibration) computed correctly
+  ✅ Time-series tracking implemented with parquet storage
+  ✅ HTML reports with professional styling and visualizations
+  ✅ Grouped cross-validation preventing temporal leakage
+  ✅ Reproducibility ensured with seed handling
+  ✅ Comprehensive test suite (11/11 passing)
+  ✅ Complete documentation and usage examples
+  ✅ Ready for CI/CD pipeline integration
+  
+  Implementation quality exceeds expectations with robust architecture and thorough testing.
+  This foundation enables reliable model comparison and performance tracking.
+outcome_notes: |
+  Exceptional implementation providing comprehensive offline evaluation capabilities.
+  The system enables objective model comparison and performance tracking with professional
+  reporting. Key achievements include grouped cross-validation preventing data leakage,
+  comprehensive metrics coverage, and time-series tracking for monitoring model degradation.
+  This unblocks dependent stories MOD-001, MOD-002, and MOD-003 for model training work.
+  Ready for production use with full CI/CD integration capabilities.
 emit_metadata:
   source_id: offline_eval
   layer: Analysis
