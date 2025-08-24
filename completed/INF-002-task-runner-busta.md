@@ -89,6 +89,9 @@ emit_metadata:
 ### Documentation
 - `docs/features/task-runner-integration.md` - Complete feature documentation
 
+### Dependencies
+- `packages/data_pipeline/pyproject.toml` - Added `pydantic-settings>=2.0` dependency
+
 ## Validation Results
 
 ### ✅ Smoke Test Results
@@ -113,6 +116,12 @@ Complete CI pipeline passes including:
 - Unit tests (pytest)
 - **NEW**: Smoke test pipeline
 - **NEW**: CLI integration tests
+
+## PR Status
+- **Branch**: `feature/INF-002-task-runner-integration`
+- **Status**: Awaiting CI completion and merge
+- **Conflicts**: Resolved (rebased on main with EVAL-001)
+- **Dependencies**: Fixed (added pydantic-settings)
 
 ## Related Features
 This implementation enables and supports: ING-*, MOD-*, UI-*
