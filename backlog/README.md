@@ -2,7 +2,17 @@
 
 **Purpose**: Prioritized future work organized by strategic themes
 
-**Last Updated**: 2025-08-24
+**Last Updated**: 2025-01-27
+
+## For Implementation Agents
+
+**🚀 START HERE**: See [`PRIORITIZATION.md`](./PRIORITIZATION.md) for the ordered list of stories ready to implement.
+
+The prioritization list provides:
+- Stories ordered by priority and dependencies
+- Clear indication of what's ready to start immediately  
+- Cross-references to story files and metadata
+- Implementation guidelines and coordination notes
 
 ## Organization
 Stories are organized by functional area and priority, migrated from implementation repository and reorganized into planning-focused themes:
@@ -28,3 +38,7 @@ Prioritization focuses on pick accuracy and user confidence per stakeholder dire
 3. **Platform Reliability**: Infrastructure, automation, monitoring
 
 **Current Backlog Count**: 54+ stories organized by theme and priority
+
+## For Planning Agents
+
+Organize and maintain stories using the themed directory structure below. The prioritization list is auto-generated from story metadata and should be regenerated when significant changes are made to the backlog.

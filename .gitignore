@@ -1,0 +1,29 @@
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated files (comment these out if you want to commit them)
+# backlog/PRIORITIZATION.md

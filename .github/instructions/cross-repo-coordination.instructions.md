@@ -19,10 +19,11 @@ applyTo: '**'
 ## Coordination Workflows
 
 ### Story-Driven Development
-1. **Planning Agent** creates stories with acceptance criteria
-2. **Implementation Agent** references story IDs in commits/PRs
-3. **Implementation Agent** provides feedback on story accuracy
-4. **Planning Agent** refines future stories based on feedback
+1. **Planning Agent** creates stories with acceptance criteria and maintains prioritization list
+2. **Implementation Agent** selects next story from `backlog/PRIORITIZATION.md`
+3. **Implementation Agent** references story IDs in commits/PRs
+4. **Implementation Agent** provides feedback on story accuracy
+5. **Planning Agent** refines future stories and updates prioritization based on feedback
 
 ### Information Flow
 ```
@@ -96,13 +97,14 @@ Planning feedback:
 ## Synchronization Points
 
 ### Daily
-- Implementation agent checks for new ready stories
-- Planning agent monitors implementation progress
+- Implementation agent checks `backlog/PRIORITIZATION.md` for next ready stories
+- Planning agent monitors implementation progress and updates story status
 - Quick status updates on active stories
 
-### Weekly
+### Weekly  
 - Review completed stories and capture lessons learned
 - Adjust story estimates based on implementation feedback
+- Regenerate prioritization list if significant backlog changes
 - Plan next iteration based on velocity and capacity
 
 ### Monthly
