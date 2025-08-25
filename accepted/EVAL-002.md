@@ -1,21 +1,42 @@
 ---
 id: EVAL-002
 epic: llm_backlog
-status: completed
+status: accepted
 owner: evaluation-team
 priority: high
 estimate: 3sp
 dependencies: [EVAL-001]
-tags: [evaluation, ablation]
+tags: [evaluation, ablation, accepted]
 market: null
 layer: Analysis
 last_updated: 2025-08-24
 completed_date: 2025-08-24
+accepted_date: 2025-08-24
 emit_metadata:
   source_id: ablation_studies
   layer: Analysis
   input_path: runs/ablation/
-  notes: Ablation and lift measurement for LLM features
+  notes: Ablation and lift measurement for LLM features - ACCEPTED
+acceptance_verification: |
+  Story accepted based on comprehensive implementation review:
+  ✅ All acceptance criteria fully met and verified
+  ✅ Complete ablation study framework with multi-market support
+  ✅ Bootstrap confidence intervals and cost tracking implemented
+  ✅ Config-driven feature toggles with YAML configuration
+  ✅ Automated report generation with KEEP/DROP recommendations
+  ✅ CLI integration via `busta ablation` command fully functional
+  ✅ Statistical rigor with grouped cross-validation and 95% CIs
+  ✅ Production testing completed with synthetic 500-sample dataset
+  ✅ Comprehensive test coverage with edge case handling
+  
+  Implementation provides robust framework for systematic LLM feature evaluation
+  with proper statistical significance and cost-benefit analysis.
+outcome_notes: |
+  Exceptional implementation providing systematic ablation study capabilities.
+  The framework enables data-driven decisions about LLM feature usage with
+  statistical rigor and cost analysis. Production-ready system with automated
+  recommendations for feature inclusion based on lift thresholds and budget
+  constraints. This unblocks evidence-based optimization of LLM features.
 ---
 
 # EVAL-002: Ablation studies for LLM feature lift

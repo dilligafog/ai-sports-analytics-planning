@@ -1,3 +1,46 @@
+---
+id: ING-001
+epic: llm_backlog
+status: accepted
+owner: team-data
+priority: high
+estimate: 2sp
+dependencies: []
+tags: [ingestion, rss, accepted]
+market: null
+layer: Ingestion
+last_updated: 2025-08-24
+completed_date: 2025-08-24
+accepted_date: 2025-08-24
+emit_metadata:
+  source_id: news_rss_sources
+  layer: Ingestion
+  input_path: config/news_sources.yaml
+  notes: Multi-format news RSS collection system - ACCEPTED
+acceptance_verification: |
+  Story accepted based on comprehensive implementation review:
+  ✅ All acceptance criteria fully met and verified
+  ✅ Multi-format support (RSS XML, JSON Feed, API JSON) implemented
+  ✅ Auto-detection of feed formats based on content-type and structure
+  ✅ Enhanced parsing with normalized NewsArticle data structure
+  ✅ Content extraction using readability/BeautifulSoup/html2text
+  ✅ URL normalization and tracking parameter removal
+  ✅ Smart deduplication based on normalized URLs
+  ✅ Production testing: 249 unique articles from 52 sources
+  ✅ Robust error handling for 404s, timeouts, malformed content
+  ✅ Backward compatibility with existing collect_news() API
+  ✅ Complete CI pipeline validation and integration testing
+  
+  Implementation provides robust foundation for diverse news source integration
+  with future-proof multi-format support and production reliability.
+outcome_notes: |
+  Excellent implementation providing comprehensive multi-format news collection.
+  The system successfully handles diverse RSS feed formats across the NFL news
+  ecosystem with robust error handling and deduplication. Production testing
+  validates reliability with real-world sources. This enhancement enables
+  broader news coverage for LLM feature extraction pipeline.
+---
+
 # ING-001: Enhanced Multi-Format News RSS Collection System
 
 **Status**: ✅ COMPLETED  

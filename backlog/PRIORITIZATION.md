@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-24  
-**Total Stories**: 50  
+**Total Stories**: 47  
 
 ## Quick Start for Implementation Agents
 
@@ -26,56 +26,42 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. INF-004** - INF-004: Secrets management & key rotation
-- **File**: `backlog/llm/infra/04-secrets-management.md`
-- **Owner**: infra-team
-- **Estimate**: 2sp
-- **Epic**: llm_backlog
-- **Tags**: secrets, security
-
-**2. ING-001** - ING-001: Expand and standardize News RSS sources
-- **File**: `backlog/llm/ingestion/01-news-rss-sources.md`
-- **Owner**: team-data
-- **Estimate**: 2sp
-- **Epic**: llm_backlog
-- **Tags**: ingestion, rss
-
-**3. ING-003** - ING-003: Odds API integration (moneyline, spread, totals, props)
+**1. ING-003** - ING-003: Odds API integration (moneyline, spread, totals, props)
 - **File**: `backlog/llm/ingestion/03-odds-api-integration.md`
 - **Owner**: team-data
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 - **Tags**: ingestion, odds
 
-**5. MOD-005** - MOD-005: Feature store schema & lineage
+**2. MOD-005** - MOD-005: Feature store schema & lineage
 - **File**: `backlog/llm/modeling/05-feature-store-schema.md`
 - **Owner**: feature-store-team
 - **Estimate**: 4sp
 - **Epic**: llm_backlog
 - **Tags**: feature-store, schema
 
-**6. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
+**3. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
 - **File**: `backlog/models/MODEL_TRAINING_EVALUATION.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
 - **Epic**: modeling
 - **Tags**: modeling, evaluation
 
-**7. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
+**4. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
 - **File**: `backlog/models/NFL_PLAYER_INJURY_DATA_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
 - **Epic**: ingestion
 - **Tags**: injury, data
 
-**8. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
+**5. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
 - **File**: `backlog/models/PREDICTIONS_OUTPUTS.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
 - **Epic**: predictions
 - **Tags**: outputs, infra
 
-**9. QLT-001** - QLT-001: Data quality checks on joins and keys
+**6. QLT-001** - QLT-001: Data quality checks on joins and keys
 - **File**: `backlog/llm/quality/01-data-quality-checks.md`
 - **Owner**: qa-team
 - **Estimate**: 2sp
