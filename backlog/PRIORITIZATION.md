@@ -46,14 +46,7 @@ Stories are prioritized by:
 - **Epic**: ingestion
 - **Tags**: injury, data
 
-**3. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
-- **File**: `backlog/models/PREDICTIONS_OUTPUTS.md`
-- **Owner**: TBD
-- **Estimate**: 5 story points
-- **Epic**: predictions
-- **Tags**: outputs, infra
-
-**4. QLT-001** - QLT-001: Data quality checks on joins and keys
+**3. QLT-001** - QLT-001: Data quality checks on joins and keys
 - **File**: `backlog/llm/quality/01-data-quality-checks.md`
 - **Owner**: qa-team
 - **Estimate**: 2sp
