@@ -33,21 +33,14 @@ Stories are prioritized by:
 - **Epic**: llm_backlog
 - **Tags**: secrets, security
 
-**2. EVAL-002** - EVAL-002: Ablation studies for LLM feature lift
-- **File**: `backlog/llm/evaluation/02-ablation-llm-lift.md`
-- **Owner**: evaluation-team
-- **Estimate**: 2sp
-- **Epic**: llm_backlog
-- **Tags**: evaluation, ablation
-
-**3. ING-001** - ING-001: Expand and standardize News RSS sources
+**2. ING-001** - ING-001: Expand and standardize News RSS sources
 - **File**: `backlog/llm/ingestion/01-news-rss-sources.md`
 - **Owner**: team-data
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 - **Tags**: ingestion, rss
 
-**4. ING-003** - ING-003: Odds API integration (moneyline, spread, totals, props)
+**3. ING-003** - ING-003: Odds API integration (moneyline, spread, totals, props)
 - **File**: `backlog/llm/ingestion/03-odds-api-integration.md`
 - **Owner**: team-data
 - **Estimate**: 2sp

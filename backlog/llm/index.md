@@ -46,7 +46,6 @@ This page lists the epic-level backlog for LLM-augmented features and infra. Eac
 - [INF-004: Secrets management & key rotation](infra/04-secrets-management.md)
 - [INF-005: LLM provider failover and model versioning](infra/05-llm-provider-failover.md)
 - [EVAL-001: Offline evaluation harness & metrics tracking](evaluation/01-offline-eval-metrics.md)
-- [EVAL-002: Ablation studies for LLM feature lift](evaluation/02-ablation-llm-lift.md)
 - [QLT-001: Data quality checks on joins and keys](quality/01-data-quality-checks.md)
 - [QLT-002: Structured logging & lightweight monitoring](quality/02-logging-and-monitoring.md)
 - [QLT-003: Feature store monitoring and drift detection](quality/03-feature-monitoring-drift.md)
