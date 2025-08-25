@@ -46,12 +46,13 @@ Stories are prioritized by:
 - **Epic**: ingestion
 - **Tags**: injury, data
 
-**3. QLT-001** - QLT-001: Data quality checks on joins and keys
+**3. QLT-001** - QLT-001: Smart data quality checks with CI integration
 - **File**: `backlog/llm/quality/01-data-quality-checks.md`
 - **Owner**: qa-team
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 - **Tags**: quality, data
+- **Note**: CI-friendly approach - validates code, not missing data
 
 ### 📋 Medium Priority - Next in Queue
 
@@ -96,6 +97,15 @@ Stories are prioritized by:
 - **Owner**: TBD
 - **Estimate**: 5 story points
 - **Epic**: ingestion
+
+**20. QLT-004** - QLT-004: Production Data Quality Monitoring
+- **File**: `backlog/llm/quality/04-production-data-quality-monitoring.md`
+- **Owner**: qa-team
+- **Estimate**: 3sp
+- **Epic**: llm_backlog
+- **Dependencies**: QLT-001
+- **Tags**: quality, data, production
+- **Note**: Real-time quality monitoring where data actually exists
 
 **20. QLT-002** - QLT-002: Structured logging & lightweight monitoring
 - **File**: `backlog/llm/quality/02-logging-and-monitoring.md`
