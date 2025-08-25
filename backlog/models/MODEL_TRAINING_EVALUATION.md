@@ -15,22 +15,6 @@ emit_metadata:
   layer: Gold
   input_path: null
   notes: null
----INING_EVALUATION
-epic: modeling
-status: draft
-owner: TBD
-priority: high
-estimate: null
-dependencies: []
-tags: [modeling, evaluation]
-market: null
-layer: Gold
-last_updated: 2025-08-24
-emit_metadata:
-  source_id: null
-  layer: Gold
-  input_path: null
-  notes: null
 ---
 
 # User Story: Model Training & Evaluation
