@@ -1,8 +1,8 @@
 # Story Prioritization List
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
-**Last Updated**: 2025-08-24  
-**Total Stories**: 45  
+**Last Updated**: 2025-08-25  
+**Total Stories**: 44  
 
 ## Quick Start for Implementation Agents
 
@@ -11,6 +11,12 @@
 3. **Reference the story ID** in all commits and PRs (format: `feat(STORY-ID): description`)
 4. **Update this planning repo** when work begins and completes
 5. **Report outcomes** including lessons learned and follow-up needs
+
+## Recent Completions
+- ✅ **MODEL_TRAINING_EVALUATION** (2025-08-25): Complete model training & evaluation system
+  - 80.9% moneyline accuracy (+28.9% lift), 77.4% ATS accuracy (+20.3% lift)
+  - Auto-detection of gold features, multi-market support
+  - PR #23: https://github.com/dilligafog/ai-sports-analytics/pull/23
 
 ## Story Selection Criteria
 
@@ -26,12 +32,12 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
-- **File**: `backlog/models/MODEL_TRAINING_EVALUATION.md`
+**1. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
+- **File**: `backlog/models/PREDICTIONS_OUTPUTS.md`
 - **Owner**: TBD
-- **Estimate**: 8 story points
-- **Epic**: modeling
-- **Tags**: modeling, evaluation
+- **Estimate**: 5 story points
+- **Epic**: predictions
+- **Tags**: outputs, infra
 
 **2. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
 - **File**: `backlog/models/NFL_PLAYER_INJURY_DATA_INTEGRATION.md`
