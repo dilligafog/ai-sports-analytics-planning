@@ -4,7 +4,7 @@ epic: backtesting
 status: accepted
 owner: ai-agent
 priority: high
-estimate: null
+estimate: 8
 dependencies: []
 tags: [backtesting, roi]
 market: null

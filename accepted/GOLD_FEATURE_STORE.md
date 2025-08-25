@@ -4,7 +4,7 @@ epic: feature_store
 status: accepted
 owner: AI Assistant
 priority: high
-estimate: null
+estimate: 8
 dependencies: []
 tags: [feature-store, schema, accepted]
 market: null
