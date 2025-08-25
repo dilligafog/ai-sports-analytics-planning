@@ -4,7 +4,7 @@ epic: data_sources
 status: draft
 owner: TBD
 priority: low
-estimate: null
+estimate: 3
 dependencies: []
 tags: [external-data]
 market: null

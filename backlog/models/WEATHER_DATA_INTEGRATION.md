@@ -4,7 +4,7 @@ epic: ingestion
 status: draft
 owner: TBD
 priority: low
-estimate: null
+estimate: 3
 dependencies: []
 tags: [weather, external-data]
 market: null

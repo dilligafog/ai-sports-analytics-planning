@@ -4,7 +4,7 @@ epic: predictions
 status: draft
 owner: TBD
 priority: high
-estimate: null
+estimate: 5
 dependencies: []
 tags: [outputs, infra]
 market: null

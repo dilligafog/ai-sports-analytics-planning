@@ -4,7 +4,7 @@ epic: analytics
 status: draft
 owner: TBD
 priority: medium
-estimate: null
+estimate: 8
 dependencies: []
 tags: [advanced-stats]
 market: null

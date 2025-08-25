@@ -4,7 +4,7 @@ epic: ingestion
 status: draft
 owner: TBD
 priority: medium
-estimate: null
+estimate: 5
 dependencies: []
 tags: [betting, trends]
 market: null

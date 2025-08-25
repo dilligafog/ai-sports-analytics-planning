@@ -1,5 +1,21 @@
 ---
 id: MODEL_TRAINING_EVALUATION
+epic: training
+status: draft
+owner: TBD
+priority: high
+estimate: 8
+dependencies: []
+tags: [model, training, evaluation]
+market: null
+layer: Gold
+last_updated: 2025-08-24
+emit_metadata:
+  source_id: null
+  layer: Gold
+  input_path: null
+  notes: null
+---INING_EVALUATION
 epic: modeling
 status: draft
 owner: TBD

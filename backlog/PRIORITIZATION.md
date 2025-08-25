@@ -29,21 +29,21 @@ Stories are prioritized by:
 **1. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
 - **File**: `backlog/models/MODEL_TRAINING_EVALUATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 8 story points
 - **Epic**: modeling
 - **Tags**: modeling, evaluation
 
 **2. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
 - **File**: `backlog/models/NFL_PLAYER_INJURY_DATA_INTEGRATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 5 story points
 - **Epic**: ingestion
 - **Tags**: injury, data
 
 **3. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
 - **File**: `backlog/models/PREDICTIONS_OUTPUTS.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 5 story points
 - **Epic**: predictions
 - **Tags**: outputs, infra
 
@@ -59,19 +59,19 @@ Stories are prioritized by:
 **13. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
 - **File**: `backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 8 story points
 - **Epic**: analytics
 
 **14. AI_GENERATED_SALES_PITCH** - User Story: AI-Generated Sales Pitch
 - **File**: `backlog/ui/AI_GENERATED_SALES_PITCH.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 5 story points
 - **Epic**: ui_explainability
 
 **15. DATA_SOURCE_INTEGRATION_FRAMEWORK** - User Story: Data Source Integration Framework
 - **File**: `backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 8 story points
 - **Epic**: infra
 
 **16. INF-001** - INF-001: Configuration standards (YAML + pydantic)
@@ -95,7 +95,7 @@ Stories are prioritized by:
 **19. PUBLIC_BETTING_DATA_INTEGRATION** - User Story: Public Betting Data Integration
 - **File**: `backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 5 story points
 - **Epic**: ingestion
 
 **20. QLT-002** - QLT-002: Structured logging & lightweight monitoring
@@ -107,7 +107,7 @@ Stories are prioritized by:
 **21. SCHEDULING_AUTOMATION** - User Story: Scheduling & Automation
 - **File**: `backlog/infrastructure/SCHEDULING_AUTOMATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 5 story points
 - **Epic**: infra
 
 ### 📝 Low Priority - Future Work
@@ -115,12 +115,12 @@ Stories are prioritized by:
 **22. KAGGLE_DATA_UTILIZATION** - User Story: Kaggle Data Utilization
 - **File**: `backlog/models/KAGGLE_DATA_UTILIZATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 3 story points
 
 **23. WEATHER_DATA_INTEGRATION** - User Story: Weather Data Integration
 - **File**: `backlog/models/WEATHER_DATA_INTEGRATION.md`
 - **Owner**: TBD
-- **Estimate**: Not specified
+- **Estimate**: 3 story points
 
 ### ❓ Priority Needs Review
 

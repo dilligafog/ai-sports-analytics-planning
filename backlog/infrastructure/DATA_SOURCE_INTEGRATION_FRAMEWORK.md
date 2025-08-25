@@ -4,7 +4,7 @@ epic: infra
 status: draft
 owner: TBD
 priority: medium
-estimate: null
+estimate: 8
 dependencies: []
 tags: [ingestion, integration]
 market: null

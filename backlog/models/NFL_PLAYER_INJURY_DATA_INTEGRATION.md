@@ -4,7 +4,7 @@ epic: ingestion
 status: draft
 owner: TBD
 priority: high
-estimate: null
+estimate: 5
 dependencies: []
 tags: [injury, data]
 market: null

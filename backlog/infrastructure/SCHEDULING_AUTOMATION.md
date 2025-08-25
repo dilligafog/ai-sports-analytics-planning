@@ -4,7 +4,7 @@ epic: infra
 status: draft
 owner: TBD
 priority: medium
-estimate: null
+estimate: 5
 dependencies: []
 tags: [scheduling, automation]
 market: null

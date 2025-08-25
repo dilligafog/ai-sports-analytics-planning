@@ -4,7 +4,7 @@ epic: ui_explainability
 status: draft
 owner: TBD
 priority: medium
-estimate: null
+estimate: 5
 dependencies: []
 tags: [explainability, ui]
 market: null
