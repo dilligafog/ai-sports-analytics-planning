@@ -1,7 +1,8 @@
 {
   "last_updated": "2025-08-26",
-  "total_stories": 40,
+  "total_stories": 39,
   "recently_completed": [
+    "S07_dedup_and_crosspost_collapsing",
     "ADVANCED_NFL_STATISTICS_INTEGRATION",
     "NFL_PLAYER_INJURY_DATA_INTEGRATION", 
     "PREDICTIONS_OUTPUTS",
@@ -10,9 +11,17 @@
     "S01_social_news_schema_and_abstraction"
   ],
   "completed_stories": {
-    "total_completed": 7,
+    "total_completed": 8,
     "total_accepted": 30,
     "recently_completed": [
+      {
+        "id": "S07_dedup_and_crosspost_collapsing",
+        "status": "COMPLETED",
+        "completion_date": "2025-08-26",
+        "file_path": "completed/S07_dedup_and_crosspost_collapsing.md",
+        "pr": "https://github.com/dilligafog/ai-sports-analytics/pull/31",
+        "epic": "social_media"
+      },
       {
         "id": "ADVANCED_NFL_STATISTICS_INTEGRATION",
         "status": "COMPLETED",
