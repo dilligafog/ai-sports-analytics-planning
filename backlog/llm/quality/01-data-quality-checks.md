@@ -1,7 +1,7 @@
 ---
 id: QLT-001
 epic: llm_backlog
-status: draft
+status: completed
 owner: qa-team
 priority: high
 estimate: 2sp
@@ -14,42 +14,37 @@ emit_metadata:
   source_id: dq_checks
   layer: Bronze
   input_path: data/bronze/
-  notes: Data quality checks with smart CI integration
+  notes: Data quality checks on joins and keys
 ---
 
-# QLT-001: Data quality checks on joins and keys
+# QLT-001: Data quality checks on joins and keys ✅ COMPLETED
 
 - **Overview**: As a data engineer, I want quality checks on join keys so that mismatches are caught early.
 - **Value Proposition**: Prevents silent data loss or duplication from mis-joins.
 
 ## Acceptance Criteria
-- **Smart CI Integration**: CI checks only run when data is actually available
-- **Data Detection**: CI automatically detects if data directories/files exist before attempting validation
-- **Local/Production Focus**: Primary quality checks run in local development and production environments
-- **CI Code Validation**: CI validates data quality check code itself (unit tests, syntax, imports)
-- **Sample Data Testing**: CI uses small sample datasets for testing validation logic
-- Missing keys reported with counts and sample rows when data is present
+- Checks for duplicate `game_id` rows; one-to-one joins validated between schedules, odds, and features.
+- Missing keys reported with counts and sample rows.
+- CI gate fails if key error rate exceeds threshold.
 
 ## Technical Requirements
-- **Conditional CI**: `if [ -d "data/bronze" ]; then run_quality_checks; else echo "No data - skipping"; fi`
-- **Sample Data**: Include small test datasets in repo for CI validation of check logic
-- **Unit Tests**: Test data quality functions with mock/sample data in CI
-- **Production Integration**: Full quality checks run during actual data pipeline execution
-- **Environment Detection**: Detect if running in CI vs local/production environment
+- pandera/Great Expectations suite executed in CI.
+- Per-source completeness stats logged.
 
 ## Implementation Plan
-1. **Create quality check framework** with environment detection
-2. **Add sample test data** (small files) to repo for CI testing
-3. **Implement conditional CI step** that checks for data availability first
-4. **Write unit tests** for quality check functions using sample data
-5. **Integrate with production pipeline** for full data validation
+- Define expectations for each table.
+- Implement CI step.
+- Create sample failing tests to verify gating.
 
 ## Definition of Done
-- **CI passes** when no data is present (doesn't fail on missing data)
-- **CI validates** quality check code using sample data
-- **Production quality checks** run when actual data pipeline executes
-- **Unit tests** verify quality check logic works correctly
-- **Documentation** explains when/where quality checks run
+- Quality report produced for each run.
+- CI blocks on violations as configured.
 
 ## Related Features
-ING-*, MOD-*
+ING-*, MOD-*, PREDICTIONS_OUTPUTS (unblocked)
+
+## Next Steps
+With data quality issues resolved, the pipeline is ready for:
+1. Model training and predictions (PREDICTIONS_OUTPUTS story)
+2. Additional data source integration
+3. Advanced feature engineering
