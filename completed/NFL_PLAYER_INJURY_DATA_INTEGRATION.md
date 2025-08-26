@@ -1,8 +1,8 @@
 # NFL_PLAYER_INJURY_DATA_INTEGRATION - User Story: NFL Player Injury Data Integration
 
-**Status**: ✅ COMPLETED  
-**Completion Date**: August 25, 2025  
-**Branch**: feature/NFL_PLAYER_INJURY_DATA_INTEGRATION  
+**Status**: ✅ COMPLETED
+**Completion Date**: August 25, 2025
+**Branch**: feature/NFL_PLAYER_INJURY_DATA_INTEGRATION
 **PR**: https://github.com/dilligafog/ai-sports-analytics/pull/27
 
 ## Story Summary

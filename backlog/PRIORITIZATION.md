@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-25  
-**Total Stories**: 42 (2 recently accepted: QLT-001, PREDICTIONS_OUTPUTS)  
+**Total Stories**: 41 (3 recently completed: QLT-001, PREDICTIONS_OUTPUTS, NFL_PLAYER_INJURY_DATA_INTEGRATION)  
 
 ## Quick Start for Implementation Agents
 
@@ -12,7 +12,12 @@
 4. **Update this planning repo** when work begins and completes
 5. **Report outcomes** including lessons learned and follow-up needs
 
-## Recent Acceptances (Moved to accepted/)
+## Recent Completions (Moved to completed/)
+- ✅ **NFL_PLAYER_INJURY_DATA_INTEGRATION** (2025-08-25): NFL injury data integration → **COMPLETED**
+  - Multi-source injury data collection (Kaggle, RSS, official reports, market signals)
+  - ML feature engineering with position-weighted impact scoring
+  - CLI integration with busta injuries commands
+  - PR #27: https://github.com/dilligafog/ai-sports-analytics/pull/27
 - ✅ **QLT-001** (2025-08-25): Data quality checks and fixes system → **ACCEPTED**
   - 100% → 0% NULL weeks, 100% → 9.8% NULL dates fixed
   - CI integration with automated quality gates
@@ -40,14 +45,13 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
-- **File**: `backlog/models/NFL_PLAYER_INJURY_DATA_INTEGRATION.md`
+**1. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
+- **File**: `backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md`
 - **Owner**: TBD
-- **Estimate**: 5 story points
-- **Epic**: ingestion
-- **Tags**: injury, data
+- **Estimate**: 8 story points
+- **Epic**: analytics
 
-**2. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
+**2. AI_GENERATED_SALES_PITCH** - User Story: AI-Generated Sales Pitch
 - **File**: `backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 8 story points
@@ -207,8 +211,9 @@ These stories require other work to be completed first:
 - **File**: `backlog/llm/llm/02-evidence-citation-and-traceability.md`
 
 **LLM-005** - LLM-005: Injury override & starter availability signal (high)
-- **Dependencies**: NFL_PLAYER_INJURY_DATA_INTEGRATION
+- **Dependencies**: ✅ NFL_PLAYER_INJURY_DATA_INTEGRATION (COMPLETED)
 - **File**: `backlog/llm/llm/05-injury-override-signal.md`
+- **Status**: ⚡ READY TO START (dependency completed)
 
 **MOD-001** - MOD-001: Rebaseline ATS/ML/Total models with clean features (high)
 - **Dependencies**: LLM-001, ING-002
