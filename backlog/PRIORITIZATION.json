@@ -1,6 +1,6 @@
 {
   "last_updated": "2025-08-26",
-  "total_stories": 39,
+  "total_stories": 40,
   "recently_completed": [
     "S07_dedup_and_crosspost_collapsing",
     "ADVANCED_NFL_STATISTICS_INTEGRATION",
@@ -92,10 +92,23 @@
   },
   "ready_to_start": [
     {
+      "id": "UI-001",
+      "title": "Fix Inventory App Sidebar UI Layout Issues",
+      "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
+      "priority": 1,
+      "estimate": "2 story points", 
+      "epic": "ui",
+      "type": "user-story",
+      "related_prs": [
+        "https://github.com/dilligafog/ai-sports-analytics/pull/32",
+        "https://github.com/dilligafog/ai-sports-analytics/pull/33"
+      ]
+    },
+    {
       "id": "AI_GENERATED_SALES_PITCH",
       "title": "User Story: AI-Generated Sales Pitch",
       "file_path": "backlog/ui/AI_GENERATED_SALES_PITCH.md",
-      "priority": 1,
+      "priority": 2,
       "estimate": "5 story points",
       "epic": "ui_explainability"
     },
@@ -103,7 +116,7 @@
       "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
       "title": "User Story: Data Source Integration Framework",
       "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
-      "priority": 2,
+      "priority": 3,
       "estimate": "8 story points",
       "epic": "infra"
     },
