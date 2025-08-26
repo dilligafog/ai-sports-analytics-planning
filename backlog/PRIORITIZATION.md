@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-25  
-**Total Stories**: 44  
+**Total Stories**: 42 (2 recently accepted: QLT-001, PREDICTIONS_OUTPUTS)  
 
 ## Quick Start for Implementation Agents
 
@@ -12,12 +12,15 @@
 4. **Update this planning repo** when work begins and completes
 5. **Report outcomes** including lessons learned and follow-up needs
 
-## Recent Completions
-- ✅ **QLT-001** (2025-08-25): Complete data quality checks and fixes system
+## Recent Acceptances (Moved to accepted/)
+- ✅ **QLT-001** (2025-08-25): Data quality checks and fixes system → **ACCEPTED**
   - 100% → 0% NULL weeks, 100% → 9.8% NULL dates fixed
   - CI integration with automated quality gates
-  - CLI commands: quality-check, quality-fix, quality-ci
-  - All CI thresholds PASSING, prediction pipeline restored
+  - Foundation for prediction pipeline established
+- ✅ **PREDICTIONS_OUTPUTS** (2025-08-25): Predictions & Outputs system → **ACCEPTED**
+  - Core value delivery mechanism implemented
+  - Built on MODEL_TRAINING_EVALUATION (80.9% accuracy) foundation
+  - Enables informed betting decisions for end users
 - ✅ **MODEL_TRAINING_EVALUATION** (2025-08-25): Complete model training & evaluation system
   - 80.9% moneyline accuracy (+28.9% lift), 77.4% ATS accuracy (+20.3% lift)
   - Auto-detection of gold features, multi-market support
@@ -37,37 +40,14 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
-- **File**: `backlog/models/PREDICTIONS_OUTPUTS.md`
-- **Owner**: TBD
-- **Estimate**: 5 story points
-- **Epic**: predictions
-- **Tags**: outputs, infra
-
-**2. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
+**1. NFL_PLAYER_INJURY_DATA_INTEGRATION** - User Story: NFL Player Injury Data Integration
 - **File**: `backlog/models/NFL_PLAYER_INJURY_DATA_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 5 story points
 - **Epic**: ingestion
 - **Tags**: injury, data
 
-**3. PREDICTIONS_OUTPUTS** - User Story: Predictions & Outputs
-- **File**: `backlog/models/PREDICTIONS_OUTPUTS.md`
-- **Owner**: TBD
-- **Estimate**: 5 story points
-- **Epic**: predictions
-- **Tags**: outputs, infra
-
-**4. QLT-001** - QLT-001: Data quality checks on joins and keys
-- **File**: `backlog/llm/quality/01-data-quality-checks.md`
-- **Owner**: qa-team
-- **Estimate**: 2sp
-- **Epic**: llm_backlog
-- **Tags**: quality, data
-
-### 📋 Medium Priority - Next in Queue
-
-**13. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
+**2. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
 - **File**: `backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 8 story points

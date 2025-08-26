@@ -22,10 +22,16 @@ For a story to be moved to accepted/, it must:
 
 ## Contents
 
-**Last Updated**: 2025-01-27  
-**Accepted Stories Count**: 19
+**Last Updated**: 2025-08-25  
+**Accepted Stories Count**: 21
 
-### Recently Accepted (Migrated from Implementation Repository)
+### Recently Accepted - August 2025
+
+**Latest Acceptances** (August 25, 2025):
+1. [QLT-001: Data Quality Checks](./QLT-001-data-quality-checks.md) - ✅ Data quality framework with CI integration
+2. [PREDICTIONS_OUTPUTS: Predictions & Outputs](./PREDICTIONS_OUTPUTS.md) - ✅ Core predictions pipeline for end users
+
+### Previously Accepted (Migrated from Implementation Repository)
 
 All stories below were migrated from the main implementation repository and have been reviewed for acceptance:
 
