@@ -1,0 +1,51 @@
+{
+  "last_updated": "2025-08-25",
+  "total_stories": 41,
+  "recently_completed": [
+    "QLT-001",
+    "PREDICTIONS_OUTPUTS", 
+    "NFL_PLAYER_INJURY_DATA_INTEGRATION"
+  ],
+  "ready_to_start": [
+    {
+      "id": "ADVANCED_NFL_STATISTICS_INTEGRATION",
+      "title": "User Story: Advanced NFL Statistics Integration",
+      "file_path": "backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md",
+      "priority": 1,
+      "estimate": "8 story points",
+      "epic": "analytics"
+    },
+    {
+      "id": "AI_GENERATED_SALES_PITCH",
+      "title": "User Story: AI-Generated Sales Pitch", 
+      "file_path": "backlog/ui/AI_GENERATED_SALES_PITCH.md",
+      "priority": 2,
+      "estimate": "5 story points",
+      "epic": "ui_explainability"
+    },
+    {
+      "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
+      "title": "User Story: Data Source Integration Framework",
+      "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md", 
+      "priority": 3,
+      "estimate": "8 story points",
+      "epic": "infra"
+    },
+    {
+      "id": "INF-001",
+      "title": "INF-001: Configuration standards (YAML + pydantic)",
+      "file_path": "backlog/llm/infra/01-config-standards-yaml.md",
+      "priority": 4,
+      "estimate": "2sp",
+      "epic": "llm_backlog"
+    },
+    {
+      "id": "PUBLIC_BETTING_DATA_INTEGRATION",
+      "title": "User Story: Public Betting Data Integration",
+      "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
+      "priority": 5,
+      "estimate": "5 story points", 
+      "epic": "ingestion"
+    }
+  ]
+}
