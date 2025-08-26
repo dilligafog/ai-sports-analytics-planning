@@ -1,0 +1,127 @@
+{
+  "last_updated": "2025-08-26",
+  "total_stories": 40,
+  "recently_completed": [
+    "ADVANCED_NFL_STATISTICS_INTEGRATION",
+    "NFL_PLAYER_INJURY_DATA_INTEGRATION", 
+    "PREDICTIONS_OUTPUTS",
+    "MODEL_TRAINING_EVALUATION",
+    "QLT-001",
+    "S01_social_news_schema_and_abstraction"
+  ],
+  "completed_stories": {
+    "total_completed": 7,
+    "total_accepted": 30,
+    "recently_completed": [
+      {
+        "id": "ADVANCED_NFL_STATISTICS_INTEGRATION",
+        "status": "COMPLETED",
+        "completion_date": "2025-08-26",
+        "file_path": "completed/ADVANCED_NFL_STATISTICS_INTEGRATION.md"
+      },
+      {
+        "id": "NFL_PLAYER_INJURY_DATA_INTEGRATION",
+        "status": "COMPLETED", 
+        "completion_date": "2025-08-25",
+        "file_path": "completed/NFL_PLAYER_INJURY_DATA_INTEGRATION.md"
+      },
+      {
+        "id": "MODEL_TRAINING_EVALUATION",
+        "status": "COMPLETED",
+        "completion_date": "2025-08-25",
+        "file_path": "completed/MODEL_TRAINING_EVALUATION.md"
+      },
+      {
+        "id": "PREDICTIONS_OUTPUTS",
+        "status": "COMPLETED",
+        "completion_date": "2025-08-25", 
+        "file_path": "completed/PREDICTIONS_OUTPUTS-enhanced-formatting.md"
+      },
+      {
+        "id": "QLT-001",
+        "status": "COMPLETED",
+        "completion_date": "2025-08-25",
+        "file_path": "completed/QLT-001-data-quality-checks.md"
+      },
+      {
+        "id": "S01_social_news_schema_and_abstraction",
+        "status": "COMPLETED",
+        "file_path": "completed/S01_social_news_schema_and_abstraction.md"
+      }
+    ],
+    "accepted_stories": [
+      "BACKTESTING_ROI_TRACKING",
+      "CODE_STYLE_INVENTORY", 
+      "CONFIG_STANDARDS_YAML_PYDANTIC",
+      "DATA_CATALOG",
+      "EMIT_METADATA_DOC",
+      "END_TO_END_KAGGLE_NFL_SCORES",
+      "END_TO_END_SUMMARY",
+      "EVAL-001-offline-eval-metrics",
+      "EVAL-002",
+      "GOLD_FEATURE_STORE",
+      "INF-002-task-runner-busta",
+      "INF-004", 
+      "ING-001-news-rss-sources",
+      "ING-003-odds-api-integration",
+      "LLM_FEATURE_EXTRACTION_FROM_NEWS",
+      "MOD-005-feature-store-schema",
+      "NEWS_RSS_SOURCES_INTEGRATION",
+      "PERFORMANCE_TRACKING_FINAL",
+      "PLAYBOOK_DATA_SOURCES",
+      "PLAYBOOK_PERFORMANCE_TRACKING",
+      "PLAYBOOK_PROJECT_SETUP",
+      "PLAYBOOK_UNIFIED_CLI",
+      "PREDICTIONS_OUTPUTS",
+      "QLT-001-data-quality-checks",
+      "SESSION_SUMMARY",
+      "UI_ARCHITECTURE_QUICKSTART",
+      "UI_BUILD_PROCESS_ANALYSIS", 
+      "WEB_BUILD_PROCESS_UPDATE",
+      "WEB_DEPLOYMENT_GUIDE"
+    ]
+  },
+  "ready_to_start": [
+    {
+      "id": "AI_GENERATED_SALES_PITCH",
+      "title": "User Story: AI-Generated Sales Pitch",
+      "file_path": "backlog/ui/AI_GENERATED_SALES_PITCH.md",
+      "priority": 1,
+      "estimate": "5 story points",
+      "epic": "ui_explainability"
+    },
+    {
+      "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
+      "title": "User Story: Data Source Integration Framework",
+      "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
+      "priority": 2,
+      "estimate": "8 story points",
+      "epic": "infra"
+    },
+    {
+      "id": "LLM-005",
+      "title": "LLM-005: Injury override & starter availability signal",
+      "file_path": "backlog/llm/llm/05-injury-override-signal.md",
+      "priority": 3,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "note": "Now ready - dependency NFL_PLAYER_INJURY_DATA_INTEGRATION completed"
+    },
+    {
+      "id": "PUBLIC_BETTING_DATA_INTEGRATION",
+      "title": "User Story: Public Betting Data Integration",
+      "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
+      "priority": 4,
+      "estimate": "5 story points",
+      "epic": "ingestion"
+    },
+    {
+      "id": "INF-001",
+      "title": "INF-001: Configuration standards (YAML + pydantic)",
+      "file_path": "backlog/llm/infra/01-config-standards-yaml.md",
+      "priority": 5,
+      "estimate": "2sp",
+      "epic": "llm_backlog"
+    }
+  ]
+}
