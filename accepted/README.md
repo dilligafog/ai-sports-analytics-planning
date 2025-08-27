@@ -8,6 +8,9 @@ Stories move through the following stages:
 1. **Creation** → `backlog/` - New story with basic structure
 2. **Refinement** → Stay in `backlog/` until ready
 3. **Ready** → Move to `active/` when implementation starts
+4. **Implementation** → Stay in `active/` during development
+5. **Completion** → Move to `completed/` when implementation finishes
+6. **Acceptance** → Move to `accepted/` after planning review and verification
 4. **Completion** → Move to `completed/` with outcome notes
 5. **Acceptance** → Move to `accepted/` when verified and meeting all criteria ← **This Stage**
 
