@@ -1,6 +1,6 @@
 {
   "last_updated": "2025-08-26",
-  "total_stories": 45,
+  "total_stories": 83,
   "recently_completed": [],
   "adhoc_workflow": {
     "description": "ADH stories are ad-hoc bug fixes and maintenance tasks that bypass the formal backlog prioritization process",
@@ -35,7 +35,7 @@
   },
   "completed_stories": {
     "total_completed": 0,
-    "total_accepted": 41,
+    "total_accepted": 39,
     "recently_accepted": [
       {
         "id": "AI_GENERATED_SALES_PITCH",
@@ -111,8 +111,8 @@
       "ING-001-news-rss-sources",
       "ING-003-odds-api-integration",
       "LLM_FEATURE_EXTRACTION_FROM_NEWS",
-      "MODEL_TRAINING_EVALUATION",
       "MOD-005-feature-store-schema",
+      "MODEL_TRAINING_EVALUATION",
       "NEWS_RSS_SOURCES_INTEGRATION",
       "NFL_PLAYER_INJURY_DATA_INTEGRATION",
       "PERFORMANCE_TRACKING_FINAL",
@@ -121,6 +121,7 @@
       "PLAYBOOK_PROJECT_SETUP",
       "PLAYBOOK_UNIFIED_CLI",
       "PREDICTIONS_OUTPUTS",
+      "PREDICTIONS_OUTPUTS-enhanced-formatting",
       "QLT-001-data-quality-checks",
       "S01_social_news_schema_and_abstraction",
       "S07_dedup_and_crosspost_collapsing",
@@ -133,17 +134,12 @@
   },
   "ready_to_start": [
     {
-      "id": "UI-001",
-      "title": "Fix Inventory App Sidebar UI Layout Issues",
-      "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
+      "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
+      "title": "User Story: Data Source Integration Framework",
+      "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
       "priority": 1,
-      "estimate": "2 story points", 
-      "epic": "ui",
-      "type": "user-story",
-      "related_prs": [
-        "https://github.com/dilligafog/ai-sports-analytics/pull/32",
-        "https://github.com/dilligafog/ai-sports-analytics/pull/33"
-      ]
+      "estimate": "8 story points",
+      "epic": "infra"
     },
     {
       "id": "UI-002",
@@ -153,14 +149,6 @@
       "estimate": "5 story points",
       "epic": "ui",
       "dependencies": ["AI_GENERATED_SALES_PITCH"]
-    },
-    {
-      "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
-      "title": "User Story: Data Source Integration Framework",
-      "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
-      "priority": 3,
-      "estimate": "8 story points",
-      "epic": "infra"
     },
     {
       "id": "LLM-005",
