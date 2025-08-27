@@ -1,7 +1,8 @@
 # ADH-004-Next-Story-Preview - Next-Story-Preview
 
-**Status**: ✅ COMPLETED  
+**Status**: ✅ ACCEPTED  
 **Completion Date**: August 26, 2025  
+**Acceptance Date**: August 27, 2025  
 **Branch**: feature/ADH-004-Next-Story-Preview  
 **PR**: https://github.com/dilligafog/ai-sports-analytics/pull/42
 

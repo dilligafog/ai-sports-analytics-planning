@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-26",
+  "last_updated": "2025-08-27",
   "total_stories": 86,
   "recently_completed": [],
   "adhoc_workflow": {
@@ -30,12 +30,20 @@
         "type": "ad-hoc",
         "completion_date": "2025-08-26",
         "acceptance_date": "2025-08-26"
+      },
+      {
+        "id": "ADH-004",
+        "title": "Next-Story-Preview",
+        "file_path": "accepted/ADH-004-Next-Story-Preview.md",
+        "type": "ad-hoc",
+        "completion_date": "2025-08-26",
+        "acceptance_date": "2025-08-27"
       }
     ]
   },
   "completed_stories": {
     "total_completed": 0,
-    "total_accepted": 40,
+    "total_accepted": 41,
     "recently_accepted": [
       {
         "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
@@ -103,6 +111,7 @@
       "ADH-001-Update_Busta_for_Adhoc_Stories",
       "ADH-002-Fix_Inventory_Sidebar", 
       "ADH-003-Untrack_Log_Files",
+      "ADH-004-Next-Story-Preview",
       "ADVANCED_NFL_STATISTICS_INTEGRATION",
       "AI_GENERATED_SALES_PITCH",
       "BACKTESTING_ROI_TRACKING",
