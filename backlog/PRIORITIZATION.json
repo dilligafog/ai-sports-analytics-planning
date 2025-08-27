@@ -1,54 +1,51 @@
 {
   "last_updated": "2025-08-26",
-  "total_stories": 42,
+  "total_stories": 45,
   "recently_completed": [],
   "adhoc_workflow": {
     "description": "ADH stories are ad-hoc bug fixes and maintenance tasks that bypass the formal backlog prioritization process",
     "workflow": "ADH stories go directly to active/ when started and to completed/ when finished, without backlog planning",
-    "active_adhoc": [
+    "active_adhoc": [],
+    "recently_accepted_adhoc": [
       {
         "id": "ADH-001",
         "title": "Update Busta for Adhoc Stories",
-        "file_path": "active/ADH-001-Update_Busta_for_Adhoc_Stories.md",
+        "file_path": "accepted/ADH-001-Update_Busta_for_Adhoc_Stories.md",
         "type": "ad-hoc",
-        "status": "in-progress"
-      },
-      {
-        "id": "ADH-002", 
-        "title": "Fix Inventory Sidebar",
-        "file_path": "active/ADH-002-Fix_Inventory_Sidebar.md",
-        "type": "ad-hoc",
-        "status": "in-progress"
-      },
-      {
-        "id": "ADH-003",
-        "title": "Untrack Log Files",
-        "file_path": "active/ADH-003-Untrack_Log_Files.md", 
-        "type": "ad-hoc",
-        "status": "in-progress"
-      }
-    ],
-    "completed_adhoc": [
-      {
-        "id": "ADH-001",
-        "title": "Update Busta for Adhoc Stories",
-        "file_path": "completed/ADH-001-Update_Busta_for_Adhoc_Stories.md",
-        "type": "ad-hoc",
-        "completion_date": "2025-08-26"
+        "completion_date": "2025-08-26",
+        "acceptance_date": "2025-08-26"
       },
       {
         "id": "ADH-002",
         "title": "Fix Inventory Sidebar", 
-        "file_path": "completed/ADH-002-Fix_Inventory_Sidebar.md",
+        "file_path": "accepted/ADH-002-Fix_Inventory_Sidebar.md",
         "type": "ad-hoc",
-        "completion_date": "2025-08-26"
+        "completion_date": "2025-08-26",
+        "acceptance_date": "2025-08-26"
+      },
+      {
+        "id": "ADH-003",
+        "title": "Untrack Log Files", 
+        "file_path": "accepted/ADH-003-Untrack_Log_Files.md",
+        "type": "ad-hoc",
+        "completion_date": "2025-08-26",
+        "acceptance_date": "2025-08-26"
       }
     ]
   },
   "completed_stories": {
     "total_completed": 0,
-    "total_accepted": 37,
+    "total_accepted": 41,
     "recently_accepted": [
+      {
+        "id": "AI_GENERATED_SALES_PITCH",
+        "status": "ACCEPTED",
+        "completion_date": "2025-08-26",
+        "acceptance_date": "2025-08-26",
+        "file_path": "accepted/AI_GENERATED_SALES_PITCH.md",
+        "pr": "https://github.com/dilligafog/ai-sports-analytics/pull/35",
+        "epic": "ui_explainability"
+      },
       {
         "id": "S07_dedup_and_crosspost_collapsing",
         "status": "ACCEPTED",
@@ -94,7 +91,11 @@
       }
     ],
     "accepted_stories": [
+      "ADH-001-Update_Busta_for_Adhoc_Stories",
+      "ADH-002-Fix_Inventory_Sidebar", 
+      "ADH-003-Untrack_Log_Files",
       "ADVANCED_NFL_STATISTICS_INTEGRATION",
+      "AI_GENERATED_SALES_PITCH",
       "BACKTESTING_ROI_TRACKING",
       "CODE_STYLE_INVENTORY", 
       "CONFIG_STANDARDS_YAML_PYDANTIC",
@@ -145,12 +146,13 @@
       ]
     },
     {
-      "id": "AI_GENERATED_SALES_PITCH",
-      "title": "User Story: AI-Generated Sales Pitch",
-      "file_path": "backlog/ui/AI_GENERATED_SALES_PITCH.md",
+      "id": "UI-002",
+      "title": "Integrate AI Sales Pitch into Web UI",
+      "file_path": "backlog/ui/UI-002-sales-pitch-integration.md",
       "priority": 2,
       "estimate": "5 story points",
-      "epic": "ui_explainability"
+      "epic": "ui",
+      "dependencies": ["AI_GENERATED_SALES_PITCH"]
     },
     {
       "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
@@ -170,10 +172,19 @@
       "note": "Now ready - dependency NFL_PLAYER_INJURY_DATA_INTEGRATION completed"
     },
     {
+      "id": "INF-006",
+      "title": "AI Inference Performance Monitoring & Cost Optimization",
+      "file_path": "backlog/infrastructure/INF-006-ai-inference-monitoring.md",
+      "priority": 4,
+      "estimate": "3 story points",
+      "epic": "infra",
+      "dependencies": ["AI_GENERATED_SALES_PITCH"]
+    },
+    {
       "id": "PUBLIC_BETTING_DATA_INTEGRATION",
       "title": "User Story: Public Betting Data Integration",
       "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
-      "priority": 4,
+      "priority": 5,
       "estimate": "5 story points",
       "epic": "ingestion"
     },
@@ -181,7 +192,7 @@
       "id": "INF-001",
       "title": "INF-001: Configuration standards (YAML + pydantic)",
       "file_path": "backlog/llm/infra/01-config-standards-yaml.md",
-      "priority": 5,
+      "priority": 6,
       "estimate": "2sp",
       "epic": "llm_backlog"
     }

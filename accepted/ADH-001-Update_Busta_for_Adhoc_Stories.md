@@ -2,11 +2,13 @@
 id: ADH-001-Update_Busta_for_Adhoc_Stories
 title: Update Busta for Adhoc Stories
 type: ad-hoc
-status: completed  
+status: accepted  
 priority: ad-hoc
 effort: ad-hoc
 labels: [ad-hoc, maintenance]
 created: 2025-08-26
+completed: 2025-08-26
+accepted: 2025-08-26
 author: developer
 dependencies: []
 ---
