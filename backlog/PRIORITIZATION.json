@@ -1,64 +1,57 @@
 {
   "last_updated": "2025-08-26",
-  "total_stories": 39,
-  "recently_completed": [
-    "S07_dedup_and_crosspost_collapsing",
-    "ADVANCED_NFL_STATISTICS_INTEGRATION",
-    "NFL_PLAYER_INJURY_DATA_INTEGRATION", 
-    "PREDICTIONS_OUTPUTS",
-    "MODEL_TRAINING_EVALUATION",
-    "QLT-001",
-    "S01_social_news_schema_and_abstraction"
-  ],
+  "total_stories": 42,
+  "recently_completed": [],
   "completed_stories": {
-    "total_completed": 8,
-    "total_accepted": 30,
-    "recently_completed": [
+    "total_completed": 0,
+    "total_accepted": 37,
+    "recently_accepted": [
       {
         "id": "S07_dedup_and_crosspost_collapsing",
-        "status": "COMPLETED",
+        "status": "ACCEPTED",
         "completion_date": "2025-08-26",
-        "file_path": "completed/S07_dedup_and_crosspost_collapsing.md",
+        "file_path": "accepted/S07_dedup_and_crosspost_collapsing.md",
         "pr": "https://github.com/dilligafog/ai-sports-analytics/pull/31",
         "epic": "social_media"
       },
       {
         "id": "ADVANCED_NFL_STATISTICS_INTEGRATION",
-        "status": "COMPLETED",
+        "status": "ACCEPTED",
         "completion_date": "2025-08-26",
-        "file_path": "completed/ADVANCED_NFL_STATISTICS_INTEGRATION.md"
+        "file_path": "accepted/ADVANCED_NFL_STATISTICS_INTEGRATION.md"
       },
       {
         "id": "NFL_PLAYER_INJURY_DATA_INTEGRATION",
-        "status": "COMPLETED", 
+        "status": "ACCEPTED", 
         "completion_date": "2025-08-25",
-        "file_path": "completed/NFL_PLAYER_INJURY_DATA_INTEGRATION.md"
+        "file_path": "accepted/NFL_PLAYER_INJURY_DATA_INTEGRATION.md"
       },
       {
         "id": "MODEL_TRAINING_EVALUATION",
-        "status": "COMPLETED",
+        "status": "ACCEPTED",
         "completion_date": "2025-08-25",
-        "file_path": "completed/MODEL_TRAINING_EVALUATION.md"
+        "file_path": "accepted/MODEL_TRAINING_EVALUATION.md"
       },
       {
         "id": "PREDICTIONS_OUTPUTS",
-        "status": "COMPLETED",
+        "status": "ACCEPTED",
         "completion_date": "2025-08-25", 
-        "file_path": "completed/PREDICTIONS_OUTPUTS-enhanced-formatting.md"
+        "file_path": "accepted/PREDICTIONS_OUTPUTS-enhanced-formatting.md"
       },
       {
         "id": "QLT-001",
-        "status": "COMPLETED",
+        "status": "ACCEPTED",
         "completion_date": "2025-08-25",
-        "file_path": "completed/QLT-001-data-quality-checks.md"
+        "file_path": "accepted/QLT-001-data-quality-checks.md"
       },
       {
         "id": "S01_social_news_schema_and_abstraction",
-        "status": "COMPLETED",
-        "file_path": "completed/S01_social_news_schema_and_abstraction.md"
+        "status": "ACCEPTED",
+        "file_path": "accepted/S01_social_news_schema_and_abstraction.md"
       }
     ],
     "accepted_stories": [
+      "ADVANCED_NFL_STATISTICS_INTEGRATION",
       "BACKTESTING_ROI_TRACKING",
       "CODE_STYLE_INVENTORY", 
       "CONFIG_STANDARDS_YAML_PYDANTIC",
@@ -70,12 +63,14 @@
       "EVAL-002",
       "GOLD_FEATURE_STORE",
       "INF-002-task-runner-busta",
-      "INF-004", 
+      "INF-004",
       "ING-001-news-rss-sources",
       "ING-003-odds-api-integration",
       "LLM_FEATURE_EXTRACTION_FROM_NEWS",
+      "MODEL_TRAINING_EVALUATION",
       "MOD-005-feature-store-schema",
       "NEWS_RSS_SOURCES_INTEGRATION",
+      "NFL_PLAYER_INJURY_DATA_INTEGRATION",
       "PERFORMANCE_TRACKING_FINAL",
       "PLAYBOOK_DATA_SOURCES",
       "PLAYBOOK_PERFORMANCE_TRACKING",
@@ -83,6 +78,8 @@
       "PLAYBOOK_UNIFIED_CLI",
       "PREDICTIONS_OUTPUTS",
       "QLT-001-data-quality-checks",
+      "S01_social_news_schema_and_abstraction",
+      "S07_dedup_and_crosspost_collapsing",
       "SESSION_SUMMARY",
       "UI_ARCHITECTURE_QUICKSTART",
       "UI_BUILD_PROCESS_ANALYSIS", 
@@ -92,10 +89,23 @@
   },
   "ready_to_start": [
     {
+      "id": "UI-001",
+      "title": "Fix Inventory App Sidebar UI Layout Issues",
+      "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
+      "priority": 1,
+      "estimate": "2 story points", 
+      "epic": "ui",
+      "type": "user-story",
+      "related_prs": [
+        "https://github.com/dilligafog/ai-sports-analytics/pull/32",
+        "https://github.com/dilligafog/ai-sports-analytics/pull/33"
+      ]
+    },
+    {
       "id": "AI_GENERATED_SALES_PITCH",
       "title": "User Story: AI-Generated Sales Pitch",
       "file_path": "backlog/ui/AI_GENERATED_SALES_PITCH.md",
-      "priority": 1,
+      "priority": 2,
       "estimate": "5 story points",
       "epic": "ui_explainability"
     },
@@ -103,7 +113,7 @@
       "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
       "title": "User Story: Data Source Integration Framework",
       "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
-      "priority": 2,
+      "priority": 3,
       "estimate": "8 story points",
       "epic": "infra"
     },

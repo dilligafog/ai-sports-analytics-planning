@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-25  
-**Total Stories**: 41 (3 recently completed: QLT-001, PREDICTIONS_OUTPUTS, NFL_PLAYER_INJURY_DATA_INTEGRATION)  
+**Total Stories**: 42 (3 recently completed: QLT-001, PREDICTIONS_OUTPUTS, NFL_PLAYER_INJURY_DATA_INTEGRATION, 1 new: UI-001)  
 
 ## Quick Start for Implementation Agents
 
@@ -45,13 +45,20 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
+**1. UI-001** - Fix Inventory App Sidebar UI Layout Issues
+- **File**: `backlog/ui/UI-001-fix-inventory-sidebar-layout.md`
+- **Owner**: TBD
+- **Estimate**: 2 story points
+- **Epic**: ui
+- **Priority**: High (quick win, improves UX for existing inventory app)
+
+**2. ADVANCED_NFL_STATISTICS_INTEGRATION** - User Story: Advanced NFL Statistics Integration
 - **File**: `backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 8 story points
 - **Epic**: analytics
 
-**2. AI_GENERATED_SALES_PITCH** - User Story: AI-Generated Sales Pitch
+**3. AI_GENERATED_SALES_PITCH** - User Story: AI-Generated Sales Pitch
 - **File**: `backlog/models/ADVANCED_NFL_STATISTICS_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 8 story points
