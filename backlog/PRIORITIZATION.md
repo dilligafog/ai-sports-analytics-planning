@@ -2,7 +2,7 @@
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
 **Last Updated**: 2025-08-27  
-**Total Stories**: 45  
+**Total Stories**: 44  
 
 ## Quick Start for Implementation Agents
 
@@ -26,65 +26,52 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. UI-002** - Integrate AI Sales Pitch into Web UI
-- **File**: `backlog/ui/UI-002-sales-pitch-integration.md`
+**1. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
+- **File**: `backlog/models/MODEL_TRAINING_EVALUATION.md`
 - **Owner**: TBD
-- **Estimate**: 5 story points
-- **Epic**: ui
-- **Dependencies**: AI_GENERATED_SALES_PITCH ✅
+- **Estimate**: 8
+- **Epic**: training
+- **Tags**: model, training, evaluation
 
 ### 📋 Medium Priority - Next in Queue
 
-**2. LLM-005** - LLM-005: Injury override & starter availability signal
-- **File**: `backlog/llm/llm/05-injury-override-signal.md`
-- **Owner**: TBD
-- **Estimate**: 3sp
+**2. INF-001** - INF-001: Configuration standards (YAML + pydantic)
+- **File**: `backlog/llm/infra/01-config-standards-yaml.md`
+- **Owner**: infra-team
+- **Estimate**: 2sp
 - **Epic**: llm_backlog
-- **Note**: Now ready - dependency NFL_PLAYER_INJURY_DATA_INTEGRATION completed
 
-**3. INF-006** - AI Inference Performance Monitoring & Cost Optimization
-- **File**: `backlog/infrastructure/INF-006-ai-inference-monitoring.md`
-- **Owner**: TBD
-- **Estimate**: 3 story points
-- **Epic**: infra
-- **Dependencies**: AI_GENERATED_SALES_PITCH ✅
-
-**4. INF-007** - Parallel Data Collection Engine
-- **File**: `backlog/infrastructure/INF-007-parallel-data-collection.md`
-- **Owner**: TBD
-- **Estimate**: 5 story points
-- **Epic**: infra
-- **Dependencies**: DATA_SOURCE_INTEGRATION_FRAMEWORK ✅
+**3. INF-003** - INF-003: Caching & TTL for time-sensitive signals
 - **File**: `backlog/llm/infra/03-caching-ttl.md`
 - **Owner**: infra-team
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 
-**5. ING-004** - ING-004: PFR weekly schedule & team stats scraper
+**4. ING-004** - ING-004: PFR weekly schedule & team stats scraper
 - **File**: `backlog/llm/ingestion/04-pfr-scraper-week.md`
 - **Owner**: team-data
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 
-**6. PUBLIC_BETTING_DATA_INTEGRATION** - User Story: Public Betting Data Integration
+**5. PUBLIC_BETTING_DATA_INTEGRATION** - User Story: Public Betting Data Integration
 - **File**: `backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 5
 - **Epic**: ingestion
 
-**7. QLT-002** - QLT-002: Structured logging & lightweight monitoring
+**6. QLT-002** - QLT-002: Structured logging & lightweight monitoring
 - **File**: `backlog/llm/quality/02-logging-and-monitoring.md`
 - **Owner**: qa-team
 - **Estimate**: 2sp
 - **Epic**: llm_backlog
 
-**8. SCHEDULING_AUTOMATION** - User Story: Scheduling & Automation
+**7. SCHEDULING_AUTOMATION** - User Story: Scheduling & Automation
 - **File**: `backlog/infrastructure/SCHEDULING_AUTOMATION.md`
 - **Owner**: TBD
 - **Estimate**: 5
 - **Epic**: infra
 
-**9. UI-001** - Fix Inventory App Sidebar UI Layout Issues
+**8. UI-001** - Fix Inventory App Sidebar UI Layout Issues
 - **File**: `backlog/ui/UI-001-fix-inventory-sidebar-layout.md`
 - **Owner**: TBD
 - **Estimate**: Not specified
@@ -92,25 +79,30 @@ Stories are prioritized by:
 
 ### 📝 Low Priority - Future Work
 
-**10. KAGGLE_DATA_UTILIZATION** - User Story: Kaggle Data Utilization
+**9. KAGGLE_DATA_UTILIZATION** - User Story: Kaggle Data Utilization
 - **File**: `backlog/models/KAGGLE_DATA_UTILIZATION.md`
 - **Owner**: TBD
 - **Estimate**: 3
 
-**11. WEATHER_DATA_INTEGRATION** - User Story: Weather Data Integration
+**10. WEATHER_DATA_INTEGRATION** - User Story: Weather Data Integration
 - **File**: `backlog/models/WEATHER_DATA_INTEGRATION.md`
 - **Owner**: TBD
 - **Estimate**: 3
 
 ### ❓ Priority Needs Review
 
-**12. S** - Story S05 — Bluesky: Keyword/Graph Search
-- **File**: `backlog/social_media/S05_bluesky_keyword_and_graph_search.md`
+**11. INF-007** - INF-007 - Parallel Data Collection Engine
+- **File**: `backlog/infrastructure/INF-007-parallel-data-collection.md`
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
-**13. S** - Story S06 — Relevance Filter & Entity Linking for Social
-- **File**: `backlog/social_media/S06_relevance_filter_and_entity_linking.md`
+**12. INF-008** - INF-008 - Data Source Health Monitoring & Alerting
+- **File**: `backlog/infrastructure/INF-008-data-source-health-monitoring.md`
+- **Owner**: TBD
+- **Note**: Priority needs to be assigned
+
+**13. S** - Story S03 — Twitter/X: Keyword & List Search
+- **File**: `backlog/social_media/S03_x_keyword_and_list_search.md`
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
@@ -119,38 +111,48 @@ Stories are prioritized by:
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
-**15. S** - Story S11 — UI/CLI Surfacing & Source Configuration
-- **File**: `backlog/social_media/S11_ui_cli_source_configuration.md`
-- **Owner**: TBD
-- **Note**: Priority needs to be assigned
-
-**16. S** - Story S02 — Twitter/X: Curated Accounts Ingestion
-- **File**: `backlog/social_media/S02_x_curated_accounts_ingestion.md`
-- **Owner**: TBD
-- **Note**: Priority needs to be assigned
-
-**17. S** - Story S08 — Scheduling, Rate-Limits, Secrets & Checkpointing
-- **File**: `backlog/social_media/S08_scheduling_ratelimits_secrets_checkpointing.md`
-- **Owner**: TBD
-- **Note**: Priority needs to be assigned
-
-**18. S** - Story S04 — Bluesky: Curated Handles Ingestion
+**15. S** - Story S04 — Bluesky: Curated Handles Ingestion
 - **File**: `backlog/social_media/S04_bluesky_curated_handles_ingestion.md`
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
-**19. S** - Story S10 — Compliance, Config Gating & Kill-Switch
-- **File**: `backlog/social_media/S10_compliance_config_gating_killswitch.md`
+**16. S** - Story S06 — Relevance Filter & Entity Linking for Social
+- **File**: `backlog/social_media/S06_relevance_filter_and_entity_linking.md`
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
-**20. S** - Story S09 — Feed Health, Metrics & Alerting for Social
+**17. S** - Story S09 — Feed Health, Metrics & Alerting for Social
 - **File**: `backlog/social_media/S09_feed_health_metrics_alerting.md`
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
-**21. S** - Story S03 — Twitter/X: Keyword & List Search
-- **File**: `backlog/social_media/S03_x_keyword_and_list_search.md`
+**18. S** - Story S05 — Bluesky: Keyword/Graph Search
+- **File**: `backlog/social_media/S05_bluesky_keyword_and_graph_search.md`
+- **Owner**: TBD
+- **Note**: Priority needs to be assigned
+
+**19. S** - Story S02 — Twitter/X: Curated Accounts Ingestion
+- **File**: `backlog/social_media/S02_x_curated_accounts_ingestion.md`
+- **Owner**: TBD
+- **Note**: Priority needs to be assigned
+
+**20. S** - Story S10 — Compliance, Config Gating & Kill-Switch
+- **File**: `backlog/social_media/S10_compliance_config_gating_killswitch.md`
+- **Owner**: TBD
+- **Note**: Priority needs to be assigned
+
+**21. S** - Story S11 — UI/CLI Surfacing & Source Configuration
+- **File**: `backlog/social_media/S11_ui_cli_source_configuration.md`
+- **Owner**: TBD
+- **Note**: Priority needs to be assigned
+
+**22. S** - Story S08 — Scheduling, Rate-Limits, Secrets & Checkpointing
+- **File**: `backlog/social_media/S08_scheduling_ratelimits_secrets_checkpointing.md`
+- **Owner**: TBD
+- **Note**: Priority needs to be assigned
+
+**23. UI-003** - UI-003 - Data Source Management Web Interface
+- **File**: `backlog/ui/UI-003-data-source-management-interface.md`
 - **Owner**: TBD
 - **Note**: Priority needs to be assigned
 
@@ -196,6 +198,10 @@ These stories require other work to be completed first:
 - **Dependencies**: LLM-002
 - **File**: `backlog/llm/explain/01-llm-grounded-explanations.md`
 
+**INF-006-ai-inference-monitoring** - AI Inference Performance Monitoring & Cost Optimization (medium)
+- **Dependencies**: AI_GENERATED_SALES_PITCH
+- **File**: `backlog/infrastructure/INF-006-ai-inference-monitoring.md`
+
 **ING-005** - ING-005: Content quality scoring and filtering (medium)
 - **Dependencies**: ING-001, ING-002
 - **File**: `backlog/llm/ingestion/05-content-quality-filtering.md`
@@ -236,14 +242,18 @@ These stories require other work to be completed first:
 - **Dependencies**: LLM-002, UI-001
 - **File**: `backlog/llm/ui/02-game-detail-page.md`
 
+**LLM-007-sales-pitch-personalization** - Personalized AI Sales Pitch Generation (low)
+- **Dependencies**: AI_GENERATED_SALES_PITCH, UI-002-sales-pitch-integration
+- **File**: `backlog/llm/llm/LLM-007-sales-pitch-personalization.md`
+
 ---
 
 ## Strategic Context
 
 ### Current Focus Areas
 1. **Pick Accuracy** - Model improvements and data quality (9 stories)
-2. **LLM Pipeline** - News ingestion and feature extraction (23 stories)  
-3. **Infrastructure** - Platform reliability and automation (5 stories)
+2. **LLM Pipeline** - News ingestion and feature extraction (24 stories)  
+3. **Infrastructure** - Platform reliability and automation (7 stories)
 4. **Social Media** - Twitter/X and Bluesky integration (10 stories)
 
 ### Implementation Notes
@@ -258,4 +268,4 @@ This file is auto-generated from story metadata. To regenerate:
 python3 scripts/regenerate_prioritization.py
 ```
 
-**Last Generated**: 2025-08-26 21:54:48
+**Last Generated**: 2025-08-27 05:00:25
