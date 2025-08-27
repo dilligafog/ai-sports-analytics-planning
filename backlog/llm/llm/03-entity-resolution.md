@@ -5,11 +5,11 @@ status: draft
 owner: team-llm
 priority: medium
 estimate: 2sp
-dependencies: [ING-001]
+dependencies: []
 tags: [llm, entity-resolution]
 market: null
 layer: Bronze
-last_updated: 2025-08-24
+last_updated: 2025-08-27
 emit_metadata:
   source_id: entity_resolver
   layer: Bronze

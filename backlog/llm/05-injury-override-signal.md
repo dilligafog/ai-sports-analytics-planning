@@ -5,11 +5,11 @@ status: draft
 owner: team-llm
 priority: high
 estimate: 2sp
-dependencies: [NFL_PLAYER_INJURY_DATA_INTEGRATION]
+dependencies: []
 tags: [llm, injuries]
 market: null
 layer: Silver
-last_updated: 2025-08-24
+last_updated: 2025-08-27
 emit_metadata:
   source_id: injury_override
   layer: Silver
