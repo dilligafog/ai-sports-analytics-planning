@@ -5,11 +5,11 @@ status: draft
 owner: team-data
 priority: high
 estimate: 3sp
-dependencies: [ING-001]
+dependencies: []
 tags: [ingestion, dedup, enrichment]
 market: null
 layer: Bronze
-last_updated: 2025-08-24
+last_updated: 2025-08-27
 emit_metadata:
   source_id: dedup_enrich
   layer: Bronze

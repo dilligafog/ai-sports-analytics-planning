@@ -5,11 +5,11 @@ status: draft
 owner: modeling-team
 priority: high
 estimate: 2sp
-dependencies: [MOD-001, MOD-002, EVAL-001]
+dependencies: [MOD-001, MOD-002]
 tags: [modeling, monitoring, calibration]
 market: null
 layer: Analysis
-last_updated: 2025-08-24
+last_updated: 2025-08-27
 emit_metadata:
   source_id: model_monitoring
   layer: Analysis

@@ -5,11 +5,11 @@ status: draft
 owner: qa-team
 priority: high
 estimate: 3sp
-dependencies: [MOD-005]
+dependencies: []
 tags: [quality, monitoring, drift]
 market: null
 layer: Gold
-last_updated: 2025-08-24
+last_updated: 2025-08-27
 emit_metadata:
   source_id: feature_monitoring
   layer: Gold

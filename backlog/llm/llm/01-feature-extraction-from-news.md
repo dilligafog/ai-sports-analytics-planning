@@ -5,11 +5,11 @@ status: draft
 owner: team-llm
 priority: high
 estimate: 3sp
-dependencies: [ING-001, ING-002]
+dependencies: [ING-002]
 tags: [llm, features, news]
 market: null
 layer: Silver
-last_updated: 2025-08-24
+last_updated: 2025-08-27
 emit_metadata:
   source_id: news_rss
   layer: Silver
