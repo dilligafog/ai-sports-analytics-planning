@@ -1,6 +1,6 @@
 {
   "last_updated": "2025-08-26",
-  "total_stories": 83,
+  "total_stories": 86,
   "recently_completed": [],
   "adhoc_workflow": {
     "description": "ADH stories are ad-hoc bug fixes and maintenance tasks that bypass the formal backlog prioritization process",
@@ -35,8 +35,17 @@
   },
   "completed_stories": {
     "total_completed": 0,
-    "total_accepted": 39,
+    "total_accepted": 40,
     "recently_accepted": [
+      {
+        "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
+        "status": "ACCEPTED",
+        "completion_date": "2025-08-26",
+        "acceptance_date": "2025-08-26",
+        "file_path": "accepted/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
+        "pr": "https://github.com/dilligafog/ai-sports-analytics/pull/41",
+        "epic": "infrastructure"
+      },
       {
         "id": "AI_GENERATED_SALES_PITCH",
         "status": "ACCEPTED",
@@ -100,6 +109,7 @@
       "CODE_STYLE_INVENTORY", 
       "CONFIG_STANDARDS_YAML_PYDANTIC",
       "DATA_CATALOG",
+      "DATA_SOURCE_INTEGRATION_FRAMEWORK",
       "EMIT_METADATA_DOC",
       "END_TO_END_KAGGLE_NFL_SCORES",
       "END_TO_END_SUMMARY",
@@ -134,18 +144,10 @@
   },
   "ready_to_start": [
     {
-      "id": "DATA_SOURCE_INTEGRATION_FRAMEWORK",
-      "title": "User Story: Data Source Integration Framework",
-      "file_path": "backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md",
-      "priority": 1,
-      "estimate": "8 story points",
-      "epic": "infra"
-    },
-    {
       "id": "UI-002",
       "title": "Integrate AI Sales Pitch into Web UI",
       "file_path": "backlog/ui/UI-002-sales-pitch-integration.md",
-      "priority": 2,
+      "priority": 1,
       "estimate": "5 story points",
       "epic": "ui",
       "dependencies": ["AI_GENERATED_SALES_PITCH"]
@@ -154,7 +156,7 @@
       "id": "LLM-005",
       "title": "LLM-005: Injury override & starter availability signal",
       "file_path": "backlog/llm/llm/05-injury-override-signal.md",
-      "priority": 3,
+      "priority": 2,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "note": "Now ready - dependency NFL_PLAYER_INJURY_DATA_INTEGRATION completed"
@@ -163,10 +165,19 @@
       "id": "INF-006",
       "title": "AI Inference Performance Monitoring & Cost Optimization",
       "file_path": "backlog/infrastructure/INF-006-ai-inference-monitoring.md",
-      "priority": 4,
+      "priority": 3,
       "estimate": "3 story points",
       "epic": "infra",
       "dependencies": ["AI_GENERATED_SALES_PITCH"]
+    },
+    {
+      "id": "INF-007",
+      "title": "Parallel Data Collection Engine",
+      "file_path": "backlog/infrastructure/INF-007-parallel-data-collection.md",
+      "priority": 4,
+      "estimate": "5 story points",
+      "epic": "infra",
+      "dependencies": ["DATA_SOURCE_INTEGRATION_FRAMEWORK"]
     },
     {
       "id": "PUBLIC_BETTING_DATA_INTEGRATION",
@@ -177,10 +188,19 @@
       "epic": "ingestion"
     },
     {
+      "id": "INF-008",
+      "title": "Data Source Health Monitoring & Alerting",
+      "file_path": "backlog/infrastructure/INF-008-data-source-health-monitoring.md",
+      "priority": 6,
+      "estimate": "3 story points",
+      "epic": "infra",
+      "dependencies": ["DATA_SOURCE_INTEGRATION_FRAMEWORK"]
+    },
+    {
       "id": "INF-001",
       "title": "INF-001: Configuration standards (YAML + pydantic)",
       "file_path": "backlog/llm/infra/01-config-standards-yaml.md",
-      "priority": 6,
+      "priority": 7,
       "estimate": "2sp",
       "epic": "llm_backlog"
     }

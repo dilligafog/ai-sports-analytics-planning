@@ -1,7 +1,8 @@
 # DATA_SOURCE_INTEGRATION_FRAMEWORK - User Story: Data Source Integration Framework
 
-**Status**: ✅ COMPLETED  
+**Status**: ✅ ACCEPTED  
 **Completion Date**: August 26, 2025  
+**Acceptance Date**: August 26, 2025  
 **Branch**: feature/DATA_SOURCE_INTEGRATION_FRAMEWORK  
 **PR**: https://github.com/dilligafog/ai-sports-analytics/pull/41
 
