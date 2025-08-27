@@ -1,17 +1,18 @@
 ---
-id: ADH-002-Fix_Inventory_Sidebar
-title: Fix Inventory Sidebar
+id: ADH-003-Untrack_Log_Files
+title: Untrack Log Files
 type: ad-hoc
-status: in-progress  
+status: completed  
 priority: ad-hoc
 effort: ad-hoc
 labels: [ad-hoc, maintenance]
 created: 2025-08-26
+completed: 2025-08-26
 author: developer
 dependencies: []
 ---
 
-# Fix Inventory Sidebar
+# Untrack Log Files
 
 ## Ad-hoc Story
 

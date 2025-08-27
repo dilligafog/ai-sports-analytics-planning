@@ -1,48 +1,36 @@
-# ADH-001-Update_Busta_for_Adhoc_Stories - Update Busta for Adhoc Stories
+---
+id: ADH-001-Update_Busta_for_Adhoc_Stories
+title: Update Busta for Adhoc Stories
+type: ad-hoc
+status: completed  
+priority: ad-hoc
+effort: ad-hoc
+labels: [ad-hoc, maintenance]
+created: 2025-08-26
+author: developer
+dependencies: []
+---
 
-**Status**: ✅ COMPLETED  
-**Completion Date**: August 26, 2025  
-**Branch**: feature/ADH-001-Update_Busta_for_Adhoc_Stories  
-**PR**: https://github.com/dilligafog/ai-sports-analytics/pull/36
+# Update Busta for Adhoc Stories
 
-## Story Summary
-Story completed successfully.
+## Ad-hoc Story
 
-## Implementation Details
-[Details from commit message]
+**As a** developer  
+**I want** to complete ad-hoc maintenance/improvement work  
+**So that** the system stays clean and functional
 
-feat: implement ADH-001-Update_Busta_for_Adhoc_Stories - Add Ad-hoc Story Support to Busta CLI
+## Description
 
-✅ ADH-001-Update_Busta_for_Adhoc_Stories Story Complete
+This is an ad-hoc story for quick fixes, improvements, or maintenance work that doesn't require formal planning.
 
-🎯 Core Features:
-- [x] Ad-hoc story creation with `busta story start adhoc ADH-XXX-Title`
-- [x] Auto-generated story file in planning repository
-- [x] Feature branch creation with proper naming
-- [x] Story context management for ad-hoc workflows
+## Tasks
 
-🔧 Technical Implementation:
-- [x] Extended busta CLI with adhoc story command parsing
-- [x] Added start_adhoc_story_workflow() function
-- [x] Added start_adhoc_story() method to StoryWorkflow class
-- [x] Auto-generates markdown story files in planning repo
-- [x] Proper template generation and story tracking
+- [ ] Complete the work described in the story title
+- [ ] Ensure all CI checks pass
+- [ ] Update documentation if needed
 
-📊 Testing & Quality:
-- [x] All CI checks passing ✓
-- [x] Manual testing of adhoc story creation
-- [x] Documentation updated in help text
-- [x] Story workflow validated
+## Definition of Done
 
-💡 Additional Notes:
-- Enables quick maintenance and improvement work without formal backlog planning
-- Ad-hoc stories follow format: ADH-XXX-Title_With_Underscores
-- Integrates seamlessly with existing story close workflow
-- Planning repository automatically tracks ad-hoc stories in active folder
-
-## Quality Assurance
-- ✅ All CI checks passing
-- ✅ Code review completed
-- ✅ Ready for deployment
-
-**Status**: ✅ STORY COMPLETE
+- [ ] All changes implemented and tested
+- [ ] CI checks passing
+- [ ] Code reviewed and merged
