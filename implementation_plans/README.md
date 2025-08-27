@@ -84,13 +84,13 @@ Each implementation plan should follow this structure:
 ## File Naming Convention
 
 ```
-[STORY-ID]-implementation-plan.md
+IP-[story-file-name].md
 ```
 
 Examples:
-- `DATA_SOURCE_INTEGRATION_FRAMEWORK-implementation-plan.md`
-- `LLM-001-implementation-plan.md`
-- `UI-003-implementation-plan.md`
+- `IP-DATA_SOURCE_INTEGRATION_FRAMEWORK.md`
+- `IP-LLM-001-implementation-plan.md` 
+- `IP-UI-003-data-source-management-interface.md`
 
 ## Relationship to Other Folders
 
