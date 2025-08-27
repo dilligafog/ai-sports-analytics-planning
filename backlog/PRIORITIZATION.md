@@ -1,8 +1,8 @@
 # Story Prioritization List
 
 **Purpose**: Prioritized task list for coding agents to select next work items  
-**Last Updated**: 2025-08-26  
-**Total Stories**: 40  
+**Last Updated**: 2025-08-27  
+**Total Stories**: 45  
 
 ## Quick Start for Implementation Agents
 
@@ -26,28 +26,35 @@ Stories are prioritized by:
 
 ### 🔥 High Priority - Start These First
 
-**1. MODEL_TRAINING_EVALUATION** - User Story: Model Training & Evaluation
-- **File**: `backlog/models/MODEL_TRAINING_EVALUATION.md`
+**1. UI-002** - Integrate AI Sales Pitch into Web UI
+- **File**: `backlog/ui/UI-002-sales-pitch-integration.md`
 - **Owner**: TBD
-- **Estimate**: 8
-- **Epic**: training
-- **Tags**: model, training, evaluation
+- **Estimate**: 5 story points
+- **Epic**: ui
+- **Dependencies**: AI_GENERATED_SALES_PITCH ✅
 
 ### 📋 Medium Priority - Next in Queue
 
-**2. DATA_SOURCE_INTEGRATION_FRAMEWORK** - User Story: Data Source Integration Framework
-- **File**: `backlog/infrastructure/DATA_SOURCE_INTEGRATION_FRAMEWORK.md`
+**2. LLM-005** - LLM-005: Injury override & starter availability signal
+- **File**: `backlog/llm/llm/05-injury-override-signal.md`
 - **Owner**: TBD
-- **Estimate**: 8
-- **Epic**: infra
-
-**3. INF-001** - INF-001: Configuration standards (YAML + pydantic)
-- **File**: `backlog/llm/infra/01-config-standards-yaml.md`
-- **Owner**: infra-team
-- **Estimate**: 2sp
+- **Estimate**: 3sp
 - **Epic**: llm_backlog
+- **Note**: Now ready - dependency NFL_PLAYER_INJURY_DATA_INTEGRATION completed
 
-**4. INF-003** - INF-003: Caching & TTL for time-sensitive signals
+**3. INF-006** - AI Inference Performance Monitoring & Cost Optimization
+- **File**: `backlog/infrastructure/INF-006-ai-inference-monitoring.md`
+- **Owner**: TBD
+- **Estimate**: 3 story points
+- **Epic**: infra
+- **Dependencies**: AI_GENERATED_SALES_PITCH ✅
+
+**4. INF-007** - Parallel Data Collection Engine
+- **File**: `backlog/infrastructure/INF-007-parallel-data-collection.md`
+- **Owner**: TBD
+- **Estimate**: 5 story points
+- **Epic**: infra
+- **Dependencies**: DATA_SOURCE_INTEGRATION_FRAMEWORK ✅
 - **File**: `backlog/llm/infra/03-caching-ttl.md`
 - **Owner**: infra-team
 - **Estimate**: 2sp
