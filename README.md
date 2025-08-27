@@ -12,7 +12,7 @@ This repository manages strategic planning, story development, and roadmap evolu
 Formally accepted stories that have been completed, verified, and meet all acceptance criteria. These stories serve as reference materials and provide complete implementation history.
 
 ### 📋 **Active Stories** (`active/`)
-Current iteration stories being actively developed. Stories move here from backlog when development begins.
+Current iteration stories being actively developed. Stories move here from backlog when development begins. Also contains ADH (ad-hoc) stories for bug fixes and maintenance.
 
 ### 🗃️ **Backlog** (`backlog/`)
 Prioritized future work organized by theme:
@@ -22,7 +22,10 @@ Prioritized future work organized by theme:
 - **User Experience**: UI, documentation, APIs
 
 ### ✅ **Completed** (`completed/`)
-Archived stories with links to implementation commits and PRs. Maintains traceability between planning and execution.
+Staging area for recently completed stories. Stories accumulate here before being moved to accepted/ in batches. Maintains traceability between planning and execution.
+
+### 🚀 **ADH Workflow** ([`ADH_WORKFLOW.md`](./ADH_WORKFLOW.md))
+Ad-hoc bug fixing and maintenance workflow. ADH stories bypass formal backlog prioritization for rapid execution of small fixes and improvements.
 
 ### 🗺️ **Roadmaps** (`roadmaps/`)
 High-level strategic plans and release planning:

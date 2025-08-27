@@ -2,6 +2,49 @@
   "last_updated": "2025-08-26",
   "total_stories": 42,
   "recently_completed": [],
+  "adhoc_workflow": {
+    "description": "ADH stories are ad-hoc bug fixes and maintenance tasks that bypass the formal backlog prioritization process",
+    "workflow": "ADH stories go directly to active/ when started and to completed/ when finished, without backlog planning",
+    "active_adhoc": [
+      {
+        "id": "ADH-001",
+        "title": "Update Busta for Adhoc Stories",
+        "file_path": "active/ADH-001-Update_Busta_for_Adhoc_Stories.md",
+        "type": "ad-hoc",
+        "status": "in-progress"
+      },
+      {
+        "id": "ADH-002", 
+        "title": "Fix Inventory Sidebar",
+        "file_path": "active/ADH-002-Fix_Inventory_Sidebar.md",
+        "type": "ad-hoc",
+        "status": "in-progress"
+      },
+      {
+        "id": "ADH-003",
+        "title": "Untrack Log Files",
+        "file_path": "active/ADH-003-Untrack_Log_Files.md", 
+        "type": "ad-hoc",
+        "status": "in-progress"
+      }
+    ],
+    "completed_adhoc": [
+      {
+        "id": "ADH-001",
+        "title": "Update Busta for Adhoc Stories",
+        "file_path": "completed/ADH-001-Update_Busta_for_Adhoc_Stories.md",
+        "type": "ad-hoc",
+        "completion_date": "2025-08-26"
+      },
+      {
+        "id": "ADH-002",
+        "title": "Fix Inventory Sidebar", 
+        "file_path": "completed/ADH-002-Fix_Inventory_Sidebar.md",
+        "type": "ad-hoc",
+        "completion_date": "2025-08-26"
+      }
+    ]
+  },
   "completed_stories": {
     "total_completed": 0,
     "total_accepted": 37,

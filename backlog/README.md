@@ -1,8 +1,9 @@
 # Story Backlog
 
-**Purpose**: Prioritized future work organized by strategic themes
+**Purpose**: Prioritized future work organized by strategic themes  
+**Scope**: Formal stories requiring planning and refinement
 
-**Last Updated**: 2025-01-27
+**Last Updated**: 2025-08-26
 
 ## For Implementation Agents
 
@@ -13,6 +14,22 @@ The prioritization list provides:
 - Clear indication of what's ready to start immediately  
 - Cross-references to story files and metadata
 - Implementation guidelines and coordination notes
+
+## Story Types
+
+### 📋 Formal Stories (This Backlog)
+Stories requiring planning, refinement, and prioritization:
+- User-facing features
+- Architectural changes  
+- Complex integrations
+- Stories with dependencies
+
+### 🚀 ADH Stories (Bypass Backlog)
+Ad-hoc bug fixes and maintenance tasks that go directly to `active/`:
+- Quick bug fixes (< 4 hours)
+- Repository maintenance
+- Tool improvements
+- See [`../ADH_WORKFLOW.md`](../ADH_WORKFLOW.md) for details
 
 ## Organization
 Stories are organized by functional area and priority, migrated from implementation repository and reorganized into planning-focused themes:
