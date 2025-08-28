@@ -1684,7 +1684,7 @@
       "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
       "branch_name": "ingestion-046a-rss-analytics-betting-core",
       "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
-      "status": "active",
+      "status": "completed",
       "priority": 1,
       "estimate": "5sp",
       "epic": "ingestion",
