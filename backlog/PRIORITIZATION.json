@@ -1705,7 +1705,7 @@
       "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
       "branch_name": "ingestion-046b-rss-team-coverage-expansion",
       "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
-      "status": "active",
+      "status": "completed",
       "priority": 2,
       "estimate": "3sp",
       "epic": "ingestion",
