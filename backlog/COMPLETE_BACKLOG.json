@@ -1,15 +1,18 @@
 {
   "metadata": {
     "last_updated": "2025-08-27",
-    "total_backlog_stories": 91,
+    "total_backlog_stories": 92,
     "format_version": "2.0",
-    "generated_by": "Strategic Nexus Prime"
+    "generated_by": "Strategic Business Analysis",
+    "priority_method": "business_value_assessment",
+    "top_10_prioritized": true,
+    "prioritization_rationale": "Based on revenue impact, user confidence, and logical dependencies"
   },
   "backlog": [
     {
       "id": "ADH-001",
-      "title": "Update Busta for Adhoc Stories",
-      "branch_name": "adh-001-update-busta-for-adhoc-stories",
+      "title": "Update Busta CLI for Adhoc Story Workflow Integration",
+      "branch_name": "adh-001-update-busta-adhoc-stories",
       "file_path": "backlog/adhoc/ADH-001-Update_Busta_for_Adhoc_Stories.md",
       "status": "accepted",
       "priority": 99,
@@ -17,8 +20,10 @@
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
-        "ad-hoc",
-        "maintenance"
+        "adhoc",
+        "workflow",
+        "cli",
+        "implementation"
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
@@ -117,7 +122,7 @@
       "branch_name": "adh-010-user-story-backtesting-roi-tracking",
       "file_path": "backlog/adhoc/ADH-010-backtesting-roi-tracking.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 6,
       "estimate": 8,
       "epic": "adhoc",
       "dependencies": [],
@@ -562,7 +567,7 @@
       "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 3,
       "estimate": 3,
       "epic": "data_sources",
       "dependencies": [],
@@ -729,7 +734,7 @@
       "branch_name": "public_betting_data_integration-user-story-public-betting-data-integration",
       "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 4,
       "estimate": 5,
       "epic": "ingestion",
       "dependencies": [],
@@ -843,7 +848,7 @@
       "branch_name": "ing-002-article-deduplication-enrichment-pipeline",
       "file_path": "backlog/ingestion/ING-001-article-dedup-enrich.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 7,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [],
@@ -902,7 +907,7 @@
       "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
       "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 1,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -923,7 +928,7 @@
       "branch_name": "llm-002-evidence-citation-traceability-for-llm-outputs",
       "file_path": "backlog/core/LLM-002-evidence-citation-traceability.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 2,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -944,7 +949,7 @@
       "branch_name": "llm-003-entity-resolution-for-teams-and-players",
       "file_path": "backlog/core/LLM-003-entity-resolution.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 5,
       "estimate": "2sp",
       "epic": "llm_backlog",
       "dependencies": [],
@@ -962,7 +967,7 @@
       "branch_name": "llm-004-regime-change-detection-from-weekly-summaries",
       "file_path": "backlog/core/LLM-004-regime-change-detection.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -1067,7 +1072,7 @@
       "branch_name": "mod-002-meta-model-stacker-with-llm-aware-weighting",
       "file_path": "backlog/modeling/MOD-002-stacker-meta-model.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 9,
       "estimate": "5sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -1490,7 +1495,7 @@
       "branch_name": "ui-001-fix-inventory-app-sidebar-ui-layout-issues",
       "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
       "status": "ready",
-      "priority": 99,
+      "priority": 8,
       "estimate": "TBD",
       "epic": "ui",
       "dependencies": [],
@@ -1502,6 +1507,24 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "UI-002",
+      "title": "UI-002-sales-pitch-integration - Integrate AI Sales Pitch into Web UI",
+      "branch_name": "ui-002-ui-002-sales-pitch-integration---integrate-ai-sale",
+      "file_path": "backlog/ui/UI-002-sales-pitch-integration.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "ui",
+        "ui"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
       "last_updated": "2025-08-27"
     },
     {
