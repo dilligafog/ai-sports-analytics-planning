@@ -1729,7 +1729,7 @@
       "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
       "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
       "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
-      "status": "active",
+      "status": "completed",
       "priority": 3,
       "estimate": "2sp",
       "epic": "ingestion",
