@@ -4,32 +4,60 @@ Automation scripts for maintaining the planning repository.
 
 ## Available Scripts
 
-### `regenerate_prioritization.py`
+### `update_story.py`
 
-**Purpose**: Automatically generate the `backlog/PRIORITIZATION.md` file from current story metadata.
+**Purpose**: Direct JSON-based story workflow management for the prioritization system.
 
 **Usage**:
 ```bash
-# From repository root
-python3 scripts/regenerate_prioritization.py
+# List ready stories for implementation
+python scripts/update_story.py --list
+
+# See all stories with status overview  
+python scripts/update_story.py --all
+
+# Update story status
+python scripts/update_story.py STORY-ID --status active
+python scripts/update_story.py STORY-ID --status completed
 ```
 
 **What it does**:
-- Scans all story files in `backlog/` subdirectories
-- Extracts metadata (priority, dependencies, estimates, etc.)
-- Sorts stories by priority and dependency status
-- Generates a comprehensive prioritization list for implementation agents
+- Provides CLI interface to story status management
+- Shows ready-to-start stories for Neo Starlord of Thunder
+- Updates story status in PRIORITIZATION.json
+- Maintains epic and dependency tracking
+
+### `generate_complete_backlog.py`
+
+**Purpose**: Generate comprehensive JSON backlog from all story files.
+
+**Usage**:
+```bash
+# Regenerate complete backlog JSON from current story files
+python scripts/generate_complete_backlog.py
+```
+
+**What it does**:
+- Scans all story files across epic folders
+- Extracts YAML frontmatter and metadata
+- Updates PRIORITIZATION.json with complete story tracking
+- Maintains dependencies, epic categorization, and file paths
 
 **When to run**:
-- After adding new stories to the backlog
-- After changing story priorities or dependencies  
-- Weekly during backlog grooming
-- Before major planning reviews
+- After adding new stories to backlog folders
+- After major backlog restructuring
+- Weekly backlog synchronization
 
-**Output**:
-- Updates `backlog/PRIORITIZATION.md` with current story status
-- Shows summary of ready vs blocked stories
-- Maintains automation timestamp
+### `migrate_backlog_structure.py`
+
+**Purpose**: One-time migration tool for folder structure reorganization.
+
+**Status**: ✅ **Completed** - Successfully migrated stories to clean epic-based folders
+
+**What it accomplished**:
+- Moved 24 LLM stories to functional folders (core, ingestion, modeling, quality, explain, infra)
+- Updated all file paths in PRIORITIZATION.json
+- Cleaned up old nested folder structure
 
 ## Script Development Guidelines
 
