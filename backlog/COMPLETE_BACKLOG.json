@@ -1823,8 +1823,8 @@
     },
     {
       "id": "PRIORITIZATION",
-      "title": "Strategic Backlog Prioritization",
-      "branch_name": "prioritization-strategic-backlog-prioritization",
+      "title": "Strategic| 1 | ADH-015 | End-to-End Kaggle NFL Scores | adhoc | ba### Immediate Revenue Impact (Priority 1-6)",
+      "branch_name": "prioritization-strategic-1-adh-015-end-to-end-kaggle-nfl-scores-a",
       "file_path": "backlog/PRIORITIZATION.md",
       "status": "backlog",
       "priority": 99,
