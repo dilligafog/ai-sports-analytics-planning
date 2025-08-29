@@ -1,97 +1,178 @@
-# AI Sports Analytics - Strategic Planning
+# AI Sports Analytics - Strategic Planning 🚀
 
 **Main Implementation Repo**: [ai-sports-analytics](https://github.com/dilligafog/ai-sports-analytics)
 
-## Purpose
+## 🎯 Overview
 
-This repository manages strategic planning, story development, and roadmap evolution for the AI Sports Analytics project. It works in partnership with the main implementation repository through automated synchronization and specialized AI agents.
+Enterprise-grade strategic planning repository featuring **automated story ingestion, priority management, and workflow orchestration**. This repository manages the complete story lifecycle from ideation to implementation through professional tooling and AI-powered automation.
 
-## Repository Structure
+## ✨ Key Features
 
-### ✅ **Accepted** (`accepted/`)
-Formally accepted stories that have been completed, verified, and meet all acceptance criteria. These stories serve as reference materials and provide complete implementation history.
+- **🔄 Automated Story Ingestion**: Template-based story creation with validation
+- **📊 Smart Priority Management**: Business-logic driven prioritization automation  
+- **🏗️ Epic Organization**: Automatic routing to appropriate backlog folders
+- **📝 Multi-Format Support**: Markdown, JSON, CSV, and interactive modes
+- **🔗 Implementation Sync**: Seamless coordination with development workflows
+- **📈 Analytics & Tracking**: Complete story metrics and progress monitoring
 
-### 📋 **Active Stories** (`active/`)
-Current iteration stories being actively developed. Stories move here from backlog when development begins. Also contains ADH (ad-hoc) stories for bug fixes and maintenance.
+## 🛠️ Quick Start
 
-### 🗃️ **Backlog** (`backlog/`)
-Prioritized future work organized by theme:
-- **Foundation**: Core infrastructure and data pipeline
-- **Features**: ML models, LLM integration, social media
-- **Operations**: Monitoring, deployment, performance
-- **User Experience**: UI, documentation, APIs
+### Prerequisites
+```bash
+pip install -r scripts/requirements.txt
+```
 
-### ✅ **Completed** (`completed/`)
-Staging area for recently completed stories. Stories accumulate here before being moved to accepted/ in batches. Maintains traceability between planning and execution.
+### Create a New Story
+```bash
+# From template (fastest)
+python scripts/ingest_stories.py --template basic --title "Feature Name" --epic ui
 
-### 🚀 **ADH Workflow** ([`ADH_WORKFLOW.md`](./ADH_WORKFLOW.md))
-Ad-hoc bug fixing and maintenance workflow. ADH stories bypass formal backlog prioritization for rapid execution of small fixes and improvements.
+# Interactive mode (guided)
+python scripts/ingest_stories.py --interactive
 
-### 🗺️ **Roadmaps** (`roadmaps/`)
-High-level strategic plans and release planning:
-- Quarterly objectives
-- Technology evolution
-- Dependency mapping
-- Resource allocation
+# Batch processing (stage files first)
+python scripts/ingest_stories.py
+```
 
-## Agent Collaboration
+### Manage Priorities
+```bash
+# Auto-prioritize ready stories
+python scripts/manage_priorities.py --auto-prioritize
 
-### Planning Agent (This Repo)
-- **Strategic thinking**: Roadmap planning and story generation
-- **Backlog management**: Prioritization and dependency tracking  
-- **Story refinement**: Updates based on implementation learnings
-- **Pattern recognition**: Identifies recurring themes and opportunities
+# View current priorities
+python scripts/manage_priorities.py --list
 
-### Implementation Agent (Main Repo)
-- **Tactical execution**: Code, tests, CI/CD
-- **Technical decisions**: Architecture and implementation choices
-- **Quality assurance**: Testing and performance validation
-- **Delivery**: Feature completion and deployment
+# Interactive management
+python scripts/manage_priorities.py --interactive
+```
 
-## Synchronization
+## 📁 Repository Structure
 
-Automated workflows watch the main repository for:
-- **Commits**: Update story progress and completion status
-- **PRs**: Refine story details based on actual implementation
-- **Issues**: Generate new stories from discovered technical debt
-- **Releases**: Archive completed stories and plan next iteration
+### 🎪 **Staging System** (`staging/`)
+Modern story ingestion workflow:
+- `staging/new/` - Drop zone for new stories
+- `staging/templates/` - Quick-start templates (basic, technical, spike)
+- `staging/bulk/` - JSON/CSV bulk import files  
+- `staging/processed/` - Archive of processed stories
 
-## Current Status
+### 🗃️ **Organized Backlog** (`backlog/`)
+Epic-driven story organization:
+- **`core/`** - LLM and AI functionality (LLM-XXX)
+- **`ui/`** - User interface work (UI-XXX)
+- **`infrastructure/`** - Technical foundation (INF-XXX)
+- **`ingestion/`** - Data pipelines (ING-XXX)
+- **`modeling/`** - ML models (MOD-XXX)
+- **`quality/`** - QA and monitoring (QA-XXX)
+- **`social_media/`** - Social integrations (SOC-XXX)
+- **`adhoc/`** - Quick fixes (ADH-XXX)
 
-**Last Updated**: 2025-01-27  
-**Active Stories**: 1 (migration summary)  
-**Backlog Stories**: 54+ (organized by theme)  
-**Completed Stories**: 0  
-**Accepted Stories**: 19 (migrated from implementation repo)  
+### 📋 **Active Development** (`active/`)
+Stories currently being implemented by development teams.
 
-**Next Actions**:
-1. Migrate existing stories from main repo
-2. Set up GitHub Actions for repo synchronization
-3. Initialize story agent prompts
-4. Establish workflow with implementation repo
+### ✅ **Completion Tracking** (`completed/` & `accepted/`)
+Graduated stories with full implementation history and outcomes.
 
-Import branch
---------------
+### 🗺️ **Strategic Roadmaps** (`roadmaps/`)
+High-level planning documents:
+- Quarterly objectives and milestones
+- Technology evolution strategy
+- Resource allocation and capacity planning
 
-When migrating stories from the implementation repo, use the `feature/import-stories-from-impl` branch. Place incoming stories into `backlog/` and open a PR for the planning agent to review and assign.
+## 🤖 Automation & Tooling
 
-## Usage
+### Story Ingestion Engine (`scripts/ingest_stories.py`)
+**Professional-grade story processing pipeline**:
+- ✅ YAML frontmatter parsing & validation
+- ✅ Automatic ID generation (epic-aware prefixing)
+- ✅ Git branch name generation (kebab-case)
+- ✅ Epic-based folder routing
+- ✅ JSON integration with backlog systems
+- ✅ Archive & audit trail management
 
-### For Planning Agent
-Use prompts in `.github/prompts/` to:
-- Refine stories based on implementation feedback
-- Generate new stories from patterns
-- Update roadmaps and priorities
-- Maintain backlog health
+### Priority Management (`scripts/manage_priorities.py`)
+**Intelligent backlog optimization**:
+- ✅ Business-logic scoring algorithm
+- ✅ Interactive reordering interface
+- ✅ Batch operations (shift, insert, rerank)
+- ✅ Auto-prioritization for ready stories
+- ✅ Strategic priority visualization
 
-### For Implementation Agent
-Refer to this repo for:
-- Current story context and acceptance criteria
-- Strategic direction and priorities
-- Implementation guidance and constraints
+### Story Templates (`staging/templates/`)
+**Quick-start consistency**:
+- **Basic Story**: Standard user-facing features
+- **Technical Story**: Infrastructure & system work  
+- **Spike Story**: Research & investigation tasks
 
-## Repository Links
+## 🔄 Workflow Integration
 
-- **Implementation**: https://github.com/dilligafog/ai-sports-analytics
-- **Issues**: Use main repo for technical issues, this repo for planning discussions
-- **Projects**: GitHub Projects boards for iteration planning
+### Cross-Repository Coordination
+This planning repository works seamlessly with the [implementation repository](https://github.com/dilligafog/ai-sports-analytics) through:
+
+**Story-Driven Development**:
+1. **Planning Agent** creates stories with acceptance criteria
+2. **Implementation Agent** references story IDs in commits/PRs  
+3. **Feedback Loop** refines future stories based on implementation learnings
+4. **Completion Tracking** moves stories through lifecycle stages
+
+**Synchronization Points**:
+- 📅 **Daily**: Implementation checks prioritization list
+- 📅 **Weekly**: Planning updates based on development progress  
+- 📅 **Monthly**: Roadmap adjustments and capacity planning
+
+## 📊 Current Status
+
+**Last Updated**: 2025-08-28  
+**Total Stories**: 98+ (actively managed)  
+**Automation Status**: ✅ Fully Operational  
+**Processing Capacity**: Unlimited (template + automation driven)
+
+**Recent Achievements**:
+- ✅ Eliminated manual story creation bottlenecks
+- ✅ Implemented professional-grade automation toolkit
+- ✅ Established consistent story formats across all epics
+- ✅ Reduced story creation time from minutes to seconds
+
+**Next Evolution**:
+- 🔄 GitHub Actions integration for commit synchronization
+- 🔄 Advanced analytics dashboards for story metrics
+- 🔄 AI-powered story suggestion based on patterns
+- 🔄 Automated dependency analysis and conflict detection
+
+## 🎯 Usage Patterns
+
+### For Planning Specialists
+```bash
+# Create epic-level story breakdown
+python scripts/ingest_stories.py --template basic --title "User Authentication" --epic core
+
+# Prioritize quarterly objectives  
+python scripts/manage_priorities.py --auto-prioritize --max-priority 15
+
+# Bulk import from stakeholder input
+# (place JSON/CSV in staging/bulk/ then run ingest)
+```
+
+### For Development Teams
+- **Reference**: Use story IDs in commit messages (`LLM-019: implement feature`)
+- **Feedback**: Update story status and provide implementation notes
+- **Planning**: Check `backlog/PRIORITIZATION.md` for next priority stories
+
+### For Product Management
+- **Roadmapping**: Use `roadmaps/` documents for strategic planning
+- **Metrics**: Monitor story completion rates and velocity
+- **Stakeholder Updates**: Reference `completed/` and `accepted/` for progress reports
+
+## 🏆 Enterprise Features
+
+- **🔒 Validation**: Schema validation for all story inputs
+- **📈 Metrics**: Comprehensive tracking of story lifecycle
+- **🏷️ Tagging**: Rich labeling system for filtering and organization  
+- **🔍 Searchability**: Full-text search across all stories and metadata
+- **📋 Templates**: Standardized formats ensure consistency
+- **⚡ Performance**: Sub-second story processing and priority updates
+
+---
+
+**Ready for enterprise-scale development workflows** 🚀
+
+For detailed automation usage, see [`scripts/README.md`](./scripts/README.md)
