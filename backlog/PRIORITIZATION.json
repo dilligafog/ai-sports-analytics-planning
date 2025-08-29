@@ -925,7 +925,7 @@
       "title": "Evidence citation & traceability for LLM outputs",
       "branch_name": "llm-002-evidence-citation-traceability-for-llm-outputs",
       "file_path": "backlog/core/LLM-002-evidence-citation-traceability.md",
-      "status": "active",
+      "status": "completed",
       "priority": 5,
       "estimate": "3sp",
       "epic": "llm_backlog",
