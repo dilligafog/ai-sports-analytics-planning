@@ -760,7 +760,7 @@
       "title": "User Story: Weather Data Integration",
       "branch_name": "weather_data_integration-user-story-weather-data-integration",
       "file_path": "backlog/models/WEATHER_DATA_INTEGRATION.md",
-      "status": "draft",
+      "status": "active",
       "priority": 5,
       "estimate": "3sp",
       "epic": "ingestion",
@@ -771,7 +771,7 @@
       ],
       "owner": "TBD",
       "created": "2025-08-27",
-      "last_updated": "2025-08-24"
+      "last_updated": "2025-08-29"
     },
     {
       "id": "EXP-001",
