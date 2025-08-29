@@ -4,18 +4,18 @@
     "health_score": 100.0,
     "prioritized_stories": 97,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T04:03:26.851075"
+    "last_updated": "2025-08-29T04:04:48.683113"
   },
   "velocity": {
-    "generated_at": "2025-08-29T04:03:26.850109",
+    "generated_at": "2025-08-29T04:04:48.682143",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
-      "completed": 7,
+      "completed": 8,
       "backlog": 21,
-      "draft": 25,
-      "ready": 1,
-      "active": 2
+      "draft": 24,
+      "active": 2,
+      "ready": 1
     },
     "epic_breakdown": {
       "adhoc": 27,
@@ -30,7 +30,7 @@
       "ui": 7
     },
     "epic_completion_rates": {
-      "adhoc": 77.8,
+      "adhoc": 81.5,
       "core": 100.0,
       "data-sources": 100.0,
       "infrastructure": 28.6,
@@ -115,7 +115,7 @@
         "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
         "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
         "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
-        "status": "active",
+        "status": "completed",
         "priority": 3,
         "estimate": "2sp",
         "epic": "adhoc",
@@ -125,7 +125,7 @@
         ],
         "owner": "Neo Starlord of Thunder",
         "created": "2025-08-27",
-        "last_updated": "2025-08-28"
+        "last_updated": "2025-08-29"
       },
       {
         "id": "INGESTION-046C",
@@ -246,7 +246,7 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T04:03:26.850209",
+    "generated_at": "2025-08-29T04:04:48.682241",
     "health_score": 100.0,
     "quality_issues": {
       "missing_estimates": 0,
@@ -276,7 +276,7 @@
     "recommendations": []
   },
   "priority": {
-    "generated_at": "2025-08-29T04:03:26.850276",
+    "generated_at": "2025-08-29T04:04:48.682305",
     "total_prioritized": 97,
     "total_unprocessed": 0,
     "priority_heatmap": {
@@ -336,18 +336,18 @@
     "priority_recommendations": []
   },
   "workflow": {
-    "generated_at": "2025-08-29T04:03:26.851067",
+    "generated_at": "2025-08-29T04:04:48.683106",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
       "automation_rate": 0.0
     },
     "status_progression": {
-      "draft": 25,
+      "draft": 24,
       "backlog": 21,
       "ready": 1,
       "active": 2,
-      "completed": 7,
+      "completed": 8,
       "accepted": 41
     },
     "complexity_distribution": {
@@ -356,12 +356,12 @@
       "large": 9,
       "unknown": 2
     },
-    "workflow_efficiency": 60.5,
+    "workflow_efficiency": 61.4,
     "velocity_trends": {
-      "weekly_completion_rate": 4.0,
-      "total_completed": 48,
+      "weekly_completion_rate": 4.1,
+      "total_completed": 49,
       "epic_velocity": {
-        "adhoc": 21,
+        "adhoc": 22,
         "core": 11,
         "ingestion": 4,
         "ui": 4,
@@ -398,8 +398,8 @@
     "priority_heatmap": {
       "epic_priority_matrix": {
         "adhoc": {
-          "critical": 3,
-          "high": 6,
+          "critical": 2,
+          "high": 7,
           "medium": 18,
           "low": 0,
           "unassigned": 0
@@ -470,18 +470,11 @@
       },
       "critical_path_items": [
         {
-          "id": "ADH-005",
-          "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-",
-          "epic": "adhoc",
-          "priority": 3,
-          "status": "active"
-        },
-        {
           "id": "WEATHER_DATA_INTEGRATION",
           "title": "User Story: Weather Data Integration",
           "epic": "ingestion",
           "priority": 5,
-          "status": "draft"
+          "status": "active"
         },
         {
           "id": "ADH-004",
@@ -498,7 +491,7 @@
           "status": "active"
         }
       ],
-      "total_critical": 4,
+      "total_critical": 3,
       "priority_distribution_health": "good"
     },
     "cycle_time_analysis": {
@@ -547,7 +540,7 @@
           "type": "status",
           "location": "draft",
           "severity": "medium",
-          "count": 25,
+          "count": 24,
           "recommendation": "Complete story refinement and add acceptance criteria"
         },
         {
@@ -567,11 +560,11 @@
       ],
       "status_distribution": {
         "accepted": 41,
-        "completed": 7,
+        "completed": 8,
         "backlog": 21,
-        "draft": 25,
-        "ready": 1,
-        "active": 2
+        "draft": 24,
+        "active": 2,
+        "ready": 1
       },
       "epic_workload": {
         "adhoc": 27,
@@ -589,8 +582,8 @@
     },
     "predictive_metrics": {
       "completion_forecast": {
-        "estimated_weeks": 11.7,
-        "confidence_level": 63.328178694158076,
+        "estimated_weeks": 11.4,
+        "confidence_level": 63.97182130584193,
         "current_velocity": 4.2
       },
       "risk_assessment": [
@@ -601,10 +594,10 @@
           "impact": "2-3 week delay potential"
         }
       ],
-      "success_probability": 63.3,
+      "success_probability": 64.0,
       "key_metrics": {
-        "completion_rate": 49.5,
-        "remaining_work": 49,
+        "completion_rate": 50.5,
+        "remaining_work": 48,
         "velocity_trend": "stable"
       }
     },
@@ -643,8 +636,8 @@
         },
         "operational_efficiency": {
           "total_stories": 27,
-          "completed_stories": 21,
-          "completion_rate": 77.8
+          "completed_stories": 22,
+          "completion_rate": 81.5
         }
       },
       "epic_distribution": {
@@ -661,7 +654,7 @@
       },
       "priority_execution_alignment": {
         "medium": 20,
-        "high": 28
+        "high": 29
       },
       "roi_estimates": {
         "core_platform": {
@@ -681,7 +674,7 @@
           "cost_reduction": 45
         }
       },
-      "alignment_score": 63.0,
+      "alignment_score": 63.9,
       "recommendations": [
         "Focus on completing high-priority core platform stories",
         "Balance effort across strategic themes",
