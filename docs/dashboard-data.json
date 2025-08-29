@@ -11,11 +11,11 @@
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
-      "draft": 26,
+      "active": 2,
       "backlog": 22,
+      "draft": 25,
       "completed": 6,
-      "ready": 1,
-      "active": 1
+      "ready": 1
     },
     "epic_breakdown": {
       "adhoc": 22,
@@ -168,7 +168,7 @@
         "title": "User Story: Kaggle Data Utilization",
         "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
         "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-        "status": "draft",
+        "status": "active",
         "priority": 6,
         "estimate": 3,
         "epic": "data_sources",
@@ -178,7 +178,7 @@
         ],
         "owner": "TBD",
         "created": "2025-08-27",
-        "last_updated": "2025-08-24"
+        "last_updated": "2025-08-28"
       },
       {
         "id": "PUBLIC_BETTING_DATA_INTEGRATION",
@@ -357,10 +357,10 @@
       "automation_rate": 0.0
     },
     "status_progression": {
-      "draft": 26,
+      "draft": 25,
       "backlog": 22,
       "ready": 1,
-      "active": 1,
+      "active": 2,
       "completed": 6,
       "accepted": 41
     },
@@ -370,6 +370,6 @@
       "large": 4,
       "unknown": 52
     },
-    "workflow_efficiency": 59.2
+    "workflow_efficiency": 59.8
   }
 }

@@ -1,0 +1,55 @@
+{
+  "generated_at": "2025-08-29T02:00:38.277539",
+  "total_prioritized": 13,
+  "total_unprocessed": 84,
+  "priority_heatmap": {
+    "adhoc": {
+      "High (6-10)": 1
+    },
+    "core": {},
+    "data_sources": {
+      "High (6-10)": 1
+    },
+    "infra": {},
+    "infrastructure": {},
+    "ingestion": {
+      "High (6-10)": 1,
+      "Critical (1-5)": 3
+    },
+    "llm_backlog": {
+      "High (6-10)": 2,
+      "Critical (1-5)": 2,
+      "Medium (11-20)": 2
+    },
+    "modeling": {},
+    "social_media": {},
+    "training": {},
+    "ui": {
+      "Medium (11-20)": 1
+    },
+    "unknown": {}
+  },
+  "high_priority_distribution": {
+    "adhoc": 1,
+    "data_sources": 1,
+    "ingestion": 4,
+    "llm_backlog": 4
+  },
+  "unprocessed_by_epic": {
+    "adhoc": 21,
+    "core": 11,
+    "infra": 2,
+    "infrastructure": 5,
+    "ingestion": 2,
+    "llm_backlog": 18,
+    "modeling": 2,
+    "social_media": 11,
+    "training": 1,
+    "ui": 6,
+    "unknown": 5
+  },
+  "priority_recommendations": [
+    "Run auto-prioritization to process backlog efficiently",
+    "Focus prioritization efforts on adhoc epic (21 stories)"
+  ]
+}

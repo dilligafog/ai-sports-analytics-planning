@@ -287,14 +287,19 @@
                     <strong>41</strong>
                 </div>
             
-                <div class="status-item" style="border-left-color: #6b7280;">
-                    <span>Draft</span>
-                    <strong>26</strong>
+                <div class="status-item" style="border-left-color: #f59e0b;">
+                    <span>Active</span>
+                    <strong>2</strong>
                 </div>
             
                 <div class="status-item" style="border-left-color: #3b82f6;">
                     <span>Backlog</span>
                     <strong>22</strong>
+                </div>
+            
+                <div class="status-item" style="border-left-color: #6b7280;">
+                    <span>Draft</span>
+                    <strong>25</strong>
                 </div>
             
                 <div class="status-item" style="border-left-color: #8b5cf6;">
@@ -304,11 +309,6 @@
             
                 <div class="status-item" style="border-left-color: #10b981;">
                     <span>Ready</span>
-                    <strong>1</strong>
-                </div>
-            
-                <div class="status-item" style="border-left-color: #f59e0b;">
-                    <span>Active</span>
                     <strong>1</strong>
                 </div>
             
@@ -391,7 +391,7 @@
         });
         
         // Workflow Efficiency Chart
-        const workflowData = {"labels": ["Current Efficiency"], "datasets": [{"label": "Efficiency %", "data": [59.2], "borderColor": "#8b5cf6", "backgroundColor": "rgba(139, 92, 246, 0.1)", "tension": 0.4, "fill": true}]};
+        const workflowData = {"labels": ["Current Efficiency"], "datasets": [{"label": "Efficiency %", "data": [59.8], "borderColor": "#8b5cf6", "backgroundColor": "rgba(139, 92, 246, 0.1)", "tension": 0.4, "fill": true}]};
         new Chart(document.getElementById('workflowChart'), {
             type: 'line',
             data: workflowData,
