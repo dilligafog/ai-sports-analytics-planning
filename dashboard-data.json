@@ -4,17 +4,17 @@
     "health_score": 99.8,
     "prioritized_stories": 97,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T04:14:15.816134"
+    "last_updated": "2025-08-29T04:31:40.958804"
   },
   "velocity": {
-    "generated_at": "2025-08-29T04:14:15.815150",
+    "generated_at": "2025-08-29T04:31:40.957803",
     "total_stories": 98,
     "status_breakdown": {
       "accepted": 41,
-      "completed": 8,
+      "completed": 9,
       "backlog": 21,
       "draft": 24,
-      "active": 3,
+      "active": 2,
       "ready": 1
     },
     "epic_breakdown": {
@@ -30,7 +30,7 @@
       "ui": 7
     },
     "epic_completion_rates": {
-      "adhoc": 78.6,
+      "adhoc": 82.1,
       "core": 100.0,
       "data-sources": 100.0,
       "infrastructure": 28.6,
@@ -246,7 +246,7 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T04:14:15.815253",
+    "generated_at": "2025-08-29T04:31:40.957902",
     "health_score": 99.8,
     "quality_issues": {
       "missing_estimates": 0,
@@ -276,7 +276,7 @@
     "recommendations": []
   },
   "priority": {
-    "generated_at": "2025-08-29T04:14:15.815319",
+    "generated_at": "2025-08-29T04:31:40.957968",
     "total_prioritized": 97,
     "total_unprocessed": 1,
     "priority_heatmap": {
@@ -340,7 +340,7 @@
     ]
   },
   "workflow": {
-    "generated_at": "2025-08-29T04:14:15.816127",
+    "generated_at": "2025-08-29T04:31:40.958797",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
@@ -350,8 +350,8 @@
       "draft": 24,
       "backlog": 21,
       "ready": 1,
-      "active": 3,
-      "completed": 8,
+      "active": 2,
+      "completed": 9,
       "accepted": 41
     },
     "complexity_distribution": {
@@ -360,12 +360,12 @@
       "large": 9,
       "unknown": 3
     },
-    "workflow_efficiency": 61.5,
+    "workflow_efficiency": 61.8,
     "velocity_trends": {
-      "weekly_completion_rate": 4.1,
-      "total_completed": 49,
+      "weekly_completion_rate": 4.2,
+      "total_completed": 50,
       "epic_velocity": {
-        "adhoc": 22,
+        "adhoc": 23,
         "core": 11,
         "ingestion": 4,
         "ui": 4,
@@ -564,10 +564,10 @@
       ],
       "status_distribution": {
         "accepted": 41,
-        "completed": 8,
+        "completed": 9,
         "backlog": 21,
         "draft": 24,
-        "active": 3,
+        "active": 2,
         "ready": 1
       },
       "epic_workload": {
@@ -586,8 +586,8 @@
     },
     "predictive_metrics": {
       "completion_forecast": {
-        "estimated_weeks": 11.7,
-        "confidence_level": 63.83333333333333,
+        "estimated_weeks": 11.4,
+        "confidence_level": 64.2734693877551,
         "current_velocity": 4.2
       },
       "risk_assessment": [
@@ -598,10 +598,10 @@
           "impact": "2-3 week delay potential"
         }
       ],
-      "success_probability": 63.8,
+      "success_probability": 64.3,
       "key_metrics": {
-        "completion_rate": 50.0,
-        "remaining_work": 49,
+        "completion_rate": 51.0,
+        "remaining_work": 48,
         "velocity_trend": "stable"
       }
     },
@@ -640,8 +640,8 @@
         },
         "operational_efficiency": {
           "total_stories": 28,
-          "completed_stories": 22,
-          "completion_rate": 78.6
+          "completed_stories": 23,
+          "completion_rate": 82.1
         }
       },
       "epic_distribution": {
@@ -658,7 +658,8 @@
       },
       "priority_execution_alignment": {
         "medium": 20,
-        "high": 29
+        "high": 29,
+        "low": 1
       },
       "roi_estimates": {
         "core_platform": {
@@ -678,7 +679,7 @@
           "cost_reduction": 45
         }
       },
-      "alignment_score": 63.2,
+      "alignment_score": 64.1,
       "recommendations": [
         "Focus on completing high-priority core platform stories",
         "Balance effort across strategic themes",
