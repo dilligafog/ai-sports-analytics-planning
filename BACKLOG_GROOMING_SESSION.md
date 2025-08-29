@@ -20,14 +20,39 @@
 ## 🔍 Grooming Focus Areas
 
 ### 1. **Top 5 Priority Stories** (Immediate Sprint)
-- LLM-001: Feature Extraction from News
+- ~~LLM-001: Feature Extraction from News~~ *(DISCOVERED: Already completed as LLM-014)*
 - LLM-002: Evidence Citation Traceability  
-- MOD-005: Advanced NFL Statistics Integration
-- MOD-004: NFL Player Injury Data Integration
+- MOD-001: Rebaseline ATS/ML/Total models
+- MOD-002: Meta-model stacker with LLM-aware weighting
 - ADH-015: End-to-End Kaggle NFL Scores
 
 ### 2. **Dependency Validation**
-- Check ING-001/ING-002 status for LLM pipeline
+- LLM-014 ✅ completed, update dependencies from LLM-001 to LLM-014
+- Check MOD-001 status for model baseline work
+- Validate MOD-002 dependencies on completed LLM work
+
+## 🔍 **Critical Discoveries Made**
+
+### 1. **Duplicate Stories Identified**
+- **LLM-001** and **LLM-014** were both about "Feature Extraction from News"
+- **LLM-014** was already marked as **completed** with full implementation
+- **LLM-001** was a duplicate we were grooming unnecessarily
+
+### 2. **Completed Work Not Reflected**
+- **LLM-014**: Full LLM pipeline with OpenAI API integration operational
+- **Cost-efficient processing** at ~$0.03 per run using gpt-3.5-turbo
+- **Production-safe error handling** with Pydantic validation
+- **CLI integration**: `busta features llm extract` and batch operations
+
+### 3. **Dependency Chain Issues**
+- Multiple stories depended on LLM-001 (duplicate)
+- Need to update dependencies to point to LLM-014
+- Stories affected: LLM-002, LLM-004, LLM-006, UI components
+
+### 4. **Backlog Cleanup Required**
+- Remove or mark LLM-001 as completed/duplicate
+- Update prioritization to reflect actual completion status
+- Fix dependency references across all affected stories
 - Validate MOD-003 completion for abstention logic
 - Confirm data pipeline readiness
 
@@ -78,6 +103,7 @@
 **Grooming Session Complete**: August 29, 2025
 **Planning Agent**: GitHub Copilot
 **Stories Groomed**: 5 high-priority stories
-**Priorities Updated**: Corrected dependency chains and removed completed work
-**Next Sprint Ready**: Top 6 stories implementation-ready with validated dependencies</content>
+**Duplicates Found**: LLM-001 was duplicate of completed LLM-014
+**Priorities Corrected**: Updated to reflect actual completion status
+**Dependencies Fixed**: Updated dependency chains to point to correct completed work</content>
 <parameter name="filePath">c:\Users\Phil\ai-sports-analytics-planning\BACKLOG_GROOMING_SESSION.md
