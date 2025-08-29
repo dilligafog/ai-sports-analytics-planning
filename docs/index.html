@@ -294,15 +294,18 @@
         
         function renderProjectMetrics() {
             const container = document.getElementById('projectMetrics');
-            const { summary } = dashboardData;
+            const { summary, velocity } = dashboardData;
+            
+            const completedCount = (velocity?.status_breakdown?.accepted || 0) + (velocity?.status_breakdown?.completed || 0);
+            const healthScore = summary?.health_score || 0;
             
             const metrics = [
                 { value: summary?.total_stories || 0, label: 'Total Stories' },
-                { value: `${summary?.health_score || 0}%`, label: 'Completion Rate' },
-                { value: summary?.completed_count || 0, label: 'Completed' },
-                { value: summary?.active_count || 0, label: 'Active' },
-                { value: summary?.ready_count || 0, label: 'Ready' },
-                { value: summary?.backlog_count || 0, label: 'Backlog' }
+                { value: `${healthScore}%`, label: 'Health Score' },
+                { value: completedCount, label: 'Completed' },
+                { value: velocity?.status_breakdown?.active || 0, label: 'Active' },
+                { value: velocity?.status_breakdown?.ready || 0, label: 'Ready' },
+                { value: velocity?.status_breakdown?.backlog || 0, label: 'Backlog' }
             ];
             
             container.innerHTML = metrics.map(metric => `
@@ -422,26 +425,29 @@
             const container = document.getElementById('qualityInsights');
             const { quality_metrics, summary } = dashboardData;
             
+            const qualityIndicators = quality_metrics?.quality_indicators || {};
+            const totalStories = summary?.total_stories || 1;
+            
             const insights = [
                 {
                     title: 'Stories with Estimates',
-                    value: quality_metrics?.stories_with_estimates || 0,
-                    description: `${Math.round((quality_metrics?.stories_with_estimates || 0) / summary?.total_stories * 100)}% of total stories`
+                    value: qualityIndicators.stories_with_estimates || 0,
+                    description: `${Math.round((qualityIndicators.stories_with_estimates || 0) / totalStories * 100)}% of total stories`
                 },
                 {
                     title: 'Stories with Owners',
-                    value: quality_metrics?.stories_with_owners || 0,
-                    description: `${Math.round((quality_metrics?.stories_with_owners || 0) / summary?.total_stories * 100)}% have assigned owners`
+                    value: qualityIndicators.stories_with_owners || 0,
+                    description: `${Math.round((qualityIndicators.stories_with_owners || 0) / totalStories * 100)}% have assigned owners`
                 },
                 {
-                    title: 'Average Priority',
-                    value: quality_metrics?.average_priority || 0,
-                    description: 'Lower numbers indicate higher priority'
+                    title: 'Quality Score',
+                    value: `${Math.round(quality_metrics?.overall_quality_score || 0)}%`,
+                    description: 'Overall backlog quality assessment'
                 },
                 {
-                    title: 'Stories with Dependencies',
-                    value: quality_metrics?.stories_with_dependencies || 0,
-                    description: 'Stories that depend on other work'
+                    title: 'Properly Prioritized',
+                    value: qualityIndicators.properly_prioritized || 0,
+                    description: 'Stories with clear priority assignments'
                 }
             ];
             
