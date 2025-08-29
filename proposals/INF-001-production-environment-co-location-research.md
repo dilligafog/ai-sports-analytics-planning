@@ -1,56 +1,7 @@
-# Proposal: INF-001 - Data Layer Separation Strategy with Symbolic Links
+# Proposal: INF-001 - Production Environment Co-location Research & Implementation
 
 ## Summary
-Implement a data layer separation strategy using symbolic links to create isolated development and production environments while sharing a master data location. This approach provides complete data isolation with minimal infrastructure overhead and strong protection against production data corruption.
-
-## Motivation
-Current infrastructure costs are running $250/month for separate production and development servers. Instead of full environment co-location, we can achieve similar cost benefits through intelligent data layer separation using symbolic links. This provides:
-
-**Business Impact:**
-- **Cost Reduction**: 28% infrastructure savings ($840/year) through server consolidation
-- **Data Safety**: Complete protection against development activities affecting production data
-- **Development Velocity**: Fast switching between data environments without full duplication
-- **Operational Simplicity**: Single server management with clear data boundaries
-
-## Proposed Changes
-
-### Data Layer Architecture
-```
-Master Data Location (Production):
-├── raw/           # Source data (read-only, shared via symlinks)
-├── bronze/        # Raw → Bronze transformations (prod only)
-├── silver/        # Bronze → Silver integrations (prod only)
-├── gold/          # Silver → Gold aggregations (prod only)
-├── models/        # Trained models (prod only)
-├── predictions/   # Generated predictions (prod only)
-├── results/       # Actual results tracking (prod only)
-├── reports/       # Generated reports (prod only)
-└── dashboard/     # Dashboard data (prod only)
-
-Development Environment:
-├── raw/           # → symlink to master/raw
-├── bronze/        # Dev-specific bronze transformations
-├── silver/        # Dev-specific silver integrations
-├── gold/          # Dev-specific gold aggregations
-├── models/        # Dev-trained models
-├── predictions/   # Dev-generated predictions
-├── results/       # Dev results tracking
-├── reports/       # Dev reports
-└── dashboard/     # Dev dashboard data
-```
-
-### Symbolic Link Strategy
-- **Shared Layers**: `raw/` data symlinked to master (read-only)
-- **Isolated Layers**: `bronze/` through `dashboard/` are dev-specific
-- **Environment Variables**: Control symlink targets based on environment
-- **Dynamic Switching**: Easy switching between dev/prod data configurations
-
-### Protection Mechanisms
-- **File Permissions**: Production data directories set to read-only for dev user
-- **Validation Scripts**: Automated checks before any data operations
-- **Backup Integration**: Automatic backups before destructive operations
-- **Audit Logging**: Track all data access and modifications
-- **Environment Guards**: Prevent accidental prod operations from dev environment
+Research and implement strategies for running production and development environments on the same server to reduce infrastructure costs by 28% ($840/year) while maintaining proper isolation, security, and performance standards.
 
 ## Motivation
 Current infrastructure costs are running $250/month for separate production and development servers. With only 3% of available storage utilized and low resource consumption, there's significant opportunity to consolidate environments while maintaining operational safety and development velocity.
@@ -88,107 +39,92 @@ Current infrastructure costs are running $250/month for separate production and 
 - Continuous cost and performance optimization
 
 ## Acceptance Criteria
-- [ ] **Data Layer Architecture**: Design symlink-based data separation strategy
-- [ ] **Protection Mechanisms**: Implement safeguards against prod data corruption
-- [ ] **Development Workflow**: Validate dev environment functionality with isolated data
-- [ ] **Symbolic Link Management**: Create automated symlink management system
-- [ ] **Environment Switching**: Implement easy switching between dev/prod data configurations
-- [ ] **Backup Integration**: Automated backup system for data protection
-- [ ] **Cost Analysis**: Confirm 25%+ infrastructure cost reduction achieved
-- [ ] **Operational Procedures**: Document data management and switching procedures
-- [ ] **Testing Validation**: Comprehensive testing of data isolation and protection mechanisms
+- [ ] **Research Complete**: INF-013 spike delivers isolation strategy recommendations with cost analysis
+- [ ] **Security Validated**: Co-location approach meets security and compliance requirements
+- [ ] **Performance Tested**: <5% performance degradation in production workloads
+- [ ] **Cost Savings Achieved**: >25% reduction in infrastructure costs vs. separate servers
+- [ ] **Operational Ready**: Monitoring, alerting, and backup procedures documented and tested
+- [ ] **Migration Successful**: Development environment successfully migrated to shared infrastructure
+- [ ] **Resource Utilization**: >80% server utilization across both environments
 
 ## Suggested Stories
 
-### Research & Design Phase
-- **INF-013**: Data Layer Separation Architecture Design (3 points) - *Current*
-  - Analyze current data layer dependencies and access patterns
-  - Design symlink-based separation strategy for each data layer
-  - Create data flow diagrams and dependency mapping
+### Research Phase
+- **INF-013**: Production & Dev Environment Co-location Spike (3 points) - *Current*
+  - Research isolation strategies and security implications
+  - Create proof-of-concept implementation
+  - Deliver cost-benefit analysis and risk assessment
 
 ### Implementation Phase
-- **INF-020**: Symbolic Link Management System (4 points)
-  - Implement automated symlink creation and management
-  - Create environment-specific configuration system
-  - Build validation scripts for symlink integrity
+- **INF-014**: Environment Isolation Architecture (5 points)
+  - Design production-grade isolation using selected strategy
+  - Implement resource limits and network segmentation
+  - Create deployment automation for co-located environments
 
-- **INF-021**: Data Protection Framework (3 points)
-  - Implement file permission safeguards for production data
-  - Create environment guards against accidental prod operations
-  - Build audit logging for data access and modifications
+- **INF-015**: Security & Compliance Framework (3 points)
+  - Implement access controls and audit logging
+  - Configure network segmentation and firewall rules
+  - Validate compliance with security requirements
 
-- **INF-022**: Development Environment Setup (2 points)
-  - Configure dev environment with isolated data layers
-  - Implement data switching mechanisms for testing
+- **INF-016**: Resource Management System (4 points)
+  - Deploy dynamic resource allocation system
+  - Implement workload prioritization (production > development)
+  - Create monitoring dashboards for resource utilization
+
+### Migration & Optimization Phase
+- **INF-017**: Development Environment Migration (2 points)
+  - Migrate development workloads to shared infrastructure
+  - Update CI/CD pipelines for co-located deployment
   - Validate development workflow functionality
 
-### Integration & Testing Phase
-- **INF-023**: Backup Integration System (3 points)
-  - Integrate automated backups with data operations
-  - Implement backup validation and restoration procedures
-  - Create backup scheduling for different data layers
+- **INF-018**: Production Environment Migration (5 points)
+  - Migrate production workloads with zero-downtime
+  - Implement production safeguards and monitoring
+  - Validate performance and stability requirements
 
-- **INF-024**: Environment Switching Automation (2 points)
-  - Build automated switching between dev/prod configurations
-  - Create environment validation scripts
-  - Implement switching safeguards and rollback procedures
-
-- **INF-025**: Data Isolation Testing & Validation (4 points)
-  - Comprehensive testing of data separation mechanisms
-  - Performance validation of symlink-based data access
-  - Security testing of protection mechanisms
-  - Integration testing with existing data pipeline
+- **INF-019**: Monitoring & Alerting Enhancement (3 points)
+  - Deploy comprehensive monitoring stack
+  - Configure alerting for resource contention and performance issues
+  - Create operational runbooks and incident response procedures
 
 ## Impact
 
 ### Areas Affected
-- **Data Architecture**: Data layer organization and access patterns
-- **Development Workflow**: Environment setup and data management procedures
-- **Operations**: Backup procedures, data integrity checks, environment switching
-- **Security**: Data protection mechanisms and access controls
-- **CI/CD**: Pipeline modifications for data layer separation
+- **Infrastructure**: Server provisioning, network configuration, security policies
+- **DevOps**: CI/CD pipelines, deployment automation, monitoring systems
+- **Development**: Local development environment, testing workflows
+- **Operations**: Backup procedures, disaster recovery, incident response
 
 ### Risk Assessment
-- **Low Risk**: Data layer separation, symlink management, environment switching
-- **Medium Risk**: Initial setup complexity, backup integration
-- **High Risk**: Data corruption if protection mechanisms fail (mitigated by backups)
+- **Low Risk**: Resource utilization improvement, operational simplification
+- **Medium Risk**: Potential performance impact during peak usage, increased complexity
+- **High Risk**: Security vulnerabilities if isolation fails, production downtime during migration
 
 ### Mitigation Strategies
-- **Data Protection**: Multi-layer safeguards (permissions, validation, backups)
-- **Testing**: Comprehensive testing before production deployment
-- **Gradual Rollout**: Phase implementation with rollback procedures
-- **Monitoring**: Automated validation and alerting for data integrity
+- **Security**: Multi-layer isolation, comprehensive testing, gradual rollout
+- **Performance**: Resource reservations for production, load testing, rollback procedures
+- **Operational**: Detailed migration plan, extensive testing, monitoring enhancements
 
 ## Success Metrics
-- **Data Isolation**: 100% separation of dev/prod data layers
-- **Protection Effectiveness**: Zero incidents of prod data corruption
-- **Development Velocity**: <10% impact on development workflows
-- **Cost Savings**: >25% reduction in infrastructure costs
-- **Operational Efficiency**: <5 minute environment switching time
-- **Backup Reliability**: 100% successful automated backups
-- **Data Integrity**: All data validation checks passing
+- **Cost Savings**: >25% reduction in monthly infrastructure costs
+- **Resource Utilization**: >80% server utilization across environments
+- **Performance Impact**: <5% degradation in production response times
+- **Incident Rate**: <2% increase in production incidents
+- **Development Velocity**: No impact on development and testing workflows
 
 ## Timeline Estimate
-- **Phase 1 (Design)**: 2 weeks (INF-013 - data layer analysis)
-- **Phase 2 (Implementation)**: 3-4 weeks (INF-020, INF-021, INF-022)
-- **Phase 3 (Integration)**: 2-3 weeks (INF-023, INF-024)
-- **Phase 4 (Testing)**: 1-2 weeks (INF-025)
-- **Total**: 8-11 weeks vs. original 8-11 weeks, but much lower risk
+- **Phase 1 (Research)**: 2-3 weeks (INF-013 spike)
+- **Phase 2 (Planning)**: 2 weeks
+- **Phase 3 (Implementation)**: 4-6 weeks
+- **Phase 4 (Optimization)**: Ongoing
 
 ## Notes
-- **Data Layer Strategy**: Raw data shared via symlinks, processed layers isolated
-- **Protection Mechanisms**: File permissions, validation scripts, audit logging
-- **Environment Switching**: Automated symlink management for easy dev/prod switching
-- **Backup Integration**: Automated backups integrated with data operations
+- **Current Infrastructure**: 16GB RAM, 12 CPU cores, 1TB storage (3% utilized)
+- **Available Tools**: Docker ✅, Kubernetes ❌, libvirt ❌
 - **Cost Baseline**: $250/month for separate environments
-- **Potential Savings**: $70/month ($840/year) through server consolidation
-- **Risk Level**: Low-Medium (much safer than full environment co-location)
+- **Potential Savings**: $70/month ($840/year) based on current utilization
+- **Risk Mitigation**: Comprehensive testing, gradual migration, rollback procedures
 
-**Key Advantages of This Approach:**
-1. **Complete Data Safety**: Dev activities cannot affect prod data
-2. **Simple Implementation**: No complex container/VM isolation needed
-3. **Flexible Data Management**: Easy switching between data environments
-4. **Clear Separation**: Obvious boundaries between dev and prod data
-5. **Easy Maintenance**: Symlinks are straightforward to manage
+**Dependencies**: None - This is an infrastructure optimization initiative that can proceed independently.
 
-**Dependencies**: None - This can be implemented independently of other infrastructure changes.
+**Stakeholder Approval Required**: Infrastructure cost implications and security considerations need executive review before Phase 3 implementation.
