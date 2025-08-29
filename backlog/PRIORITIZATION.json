@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 101,
+    "total_backlog_stories": 96,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime",
     "priority_assigned": true,
@@ -974,24 +974,6 @@
       "last_updated": "2025-08-29"
     },
     {
-      "id": "ING-004",
-      "title": "PFR weekly schedule & team stats scraper",
-      "branch_name": "ing-004-pfr-weekly-schedule-team-stats-scraper",
-      "file_path": "backlog/ingestion/ING-002-pfr-scraper-week.md",
-      "status": "draft",
-      "priority": 13,
-      "estimate": "2sp",
-      "epic": "llm_backlog",
-      "dependencies": [],
-      "labels": [
-        "ingestion",
-        "pfr"
-      ],
-      "owner": "team-data",
-      "created": "2025-08-29",
-      "last_updated": "2025-08-29"
-    },
-    {
       "id": "ING-005",
       "title": "Content quality scoring and filtering",
       "branch_name": "ing-005-content-quality-scoring-and-filtering",
@@ -1133,28 +1115,6 @@
       "last_updated": "2025-08-29"
     },
     {
-      "id": "MOD-006",
-      "title": "Production model calibration monitoring",
-      "branch_name": "mod-006-production-model-calibration-monitoring",
-      "file_path": "backlog/modeling/MOD-005-calibration-monitoring.md",
-      "status": "draft",
-      "priority": 13,
-      "estimate": "2sp",
-      "epic": "llm_backlog",
-      "dependencies": [
-        "MOD-001",
-        "MOD-002"
-      ],
-      "labels": [
-        "modeling",
-        "monitoring",
-        "calibration"
-      ],
-      "owner": "modeling-team",
-      "created": "2025-08-29",
-      "last_updated": "2025-08-29"
-    },
-    {
       "id": "QLT-002",
       "title": "Structured logging & lightweight monitoring",
       "branch_name": "qlt-002-structured-logging-lightweight-monitoring",
@@ -1209,47 +1169,6 @@
         "production"
       ],
       "owner": "qa-team",
-      "created": "2025-08-29",
-      "last_updated": "2025-08-29"
-    },
-    {
-      "id": "UI-001",
-      "title": "Landing page with daily games & confidence",
-      "branch_name": "ui-001-landing-page-with-daily-games-confidence",
-      "file_path": "backlog/ui/UI-004-landing-page-cards.md",
-      "status": "draft",
-      "priority": 13,
-      "estimate": "3sp",
-      "epic": "llm_backlog",
-      "dependencies": [
-        "LLM-001"
-      ],
-      "labels": [
-        "ui",
-        "landing"
-      ],
-      "owner": "ui-team",
-      "created": "2025-08-29",
-      "last_updated": "2025-08-29"
-    },
-    {
-      "id": "UI-002",
-      "title": "Game detail page with rationale and signals",
-      "branch_name": "ui-002-game-detail-page-with-rationale-and-signals",
-      "file_path": "backlog/ui/UI-005-game-detail-page.md",
-      "status": "draft",
-      "priority": 13,
-      "estimate": "3sp",
-      "epic": "llm_backlog",
-      "dependencies": [
-        "LLM-002",
-        "UI-001"
-      ],
-      "labels": [
-        "ui",
-        "game-detail"
-      ],
-      "owner": "ui-team",
       "created": "2025-08-29",
       "last_updated": "2025-08-29"
     },
@@ -1322,23 +1241,6 @@
         "accepted"
       ],
       "owner": "AI Assistant",
-      "created": "2025-08-29",
-      "last_updated": "2025-08-29"
-    },
-    {
-      "id": "ADH-004",
-      "title": "ADH-004-Vite-Glassmorphism-Framework-Integration - Vite-Glassmorphism-Framework-Integration",
-      "branch_name": "adh-004-adh-004-vite-glassmorphism-framework-integration--",
-      "file_path": "backlog/adhoc/ADH-004-Vite-Glassmorphism-Framework-Integration.md",
-      "status": "backlog",
-      "priority": 14,
-      "estimate": "TBD",
-      "epic": "unknown",
-      "dependencies": [],
-      "labels": [
-        "unknown"
-      ],
-      "owner": "Neo Starlord of Thunder",
       "created": "2025-08-29",
       "last_updated": "2025-08-29"
     },
