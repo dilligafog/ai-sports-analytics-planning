@@ -3,7 +3,7 @@ id: INF-012
 title: FastAPI service framework with basic CRUD endpoints
 branch_name: inf-012-fastapi-service-framework-basic-crud-endpoints
 epic: infrastructure
-status: draft
+status: backlog
 priority: high
 estimate: "5sp"
 dependencies: []
