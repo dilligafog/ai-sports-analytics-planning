@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 101,
+    "total_backlog_stories": 102,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime",
     "priority_assigned": true,
@@ -79,6 +79,26 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-29",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "INF-012",
+      "title": "FastAPI service framework with basic CRUD endpoints",
+      "branch_name": "inf-012-fastapi-service-framework-basic-crud-endpoints",
+      "file_path": "backlog/infrastructure/INF-012-fastapi-service-framework-basic-crud-endpoints.md",
+      "status": "backlog",
+      "priority": 3,
+      "estimate": "5sp",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "api",
+        "infrastructure",
+        "fastapi",
+        "crud"
+      ],
+      "owner": "implementation-team",
+      "created": "2025-08-28",
       "last_updated": "2025-08-29"
     },
     {
