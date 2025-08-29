@@ -7,7 +7,7 @@ Stories no longer move between directories - their status is updated in PRIORITI
 
 DEPRECATED FUNCTIONALITY:
 This script previously migrated accepted stories to proper backlog structure with:
-- Standardized filenames (EPIC-001-title-format.md)
+- Standardized filenames (branch-name.md format)
 - YAML frontmatter for stories that lack it
 - Proper epic folder placement
 - Updated JSON tracking
@@ -194,11 +194,9 @@ def generate_standard_naming(original_name, epic, frontmatter, epic_counters):
         # Extract title from filename or content
         title = extract_title_from_name(original_name)
     
-    # Convert title to filename format
-    filename_title = re.sub(r'[^\w\s-]', '', title).strip()
-    filename_title = re.sub(r'[-\s]+', '-', filename_title).lower()
-    
-    new_filename = f"{new_id}-{filename_title}.md"
+    # Generate filename using branch name instead of title format
+    branch_name = generate_branch_name(new_id, title)
+    new_filename = f"{branch_name}.md"
     
     return new_id, new_filename
 

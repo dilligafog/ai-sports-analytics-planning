@@ -214,10 +214,8 @@ class StoryIngestor:
         target_dir = self.backlog_path / self.epic_dirs[epic]
         target_dir.mkdir(exist_ok=True)
         
-        # Create target filename
-        clean_title = re.sub(r'[^\w\s-]', '', story_data["title"])
-        clean_title = re.sub(r'\s+', '_', clean_title.strip())
-        target_filename = f"{story_data['id']}-{clean_title}.md"
+        # Create target filename using branch name
+        target_filename = f"{story_data['branch_name']}.md"
         target_path = target_dir / target_filename
         
         # Update file path in story data

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 99,
+    "total_backlog_stories": 101,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime"
   },
@@ -10,7 +10,7 @@
       "id": "ADH-001",
       "title": "Update Busta CLI for Adhoc Story Workflow Integration",
       "branch_name": "adh-001-update-busta-adhoc-stories",
-      "file_path": "backlog/adhoc/ADH-001-Update_Busta_for_Adhoc_Stories.md",
+      "file_path": "backlog/adhoc/adh-001-update-busta-adhoc-stories.md",
       "status": "accepted",
       "priority": 99,
       "estimate": "TBD",
@@ -562,7 +562,7 @@
       "id": "LLM-019",
       "title": "Advanced Player Tracking Integration",
       "branch_name": "llm-019-advanced-player-tracking-integration",
-      "file_path": "backlog/core/LLM-019-Advanced_Player_Tracking_Integration.md",
+      "file_path": "backlog/core/llm-019-advanced-player-tracking-integration.md",
       "status": "backlog",
       "priority": 99,
       "estimate": "3sp",
@@ -580,7 +580,7 @@
       "id": "LLM-019",
       "title": "Investigate GraphQL API Integration",
       "branch_name": "llm-019-investigate-graphql-api-integration",
-      "file_path": "backlog/core/LLM-019-Investigate_GraphQL_API_Integration.md",
+      "file_path": "backlog/core/llm-019-investigate-graphql-api-integration.md",
       "status": "backlog",
       "priority": 99,
       "estimate": "2sp",
@@ -595,10 +595,27 @@
       "last_updated": "2025-08-28"
     },
     {
+      "id": "LLM-019",
+      "title": "Test Branch Name Filename",
+      "branch_name": "llm-019-test-branch-name-filename",
+      "file_path": "backlog/core/llm-019-test-branch-name-filename.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "new-story"
+      ],
+      "owner": "",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-29"
+    },
+    {
       "id": "INGESTION-046A",
       "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
       "branch_name": "ingestion-046a-rss-analytics-betting-core",
-      "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
+      "file_path": "backlog/ingestion/ingestion-046a-rss-analytics-betting-core.md",
       "status": "backlog",
       "priority": 99,
       "estimate": "5sp",
@@ -619,7 +636,7 @@
       "id": "INGESTION-046B",
       "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
       "branch_name": "ingestion-046b-rss-team-coverage-expansion",
-      "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
+      "file_path": "backlog/ingestion/ingestion-046b-rss-team-coverage-expansion.md",
       "status": "backlog",
       "priority": 99,
       "estimate": "3sp",
@@ -643,7 +660,7 @@
       "id": "INGESTION-046C",
       "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
       "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
-      "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
+      "file_path": "backlog/ingestion/ingestion-046c-rss-specialized-coverage-complete.md",
       "status": "backlog",
       "priority": 99,
       "estimate": "2sp",
@@ -1720,7 +1737,7 @@
       "id": "UI-010",
       "title": "Real-time Performance Monitoring Dashboard",
       "branch_name": "ui-010-real-time-performance-monitoring-dashboard",
-      "file_path": "backlog/ui/UI-010-Real-time_Performance_Monitoring_Dashboard.md",
+      "file_path": "backlog/ui/ui-010-real-time-performance-monitoring-dashboard.md",
       "status": "backlog",
       "priority": 99,
       "estimate": "5sp",
@@ -1734,6 +1751,25 @@
       "owner": "",
       "created": "2025-08-28",
       "last_updated": "2025-08-28"
+    },
+    {
+      "id": "UI-011",
+      "title": "Real-time Performance Monitoring Dashboard",
+      "branch_name": "ui-011-real-time-performance-monitoring-dashboard",
+      "file_path": "backlog/ui/ui-011-real-time-performance-monitoring-dashboard.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "5sp",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "dashboard",
+        "monitoring",
+        "real-time"
+      ],
+      "owner": "",
+      "created": "2025-08-29",
+      "last_updated": "2025-08-29"
     },
     {
       "id": "ADH-004",
