@@ -47,28 +47,11 @@
       "last_updated": "2025-08-29"
     },
     {
-      "id": "LLM-019",
-      "title": "Test Branch Name Filename",
-      "branch_name": "llm-019-test-branch-name-filename",
-      "file_path": "backlog/core/llm-019-test-branch-name-filename.md",
-      "status": "backlog",
-      "priority": 2,
-      "estimate": "3sp",
-      "epic": "core",
-      "dependencies": [],
-      "labels": [
-        "new-story"
-      ],
-      "owner": "",
-      "created": "2025-08-28",
-      "last_updated": "2025-08-29"
-    },
-    {
       "id": "KAGGLE_DATA_UTILIZATION",
       "title": "User Story: Kaggle Data Utilization",
       "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-      "status": "backlog",
+      "status": "completed",
       "priority": 5,
       "estimate": 3,
       "epic": "data_sources",
@@ -85,7 +68,7 @@
       "title": "INF-007 - Parallel Data Collection Engine",
       "branch_name": "inf-007-inf-007---parallel-data-collection-engine",
       "file_path": "backlog/infrastructure/INF-007-parallel-data-collection.md",
-      "status": "backlog",
+      "status": "completed",
       "priority": 5,
       "estimate": "TBD",
       "epic": "infrastructure",
