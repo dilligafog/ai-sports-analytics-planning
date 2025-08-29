@@ -27,8 +27,8 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 ## Story Lifecycle
 1. **Creation** → `backlog/` subdirectory - New story with basic structure
 2. **Refinement** → Status remains in JSON until ready
-3. **Ready** → Update status to `active` in JSON when implementation starts
-4. **Completion** → Update status to `completed` in JSON with outcome notes
+3. **Ready** → Update status to `active` using `python scripts/update_story.py STORY-ID --status active` when implementation starts
+4. **Completion** → Update status to `completed` using `python scripts/update_story.py STORY-ID --status completed` with outcome notes
 
 ## Coordination Patterns
 

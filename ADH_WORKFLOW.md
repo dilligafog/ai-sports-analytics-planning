@@ -25,8 +25,8 @@ ADH stories are ad-hoc bug fixes, maintenance tasks, and quick improvements that
 - Minimal documentation requirements
 
 ### 3. Completion
-- Update status to `completed` in PRIORITIZATION.json when work is done
-- Eventually update status to `accepted` like other stories
+- Use `python scripts/update_story.py STORY-ID --status completed` when work is done
+- Eventually update status to `accepted` using the same script: `python scripts/update_story.py STORY-ID --status accepted`
 - Track completion for metrics but don't block other work
 
 ## When to Use ADH Stories
@@ -119,4 +119,4 @@ Any additional context or considerations.
 2. **Act fast** - Don't let ADH stories linger in `active` status for days
 3. **Document briefly** - Just enough to understand what was done and why
 4. **Test quickly** - Ensure changes work but don't over-engineer the testing
-5. **Clean up** - Update completed ADH story status in JSON regularly
+5. **Clean up** - Update completed ADH story status using `python scripts/update_story.py STORY-ID --status completed` regularly

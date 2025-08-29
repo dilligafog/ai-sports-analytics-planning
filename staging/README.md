@@ -75,7 +75,7 @@ Stories are automatically:
 1. **ID Assignment**: Next available ID in the target epic
 2. **File Naming**: Converted to proper kebab-case format
 3. **Epic Placement**: Moved to correct backlog subfolder
-4. **JSON Updates**: Added to PRIORITIZATION.json and COMPLETE_BACKLOG.json
+4. **JSON Updates**: Added to PRIORITIZATION.json and COMPLETE_BACKLOG.json via `python scripts/generate_complete_backlog.py`
 5. **Validation**: Checked for required fields and formatting
 
 ## Quality Gates

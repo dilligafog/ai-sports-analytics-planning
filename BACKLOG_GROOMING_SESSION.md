@@ -80,12 +80,12 @@
 ### 🔄 In Progress
 - [ ] Validate remaining story dependencies
 - [ ] Review estimate accuracy for groomed stories
-- [ ] Update PRIORITIZATION.json with new priorities
+- [ ] Update PRIORITIZATION.json with new priorities using `python scripts/manage_priorities.py --auto-prioritize`
 - [ ] Generate updated sprint planning recommendations
 
 ### 📋 Next Steps
 - [ ] Create implementation-ready versions of remaining top 10 stories
-- [ ] Update prioritization JSON with corrected priorities and estimates
+- [ ] Update prioritization JSON with corrected priorities and estimates using `python scripts/manage_priorities.py --set STORY-ID --priority N`
 - [ ] Generate updated prioritization markdown with current status
 - [ ] Document grooming decisions and rationale for team review
 

@@ -11,7 +11,7 @@ Primary responsibilities
 - Update roadmaps, stories and priorities
 - Maintain the story prioritization list (`backlog/PRIORITIZATION.md`) for implementation agents
 - Groom the backlog and prepare stories for implementation
-- Update story status from `completed` to `accepted` in JSON when they meet acceptance criteria
+- Update story status from `completed` to `accepted` using `python scripts/update_story.py STORY-ID --status accepted` when they meet acceptance criteria
 - Never modify files - all status management happens through JSON updates
 - Manage PRs for the planning repository (author, review, merge as needed)
 
@@ -19,10 +19,10 @@ Story lifecycle actions (Planning Agent)
 1. New proposals: create a file under `proposals/` using the proposal template. Assign an owner and priority.
 2. When a proposal is approved: create or update related stories in `backlog/` and the `roadmaps/` mapping.
 3. Backlog grooming: reorder and split/merge backlog items, add acceptance criteria and estimates. Update prioritization list as needed.
-4. Acceptance: when an implementation completes and the Implementation Agent signals success, update the story status from `completed` to `accepted` in the JSON. Update the story with outcome notes and references to implementation PRs and release notes.
+4. Acceptance: when an implementation completes and the Implementation Agent signals success, update the story status from `completed` to `accepted` using `python scripts/update_story.py STORY-ID --status accepted`. Update the story with outcome notes and references to implementation PRs and release notes.
 
 Rules and constraints
-- The Planning Agent must never modify story files in `backlog/` — all status management happens through JSON updates in PRIORITIZATION.json
+- The Planning Agent must never modify story files in `backlog/` — all status management happens through the `update_story.py` script which updates PRIORITIZATION.json
 - All planning changes must be committed and opened as PRs in the planning repository so they are auditable.
 - Keep a clear changelog entry in story JSON metadata when updating status (date, author, outcome).
 
