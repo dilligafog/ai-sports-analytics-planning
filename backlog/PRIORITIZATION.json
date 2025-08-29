@@ -1803,7 +1803,7 @@
       "id": "ADH-025",
       "title": "Planning Bot Integration Test",
       "epic": "adhoc",
-      "status": "active",
+      "status": "completed",
       "priority": 99,
       "estimate": "ad-hoc",
       "effort": "1d",
