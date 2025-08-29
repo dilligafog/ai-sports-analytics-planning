@@ -1,13 +1,13 @@
 {
   "summary": {
     "total_stories": 97,
-    "health_score": 89.2,
-    "prioritized_stories": 13,
+    "health_score": 100.0,
+    "prioritized_stories": 97,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T02:19:46.484230"
+    "last_updated": "2025-08-28T22:27:56.916202"
   },
   "velocity": {
-    "generated_at": "2025-08-29T02:19:46.483740",
+    "generated_at": "2025-08-28T22:27:56.915693",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
@@ -18,37 +18,33 @@
       "ready": 1
     },
     "epic_breakdown": {
-      "adhoc": 22,
+      "adhoc": 27,
       "core": 11,
-      "data_sources": 1,
-      "infra": 2,
-      "infrastructure": 5,
+      "data-sources": 1,
+      "infrastructure": 7,
       "ingestion": 6,
-      "llm_backlog": 24,
+      "llm": 24,
       "modeling": 2,
-      "social_media": 11,
+      "social": 11,
       "training": 1,
-      "ui": 7,
-      "unknown": 5
+      "ui": 7
     },
     "epic_completion_rates": {
-      "adhoc": 95.5,
+      "adhoc": 77.8,
       "core": 100.0,
-      "data_sources": 0.0,
-      "infra": 0.0,
-      "infrastructure": 40.0,
+      "data-sources": 0.0,
+      "infrastructure": 28.6,
       "ingestion": 66.7,
-      "llm_backlog": 8.3,
+      "llm": 8.3,
       "modeling": 100.0,
-      "social_media": 9.1,
+      "social": 9.1,
       "training": 0.0,
-      "ui": 57.1,
-      "unknown": 0.0
+      "ui": 57.1
     },
     "priority_distribution": {
-      "High (6-10)": 5,
-      "Critical (1-5)": 5,
-      "Medium (11-20)": 3
+      "Medium (11-20)": 39,
+      "Critical (1-5)": 18,
+      "High (6-10)": 40
     },
     "top_priorities": [
       {
@@ -97,6 +93,41 @@
         "last_updated": "2025-08-28"
       },
       {
+        "id": "ADH-002",
+        "title": "Fix Inventory Sidebar",
+        "branch_name": "adh-002-fix-inventory-sidebar",
+        "file_path": "backlog/adhoc/ADH-002-Fix_Inventory_Sidebar.md",
+        "status": "accepted",
+        "priority": 3,
+        "estimate": "2sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "ad-hoc",
+          "maintenance"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-26",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "ADH-005",
+        "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
+        "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
+        "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
+        "status": "backlog",
+        "priority": 3,
+        "estimate": "2sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "unknown"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
         "id": "INGESTION-046C",
         "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
         "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
@@ -129,7 +160,7 @@
         "status": "completed",
         "priority": 4,
         "estimate": "3sp",
-        "epic": "llm_backlog",
+        "epic": "llm",
         "dependencies": [
           "ING-002"
         ],
@@ -143,124 +174,83 @@
         "last_updated": "2025-08-28"
       },
       {
-        "id": "LLM-002",
-        "title": "Evidence citation & traceability for LLM outputs",
-        "branch_name": "llm-002-evidence-citation-traceability-for-llm-outputs",
-        "file_path": "backlog/core/LLM-002-evidence-citation-traceability.md",
-        "status": "completed",
-        "priority": 5,
-        "estimate": "3sp",
-        "epic": "llm_backlog",
-        "dependencies": [
-          "LLM-001"
-        ],
-        "labels": [
-          "llm",
-          "traceability",
-          "evidence"
-        ],
-        "owner": "team-llm",
-        "created": "2025-08-27",
-        "last_updated": "2025-08-28"
-      },
-      {
-        "id": "KAGGLE_DATA_UTILIZATION",
-        "title": "User Story: Kaggle Data Utilization",
-        "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
-        "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-        "status": "active",
-        "priority": 6,
-        "estimate": 3,
-        "epic": "data_sources",
-        "dependencies": [],
-        "labels": [
-          "external-data"
-        ],
-        "owner": "TBD",
-        "created": "2025-08-27",
-        "last_updated": "2025-08-28"
-      },
-      {
-        "id": "PUBLIC_BETTING_DATA_INTEGRATION",
-        "title": "User Story: Public Betting Data Integration",
-        "branch_name": "public_betting_data_integration-user-story-public-betting-data-integration",
-        "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
-        "status": "draft",
-        "priority": 7,
-        "estimate": 5,
-        "epic": "ingestion",
-        "dependencies": [],
-        "labels": [
-          "betting",
-          "trends"
-        ],
-        "owner": "TBD",
-        "created": "2025-08-27",
-        "last_updated": "2025-08-24"
-      },
-      {
-        "id": "LLM-003",
-        "title": "Entity resolution for teams and players",
-        "branch_name": "llm-003-entity-resolution-for-teams-and-players",
-        "file_path": "backlog/core/LLM-003-entity-resolution.md",
-        "status": "draft",
-        "priority": 8,
-        "estimate": "2sp",
-        "epic": "llm_backlog",
-        "dependencies": [],
-        "labels": [
-          "llm",
-          "entity-resolution"
-        ],
-        "owner": "team-llm",
-        "created": "2025-08-27",
-        "last_updated": "2025-08-27"
-      },
-      {
-        "id": "ADH-010",
-        "title": "User Story: Backtesting & ROI Tracking",
-        "branch_name": "adh-010-user-story-backtesting-roi-tracking",
-        "file_path": "backlog/adhoc/ADH-010-backtesting-roi-tracking.md",
+        "id": "ADH-008",
+        "title": "Advanced Nfl Statistics Integration",
+        "branch_name": "adh-008-advanced-nfl-statistics-integration",
+        "file_path": "backlog/adhoc/ADH-008-advanced-nfl-statistics-integration.md",
         "status": "accepted",
-        "priority": 9,
-        "estimate": 8,
+        "priority": 5,
+        "estimate": "8sp",
         "epic": "adhoc",
         "dependencies": [],
         "labels": [
-          "backtesting",
-          "roi"
+          "accepted"
         ],
-        "owner": "ai-agent",
-        "created": "2025-08-27",
-        "last_updated": "2025-08-24"
-      },
-      {
-        "id": "ING-002",
-        "title": "Article deduplication & enrichment pipeline",
-        "branch_name": "ing-002-article-deduplication-enrichment-pipeline",
-        "file_path": "backlog/ingestion/ING-001-article-dedup-enrich.md",
-        "status": "draft",
-        "priority": 10,
-        "estimate": "3sp",
-        "epic": "llm_backlog",
-        "dependencies": [],
-        "labels": [
-          "ingestion",
-          "dedup",
-          "enrichment"
-        ],
-        "owner": "team-data",
+        "owner": "Neo Starlord of Thunder",
         "created": "2025-08-27",
         "last_updated": "2025-08-27"
+      },
+      {
+        "id": "ADH-015",
+        "title": "End To End Kaggle Nfl Scores",
+        "branch_name": "adh-015-end-to-end-kaggle-nfl-scores",
+        "file_path": "backlog/adhoc/ADH-015-end-to-end-kaggle-nfl-scores.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "3sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "accepted"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "ADH-017",
+        "title": "Nfl Player Injury Data Integration",
+        "branch_name": "adh-017-nfl-player-injury-data-integration",
+        "file_path": "backlog/adhoc/ADH-017-nfl-player-injury-data-integration.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "8sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "accepted"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "LLM-010",
+        "title": "Task runner integration (busta/CLI from repo root) - COMPLETED ✅",
+        "branch_name": "llm-010-task-runner-integration-bustacli-from-repo-root---",
+        "file_path": "backlog/core/LLM-010-task-runner-busta.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "1sp",
+        "epic": "core",
+        "dependencies": [],
+        "labels": [
+          "cli",
+          "busta",
+          "accepted"
+        ],
+        "owner": "infra-team",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-24"
       }
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T02:19:46.483836",
-    "health_score": 89.2,
+    "generated_at": "2025-08-28T22:27:56.915804",
+    "health_score": 100.0,
     "quality_issues": {
-      "missing_estimates": 50,
-      "missing_owners": 3,
+      "missing_estimates": 0,
+      "missing_owners": 0,
       "missing_acceptance_criteria": 0,
       "long_titles": 1,
       "stale_stories": 0
@@ -272,85 +262,81 @@
       "stale": 0
     },
     "epic_balance": {
-      "adhoc": 22,
+      "adhoc": 27,
       "core": 11,
-      "data_sources": 1,
-      "infra": 2,
-      "infrastructure": 5,
+      "data-sources": 1,
+      "infrastructure": 7,
       "ingestion": 6,
-      "llm_backlog": 24,
+      "llm": 24,
       "modeling": 2,
-      "social_media": 11,
+      "social": 11,
       "training": 1,
-      "ui": 7,
-      "unknown": 5
+      "ui": 7
     },
-    "recommendations": [
-      "Add estimates to 50 stories"
-    ]
+    "recommendations": []
   },
   "priority": {
-    "generated_at": "2025-08-29T02:19:46.483889",
-    "total_prioritized": 13,
-    "total_unprocessed": 84,
+    "generated_at": "2025-08-28T22:27:56.915854",
+    "total_prioritized": 97,
+    "total_unprocessed": 0,
     "priority_heatmap": {
       "adhoc": {
+        "Medium (11-20)": 18,
+        "Critical (1-5)": 8,
         "High (6-10)": 1
       },
-      "core": {},
-      "data_sources": {
-        "High (6-10)": 1
-      },
-      "infra": {},
-      "infrastructure": {},
-      "ingestion": {
-        "High (6-10)": 1,
+      "core": {
+        "High (6-10)": 8,
         "Critical (1-5)": 3
       },
-      "llm_backlog": {
+      "data-sources": {
+        "High (6-10)": 1
+      },
+      "infrastructure": {
+        "High (6-10)": 6,
+        "Critical (1-5)": 1
+      },
+      "ingestion": {
         "High (6-10)": 2,
+        "Critical (1-5)": 4
+      },
+      "llm": {
+        "High (6-10)": 20,
         "Critical (1-5)": 2,
         "Medium (11-20)": 2
       },
-      "modeling": {},
-      "social_media": {},
-      "training": {},
-      "ui": {
+      "modeling": {
+        "High (6-10)": 2
+      },
+      "social": {
+        "Medium (11-20)": 11
+      },
+      "training": {
         "Medium (11-20)": 1
       },
-      "unknown": {}
+      "ui": {
+        "Medium (11-20)": 7
+      }
     },
     "priority_distribution": {
-      "High (6-10)": 5,
-      "Critical (1-5)": 5,
-      "Medium (11-20)": 3
+      "Medium (11-20)": 39,
+      "Critical (1-5)": 18,
+      "High (6-10)": 40
     },
     "high_priority_distribution": {
-      "adhoc": 1,
-      "data_sources": 1,
-      "ingestion": 4,
-      "llm_backlog": 4
-    },
-    "unprocessed_by_epic": {
-      "adhoc": 21,
+      "adhoc": 9,
       "core": 11,
-      "infra": 2,
-      "infrastructure": 5,
-      "ingestion": 2,
-      "llm_backlog": 18,
-      "modeling": 2,
-      "social_media": 11,
-      "training": 1,
-      "ui": 6,
-      "unknown": 5
+      "data-sources": 1,
+      "infrastructure": 7,
+      "ingestion": 6,
+      "llm": 22,
+      "modeling": 2
     },
-    "priority_recommendations": [
-      "Run auto-prioritization to process backlog efficiently",
-      "Focus prioritization efforts on adhoc epic (21 stories)"
-    ]
+    "unprocessed_by_epic": {},
+    "priority_recommendations": []
   },
   "workflow": {
-    "generated_at": "2025-08-29T02:19:46.484222",
+    "generated_at": "2025-08-28T22:27:56.916195",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
@@ -365,10 +351,10 @@
       "accepted": 41
     },
     "complexity_distribution": {
-      "small": 17,
-      "medium": 24,
-      "large": 4,
-      "unknown": 52
+      "small": 22,
+      "medium": 64,
+      "large": 9,
+      "unknown": 2
     },
     "workflow_efficiency": 59.8
   }

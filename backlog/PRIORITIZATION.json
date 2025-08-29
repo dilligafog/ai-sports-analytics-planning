@@ -6,7 +6,18 @@
     "generated_by": "Strategic Business Analysis",
     "priority_method": "business_value_assessment",
     "top_10_prioritized": true,
-    "prioritization_rationale": "Based on revenue impact, user confidence, and logical dependencies"
+    "prioritization_rationale": "Based on revenue impact, user confidence, and logical dependencies",
+    "last_cleaned": "2025-08-28",
+    "cleaned_by": "Strategic Nexus Prime - Data Cleanup",
+    "cleanup_summary": {
+      "estimates_cleaned": 94,
+      "epics_standardized": 43,
+      "owners_assigned": 3,
+      "priorities_assigned": 84,
+      "titles_cleaned": 0,
+      "labels_added": 3,
+      "total_improvements": 227
+    }
   },
   "backlog": [
     {
@@ -15,8 +26,8 @@
       "branch_name": "adh-001-update-busta-for-adhoc-stories",
       "file_path": "backlog/adhoc/ADH-001-Update_Busta_for_Adhoc_Stories.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "2sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -33,8 +44,8 @@
       "branch_name": "adh-002-fix-inventory-sidebar",
       "file_path": "backlog/adhoc/ADH-002-Fix_Inventory_Sidebar.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 3,
+      "estimate": "2sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -51,8 +62,8 @@
       "branch_name": "adh-003-untrack-log-files",
       "file_path": "backlog/adhoc/ADH-003-Untrack_Log_Files.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -69,8 +80,8 @@
       "branch_name": "adh-004-next-story-preview",
       "file_path": "backlog/adhoc/ADH-004-Next-Story-Preview.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -86,8 +97,8 @@
       "branch_name": "adh-008-advanced-nfl-statistics-integration",
       "file_path": "backlog/adhoc/ADH-008-advanced-nfl-statistics-integration.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 5,
+      "estimate": "8sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -103,8 +114,8 @@
       "branch_name": "adh-009-ai-generated-sales-pitch",
       "file_path": "backlog/adhoc/ADH-009-ai-generated-sales-pitch.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -121,7 +132,7 @@
       "file_path": "backlog/adhoc/ADH-010-backtesting-roi-tracking.md",
       "status": "accepted",
       "priority": 9,
-      "estimate": 8,
+      "estimate": "8sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -138,8 +149,8 @@
       "branch_name": "adh-011-code-style-inventory",
       "file_path": "backlog/adhoc/ADH-011-code-style-inventory.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -155,8 +166,8 @@
       "branch_name": "adh-012-config-standards-yaml-pydantic",
       "file_path": "backlog/adhoc/ADH-012-config-standards-yaml-pydantic.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -172,8 +183,8 @@
       "branch_name": "adh-013-data-catalog",
       "file_path": "backlog/adhoc/ADH-013-data-catalog.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -189,8 +200,8 @@
       "branch_name": "adh-014-emit-metadata-doc",
       "file_path": "backlog/adhoc/ADH-014-emit-metadata-doc.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -206,8 +217,8 @@
       "branch_name": "adh-015-end-to-end-kaggle-nfl-scores",
       "file_path": "backlog/adhoc/ADH-015-end-to-end-kaggle-nfl-scores.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 5,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -223,8 +234,8 @@
       "branch_name": "adh-016-end-to-end-summary",
       "file_path": "backlog/adhoc/ADH-016-end-to-end-summary.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -240,8 +251,8 @@
       "branch_name": "adh-017-nfl-player-injury-data-integration",
       "file_path": "backlog/adhoc/ADH-017-nfl-player-injury-data-integration.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 5,
+      "estimate": "8sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -257,8 +268,8 @@
       "branch_name": "adh-018-performance-tracking-final",
       "file_path": "backlog/adhoc/ADH-018-performance-tracking-final.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -274,8 +285,8 @@
       "branch_name": "adh-019-playbook-performance-tracking",
       "file_path": "backlog/adhoc/ADH-019-playbook-performance-tracking.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -291,8 +302,8 @@
       "branch_name": "adh-020-playbook-project-setup",
       "file_path": "backlog/adhoc/ADH-020-playbook-project-setup.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -308,8 +319,8 @@
       "branch_name": "adh-021-playbook-unified-cli",
       "file_path": "backlog/adhoc/ADH-021-playbook-unified-cli.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -325,8 +336,8 @@
       "branch_name": "adh-022-predictions_outputs-predictions-outputs-accepted",
       "file_path": "backlog/adhoc/ADH-022-predictions-outputs.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": 5,
+      "priority": 15,
+      "estimate": "5sp",
       "epic": "adhoc",
       "dependencies": [
         "QLT-001"
@@ -345,8 +356,8 @@
       "branch_name": "adh-023-session-summary",
       "file_path": "backlog/adhoc/ADH-023-session-summary.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "adhoc",
       "dependencies": [],
       "labels": [
@@ -362,7 +373,7 @@
       "branch_name": "llm-008-offline-evaluation-harness-metrics-tracking",
       "file_path": "backlog/core/LLM-008-eval-001-offline-eval-metrics.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 7,
       "estimate": "3sp",
       "epic": "core",
       "dependencies": [],
@@ -380,7 +391,7 @@
       "branch_name": "llm-009-ablation-studies-for-llm-feature-lift",
       "file_path": "backlog/core/LLM-009-eval-002.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 7,
       "estimate": "3sp",
       "epic": "core",
       "dependencies": [
@@ -401,7 +412,7 @@
       "branch_name": "llm-010-task-runner-integration-bustacli-from-repo-root---",
       "file_path": "backlog/core/LLM-010-task-runner-busta.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 5,
       "estimate": "1sp",
       "epic": "core",
       "dependencies": [],
@@ -420,7 +431,7 @@
       "branch_name": "llm-011-secrets-management-key-rotation",
       "file_path": "backlog/core/LLM-011-inf-004.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 7,
       "estimate": "2sp",
       "epic": "core",
       "dependencies": [],
@@ -439,7 +450,7 @@
       "branch_name": "llm-012-enhanced-multi-format-news-rss-collection-system",
       "file_path": "backlog/core/LLM-012-ing-001-news-rss-sources.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 7,
       "estimate": "2sp",
       "epic": "core",
       "dependencies": [],
@@ -458,7 +469,7 @@
       "branch_name": "llm-013-odds-api-integration-moneyline-spread-totals-props",
       "file_path": "backlog/core/LLM-013-ing-003-odds-api-integration.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 5,
       "estimate": "2sp",
       "epic": "core",
       "dependencies": [],
@@ -477,8 +488,8 @@
       "branch_name": "llm-014-llm-feature-extraction-from-news",
       "file_path": "backlog/core/LLM-014-llm-feature-extraction-from-news.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 7,
+      "estimate": "5sp",
       "epic": "core",
       "dependencies": [],
       "labels": [
@@ -494,7 +505,7 @@
       "branch_name": "llm-015-feature-store-schema-lineage-completed",
       "file_path": "backlog/core/LLM-015-feature-store-schema.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 7,
       "estimate": "4sp",
       "epic": "core",
       "dependencies": [],
@@ -513,8 +524,8 @@
       "branch_name": "llm-016-news-rss-sources-integration",
       "file_path": "backlog/core/LLM-016-news-rss-sources-integration.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 5,
+      "estimate": "8sp",
       "epic": "core",
       "dependencies": [],
       "labels": [
@@ -530,7 +541,7 @@
       "branch_name": "llm-017-data-quality-checks-on-joins-and-keys-accepted",
       "file_path": "backlog/core/LLM-017-qlt-001-data-quality-checks.md",
       "status": "accepted",
-      "priority": 99,
+      "priority": 7,
       "estimate": "2sp",
       "epic": "core",
       "dependencies": [],
@@ -548,8 +559,8 @@
       "branch_name": "llm-018-s01-social-news-schema-and-abstraction",
       "file_path": "backlog/core/LLM-018-s01-social-news-schema-and-abstraction.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 7,
+      "estimate": "5sp",
       "epic": "core",
       "dependencies": [],
       "labels": [
@@ -566,8 +577,8 @@
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
       "status": "active",
       "priority": 6,
-      "estimate": 3,
-      "epic": "data_sources",
+      "estimate": "3sp",
+      "epic": "data-sources",
       "dependencies": [],
       "labels": [
         "external-data"
@@ -582,9 +593,9 @@
       "branch_name": "inf-006-ai-inference-monitoring-ai-inference-performance-monitoring-cost-optimizat",
       "file_path": "backlog/infrastructure/INF-006-ai-inference-monitoring.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "infra",
+      "priority": 7,
+      "estimate": "3sp",
+      "epic": "infrastructure",
       "dependencies": [
         "AI_GENERATED_SALES_PITCH"
       ],
@@ -604,9 +615,9 @@
       "branch_name": "scheduling_automation-user-story-scheduling-automation",
       "file_path": "backlog/infrastructure/SCHEDULING_AUTOMATION.md",
       "status": "draft",
-      "priority": 99,
-      "estimate": 5,
-      "epic": "infra",
+      "priority": 7,
+      "estimate": "5sp",
+      "epic": "infrastructure",
       "dependencies": [],
       "labels": [
         "scheduling",
@@ -622,8 +633,8 @@
       "branch_name": "inf-007-inf-007---parallel-data-collection-engine",
       "file_path": "backlog/infrastructure/INF-007-parallel-data-collection.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 7,
+      "estimate": "3sp",
       "epic": "infrastructure",
       "dependencies": [],
       "labels": [
@@ -640,8 +651,8 @@
       "branch_name": "inf-008-inf-008---data-source-health-monitoring-alerting",
       "file_path": "backlog/infrastructure/INF-008-data-source-health-monitoring.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 7,
+      "estimate": "3sp",
       "epic": "infrastructure",
       "dependencies": [],
       "labels": [
@@ -659,7 +670,7 @@
       "branch_name": "inf-009-adhoc-story-file-storage",
       "file_path": "backlog/infrastructure/INF-009-adhoc-story-file-storage.md",
       "status": "backlog",
-      "priority": 99,
+      "priority": 7,
       "estimate": "1sp",
       "epic": "infrastructure",
       "dependencies": [],
@@ -679,8 +690,8 @@
       "branch_name": "inf-010-data-source-integration-framework",
       "file_path": "backlog/infrastructure/INF-010-data-source-integration-framework.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 5,
+      "estimate": "8sp",
       "epic": "infrastructure",
       "dependencies": [],
       "labels": [
@@ -696,8 +707,8 @@
       "branch_name": "inf-011-user-story-gold-feature-store-completed",
       "file_path": "backlog/infrastructure/INF-011-gold-feature-store.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": 8,
+      "priority": 7,
+      "estimate": "8sp",
       "epic": "infrastructure",
       "dependencies": [],
       "labels": [
@@ -715,8 +726,8 @@
       "branch_name": "ing-004-playbook-data-sources",
       "file_path": "backlog/ingestion/ING-004-playbook-data-sources.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 7,
+      "estimate": "3sp",
       "epic": "ingestion",
       "dependencies": [],
       "labels": [
@@ -733,7 +744,7 @@
       "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
       "status": "draft",
       "priority": 7,
-      "estimate": 5,
+      "estimate": "5sp",
       "epic": "ingestion",
       "dependencies": [],
       "labels": [
@@ -750,8 +761,8 @@
       "branch_name": "weather_data_integration-user-story-weather-data-integration",
       "file_path": "backlog/models/WEATHER_DATA_INTEGRATION.md",
       "status": "draft",
-      "priority": 99,
-      "estimate": 3,
+      "priority": 5,
+      "estimate": "3sp",
       "epic": "ingestion",
       "dependencies": [],
       "labels": [
@@ -768,9 +779,9 @@
       "branch_name": "exp-001-grounded-explanation-cards-for-picks",
       "file_path": "backlog/explain/EXP-001-grounded-explanations.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-002"
       ],
@@ -788,9 +799,9 @@
       "branch_name": "inf-001-configuration-standards-yaml-pydantic",
       "file_path": "backlog/infra/INF-001-config-standards-yaml.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "config",
@@ -807,9 +818,9 @@
       "branch_name": "inf-003-caching-ttl-for-time-sensitive-signals",
       "file_path": "backlog/infra/INF-002-caching-ttl.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "caching",
@@ -825,9 +836,9 @@
       "branch_name": "inf-005-llm-provider-failover-and-model-versioning",
       "file_path": "backlog/infra/INF-003-llm-provider-failover.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-001"
       ],
@@ -848,7 +859,7 @@
       "status": "draft",
       "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "ingestion",
@@ -865,9 +876,9 @@
       "branch_name": "ing-004-pfr-weekly-schedule-team-stats-scraper",
       "file_path": "backlog/ingestion/ING-002-pfr-scraper-week.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "ingestion",
@@ -883,9 +894,9 @@
       "branch_name": "ing-005-content-quality-scoring-and-filtering",
       "file_path": "backlog/ingestion/ING-003-content-quality-filtering.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "ING-001",
         "ING-002"
@@ -907,7 +918,7 @@
       "status": "completed",
       "priority": 4,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "ING-002"
       ],
@@ -928,7 +939,7 @@
       "status": "completed",
       "priority": 5,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-001"
       ],
@@ -949,7 +960,7 @@
       "status": "draft",
       "priority": 8,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "llm",
@@ -967,7 +978,7 @@
       "status": "draft",
       "priority": 13,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-001",
         "LLM-003"
@@ -986,9 +997,9 @@
       "branch_name": "llm-005-injury-override-starter-availability-signal",
       "file_path": "backlog/core/LLM-005-injury-override-signal.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "llm",
@@ -1004,9 +1015,9 @@
       "branch_name": "llm-006-batch-processing-optimization-for-llm-features",
       "file_path": "backlog/core/LLM-006-batch-processing-optimization.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-001",
         "INF-003"
@@ -1026,9 +1037,9 @@
       "branch_name": "llm-007-sales-pitch-personalization-personalized-ai-sales-pitch-generation",
       "file_path": "backlog/core/LLM-007-sales-pitch-personalization.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "llm_backlog",
+      "priority": 10,
+      "estimate": "5sp",
+      "epic": "llm",
       "dependencies": [
         "AI_GENERATED_SALES_PITCH",
         "UI-002-sales-pitch-integration"
@@ -1049,9 +1060,9 @@
       "branch_name": "mod-001-rebaseline-atsmltotal-models-with-clean-features",
       "file_path": "backlog/modeling/MOD-001-base-ats-model.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "5sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-001",
         "ING-002"
@@ -1072,7 +1083,7 @@
       "status": "draft",
       "priority": 12,
       "estimate": "5sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "MOD-001"
       ],
@@ -1090,9 +1101,9 @@
       "branch_name": "mod-003-probability-calibration-reliability-curves",
       "file_path": "backlog/modeling/MOD-003-probability-calibration.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "MOD-001"
       ],
@@ -1110,9 +1121,9 @@
       "branch_name": "mod-004-abstention-and-do-not-bet-logic",
       "file_path": "backlog/modeling/MOD-004-abstention-logic.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "MOD-003"
       ],
@@ -1130,9 +1141,9 @@
       "branch_name": "mod-006-production-model-calibration-monitoring",
       "file_path": "backlog/modeling/MOD-005-calibration-monitoring.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "MOD-001",
         "MOD-002"
@@ -1152,9 +1163,9 @@
       "branch_name": "qlt-002-structured-logging-lightweight-monitoring",
       "file_path": "backlog/quality/QLT-001-logging-monitoring.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "2sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "logging",
@@ -1170,9 +1181,9 @@
       "branch_name": "qlt-003-feature-store-monitoring-and-drift-detection",
       "file_path": "backlog/quality/QLT-002-feature-monitoring-drift.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [],
       "labels": [
         "quality",
@@ -1189,9 +1200,9 @@
       "branch_name": "qlt-004-production-data-quality-monitoring",
       "file_path": "backlog/quality/QLT-003-production-data-quality-monitoring.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "QLT-001"
       ],
@@ -1210,9 +1221,9 @@
       "branch_name": "ui-001-landing-page-with-daily-games-confidence",
       "file_path": "backlog/ui/UI-004-landing-page-cards.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-001"
       ],
@@ -1230,9 +1241,9 @@
       "branch_name": "ui-002-game-detail-page-with-rationale-and-signals",
       "file_path": "backlog/ui/UI-005-game-detail-page.md",
       "status": "draft",
-      "priority": 99,
+      "priority": 10,
       "estimate": "3sp",
-      "epic": "llm_backlog",
+      "epic": "llm",
       "dependencies": [
         "LLM-002",
         "UI-001"
@@ -1251,8 +1262,8 @@
       "branch_name": "mod-006-user-story-model-training-evaluation",
       "file_path": "backlog/modeling/MOD-006-model-training-evaluation.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": 8,
+      "priority": 10,
+      "estimate": "8sp",
       "epic": "modeling",
       "dependencies": [],
       "labels": [
@@ -1270,8 +1281,8 @@
       "branch_name": "mod-007-predictions-outputs-enhanced-formatting",
       "file_path": "backlog/modeling/MOD-007-predictions-outputs-enhanced-formatting.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 10,
+      "estimate": "5sp",
       "epic": "modeling",
       "dependencies": [],
       "labels": [
@@ -1287,9 +1298,9 @@
       "branch_name": "s02-story-s02-twitterx-curated-accounts-ingestion",
       "file_path": "backlog/social_media/S02_x_curated_accounts_ingestion.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1304,9 +1315,9 @@
       "branch_name": "s03-story-s03-twitterx-keyword-list-search",
       "file_path": "backlog/social_media/S03_x_keyword_and_list_search.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1321,9 +1332,9 @@
       "branch_name": "s04-story-s04-bluesky-curated-handles-ingestion",
       "file_path": "backlog/social_media/S04_bluesky_curated_handles_ingestion.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1338,9 +1349,9 @@
       "branch_name": "s05-story-s05-bluesky-keywordgraph-search",
       "file_path": "backlog/social_media/S05_bluesky_keyword_and_graph_search.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1355,9 +1366,9 @@
       "branch_name": "s06-story-s06-relevance-filter-entity-linking-for-soci",
       "file_path": "backlog/social_media/S06_relevance_filter_and_entity_linking.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1372,9 +1383,9 @@
       "branch_name": "s08-story-s08-scheduling-rate-limits-secrets-checkpoin",
       "file_path": "backlog/social_media/S08_scheduling_ratelimits_secrets_checkpointing.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1389,9 +1400,9 @@
       "branch_name": "s09-story-s09-feed-health-metrics-alerting-for-social",
       "file_path": "backlog/social_media/S09_feed_health_metrics_alerting.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1406,9 +1417,9 @@
       "branch_name": "s10-story-s10-compliance-config-gating-kill-switch",
       "file_path": "backlog/social_media/S10_compliance_config_gating_killswitch.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1423,9 +1434,9 @@
       "branch_name": "s11-story-s11-uicli-surfacing-source-configuration",
       "file_path": "backlog/social_media/S11_ui_cli_source_configuration.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1440,9 +1451,9 @@
       "branch_name": "s12-story-s12-evaluation-does-social-improve-predictio",
       "file_path": "backlog/social_media/S12_evaluation_social_signal_lift.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 12,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "social-media"
@@ -1457,9 +1468,9 @@
       "branch_name": "soc-001-s07-dedup-and-crosspost-collapsing",
       "file_path": "backlog/social_media/SOC-001-s07-dedup-and-crosspost-collapsing.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "social_media",
+      "priority": 15,
+      "estimate": "3sp",
+      "epic": "social",
       "dependencies": [],
       "labels": [
         "accepted"
@@ -1474,8 +1485,8 @@
       "branch_name": "model_training_evaluation-user-story-model-training-evaluation",
       "file_path": "backlog/models/MODEL_TRAINING_EVALUATION.md",
       "status": "draft",
-      "priority": 99,
-      "estimate": 8,
+      "priority": 12,
+      "estimate": "8sp",
       "epic": "training",
       "dependencies": [],
       "labels": [
@@ -1494,7 +1505,7 @@
       "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
       "status": "ready",
       "priority": 11,
-      "estimate": "TBD",
+      "estimate": "2sp",
       "epic": "ui",
       "dependencies": [],
       "labels": [
@@ -1513,12 +1524,11 @@
       "branch_name": "ui-003-ui-003---data-source-management-web-interface",
       "file_path": "backlog/ui/UI-003-data-source-management-interface.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 12,
+      "estimate": "3sp",
       "epic": "ui",
       "dependencies": [],
       "labels": [
-        "ui",
         "ui",
         "data"
       ],
@@ -1532,8 +1542,8 @@
       "branch_name": "ui-006-ui-architecture-quickstart",
       "file_path": "backlog/ui/UI-006-ui-architecture-quickstart.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "ui",
       "dependencies": [],
       "labels": [
@@ -1549,8 +1559,8 @@
       "branch_name": "ui-007-ui-build-process-analysis",
       "file_path": "backlog/ui/UI-007-ui-build-process-analysis.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "ui",
       "dependencies": [],
       "labels": [
@@ -1566,8 +1576,8 @@
       "branch_name": "ui-008-web-build-process-update",
       "file_path": "backlog/ui/UI-008-web-build-process-update.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "2sp",
       "epic": "ui",
       "dependencies": [],
       "labels": [
@@ -1583,8 +1593,8 @@
       "branch_name": "ui-009-web-deployment-guide",
       "file_path": "backlog/ui/UI-009-web-deployment-guide.md",
       "status": "accepted",
-      "priority": 99,
-      "estimate": "TBD",
+      "priority": 15,
+      "estimate": "3sp",
       "epic": "ui",
       "dependencies": [],
       "labels": [
@@ -1600,9 +1610,9 @@
       "branch_name": "adh-004-adh-004-vite-glassmorphism-framework-integration--",
       "file_path": "backlog/adhoc/ADH-004-Vite-Glassmorphism-Framework-Integration.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "unknown",
+      "priority": 5,
+      "estimate": "8sp",
+      "epic": "adhoc",
       "dependencies": [],
       "labels": [
         "unknown"
@@ -1617,9 +1627,9 @@
       "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
       "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "unknown",
+      "priority": 3,
+      "estimate": "2sp",
+      "epic": "adhoc",
       "dependencies": [],
       "labels": [
         "unknown"
@@ -1634,9 +1644,9 @@
       "branch_name": "adh-006-adh-006-docker-preview-command---docker-preview-co",
       "file_path": "backlog/adhoc/ADH-006-Docker-Preview-Command.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "unknown",
+      "priority": 20,
+      "estimate": "3sp",
+      "epic": "adhoc",
       "dependencies": [],
       "labels": [
         "unknown"
@@ -1651,9 +1661,9 @@
       "branch_name": "adh-007-adh-007-ui-redesign-ideas---ui-redesign-ideas",
       "file_path": "backlog/adhoc/ADH-007-UI-Redesign-Ideas.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "unknown",
+      "priority": 20,
+      "estimate": "3sp",
+      "epic": "adhoc",
       "dependencies": [],
       "labels": [
         "unknown"
@@ -1668,9 +1678,9 @@
       "branch_name": "prioritization-prioritization",
       "file_path": "backlog/PRIORITIZATION.md",
       "status": "backlog",
-      "priority": 99,
-      "estimate": "TBD",
-      "epic": "unknown",
+      "priority": 20,
+      "estimate": "3sp",
+      "epic": "adhoc",
       "dependencies": [],
       "labels": [
         "unknown"
@@ -1752,7 +1762,7 @@
     {
       "title": "Real-time Performance Monitoring Dashboard",
       "epic": "ui",
-      "priority": 99,
+      "priority": 12,
       "estimate": "5sp",
       "labels": [
         "dashboard",
@@ -1782,7 +1792,7 @@
       "dependencies": [],
       "created": "2025-08-28",
       "last_updated": "2025-08-28",
-      "owner": "",
+      "owner": "Frontend Team",
       "file_path": "backlog/ui/UI-010-Real-time_Performance_Monitoring_Dashboard.md"
     },
     {
@@ -1790,28 +1800,38 @@
       "title": "Planning Bot Integration Test",
       "epic": "adhoc",
       "status": "active",
-      "priority": 99,
+      "priority": 5,
       "estimate": "ad-hoc",
       "effort": "1d",
       "dependencies": [],
       "branch_name": "feature/adh-024-planning-bot-integration-test",
       "file_path": "active/ADH-024.md",
       "created": "2025-08-28",
-      "last_updated": "2025-08-28"
+      "last_updated": "2025-08-28",
+      "owner": "Planning Team",
+      "labels": [
+        "adhoc",
+        "testing"
+      ]
     },
     {
       "id": "ADH-025",
       "title": "Planning Bot Integration Test",
       "epic": "adhoc",
       "status": "completed",
-      "priority": 99,
+      "priority": 5,
       "estimate": "ad-hoc",
       "effort": "1d",
       "dependencies": [],
       "branch_name": "feature/adh-025-planning-bot-integration-test",
       "file_path": "active/ADH-025.md",
       "created": "2025-08-28",
-      "last_updated": "2025-08-28"
+      "last_updated": "2025-08-28",
+      "owner": "Planning Team",
+      "labels": [
+        "adhoc",
+        "testing"
+      ]
     }
   ]
 }
