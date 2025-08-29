@@ -18,6 +18,10 @@ __pycache__/
 *.swo
 *~
 
+# GitHub Pages and Workflows (disabled for planning repo)
+docs/
+.github/workflows/
+
 # OS files
 .DS_Store
 Thumbs.db
