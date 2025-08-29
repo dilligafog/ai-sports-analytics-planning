@@ -1,1 +1,1 @@
-![Stories](https://img.shields.io/badge/Stories-98-blue) ![Health](https://img.shields.io/badge/Health-99.8%25-green) ![Prioritized](https://img.shields.io/badge/Prioritized-97-purple) ![Automation](https://img.shields.io/badge/Automation-0.0%25-orange)
+![Stories](https://img.shields.io/badge/Stories-99-blue) ![Health](https://img.shields.io/badge/Health-99.7%25-green) ![Prioritized](https://img.shields.io/badge/Prioritized-97-purple) ![Automation](https://img.shields.io/badge/Automation-0.0%25-orange)
