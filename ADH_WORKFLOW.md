@@ -14,10 +14,10 @@ ADH stories are ad-hoc bug fixes, maintenance tasks, and quick improvements that
 
 ## Workflow
 
-### 1. Direct to Active
-- ADH stories bypass the `backlog/` directory entirely
-- Created directly in `active/` when work begins
-- No formal refinement or prioritization needed
+### 1. Epic-Based Organization
+- ADH stories are stored in `backlog/adhoc/` directory for consistency
+- Follow the same epic-based organization as other stories
+- Maintained in PRIORITIZATION.json tracking system
 
 ### 2. Execution
 - Work proceeds immediately without waiting for prioritization
