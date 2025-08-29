@@ -1,0 +1,23 @@
+{
+  "generated_at": "2025-08-29T03:05:34.268576",
+  "automation_adoption": {
+    "auto_created_stories": 0,
+    "template_usage": 0,
+    "automation_rate": 0.0
+  },
+  "status_progression": {
+    "draft": 25,
+    "backlog": 21,
+    "ready": 1,
+    "active": 2,
+    "completed": 7,
+    "accepted": 41
+  },
+  "complexity_distribution": {
+    "small": 22,
+    "medium": 64,
+    "large": 9,
+    "unknown": 2
+  },
+  "workflow_efficiency": 60.5
+}
