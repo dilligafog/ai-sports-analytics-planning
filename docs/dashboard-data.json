@@ -4,18 +4,18 @@
     "health_score": 89.2,
     "prioritized_stories": 13,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T01:44:44.497287"
+    "last_updated": "2025-08-29T02:00:38.402224"
   },
   "velocity": {
-    "generated_at": "2025-08-29T01:44:44.496797",
+    "generated_at": "2025-08-29T02:00:38.401744",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
-      "draft": 26,
+      "active": 2,
       "backlog": 22,
+      "draft": 25,
       "completed": 6,
-      "ready": 1,
-      "active": 1
+      "ready": 1
     },
     "epic_breakdown": {
       "adhoc": 22,
@@ -168,7 +168,7 @@
         "title": "User Story: Kaggle Data Utilization",
         "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
         "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-        "status": "draft",
+        "status": "active",
         "priority": 6,
         "estimate": 3,
         "epic": "data_sources",
@@ -178,7 +178,7 @@
         ],
         "owner": "TBD",
         "created": "2025-08-27",
-        "last_updated": "2025-08-24"
+        "last_updated": "2025-08-28"
       },
       {
         "id": "PUBLIC_BETTING_DATA_INTEGRATION",
@@ -256,7 +256,7 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T01:44:44.496906",
+    "generated_at": "2025-08-29T02:00:38.401841",
     "health_score": 89.2,
     "quality_issues": {
       "missing_estimates": 50,
@@ -290,7 +290,7 @@
     ]
   },
   "priority": {
-    "generated_at": "2025-08-29T01:44:44.496951",
+    "generated_at": "2025-08-29T02:00:38.401883",
     "total_prioritized": 13,
     "total_unprocessed": 84,
     "priority_heatmap": {
@@ -345,17 +345,17 @@
     ]
   },
   "workflow": {
-    "generated_at": "2025-08-29T01:44:44.497279",
+    "generated_at": "2025-08-29T02:00:38.402217",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
       "automation_rate": 0.0
     },
     "status_progression": {
-      "draft": 26,
+      "draft": 25,
       "backlog": 22,
       "ready": 1,
-      "active": 1,
+      "active": 2,
       "completed": 6,
       "accepted": 41
     },
@@ -365,6 +365,6 @@
       "large": 4,
       "unknown": 52
     },
-    "workflow_efficiency": 59.2
+    "workflow_efficiency": 59.8
   }
 }
