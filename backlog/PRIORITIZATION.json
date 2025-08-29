@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2025-08-28",
+    "last_updated": "2025-08-29",
     "total_backlog_stories": 97,
     "format_version": "2.0",
     "generated_by": "Strategic Business Analysis",
@@ -1626,7 +1626,7 @@
       "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
       "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
       "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
-      "status": "active",
+      "status": "completed",
       "priority": 3,
       "estimate": "2sp",
       "epic": "adhoc",
@@ -1636,7 +1636,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-28"
+      "last_updated": "2025-08-29"
     },
     {
       "id": "ADH-006",
