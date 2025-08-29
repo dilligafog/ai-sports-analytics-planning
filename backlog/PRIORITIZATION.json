@@ -904,7 +904,7 @@
       "title": "LLM extraction of game signals from news",
       "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
       "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
-      "status": "draft",
+      "status": "active",
       "priority": 4,
       "estimate": "3sp",
       "epic": "llm_backlog",
@@ -918,7 +918,7 @@
       ],
       "owner": "team-llm",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "LLM-002",
