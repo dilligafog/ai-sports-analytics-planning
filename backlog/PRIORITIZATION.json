@@ -33,7 +33,7 @@
       "title": "Investigate GraphQL API Integration",
       "branch_name": "llm-020-investigate-graphql-api-integration",
       "file_path": "backlog/core/llm-020-investigate-graphql-api-integration.md",
-      "status": "active",
+      "status": "completed",
       "priority": 2,
       "estimate": "2sp",
       "epic": "core",
