@@ -10,27 +10,29 @@
   "backlog": [
     {
       "id": "LLM-019",
-      "title": "Advanced Player Tracking Integration",
+      "title": "Advanced Player Tracking Integration (Data Sources Not Viable)",
       "branch_name": "llm-019-advanced-player-tracking-integration",
       "file_path": "backlog/core/llm-019-advanced-player-tracking-integration.md",
-      "status": "active",
-      "priority": 2,
+      "status": "blocked",
+      "priority": 10,
       "estimate": "3sp",
       "epic": "core",
       "dependencies": [],
       "labels": [
         "player-tracking",
-        "data-integration"
+        "data-integration",
+        "research-complete",
+        "data-unavailable"
       ],
       "owner": "",
       "created": "2025-08-28",
       "last_updated": "2025-08-29"
     },
     {
-      "id": "LLM-019",
+      "id": "LLM-020",
       "title": "Investigate GraphQL API Integration",
-      "branch_name": "llm-019-investigate-graphql-api-integration",
-      "file_path": "backlog/core/llm-019-investigate-graphql-api-integration.md",
+      "branch_name": "llm-020-investigate-graphql-api-integration",
+      "file_path": "backlog/core/llm-020-investigate-graphql-api-integration.md",
       "status": "backlog",
       "priority": 2,
       "estimate": "2sp",
