@@ -1768,7 +1768,7 @@
       "id": "ADH-029",
       "title": "Fix duplicated IDs in PRIORITIZATION.json",
       "epic": "adhoc",
-      "status": "active",
+      "status": "completed",
       "priority": 99,
       "estimate": "ad-hoc",
       "effort": "1d",
