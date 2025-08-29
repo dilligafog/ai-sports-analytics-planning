@@ -1,0 +1,60 @@
+{
+  "generated_at": "2025-08-29T04:03:26.734627",
+  "total_prioritized": 97,
+  "total_unprocessed": 0,
+  "priority_heatmap": {
+    "adhoc": {
+      "Medium (11-20)": 18,
+      "Critical (1-5)": 8,
+      "High (6-10)": 1
+    },
+    "core": {
+      "High (6-10)": 8,
+      "Critical (1-5)": 3
+    },
+    "data-sources": {
+      "High (6-10)": 1
+    },
+    "infrastructure": {
+      "High (6-10)": 6,
+      "Critical (1-5)": 1
+    },
+    "ingestion": {
+      "High (6-10)": 2,
+      "Critical (1-5)": 4
+    },
+    "llm": {
+      "High (6-10)": 20,
+      "Critical (1-5)": 2,
+      "Medium (11-20)": 2
+    },
+    "modeling": {
+      "High (6-10)": 2
+    },
+    "social": {
+      "Medium (11-20)": 11
+    },
+    "training": {
+      "Medium (11-20)": 1
+    },
+    "ui": {
+      "Medium (11-20)": 7
+    }
+  },
+  "priority_distribution": {
+    "Medium (11-20)": 39,
+    "Critical (1-5)": 18,
+    "High (6-10)": 40
+  },
+  "high_priority_distribution": {
+    "adhoc": 9,
+    "core": 11,
+    "data-sources": 1,
+    "infrastructure": 7,
+    "ingestion": 6,
+    "llm": 22,
+    "modeling": 2
+  },
+  "unprocessed_by_epic": {},
+  "priority_recommendations": []
+}
