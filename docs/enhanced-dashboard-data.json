@@ -1,0 +1,1970 @@
+{
+  "summary": {
+    "total_stories": 97,
+    "health_score": 100.0,
+    "prioritized_stories": 97,
+    "automation_rate": 0.0,
+    "last_updated": "2025-08-28T23:07:09.517415",
+    "prediction_accuracy": 85.1,
+    "team_velocity_avg": 4.2,
+    "business_roi": 148.4,
+    "project_health": 94.3
+  },
+  "velocity": {
+    "generated_at": "2025-08-28T23:07:09.516589",
+    "total_stories": 97,
+    "status_breakdown": {
+      "accepted": 41,
+      "completed": 7,
+      "backlog": 22,
+      "draft": 25,
+      "ready": 1,
+      "active": 1
+    },
+    "epic_breakdown": {
+      "adhoc": 27,
+      "core": 11,
+      "data-sources": 1,
+      "infrastructure": 7,
+      "ingestion": 6,
+      "llm": 24,
+      "modeling": 2,
+      "social": 11,
+      "training": 1,
+      "ui": 7
+    },
+    "epic_completion_rates": {
+      "adhoc": 77.8,
+      "core": 100.0,
+      "data-sources": 100.0,
+      "infrastructure": 28.6,
+      "ingestion": 66.7,
+      "llm": 8.3,
+      "modeling": 100.0,
+      "social": 9.1,
+      "training": 0.0,
+      "ui": 57.1
+    },
+    "priority_distribution": {
+      "Medium (11-20)": 39,
+      "Critical (1-5)": 18,
+      "High (6-10)": 40
+    },
+    "top_priorities": [
+      {
+        "id": "INGESTION-046A",
+        "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
+        "branch_name": "ingestion-046a-rss-analytics-betting-core",
+        "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
+        "status": "completed",
+        "priority": 1,
+        "estimate": "5sp",
+        "epic": "ingestion",
+        "dependencies": [],
+        "labels": [
+          "rss",
+          "data-ingestion",
+          "analytics",
+          "betting",
+          "phase1"
+        ],
+        "owner": "data-team",
+        "created": "2025-08-28",
+        "last_updated": "2025-08-28"
+      },
+      {
+        "id": "INGESTION-046B",
+        "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
+        "branch_name": "ingestion-046b-rss-team-coverage-expansion",
+        "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
+        "status": "completed",
+        "priority": 2,
+        "estimate": "3sp",
+        "epic": "ingestion",
+        "dependencies": [
+          "INGESTION-046A"
+        ],
+        "labels": [
+          "rss",
+          "data-ingestion",
+          "team-coverage",
+          "sbnation",
+          "local-media",
+          "phase2"
+        ],
+        "owner": "data-team",
+        "created": "2025-08-28",
+        "last_updated": "2025-08-28"
+      },
+      {
+        "id": "ADH-002",
+        "title": "Fix Inventory Sidebar",
+        "branch_name": "adh-002-fix-inventory-sidebar",
+        "file_path": "backlog/adhoc/ADH-002-Fix_Inventory_Sidebar.md",
+        "status": "accepted",
+        "priority": 3,
+        "estimate": "2sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "ad-hoc",
+          "maintenance"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-26",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "ADH-005",
+        "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
+        "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
+        "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
+        "status": "backlog",
+        "priority": 3,
+        "estimate": "2sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "unknown"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "INGESTION-046C",
+        "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
+        "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
+        "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
+        "status": "completed",
+        "priority": 3,
+        "estimate": "2sp",
+        "epic": "ingestion",
+        "dependencies": [
+          "INGESTION-046B"
+        ],
+        "labels": [
+          "rss",
+          "data-ingestion",
+          "draft",
+          "statistics",
+          "international",
+          "specialized",
+          "phase3"
+        ],
+        "owner": "data-team",
+        "created": "2025-08-28",
+        "last_updated": "2025-08-28"
+      },
+      {
+        "id": "LLM-001",
+        "title": "LLM extraction of game signals from news",
+        "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
+        "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
+        "status": "completed",
+        "priority": 4,
+        "estimate": "3sp",
+        "epic": "llm",
+        "dependencies": [
+          "ING-002"
+        ],
+        "labels": [
+          "llm",
+          "features",
+          "news"
+        ],
+        "owner": "team-llm",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-28"
+      },
+      {
+        "id": "ADH-008",
+        "title": "Advanced Nfl Statistics Integration",
+        "branch_name": "adh-008-advanced-nfl-statistics-integration",
+        "file_path": "backlog/adhoc/ADH-008-advanced-nfl-statistics-integration.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "8sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "accepted"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "ADH-015",
+        "title": "End To End Kaggle Nfl Scores",
+        "branch_name": "adh-015-end-to-end-kaggle-nfl-scores",
+        "file_path": "backlog/adhoc/ADH-015-end-to-end-kaggle-nfl-scores.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "3sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "accepted"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "ADH-017",
+        "title": "Nfl Player Injury Data Integration",
+        "branch_name": "adh-017-nfl-player-injury-data-integration",
+        "file_path": "backlog/adhoc/ADH-017-nfl-player-injury-data-integration.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "8sp",
+        "epic": "adhoc",
+        "dependencies": [],
+        "labels": [
+          "accepted"
+        ],
+        "owner": "Neo Starlord of Thunder",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-27"
+      },
+      {
+        "id": "LLM-010",
+        "title": "Task runner integration (busta/CLI from repo root) - COMPLETED ✅",
+        "branch_name": "llm-010-task-runner-integration-bustacli-from-repo-root---",
+        "file_path": "backlog/core/LLM-010-task-runner-busta.md",
+        "status": "accepted",
+        "priority": 5,
+        "estimate": "1sp",
+        "epic": "core",
+        "dependencies": [],
+        "labels": [
+          "cli",
+          "busta",
+          "accepted"
+        ],
+        "owner": "infra-team",
+        "created": "2025-08-27",
+        "last_updated": "2025-08-24"
+      }
+    ]
+  },
+  "health": {
+    "generated_at": "2025-08-28T23:07:09.516803",
+    "health_score": 100.0,
+    "quality_issues": {
+      "missing_estimates": 0,
+      "missing_owners": 0,
+      "missing_acceptance_criteria": 0,
+      "long_titles": 1,
+      "stale_stories": 0
+    },
+    "age_distribution": {
+      "new": 97,
+      "medium": 0,
+      "old": 0,
+      "stale": 0
+    },
+    "epic_balance": {
+      "adhoc": 27,
+      "core": 11,
+      "data-sources": 1,
+      "infrastructure": 7,
+      "ingestion": 6,
+      "llm": 24,
+      "modeling": 2,
+      "social": 11,
+      "training": 1,
+      "ui": 7
+    },
+    "recommendations": []
+  },
+  "priority": {
+    "generated_at": "2025-08-28T23:07:09.516859",
+    "total_prioritized": 97,
+    "total_unprocessed": 0,
+    "priority_heatmap": {
+      "adhoc": {
+        "Medium (11-20)": 18,
+        "Critical (1-5)": 8,
+        "High (6-10)": 1
+      },
+      "core": {
+        "High (6-10)": 8,
+        "Critical (1-5)": 3
+      },
+      "data-sources": {
+        "High (6-10)": 1
+      },
+      "infrastructure": {
+        "High (6-10)": 6,
+        "Critical (1-5)": 1
+      },
+      "ingestion": {
+        "High (6-10)": 2,
+        "Critical (1-5)": 4
+      },
+      "llm": {
+        "High (6-10)": 20,
+        "Critical (1-5)": 2,
+        "Medium (11-20)": 2
+      },
+      "modeling": {
+        "High (6-10)": 2
+      },
+      "social": {
+        "Medium (11-20)": 11
+      },
+      "training": {
+        "Medium (11-20)": 1
+      },
+      "ui": {
+        "Medium (11-20)": 7
+      }
+    },
+    "priority_distribution": {
+      "Medium (11-20)": 39,
+      "Critical (1-5)": 18,
+      "High (6-10)": 40
+    },
+    "high_priority_distribution": {
+      "adhoc": 9,
+      "core": 11,
+      "data-sources": 1,
+      "infrastructure": 7,
+      "ingestion": 6,
+      "llm": 22,
+      "modeling": 2
+    },
+    "unprocessed_by_epic": {},
+    "priority_recommendations": []
+  },
+  "workflow": {
+    "generated_at": "2025-08-28T23:07:09.517410",
+    "automation_adoption": {
+      "auto_created_stories": 0,
+      "template_usage": 0,
+      "automation_rate": 0.0
+    },
+    "status_progression": {
+      "draft": 25,
+      "backlog": 22,
+      "ready": 1,
+      "active": 1,
+      "completed": 7,
+      "accepted": 41
+    },
+    "complexity_distribution": {
+      "small": 22,
+      "medium": 64,
+      "large": 9,
+      "unknown": 2
+    },
+    "workflow_efficiency": 60.1,
+    "velocity_trends": {
+      "weekly_completion_rate": 4.0,
+      "total_completed": 48,
+      "epic_velocity": {
+        "adhoc": 21,
+        "core": 11,
+        "ingestion": 4,
+        "ui": 4,
+        "infrastructure": 2,
+        "llm": 2,
+        "modeling": 2,
+        "data-sources": 1,
+        "social": 1
+      },
+      "completion_forecast": [
+        {
+          "week": "Week +1",
+          "predicted_completions": 4.0,
+          "confidence": 85
+        },
+        {
+          "week": "Week +2",
+          "predicted_completions": 4.0,
+          "confidence": 80
+        },
+        {
+          "week": "Week +3",
+          "predicted_completions": 4.0,
+          "confidence": 75
+        },
+        {
+          "week": "Week +4",
+          "predicted_completions": 4.0,
+          "confidence": 70
+        }
+      ],
+      "velocity_trend": "stable"
+    },
+    "priority_heatmap": {
+      "epic_priority_matrix": {
+        "adhoc": {
+          "critical": 3,
+          "high": 6,
+          "medium": 18,
+          "low": 0,
+          "unassigned": 0
+        },
+        "core": {
+          "critical": 0,
+          "high": 11,
+          "medium": 0,
+          "low": 0,
+          "unassigned": 0
+        },
+        "data-sources": {
+          "critical": 0,
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "unassigned": 0
+        },
+        "infrastructure": {
+          "critical": 0,
+          "high": 7,
+          "medium": 0,
+          "low": 0,
+          "unassigned": 0
+        },
+        "ingestion": {
+          "critical": 1,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "unassigned": 0
+        },
+        "llm": {
+          "critical": 0,
+          "high": 22,
+          "medium": 2,
+          "low": 0,
+          "unassigned": 0
+        },
+        "modeling": {
+          "critical": 0,
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "unassigned": 0
+        },
+        "social": {
+          "critical": 0,
+          "high": 0,
+          "medium": 11,
+          "low": 0,
+          "unassigned": 0
+        },
+        "training": {
+          "critical": 0,
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "unassigned": 0
+        },
+        "ui": {
+          "critical": 0,
+          "high": 0,
+          "medium": 7,
+          "low": 0,
+          "unassigned": 0
+        }
+      },
+      "critical_path_items": [
+        {
+          "id": "ADH-005",
+          "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-",
+          "epic": "adhoc",
+          "priority": 3,
+          "status": "backlog"
+        },
+        {
+          "id": "WEATHER_DATA_INTEGRATION",
+          "title": "User Story: Weather Data Integration",
+          "epic": "ingestion",
+          "priority": 5,
+          "status": "draft"
+        },
+        {
+          "id": "ADH-004",
+          "title": "ADH-004-Vite-Glassmorphism-Framework-Integration -",
+          "epic": "adhoc",
+          "priority": 5,
+          "status": "backlog"
+        },
+        {
+          "id": "ADH-024",
+          "title": "Planning Bot Integration Test",
+          "epic": "adhoc",
+          "priority": 5,
+          "status": "active"
+        }
+      ],
+      "total_critical": 4,
+      "priority_distribution_health": "good"
+    },
+    "cycle_time_analysis": {
+      "stage_transitions": {
+        "draft_to_backlog": {
+          "avg_days": 3.2,
+          "stories": 45
+        },
+        "backlog_to_ready": {
+          "avg_days": 8.5,
+          "stories": 23
+        },
+        "ready_to_active": {
+          "avg_days": 1.1,
+          "stories": 25
+        },
+        "active_to_completed": {
+          "avg_days": 5.7,
+          "stories": 48
+        },
+        "completed_to_accepted": {
+          "avg_days": 2.3,
+          "stories": 41
+        }
+      },
+      "total_cycle_time": 20.8,
+      "bottleneck_stages": [
+        {
+          "stage": "backlog → to → ready",
+          "avg_days": 8.5,
+          "impact": "medium"
+        }
+      ],
+      "cycle_efficiency": 27.4
+    },
+    "bottleneck_analysis": {
+      "identified_bottlenecks": [
+        {
+          "type": "status",
+          "location": "backlog",
+          "severity": "high",
+          "count": 22,
+          "recommendation": "Prioritize story grooming and move to ready status"
+        },
+        {
+          "type": "status",
+          "location": "draft",
+          "severity": "medium",
+          "count": 25,
+          "recommendation": "Complete story refinement and add acceptance criteria"
+        },
+        {
+          "type": "epic",
+          "location": "adhoc",
+          "severity": "medium",
+          "count": 27,
+          "recommendation": "Consider splitting adhoc epic or adding resources"
+        },
+        {
+          "type": "epic",
+          "location": "llm",
+          "severity": "medium",
+          "count": 24,
+          "recommendation": "Consider splitting llm epic or adding resources"
+        }
+      ],
+      "status_distribution": {
+        "accepted": 41,
+        "completed": 7,
+        "backlog": 22,
+        "draft": 25,
+        "ready": 1,
+        "active": 1
+      },
+      "epic_workload": {
+        "adhoc": 27,
+        "core": 11,
+        "data-sources": 1,
+        "infrastructure": 7,
+        "ingestion": 6,
+        "llm": 24,
+        "modeling": 2,
+        "social": 11,
+        "training": 1,
+        "ui": 7
+      },
+      "bottleneck_score": 4
+    },
+    "predictive_metrics": {
+      "completion_forecast": {
+        "estimated_weeks": 11.7,
+        "confidence_level": 63.19484536082475,
+        "current_velocity": 4.2
+      },
+      "risk_assessment": [
+        {
+          "type": "capacity",
+          "severity": "high",
+          "description": "High draft story count may slow velocity",
+          "impact": "2-3 week delay potential"
+        }
+      ],
+      "success_probability": 63.2,
+      "key_metrics": {
+        "completion_rate": 49.5,
+        "remaining_work": 49,
+        "velocity_trend": "stable"
+      }
+    },
+    "quality_metrics": {
+      "overall_quality_score": 49.3,
+      "quality_indicators": {
+        "stories_with_estimates": 0,
+        "stories_with_owners": 97,
+        "stories_with_acceptance_criteria": 1,
+        "properly_prioritized": 97,
+        "stale_stories": 9
+      },
+      "quality_trend": "improving",
+      "recommendations": [
+        "Add acceptance criteria to remaining stories",
+        "Assign owners to unassigned stories",
+        "Review and update stale stories"
+      ]
+    },
+    "strategic_alignment": {
+      "strategic_themes": {
+        "core_platform": {
+          "total_stories": 20,
+          "completed_stories": 15,
+          "completion_rate": 75.0
+        },
+        "user_experience": {
+          "total_stories": 18,
+          "completed_stories": 5,
+          "completion_rate": 27.8
+        },
+        "data_excellence": {
+          "total_stories": 7,
+          "completed_stories": 5,
+          "completion_rate": 71.4
+        },
+        "operational_efficiency": {
+          "total_stories": 27,
+          "completed_stories": 21,
+          "completion_rate": 77.8
+        }
+      },
+      "epic_distribution": {
+        "adhoc": 27,
+        "core": 11,
+        "data-sources": 1,
+        "infrastructure": 7,
+        "ingestion": 6,
+        "llm": 24,
+        "modeling": 2,
+        "social": 11,
+        "training": 1,
+        "ui": 7
+      },
+      "priority_execution_alignment": {
+        "medium": 20,
+        "high": 28
+      },
+      "roi_estimates": {
+        "core_platform": {
+          "business_value": "high",
+          "technical_debt_reduction": 85
+        },
+        "user_experience": {
+          "business_value": "high",
+          "user_satisfaction_impact": 92
+        },
+        "data_excellence": {
+          "business_value": "medium",
+          "accuracy_improvement": 78
+        },
+        "operational_efficiency": {
+          "business_value": "medium",
+          "cost_reduction": 45
+        }
+      },
+      "alignment_score": 63.0,
+      "recommendations": [
+        "Focus on completing high-priority core platform stories",
+        "Balance effort across strategic themes",
+        "Prioritize user experience improvements for Q4"
+      ]
+    }
+  },
+  "velocity_history": [
+    {
+      "week": 1,
+      "date": "2025-05-08",
+      "total_velocity": 2.5,
+      "epic_breakdown": {
+        "core": 0.2,
+        "ui": 0.1,
+        "infrastructure": 0.1,
+        "social": 0.1,
+        "modeling": 0,
+        "ingestion": 0.1,
+        "adhoc": 0.3
+      },
+      "cumulative_stories": 2.5,
+      "team_capacity": 0.4
+    },
+    {
+      "week": 2,
+      "date": "2025-05-15",
+      "total_velocity": 3.1,
+      "epic_breakdown": {
+        "core": 0.0,
+        "ui": 0.2,
+        "infrastructure": 0.1,
+        "social": 0.2,
+        "modeling": 0.2,
+        "ingestion": 0.3,
+        "adhoc": 0.1
+      },
+      "cumulative_stories": 5.6,
+      "team_capacity": 0.5
+    },
+    {
+      "week": 3,
+      "date": "2025-05-22",
+      "total_velocity": 3.5,
+      "epic_breakdown": {
+        "core": 0.1,
+        "ui": 0.4,
+        "infrastructure": 0.0,
+        "social": 0.1,
+        "modeling": 0.2,
+        "ingestion": 0.1,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 9.1,
+      "team_capacity": 0.6
+    },
+    {
+      "week": 4,
+      "date": "2025-05-29",
+      "total_velocity": 4.0,
+      "epic_breakdown": {
+        "core": 0,
+        "ui": 0.3,
+        "infrastructure": 0.2,
+        "social": 0.1,
+        "modeling": 0,
+        "ingestion": 0.3,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 13.1,
+      "team_capacity": 0.7
+    },
+    {
+      "week": 5,
+      "date": "2025-06-05",
+      "total_velocity": 4.1,
+      "epic_breakdown": {
+        "core": 0.3,
+        "ui": 0.2,
+        "infrastructure": 0,
+        "social": 0.0,
+        "modeling": 0.2,
+        "ingestion": 0.1,
+        "adhoc": 0.3
+      },
+      "cumulative_stories": 17.2,
+      "team_capacity": 0.7
+    },
+    {
+      "week": 6,
+      "date": "2025-06-12",
+      "total_velocity": 4.7,
+      "epic_breakdown": {
+        "core": 0.1,
+        "ui": 0.2,
+        "infrastructure": 0.1,
+        "social": 0.2,
+        "modeling": 0.1,
+        "ingestion": 0.1,
+        "adhoc": 0.3
+      },
+      "cumulative_stories": 21.9,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 7,
+      "date": "2025-06-19",
+      "total_velocity": 4.5,
+      "epic_breakdown": {
+        "core": 0.1,
+        "ui": 0.3,
+        "infrastructure": 0,
+        "social": 0,
+        "modeling": 0.1,
+        "ingestion": 0.2,
+        "adhoc": 0.3
+      },
+      "cumulative_stories": 26.4,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 8,
+      "date": "2025-06-26",
+      "total_velocity": 5.0,
+      "epic_breakdown": {
+        "core": 0.1,
+        "ui": 0.1,
+        "infrastructure": 0.2,
+        "social": 0.1,
+        "modeling": 0.3,
+        "ingestion": 0.1,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 31.4,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 9,
+      "date": "2025-07-03",
+      "total_velocity": 5.1,
+      "epic_breakdown": {
+        "core": 0,
+        "ui": 0.2,
+        "infrastructure": 0.1,
+        "social": 0.1,
+        "modeling": 0.1,
+        "ingestion": 0.2,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 36.5,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 10,
+      "date": "2025-07-10",
+      "total_velocity": 4.8,
+      "epic_breakdown": {
+        "core": 0,
+        "ui": 0.2,
+        "infrastructure": 0.2,
+        "social": 0.2,
+        "modeling": 0.1,
+        "ingestion": 0.0,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 41.3,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 11,
+      "date": "2025-07-17",
+      "total_velocity": 4.9,
+      "epic_breakdown": {
+        "core": 0.2,
+        "ui": 0.1,
+        "infrastructure": 0.2,
+        "social": 0.0,
+        "modeling": 0.1,
+        "ingestion": 0.1,
+        "adhoc": 0.3
+      },
+      "cumulative_stories": 46.2,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 12,
+      "date": "2025-07-24",
+      "total_velocity": 4.7,
+      "epic_breakdown": {
+        "core": 0.1,
+        "ui": 0.0,
+        "infrastructure": 0.0,
+        "social": 0.1,
+        "modeling": 0.1,
+        "ingestion": 0.2,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 50.9,
+      "team_capacity": 0.8
+    },
+    {
+      "week": 13,
+      "date": "2025-07-31",
+      "total_velocity": 4.0,
+      "epic_breakdown": {
+        "core": 0.1,
+        "ui": 0.0,
+        "infrastructure": 0.2,
+        "social": 0.3,
+        "modeling": 0.2,
+        "ingestion": 0.3,
+        "adhoc": 0.0
+      },
+      "cumulative_stories": 54.9,
+      "team_capacity": 0.7
+    },
+    {
+      "week": 14,
+      "date": "2025-08-07",
+      "total_velocity": 4.3,
+      "epic_breakdown": {
+        "core": 0.2,
+        "ui": 0.0,
+        "infrastructure": 0.1,
+        "social": 0.3,
+        "modeling": 0.1,
+        "ingestion": 0.1,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 59.2,
+      "team_capacity": 0.7
+    },
+    {
+      "week": 15,
+      "date": "2025-08-14",
+      "total_velocity": 4.2,
+      "epic_breakdown": {
+        "core": 0.2,
+        "ui": 0.2,
+        "infrastructure": 0.1,
+        "social": 0.2,
+        "modeling": 0.1,
+        "ingestion": 0.2,
+        "adhoc": 0.1
+      },
+      "cumulative_stories": 63.4,
+      "team_capacity": 0.7
+    },
+    {
+      "week": 16,
+      "date": "2025-08-21",
+      "total_velocity": 4.5,
+      "epic_breakdown": {
+        "core": 0.2,
+        "ui": 0.0,
+        "infrastructure": 0,
+        "social": 0.1,
+        "modeling": 0.1,
+        "ingestion": 0.0,
+        "adhoc": 0.2
+      },
+      "cumulative_stories": 67.9,
+      "team_capacity": 0.8
+    }
+  ],
+  "team_performance": {
+    "Alex Chen": {
+      "expertise": [
+        "core",
+        "modeling"
+      ],
+      "base_velocity": 5.2,
+      "avg_velocity": 4.8,
+      "total_stories": 52,
+      "performance_history": [
+        {
+          "week": 1,
+          "velocity": 4.2,
+          "stories_completed": 4,
+          "epic_focus": "core",
+          "capacity_utilization": 81.4
+        },
+        {
+          "week": 2,
+          "velocity": 5.0,
+          "stories_completed": 4,
+          "epic_focus": "modeling",
+          "capacity_utilization": 96.3
+        },
+        {
+          "week": 3,
+          "velocity": 5.2,
+          "stories_completed": 5,
+          "epic_focus": "modeling",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 4,
+          "velocity": 6.4,
+          "stories_completed": 3,
+          "epic_focus": "core",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 5,
+          "velocity": 2.9,
+          "stories_completed": 6,
+          "epic_focus": "core",
+          "capacity_utilization": 55.4
+        },
+        {
+          "week": 6,
+          "velocity": 5.3,
+          "stories_completed": 3,
+          "epic_focus": "modeling",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 7,
+          "velocity": 3.8,
+          "stories_completed": 7,
+          "epic_focus": "core",
+          "capacity_utilization": 73.6
+        },
+        {
+          "week": 8,
+          "velocity": 5.6,
+          "stories_completed": 7,
+          "epic_focus": "modeling",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 9,
+          "velocity": 4.5,
+          "stories_completed": 3,
+          "epic_focus": "core",
+          "capacity_utilization": 87.3
+        },
+        {
+          "week": 10,
+          "velocity": 4.6,
+          "stories_completed": 2,
+          "epic_focus": "core",
+          "capacity_utilization": 87.6
+        },
+        {
+          "week": 11,
+          "velocity": 3.1,
+          "stories_completed": 4,
+          "epic_focus": "core",
+          "capacity_utilization": 60.2
+        },
+        {
+          "week": 12,
+          "velocity": 6.9,
+          "stories_completed": 4,
+          "epic_focus": "modeling",
+          "capacity_utilization": 100
+        }
+      ],
+      "specialization_score": 93.3,
+      "collaboration_score": 81.2
+    },
+    "Sarah Rodriguez": {
+      "expertise": [
+        "ui",
+        "social"
+      ],
+      "base_velocity": 4.8,
+      "avg_velocity": 4.6,
+      "total_stories": 52,
+      "performance_history": [
+        {
+          "week": 1,
+          "velocity": 4.2,
+          "stories_completed": 2,
+          "epic_focus": "ui",
+          "capacity_utilization": 87.3
+        },
+        {
+          "week": 2,
+          "velocity": 4.0,
+          "stories_completed": 4,
+          "epic_focus": "ui",
+          "capacity_utilization": 83.7
+        },
+        {
+          "week": 3,
+          "velocity": 6.0,
+          "stories_completed": 7,
+          "epic_focus": "ui",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 4,
+          "velocity": 4.7,
+          "stories_completed": 3,
+          "epic_focus": "ui",
+          "capacity_utilization": 98.2
+        },
+        {
+          "week": 5,
+          "velocity": 4.0,
+          "stories_completed": 7,
+          "epic_focus": "ui",
+          "capacity_utilization": 82.8
+        },
+        {
+          "week": 6,
+          "velocity": 3.5,
+          "stories_completed": 3,
+          "epic_focus": "social",
+          "capacity_utilization": 72.2
+        },
+        {
+          "week": 7,
+          "velocity": 6.2,
+          "stories_completed": 4,
+          "epic_focus": "social",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 8,
+          "velocity": 4.4,
+          "stories_completed": 6,
+          "epic_focus": "ui",
+          "capacity_utilization": 91.5
+        },
+        {
+          "week": 9,
+          "velocity": 4.6,
+          "stories_completed": 2,
+          "epic_focus": "social",
+          "capacity_utilization": 94.8
+        },
+        {
+          "week": 10,
+          "velocity": 5.2,
+          "stories_completed": 4,
+          "epic_focus": "social",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 11,
+          "velocity": 3.6,
+          "stories_completed": 5,
+          "epic_focus": "ui",
+          "capacity_utilization": 74.5
+        },
+        {
+          "week": 12,
+          "velocity": 5.2,
+          "stories_completed": 5,
+          "epic_focus": "ui",
+          "capacity_utilization": 100
+        }
+      ],
+      "specialization_score": 93.1,
+      "collaboration_score": 97.4
+    },
+    "David Kim": {
+      "expertise": [
+        "infrastructure",
+        "ingestion"
+      ],
+      "base_velocity": 3.9,
+      "avg_velocity": 3.6,
+      "total_stories": 65,
+      "performance_history": [
+        {
+          "week": 1,
+          "velocity": 3.4,
+          "stories_completed": 6,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 86.7
+        },
+        {
+          "week": 2,
+          "velocity": 3.1,
+          "stories_completed": 7,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 79.3
+        },
+        {
+          "week": 3,
+          "velocity": 3.2,
+          "stories_completed": 7,
+          "epic_focus": "infrastructure",
+          "capacity_utilization": 81.5
+        },
+        {
+          "week": 4,
+          "velocity": 3.9,
+          "stories_completed": 5,
+          "epic_focus": "infrastructure",
+          "capacity_utilization": 99.0
+        },
+        {
+          "week": 5,
+          "velocity": 4.3,
+          "stories_completed": 5,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 6,
+          "velocity": 3.2,
+          "stories_completed": 4,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 82.5
+        },
+        {
+          "week": 7,
+          "velocity": 5.1,
+          "stories_completed": 6,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 8,
+          "velocity": 4.3,
+          "stories_completed": 6,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 9,
+          "velocity": 2.7,
+          "stories_completed": 4,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 70.4
+        },
+        {
+          "week": 10,
+          "velocity": 4.1,
+          "stories_completed": 2,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 11,
+          "velocity": 2.3,
+          "stories_completed": 7,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 60.2
+        },
+        {
+          "week": 12,
+          "velocity": 4.0,
+          "stories_completed": 6,
+          "epic_focus": "ingestion",
+          "capacity_utilization": 100
+        }
+      ],
+      "specialization_score": 80.5,
+      "collaboration_score": 82.5
+    },
+    "Emily Johnson": {
+      "expertise": [
+        "core",
+        "ui"
+      ],
+      "base_velocity": 4.5,
+      "avg_velocity": 4.1,
+      "total_stories": 50,
+      "performance_history": [
+        {
+          "week": 1,
+          "velocity": 2.7,
+          "stories_completed": 4,
+          "epic_focus": "core",
+          "capacity_utilization": 59.3
+        },
+        {
+          "week": 2,
+          "velocity": 3.0,
+          "stories_completed": 2,
+          "epic_focus": "ui",
+          "capacity_utilization": 66.9
+        },
+        {
+          "week": 3,
+          "velocity": 4.1,
+          "stories_completed": 3,
+          "epic_focus": "ui",
+          "capacity_utilization": 91.0
+        },
+        {
+          "week": 4,
+          "velocity": 4.9,
+          "stories_completed": 4,
+          "epic_focus": "core",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 5,
+          "velocity": 4.3,
+          "stories_completed": 5,
+          "epic_focus": "ui",
+          "capacity_utilization": 95.2
+        },
+        {
+          "week": 6,
+          "velocity": 4.7,
+          "stories_completed": 2,
+          "epic_focus": "core",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 7,
+          "velocity": 4.1,
+          "stories_completed": 4,
+          "epic_focus": "ui",
+          "capacity_utilization": 91.1
+        },
+        {
+          "week": 8,
+          "velocity": 3.6,
+          "stories_completed": 5,
+          "epic_focus": "core",
+          "capacity_utilization": 79.2
+        },
+        {
+          "week": 9,
+          "velocity": 3.3,
+          "stories_completed": 3,
+          "epic_focus": "ui",
+          "capacity_utilization": 73.0
+        },
+        {
+          "week": 10,
+          "velocity": 5.3,
+          "stories_completed": 7,
+          "epic_focus": "ui",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 11,
+          "velocity": 5.0,
+          "stories_completed": 4,
+          "epic_focus": "ui",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 12,
+          "velocity": 4.2,
+          "stories_completed": 7,
+          "epic_focus": "core",
+          "capacity_utilization": 92.3
+        }
+      ],
+      "specialization_score": 88.7,
+      "collaboration_score": 87.7
+    },
+    "Michael Zhang": {
+      "expertise": [
+        "modeling",
+        "infrastructure"
+      ],
+      "base_velocity": 4.1,
+      "avg_velocity": 3.8,
+      "total_stories": 59,
+      "performance_history": [
+        {
+          "week": 1,
+          "velocity": 3.0,
+          "stories_completed": 6,
+          "epic_focus": "modeling",
+          "capacity_utilization": 72.2
+        },
+        {
+          "week": 2,
+          "velocity": 2.9,
+          "stories_completed": 5,
+          "epic_focus": "modeling",
+          "capacity_utilization": 71.4
+        },
+        {
+          "week": 3,
+          "velocity": 4.4,
+          "stories_completed": 7,
+          "epic_focus": "infrastructure",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 4,
+          "velocity": 3.7,
+          "stories_completed": 4,
+          "epic_focus": "infrastructure",
+          "capacity_utilization": 90.6
+        },
+        {
+          "week": 5,
+          "velocity": 4.1,
+          "stories_completed": 6,
+          "epic_focus": "infrastructure",
+          "capacity_utilization": 99.0
+        },
+        {
+          "week": 6,
+          "velocity": 3.4,
+          "stories_completed": 7,
+          "epic_focus": "modeling",
+          "capacity_utilization": 81.7
+        },
+        {
+          "week": 7,
+          "velocity": 3.3,
+          "stories_completed": 4,
+          "epic_focus": "modeling",
+          "capacity_utilization": 81.2
+        },
+        {
+          "week": 8,
+          "velocity": 3.6,
+          "stories_completed": 3,
+          "epic_focus": "infrastructure",
+          "capacity_utilization": 87.0
+        },
+        {
+          "week": 9,
+          "velocity": 4.7,
+          "stories_completed": 4,
+          "epic_focus": "modeling",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 10,
+          "velocity": 5.2,
+          "stories_completed": 4,
+          "epic_focus": "modeling",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 11,
+          "velocity": 3.8,
+          "stories_completed": 2,
+          "epic_focus": "modeling",
+          "capacity_utilization": 93.6
+        },
+        {
+          "week": 12,
+          "velocity": 3.0,
+          "stories_completed": 7,
+          "epic_focus": "modeling",
+          "capacity_utilization": 73.1
+        }
+      ],
+      "specialization_score": 78.8,
+      "collaboration_score": 87.9
+    },
+    "Jessica Wu": {
+      "expertise": [
+        "social",
+        "adhoc"
+      ],
+      "base_velocity": 5.0,
+      "avg_velocity": 4.3,
+      "total_stories": 67,
+      "performance_history": [
+        {
+          "week": 1,
+          "velocity": 4.6,
+          "stories_completed": 4,
+          "epic_focus": "social",
+          "capacity_utilization": 91.4
+        },
+        {
+          "week": 2,
+          "velocity": 4.8,
+          "stories_completed": 7,
+          "epic_focus": "social",
+          "capacity_utilization": 96.7
+        },
+        {
+          "week": 3,
+          "velocity": 3.1,
+          "stories_completed": 5,
+          "epic_focus": "adhoc",
+          "capacity_utilization": 62.1
+        },
+        {
+          "week": 4,
+          "velocity": 5.1,
+          "stories_completed": 6,
+          "epic_focus": "adhoc",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 5,
+          "velocity": 5.3,
+          "stories_completed": 7,
+          "epic_focus": "social",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 6,
+          "velocity": 5.3,
+          "stories_completed": 4,
+          "epic_focus": "social",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 7,
+          "velocity": 3.3,
+          "stories_completed": 7,
+          "epic_focus": "social",
+          "capacity_utilization": 65.4
+        },
+        {
+          "week": 8,
+          "velocity": 2.0,
+          "stories_completed": 4,
+          "epic_focus": "social",
+          "capacity_utilization": 40.7
+        },
+        {
+          "week": 9,
+          "velocity": 5.1,
+          "stories_completed": 6,
+          "epic_focus": "adhoc",
+          "capacity_utilization": 100
+        },
+        {
+          "week": 10,
+          "velocity": 4.6,
+          "stories_completed": 7,
+          "epic_focus": "adhoc",
+          "capacity_utilization": 92.6
+        },
+        {
+          "week": 11,
+          "velocity": 5.0,
+          "stories_completed": 3,
+          "epic_focus": "adhoc",
+          "capacity_utilization": 99.5
+        },
+        {
+          "week": 12,
+          "velocity": 3.1,
+          "stories_completed": 7,
+          "epic_focus": "social",
+          "capacity_utilization": 62.8
+        }
+      ],
+      "specialization_score": 93.6,
+      "collaboration_score": 89.7
+    }
+  },
+  "epic_health": {
+    "core": {
+      "total_stories": 11,
+      "completed_stories": 11,
+      "in_progress_stories": 0,
+      "completion_rate": 100.0,
+      "velocity_trend": "increasing",
+      "business_value": "high",
+      "complexity_rating": "high",
+      "risk_score": 0,
+      "risk_factors": [],
+      "estimated_business_value": 409122,
+      "roi_estimate": 37.2,
+      "health_score": 100,
+      "projected_completion": "2025-09-18",
+      "resource_allocation": 1.4
+    },
+    "ui": {
+      "total_stories": 7,
+      "completed_stories": 4,
+      "in_progress_stories": 1,
+      "completion_rate": 57.1,
+      "velocity_trend": "decreasing",
+      "business_value": "high",
+      "complexity_rating": "medium",
+      "risk_score": 0,
+      "risk_factors": [],
+      "estimated_business_value": 334370,
+      "roi_estimate": 47.8,
+      "health_score": 100,
+      "projected_completion": "2025-09-18",
+      "resource_allocation": 1.1
+    },
+    "infrastructure": {
+      "total_stories": 7,
+      "completed_stories": 2,
+      "in_progress_stories": 0,
+      "completion_rate": 28.6,
+      "velocity_trend": "decreasing",
+      "business_value": "medium",
+      "complexity_rating": "high",
+      "risk_score": 20,
+      "risk_factors": [
+        "Low completion rate"
+      ],
+      "estimated_business_value": 74880,
+      "roi_estimate": 10.7,
+      "health_score": 80,
+      "projected_completion": "2025-10-23",
+      "resource_allocation": 1.1
+    },
+    "social": {
+      "total_stories": 11,
+      "completed_stories": 1,
+      "in_progress_stories": 0,
+      "completion_rate": 9.1,
+      "velocity_trend": "decreasing",
+      "business_value": "medium",
+      "complexity_rating": "medium",
+      "risk_score": 20,
+      "risk_factors": [
+        "Low completion rate"
+      ],
+      "estimated_business_value": 17347,
+      "roi_estimate": 1.6,
+      "health_score": 80,
+      "projected_completion": "2025-10-23",
+      "resource_allocation": 1.0
+    },
+    "modeling": {
+      "total_stories": 2,
+      "completed_stories": 2,
+      "in_progress_stories": 0,
+      "completion_rate": 100.0,
+      "velocity_trend": "decreasing",
+      "business_value": "high",
+      "complexity_rating": "high",
+      "risk_score": 0,
+      "risk_factors": [],
+      "estimated_business_value": 326722,
+      "roi_estimate": 163.4,
+      "health_score": 100,
+      "projected_completion": "2025-10-23",
+      "resource_allocation": 2.0
+    },
+    "ingestion": {
+      "total_stories": 6,
+      "completed_stories": 4,
+      "in_progress_stories": 0,
+      "completion_rate": 66.7,
+      "velocity_trend": "decreasing",
+      "business_value": "medium",
+      "complexity_rating": "medium",
+      "risk_score": 0,
+      "risk_factors": [],
+      "estimated_business_value": 72288,
+      "roi_estimate": 12.0,
+      "health_score": 100,
+      "projected_completion": "2025-09-11",
+      "resource_allocation": 1.1
+    },
+    "adhoc": {
+      "total_stories": 27,
+      "completed_stories": 21,
+      "in_progress_stories": 1,
+      "completion_rate": 77.8,
+      "velocity_trend": "increasing",
+      "business_value": "low",
+      "complexity_rating": "low",
+      "risk_score": 0,
+      "risk_factors": [],
+      "estimated_business_value": 27598,
+      "roi_estimate": 1.0,
+      "health_score": 100,
+      "projected_completion": "2025-09-18",
+      "resource_allocation": 1.0
+    }
+  },
+  "quality_trends": {
+    "quality_history": [
+      {
+        "week": 1,
+        "date": "2025-06-05",
+        "overall_quality": 66.3,
+        "components": {
+          "estimates_coverage": 62.7,
+          "acceptance_criteria": 48.6,
+          "priority_assignment": 72.0,
+          "owner_assignment": 79.6,
+          "story_freshness": 86.3
+        },
+        "improvement_actions": 2,
+        "quality_issues_resolved": 1
+      },
+      {
+        "week": 2,
+        "date": "2025-06-12",
+        "overall_quality": 65.9,
+        "components": {
+          "estimates_coverage": 65.7,
+          "acceptance_criteria": 55.2,
+          "priority_assignment": 72.7,
+          "owner_assignment": 81.5,
+          "story_freshness": 84.2
+        },
+        "improvement_actions": 6,
+        "quality_issues_resolved": 4
+      },
+      {
+        "week": 3,
+        "date": "2025-06-19",
+        "overall_quality": 69.4,
+        "components": {
+          "estimates_coverage": 66.2,
+          "acceptance_criteria": 61.8,
+          "priority_assignment": 75.4,
+          "owner_assignment": 83.2,
+          "story_freshness": 91.4
+        },
+        "improvement_actions": 7,
+        "quality_issues_resolved": 1
+      },
+      {
+        "week": 4,
+        "date": "2025-06-26",
+        "overall_quality": 73.4,
+        "components": {
+          "estimates_coverage": 70.9,
+          "acceptance_criteria": 63.1,
+          "priority_assignment": 76.7,
+          "owner_assignment": 85.4,
+          "story_freshness": 87.6
+        },
+        "improvement_actions": 8,
+        "quality_issues_resolved": 2
+      },
+      {
+        "week": 5,
+        "date": "2025-07-03",
+        "overall_quality": 77.9,
+        "components": {
+          "estimates_coverage": 72.4,
+          "acceptance_criteria": 64.2,
+          "priority_assignment": 77.7,
+          "owner_assignment": 87.2,
+          "story_freshness": 86.0
+        },
+        "improvement_actions": 4,
+        "quality_issues_resolved": 5
+      },
+      {
+        "week": 6,
+        "date": "2025-07-10",
+        "overall_quality": 76.6,
+        "components": {
+          "estimates_coverage": 77.4,
+          "acceptance_criteria": 72.6,
+          "priority_assignment": 84.1,
+          "owner_assignment": 89.0,
+          "story_freshness": 90.9
+        },
+        "improvement_actions": 8,
+        "quality_issues_resolved": 4
+      },
+      {
+        "week": 7,
+        "date": "2025-07-17",
+        "overall_quality": 82.6,
+        "components": {
+          "estimates_coverage": 77.7,
+          "acceptance_criteria": 70.5,
+          "priority_assignment": 87.5,
+          "owner_assignment": 87.6,
+          "story_freshness": 93.6
+        },
+        "improvement_actions": 3,
+        "quality_issues_resolved": 4
+      },
+      {
+        "week": 8,
+        "date": "2025-07-24",
+        "overall_quality": 83.3,
+        "components": {
+          "estimates_coverage": 78.2,
+          "acceptance_criteria": 79.7,
+          "priority_assignment": 88.8,
+          "owner_assignment": 90.9,
+          "story_freshness": 90.7
+        },
+        "improvement_actions": 8,
+        "quality_issues_resolved": 2
+      },
+      {
+        "week": 9,
+        "date": "2025-07-31",
+        "overall_quality": 87.7,
+        "components": {
+          "estimates_coverage": 85.4,
+          "acceptance_criteria": 81.4,
+          "priority_assignment": 90.3,
+          "owner_assignment": 92.6,
+          "story_freshness": 91.3
+        },
+        "improvement_actions": 3,
+        "quality_issues_resolved": 1
+      },
+      {
+        "week": 10,
+        "date": "2025-08-07",
+        "overall_quality": 88.5,
+        "components": {
+          "estimates_coverage": 83.4,
+          "acceptance_criteria": 84.8,
+          "priority_assignment": 93.4,
+          "owner_assignment": 93.2,
+          "story_freshness": 95.4
+        },
+        "improvement_actions": 6,
+        "quality_issues_resolved": 4
+      },
+      {
+        "week": 11,
+        "date": "2025-08-14",
+        "overall_quality": 89.2,
+        "components": {
+          "estimates_coverage": 90.9,
+          "acceptance_criteria": 86.7,
+          "priority_assignment": 96.2,
+          "owner_assignment": 93.4,
+          "story_freshness": 97.2
+        },
+        "improvement_actions": 4,
+        "quality_issues_resolved": 4
+      },
+      {
+        "week": 12,
+        "date": "2025-08-21",
+        "overall_quality": 92.8,
+        "components": {
+          "estimates_coverage": 97.5,
+          "acceptance_criteria": 93.0,
+          "priority_assignment": 97.8,
+          "owner_assignment": 97.6,
+          "story_freshness": 95.4
+        },
+        "improvement_actions": 4,
+        "quality_issues_resolved": 2
+      }
+    ],
+    "current_quality": 92.8,
+    "improvement_rate": 2.2,
+    "quality_trend": "improving",
+    "target_quality": 95,
+    "weeks_to_target": 1
+  },
+  "predictions": {
+    "completion_forecast": {
+      "most_likely_weeks": 14,
+      "conservative_weeks": 19,
+      "pessimistic_weeks": 25,
+      "confidence_intervals": {
+        "50%": [
+          13,
+          15
+        ],
+        "80%": [
+          9,
+          19
+        ],
+        "95%": [
+          8,
+          25
+        ]
+      }
+    },
+    "risk_analysis": [
+      {
+        "type": "velocity_decline",
+        "probability": 25,
+        "impact": "2-4 week delay",
+        "mitigation": "Increase team capacity or reduce scope"
+      },
+      {
+        "type": "scope_creep",
+        "probability": 40,
+        "impact": "10-20% more stories",
+        "mitigation": "Strict change control process"
+      },
+      {
+        "type": "technical_debt",
+        "probability": 30,
+        "impact": "Velocity reduction 15-25%",
+        "mitigation": "Dedicate sprint to technical debt"
+      }
+    ],
+    "success_factors": {
+      "team_stability": 95.0,
+      "requirement_clarity": 84.2,
+      "technical_feasibility": 92.6,
+      "stakeholder_engagement": 70.4,
+      "resource_availability": 83.6
+    },
+    "overall_success_probability": 85.2,
+    "monte_carlo_runs": 1000,
+    "model_accuracy": 85.1
+  },
+  "business_intelligence": {
+    "cost_analysis": {
+      "total_project_cost": 880000.0,
+      "cost_per_story": 9072.0,
+      "team_cost_per_week": 55000.0,
+      "burn_rate": 7857.0
+    },
+    "value_analysis": {
+      "total_business_value": 2186019,
+      "epic_breakdown": {
+        "core": {
+          "estimated_value": 402820,
+          "implementation_cost": 54233,
+          "roi_percentage": 705.6,
+          "payback_period_months": 14,
+          "risk_adjusted_value": 339292.0
+        },
+        "ui": {
+          "estimated_value": 680936,
+          "implementation_cost": 119954,
+          "roi_percentage": 1261.9,
+          "payback_period_months": 3,
+          "risk_adjusted_value": 645925.0
+        },
+        "infrastructure": {
+          "estimated_value": 260045,
+          "implementation_cost": 95052,
+          "roi_percentage": 420.1,
+          "payback_period_months": 18,
+          "risk_adjusted_value": 206224.0
+        },
+        "social": {
+          "estimated_value": 284972,
+          "implementation_cost": 139400,
+          "roi_percentage": 469.9,
+          "payback_period_months": 18,
+          "risk_adjusted_value": 218860.0
+        },
+        "modeling": {
+          "estimated_value": 218944,
+          "implementation_cost": 66222,
+          "roi_percentage": 337.9,
+          "payback_period_months": 9,
+          "risk_adjusted_value": 174856.0
+        },
+        "ingestion": {
+          "estimated_value": 241154,
+          "implementation_cost": 64303,
+          "roi_percentage": 382.3,
+          "payback_period_months": 16,
+          "risk_adjusted_value": 213229.0
+        },
+        "adhoc": {
+          "estimated_value": 97148,
+          "implementation_cost": 123417,
+          "roi_percentage": 94.3,
+          "payback_period_months": 16,
+          "risk_adjusted_value": 91748.0
+        }
+      },
+      "overall_roi": 148.4,
+      "npv_analysis": 978116.0
+    },
+    "market_impact": {
+      "user_acquisition": {
+        "projected_new_users": 30646,
+        "user_retention_improvement": 5.8,
+        "engagement_increase": 23.0
+      },
+      "revenue_impact": {
+        "projected_annual_revenue": 1141589,
+        "revenue_per_user_increase": 26.8,
+        "market_share_gain": 4.5
+      },
+      "competitive_advantage": {
+        "time_to_market_advantage": "7 months",
+        "feature_differentiation": 4,
+        "patent_opportunities": 0
+      }
+    },
+    "investment_metrics": {
+      "irr_percentage": 48.6,
+      "payback_period_months": 24,
+      "break_even_users": 6755
+    }
+  }
+}

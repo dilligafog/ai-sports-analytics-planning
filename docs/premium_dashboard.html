@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏈 AI Sports Analytics - Premium Executive Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #1f2937;
+        }
+        
+        .dashboard {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 4em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #ffd700, #ff6b6b, #4ecdc4, #45b7d1);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .tagline {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1em;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .last-updated {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            padding: 35px;
+            margin-bottom: 35px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .section-title {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #374151;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .premium-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #ffffff, #f8fafc);
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+        
+        .metric-card:hover::before {
+            left: 100%;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .metric-value {
+            font-size: 3.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .metric-label {
+            color: #6b7280;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .metric-subtitle {
+            color: #9ca3af;
+            font-size: 0.8em;
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        
+        .chart-container {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            height: 420px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+        
+        .chart-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #374151;
+            text-align: center;
+        }
+        
+        .chart-wrapper {
+            position: relative;
+            height: 320px;
+            width: 100%;
+        }
+        
+        .insights-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+        
+        .insight-card {
+            background: linear-gradient(135deg, #f8fafc, #ffffff);
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .insight-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #374151;
+        }
+        
+        .insight-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .insight-description {
+            color: #6b7280;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .team-card {
+            background: linear-gradient(135deg, #ffffff, #f9fafb);
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .team-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        
+        .team-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .team-metric {
+            text-align: center;
+        }
+        
+        .team-metric-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #059669;
+        }
+        
+        .team-metric-label {
+            font-size: 0.8em;
+            color: #6b7280;
+        }
+        
+        .predictions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .prediction-card {
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border: 1px solid #f59e0b;
+            border-radius: 16px;
+            padding: 20px;
+            color: #92400e;
+        }
+        
+        .prediction-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .prediction-value {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .prediction-confidence {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .metric-value {
+                font-size: 2.5em;
+            }
+        }
+        
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            font-size: 1.2em;
+            color: #6b7280;
+        }
+        
+        .error {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>🏈 AI Sports Analytics</h1>
+            <div class="subtitle">Premium Executive Dashboard</div>
+            <div class="tagline">Powered by Advanced Data Science & Predictive Analytics</div>
+            <div class="last-updated" id="lastUpdated">
+                🕒 Loading...
+            </div>
+        </div>
+        
+        <!-- Executive KPIs -->
+        <div class="section">
+            <h2 class="section-title">🎯 Executive KPIs</h2>
+            <div class="premium-metrics" id="executiveKPIs">
+                <!-- KPIs will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Velocity Analytics -->
+        <div class="section">
+            <h2 class="section-title">📈 Velocity Analytics</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3 class="chart-title">Historical Velocity Trend</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="velocityTrendChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">Epic Velocity Comparison</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="epicVelocityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Performance -->
+        <div class="section">
+            <h2 class="section-title">👥 Team Performance</h2>
+            <div class="team-grid" id="teamPerformance">
+                <!-- Team cards will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Predictive Analytics -->
+        <div class="section">
+            <h2 class="section-title">🔮 Predictive Analytics</h2>
+            <div class="predictions-grid" id="predictions">
+                <!-- Predictions will be populated by JavaScript -->
+            </div>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3 class="chart-title">Completion Forecast</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="forecastChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">Success Probability Factors</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="successFactorsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Business Intelligence -->
+        <div class="section">
+            <h2 class="section-title">💰 Business Intelligence</h2>
+            <div class="insights-container" id="businessInsights">
+                <!-- Business insights will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Quality & Health -->
+        <div class="section">
+            <h2 class="section-title">🎯 Quality & Health</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3 class="chart-title">Quality Improvement Trend</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="qualityTrendChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">Epic Health Overview</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="epicHealthChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Global data variable
+        let dashboardData = null;
+        
+        // Load and render dashboard
+        async function loadDashboard() {
+            try {
+                const response = await fetch('enhanced-dashboard-data.json');
+                dashboardData = await response.json();
+                renderPremiumDashboard();
+            } catch (error) {
+                console.error('Error loading dashboard data:', error);
+                showError('Failed to load dashboard data. Please check the data files.');
+            }
+        }
+        
+        function showError(message) {
+            document.querySelector('.dashboard').innerHTML = `
+                <div class="error">
+                    <h3>⚠️ Error</h3>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+        
+        function renderPremiumDashboard() {
+            if (!dashboardData) return;
+            
+            updateLastUpdated();
+            renderExecutiveKPIs();
+            renderVelocityCharts();
+            renderTeamPerformance();
+            renderPredictiveAnalytics();
+            renderBusinessIntelligence();
+            renderQualityCharts();
+        }
+        
+        function updateLastUpdated() {
+            const lastUpdated = new Date(dashboardData.summary?.last_updated || Date.now());
+            document.getElementById('lastUpdated').textContent = 
+                `🕒 Last Updated: ${lastUpdated.toLocaleString()}`;
+        }
+        
+        function renderExecutiveKPIs() {
+            const container = document.getElementById('executiveKPIs');
+            const { summary } = dashboardData;
+            
+            const kpis = [
+                { value: summary?.total_stories || 0, label: 'Total Stories', subtitle: 'Complete Backlog' },
+                { value: `${summary?.health_score || 0}%`, label: 'Health Score', subtitle: 'Backlog Quality' },
+                { value: `${summary?.business_roi || 0}%`, label: 'ROI Forecast', subtitle: 'Business Value' },
+                { value: `${summary?.prediction_accuracy || 0}%`, label: 'Model Accuracy', subtitle: 'Prediction Confidence' },
+                { value: summary?.team_velocity_avg || 0, label: 'Team Velocity', subtitle: 'Stories/Week' },
+                { value: `${summary?.project_health || 0}%`, label: 'Project Health', subtitle: 'Overall Status' }
+            ];
+            
+            container.innerHTML = kpis.map(kpi => `
+                <div class="metric-card">
+                    <div class="metric-value">${kpi.value}</div>
+                    <div class="metric-label">${kpi.label}</div>
+                    <div class="metric-subtitle">${kpi.subtitle}</div>
+                </div>
+            `).join('');
+        }
+        
+        function renderVelocityCharts() {
+            if (dashboardData.velocity_history) {
+                renderVelocityTrend();
+                renderEpicVelocity();
+            }
+        }
+        
+        function renderVelocityTrend() {
+            const ctx = document.getElementById('velocityTrendChart').getContext('2d');
+            const velocityData = dashboardData.velocity_history;
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: velocityData.map(d => `Week ${d.week}`),
+                    datasets: [{
+                        label: 'Weekly Velocity',
+                        data: velocityData.map(d => d.total_velocity),
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        pointBackgroundColor: '#667eea',
+                        pointBorderColor: '#ffffff',
+                        pointBorderWidth: 2,
+                        pointRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+        
+        function renderEpicVelocity() {
+            if (!dashboardData.velocity_history?.[0]?.epic_breakdown) return;
+            
+            const ctx = document.getElementById('epicVelocityChart').getContext('2d');
+            const epics = Object.keys(dashboardData.velocity_history[0].epic_breakdown);
+            
+            // Calculate total velocity per epic
+            const epicTotals = {};
+            dashboardData.velocity_history.forEach(week => {
+                Object.entries(week.epic_breakdown).forEach(([epic, velocity]) => {
+                    epicTotals[epic] = (epicTotals[epic] || 0) + velocity;
+                });
+            });
+            
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: epics,
+                    datasets: [{
+                        data: Object.values(epicTotals),
+                        backgroundColor: [
+                            '#ef4444', '#f97316', '#eab308', '#22c55e',
+                            '#06b6d4', '#3b82f6', '#8b5cf6', '#ec4899'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+        
+        function renderTeamPerformance() {
+            if (!dashboardData.team_performance) return;
+            
+            const container = document.getElementById('teamPerformance');
+            const teamData = dashboardData.team_performance;
+            
+            container.innerHTML = Object.entries(teamData).map(([name, data]) => `
+                <div class="team-card">
+                    <div class="team-name">${name}</div>
+                    <div class="team-metrics">
+                        <div class="team-metric">
+                            <div class="team-metric-value">${data.avg_velocity}</div>
+                            <div class="team-metric-label">Avg Velocity</div>
+                        </div>
+                        <div class="team-metric">
+                            <div class="team-metric-value">${data.total_stories}</div>
+                            <div class="team-metric-label">Stories</div>
+                        </div>
+                        <div class="team-metric">
+                            <div class="team-metric-value">${data.specialization_score}%</div>
+                            <div class="team-metric-label">Expertise</div>
+                        </div>
+                    </div>
+                    <div class="insight-description">
+                        Expertise: ${data.expertise.join(', ')}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function renderPredictiveAnalytics() {
+            if (!dashboardData.predictions) return;
+            
+            const container = document.getElementById('predictions');
+            const predictions = dashboardData.predictions;
+            
+            const predictionCards = [
+                {
+                    title: 'Most Likely Completion',
+                    value: `${predictions.completion_forecast.most_likely_weeks} weeks`,
+                    confidence: `${predictions.overall_success_probability}% confidence`
+                },
+                {
+                    title: 'Conservative Estimate',
+                    value: `${predictions.completion_forecast.conservative_weeks} weeks`,
+                    confidence: '80% confidence interval'
+                },
+                {
+                    title: 'Success Probability',
+                    value: `${predictions.overall_success_probability}%`,
+                    confidence: 'Based on current factors'
+                }
+            ];
+            
+            container.innerHTML = predictionCards.map(card => `
+                <div class="prediction-card">
+                    <div class="prediction-title">${card.title}</div>
+                    <div class="prediction-value">${card.value}</div>
+                    <div class="prediction-confidence">${card.confidence}</div>
+                </div>
+            `).join('');
+            
+            renderForecastChart();
+            renderSuccessFactorsChart();
+        }
+        
+        function renderForecastChart() {
+            const ctx = document.getElementById('forecastChart').getContext('2d');
+            const forecast = dashboardData.predictions.completion_forecast;
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Optimistic', 'Most Likely', 'Conservative', 'Pessimistic'],
+                    datasets: [{
+                        label: 'Weeks to Completion',
+                        data: [
+                            forecast.confidence_intervals['50%'][0],
+                            forecast.most_likely_weeks,
+                            forecast.conservative_weeks,
+                            forecast.pessimistic_weeks
+                        ],
+                        backgroundColor: ['#22c55e', '#3b82f6', '#f59e0b', '#ef4444']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+        
+        function renderSuccessFactorsChart() {
+            const ctx = document.getElementById('successFactorsChart').getContext('2d');
+            const factors = dashboardData.predictions.success_factors;
+            
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: Object.keys(factors).map(k => k.replace(/_/g, ' ')),
+                    datasets: [{
+                        label: 'Success Factors',
+                        data: Object.values(factors),
+                        backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                        borderColor: '#667eea',
+                        pointBackgroundColor: '#667eea'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+        
+        function renderBusinessIntelligence() {
+            if (!dashboardData.business_intelligence) return;
+            
+            const container = document.getElementById('businessInsights');
+            const bi = dashboardData.business_intelligence;
+            
+            const insights = [
+                {
+                    title: 'Total Business Value',
+                    value: `$${(bi.value_analysis.total_business_value / 1000000).toFixed(1)}M`,
+                    description: 'Projected annual business value'
+                },
+                {
+                    title: 'Overall ROI',
+                    value: `${bi.value_analysis.overall_roi}%`,
+                    description: 'Return on investment forecast'
+                },
+                {
+                    title: 'Break-even Users',
+                    value: bi.investment_metrics.break_even_users.toLocaleString(),
+                    description: 'Users needed to break even'
+                },
+                {
+                    title: 'Payback Period',
+                    value: `${bi.investment_metrics.payback_period_months} months`,
+                    description: 'Time to recover investment'
+                }
+            ];
+            
+            container.innerHTML = insights.map(insight => `
+                <div class="insight-card">
+                    <div class="insight-title">${insight.title}</div>
+                    <div class="insight-value">${insight.value}</div>
+                    <div class="insight-description">${insight.description}</div>
+                </div>
+            `).join('');
+        }
+        
+        function renderQualityCharts() {
+            if (dashboardData.quality_trends) {
+                renderQualityTrend();
+            }
+            if (dashboardData.epic_health) {
+                renderEpicHealth();
+            }
+        }
+        
+        function renderQualityTrend() {
+            const ctx = document.getElementById('qualityTrendChart').getContext('2d');
+            const qualityData = dashboardData.quality_trends.quality_history;
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: qualityData.map(d => `Week ${d.week}`),
+                    datasets: [{
+                        label: 'Quality Score',
+                        data: qualityData.map(d => d.overall_quality),
+                        borderColor: '#10b981',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+        
+        function renderEpicHealth() {
+            const ctx = document.getElementById('epicHealthChart').getContext('2d');
+            const epicData = dashboardData.epic_health;
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(epicData),
+                    datasets: [{
+                        label: 'Health Score',
+                        data: Object.values(epicData).map(e => e.health_score),
+                        backgroundColor: Object.values(epicData).map(e => 
+                            e.health_score > 80 ? '#22c55e' : 
+                            e.health_score > 60 ? '#f59e0b' : '#ef4444'
+                        )
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+        
+        // Initialize dashboard
+        loadDashboard();
+        
+        // Auto-refresh every 5 minutes
+        setInterval(loadDashboard, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
