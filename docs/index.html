@@ -218,19 +218,19 @@
             <h1>🏈 AI Sports Analytics</h1>
             <div class="subtitle">Strategic Planning Dashboard</div>
             <div class="last-updated">
-                🕒 Last Updated: 2025-08-28 21:41 UTC
+                🕒 Last Updated: 2025-08-29 01:44 UTC
             </div>
         </div>
         
         <div class="metrics-grid">
             <div class="metric-card total-stories">
-                <div class="metric-value">95</div>
+                <div class="metric-value">97</div>
                 <div class="metric-label">Total Stories</div>
                 <div class="metric-subtitle">Complete Backlog</div>
             </div>
             
             <div class="metric-card health-score">
-                <div class="metric-value">89.3<span style="font-size: 0.5em;">%</span></div>
+                <div class="metric-value">89.2<span style="font-size: 0.5em;">%</span></div>
                 <div class="metric-label">Health Score</div>
                 <div class="metric-subtitle">Backlog Quality</div>
             </div>
@@ -282,11 +282,16 @@
             
                 <div class="status-item" style="border-left-color: #8b5cf6;">
                     <span>Completed</span>
-                    <strong>5</strong>
+                    <strong>6</strong>
                 </div>
             
                 <div class="status-item" style="border-left-color: #10b981;">
                     <span>Ready</span>
+                    <strong>1</strong>
+                </div>
+            
+                <div class="status-item" style="border-left-color: #f59e0b;">
+                    <span>Active</span>
                     <strong>1</strong>
                 </div>
             
@@ -303,7 +308,7 @@
         <div class="recommendations">
             <h3>🎯 Strategic Recommendations</h3>
             <ul>
-                <li>Add estimates to 50 stories</li><li>Run auto-prioritization to process backlog efficiently</li><li>Focus prioritization efforts on adhoc epic (19 stories)</li>
+                <li>Add estimates to 50 stories</li><li>Run auto-prioritization to process backlog efficiently</li><li>Focus prioritization efforts on adhoc epic (21 stories)</li>
             </ul>
         </div>
         
@@ -316,7 +321,7 @@
         Chart.defaults.plugins.legend.position = 'bottom';
         
         // Epic Completion Chart
-        const epicData = {"labels": ["Adhoc", "Core", "Modeling", "Ingestion", "Ui", "Infrastructure", "Social Media", "Llm Backlog"], "datasets": [{"data": [100.0, 100.0, 100.0, 66.7, 57.1, 40.0, 9.1, 8.3], "backgroundColor": ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3", "#54a0ff", "#5f27cd"], "borderWidth": 0}]};
+        const epicData = {"labels": ["Core", "Modeling", "Adhoc", "Ingestion", "Ui", "Infrastructure", "Social Media", "Llm Backlog"], "datasets": [{"data": [100.0, 100.0, 95.5, 66.7, 57.1, 40.0, 9.1, 8.3], "backgroundColor": ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3", "#54a0ff", "#5f27cd"], "borderWidth": 0}]};
         new Chart(document.getElementById('epicChart'), {
             type: 'doughnut',
             data: epicData,
@@ -360,7 +365,7 @@
         });
         
         // Workflow Efficiency Chart
-        const workflowData = {"labels": ["Current Efficiency"], "datasets": [{"label": "Efficiency %", "data": [58.6], "borderColor": "#8b5cf6", "backgroundColor": "rgba(139, 92, 246, 0.1)", "tension": 0.4, "fill": true}]};
+        const workflowData = {"labels": ["Current Efficiency"], "datasets": [{"label": "Efficiency %", "data": [59.2], "borderColor": "#8b5cf6", "backgroundColor": "rgba(139, 92, 246, 0.1)", "tension": 0.4, "fill": true}]};
         new Chart(document.getElementById('workflowChart'), {
             type: 'line',
             data: workflowData,

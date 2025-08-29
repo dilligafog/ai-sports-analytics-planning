@@ -1,0 +1,25 @@
+# 📊 Reports Index
+
+Generated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+
+## 🎯 Latest Reports
+
+### JSON Reports
+- [dashboard_20250828_214120.json](/dashboard_20250828_214120.json)
+- [health_20250828_214120.json](/health_20250828_214120.json)
+- [health_20250829_014444.json](/health_20250829_014444.json)
+- [priority_20250828_214120.json](/priority_20250828_214120.json)
+- [priority_20250829_014444.json](/priority_20250829_014444.json)
+- [velocity_20250828_214029.json](/velocity_20250828_214029.json)
+- [velocity_20250828_214059.json](/velocity_20250828_214059.json)
+- [velocity_20250828_214120.json](/velocity_20250828_214120.json)
+- [velocity_20250829_014444.json](/velocity_20250829_014444.json)
+- [workflow_20250828_214120.json](/workflow_20250828_214120.json)
+- [workflow_20250829_014444.json](/workflow_20250829_014444.json)
+
+### Markdown Reports
+- [README.md](/README.md)
+
+## 📈 Dashboard
+- [Interactive Dashboard](../docs/index.html)
+- [Dashboard Data](../docs/dashboard-data.json)

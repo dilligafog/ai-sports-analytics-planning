@@ -1,23 +1,24 @@
 {
   "summary": {
-    "total_stories": 95,
-    "health_score": 89.3,
+    "total_stories": 97,
+    "health_score": 89.2,
     "prioritized_stories": 13,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-28T21:41:09.646902"
+    "last_updated": "2025-08-29T01:44:44.497287"
   },
   "velocity": {
-    "generated_at": "2025-08-28T21:41:09.646481",
-    "total_stories": 95,
+    "generated_at": "2025-08-29T01:44:44.496797",
+    "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
       "draft": 26,
       "backlog": 22,
-      "completed": 5,
-      "ready": 1
+      "completed": 6,
+      "ready": 1,
+      "active": 1
     },
     "epic_breakdown": {
-      "adhoc": 20,
+      "adhoc": 22,
       "core": 11,
       "data_sources": 1,
       "infra": 2,
@@ -31,7 +32,7 @@
       "unknown": 5
     },
     "epic_completion_rates": {
-      "adhoc": 100.0,
+      "adhoc": 95.5,
       "core": 100.0,
       "data_sources": 0.0,
       "infra": 0.0,
@@ -255,23 +256,23 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-28T21:41:09.646572",
-    "health_score": 89.3,
+    "generated_at": "2025-08-29T01:44:44.496906",
+    "health_score": 89.2,
     "quality_issues": {
       "missing_estimates": 50,
-      "missing_owners": 1,
+      "missing_owners": 3,
       "missing_acceptance_criteria": 0,
       "long_titles": 1,
       "stale_stories": 0
     },
     "age_distribution": {
-      "new": 95,
+      "new": 97,
       "medium": 0,
       "old": 0,
       "stale": 0
     },
     "epic_balance": {
-      "adhoc": 20,
+      "adhoc": 22,
       "core": 11,
       "data_sources": 1,
       "infra": 2,
@@ -289,9 +290,9 @@
     ]
   },
   "priority": {
-    "generated_at": "2025-08-28T21:41:09.646604",
+    "generated_at": "2025-08-29T01:44:44.496951",
     "total_prioritized": 13,
-    "total_unprocessed": 82,
+    "total_unprocessed": 84,
     "priority_heatmap": {
       "adhoc": {
         "High (6-10)": 1
@@ -326,7 +327,7 @@
       "llm_backlog": 4
     },
     "unprocessed_by_epic": {
-      "adhoc": 19,
+      "adhoc": 21,
       "core": 11,
       "infra": 2,
       "infrastructure": 5,
@@ -340,11 +341,11 @@
     },
     "priority_recommendations": [
       "Run auto-prioritization to process backlog efficiently",
-      "Focus prioritization efforts on adhoc epic (19 stories)"
+      "Focus prioritization efforts on adhoc epic (21 stories)"
     ]
   },
   "workflow": {
-    "generated_at": "2025-08-28T21:41:09.646894",
+    "generated_at": "2025-08-29T01:44:44.497279",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
@@ -354,16 +355,16 @@
       "draft": 26,
       "backlog": 22,
       "ready": 1,
-      "active": 0,
-      "completed": 5,
+      "active": 1,
+      "completed": 6,
       "accepted": 41
     },
     "complexity_distribution": {
       "small": 17,
       "medium": 24,
       "large": 4,
-      "unknown": 50
+      "unknown": 52
     },
-    "workflow_efficiency": 58.6
+    "workflow_efficiency": 59.2
   }
 }
