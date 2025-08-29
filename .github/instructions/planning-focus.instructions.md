@@ -27,15 +27,20 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 ## Story Lifecycle
 1. **Creation** → `backlog/` subdirectory - New story with basic structure
 2. **Refinement** → Status remains in JSON until ready
-3. **Ready** → Update status to `active` using `python scripts/update_story.py STORY-ID --status active` when implementation starts
-4. **Completion** → Update status to `completed` using `python scripts/update_story.py STORY-ID --status completed` with outcome notes
+3. **Ready** → Implementation Agent uses `busta story start [STORY_ID]` to begin work
+4. **Active** → Story automatically moved to active folder, feature branch created
+5. **Development** → Implementation work with story ID references in commits
+6. **Completion** → Implementation Agent uses `busta story close` for automated finish
+7. **Accepted** → Planning Agent reviews and marks as accepted with outcome notes
 
 ## Coordination Patterns
 
 ### With Implementation Repository
-- **Story References**: Implementation commits should reference story IDs
-- **Feedback Loop**: Implementation discoveries refine future stories
-- **Status Sync**: Keep story status aligned with implementation progress
+- **Story Workflow Integration**: Implementation uses `busta story start/close` for automated coordination
+- **Automated Synchronization**: Story status and branch management handled automatically
+- **Story References**: Implementation commits reference story IDs via workflow templates
+- **Feedback Loop**: Implementation discoveries refine future stories through automated context
+- **Status Sync**: Story lifecycle tracked automatically across repositories
 
 ### Communication Format
 - **Story IDs**: Use format `ADH-###` (e.g., ADH-001, ADH-042)
@@ -54,3 +59,5 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 - ❌ Over-planning distant future (beyond one quarter)
 - ❌ Ignoring implementation feedback
 - ❌ Planning in isolation from implementation realities
+- ❌ Bypassing story workflow automation for manual operations
+- ❌ Starting implementation without using `busta story start` workflow
