@@ -1,0 +1,30 @@
+{
+  "generated_at": "2025-08-29T05:03:39.810592",
+  "health_score": 99.5,
+  "quality_issues": {
+    "missing_estimates": 0,
+    "missing_owners": 3,
+    "missing_acceptance_criteria": 0,
+    "long_titles": 1,
+    "stale_stories": 0
+  },
+  "age_distribution": {
+    "new": 100,
+    "medium": 0,
+    "old": 0,
+    "stale": 0
+  },
+  "epic_balance": {
+    "adhoc": 30,
+    "core": 11,
+    "data-sources": 1,
+    "infrastructure": 7,
+    "ingestion": 6,
+    "llm": 24,
+    "modeling": 2,
+    "social": 11,
+    "training": 1,
+    "ui": 7
+  },
+  "recommendations": []
+}

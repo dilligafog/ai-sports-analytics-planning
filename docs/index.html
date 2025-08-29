@@ -256,7 +256,7 @@
         // Load and render dashboard
         async function loadDashboard() {
             try {
-                const response = await fetch('dashboard-data.json');
+                const response = await fetch('real-dashboard-data.json');
                 dashboardData = await response.json();
                 renderDashboard();
             } catch (error) {
