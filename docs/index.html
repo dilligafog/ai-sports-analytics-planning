@@ -231,7 +231,7 @@
             <h1>🏈 AI Sports Analytics</h1>
             <div class="subtitle">Strategic Planning Dashboard</div>
             <div class="last-updated">
-                🕒 Last Updated: 2025-08-29 04:14 UTC
+                🕒 Last Updated: 2025-08-29 04:31 UTC
             </div>
         </div>
         
@@ -289,7 +289,7 @@
             
                 <div class="status-item" style="border-left-color: #8b5cf6;">
                     <span>Completed</span>
-                    <strong>8</strong>
+                    <strong>9</strong>
                 </div>
             
                 <div class="status-item" style="border-left-color: #3b82f6;">
@@ -304,7 +304,7 @@
             
                 <div class="status-item" style="border-left-color: #f59e0b;">
                     <span>Active</span>
-                    <strong>3</strong>
+                    <strong>2</strong>
                 </div>
             
                 <div class="status-item" style="border-left-color: #10b981;">
@@ -339,19 +339,8 @@
         Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
         Chart.defaults.plugins.legend.position = 'bottom';
         
-<<<<<<< HEAD
-        // Load and render dashboard
-        async function loadDashboard() {
-            try {
-                const response = await fetch('dashboard-data.json');
-                dashboardData = await response.json();
-                renderDashboard();
-            } catch (error) {
-                console.error('Error loading dashboard data:', error);
-                showError('Failed to load dashboard data.');
-=======
         // Epic Completion Chart
-        const epicData = {"labels": ["Core", "Data-Sources", "Modeling", "Adhoc", "Ingestion", "Ui", "Infrastructure", "Social"], "datasets": [{"data": [100.0, 100.0, 100.0, 78.6, 66.7, 57.1, 28.6, 9.1], "backgroundColor": ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3", "#54a0ff", "#5f27cd"], "borderWidth": 0}]};
+        const epicData = {"labels": ["Core", "Data-Sources", "Modeling", "Adhoc", "Ingestion", "Ui", "Infrastructure", "Social"], "datasets": [{"data": [100.0, 100.0, 100.0, 82.1, 66.7, 57.1, 28.6, 9.1], "backgroundColor": ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3", "#54a0ff", "#5f27cd"], "borderWidth": 0}]};
         new Chart(document.getElementById('epicChart'), {
             type: 'doughnut',
             data: epicData,
@@ -371,7 +360,6 @@
                     animateRotate: true,
                     duration: 1000
                 }
->>>>>>> ab1ba31a1ab299ace29dd9cc1d923c89a0b4f5f5
             }
         });
         
@@ -403,7 +391,7 @@
         });
         
         // Workflow Efficiency Chart
-        const workflowData = {"labels": ["Current Efficiency"], "datasets": [{"label": "Efficiency %", "data": [61.5], "borderColor": "#8b5cf6", "backgroundColor": "rgba(139, 92, 246, 0.1)", "tension": 0.4, "fill": true}]};
+        const workflowData = {"labels": ["Current Efficiency"], "datasets": [{"label": "Efficiency %", "data": [61.8], "borderColor": "#8b5cf6", "backgroundColor": "rgba(139, 92, 246, 0.1)", "tension": 0.4, "fill": true}]};
         new Chart(document.getElementById('workflowChart'), {
             type: 'line',
             data: workflowData,
