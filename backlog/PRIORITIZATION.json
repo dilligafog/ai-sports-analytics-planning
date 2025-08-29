@@ -147,7 +147,7 @@
       "title": "User Story: Public Betting Data Integration",
       "branch_name": "public_betting_data_integration-user-story-public-betting-data-integration",
       "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
-      "status": "draft",
+      "status": "completed",
       "priority": 7,
       "estimate": 5,
       "epic": "ingestion",

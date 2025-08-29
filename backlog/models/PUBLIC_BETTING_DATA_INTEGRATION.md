@@ -2,7 +2,7 @@
 id: PUBLIC_BETTING_DATA_INTEGRATION
 title: User Story: Public Betting Data Integration
 epic: ingestion
-status: ready
+status: completed
 owner: 'Neo Starlord of Thunder'
 priority: 7
 estimate: 5
@@ -28,13 +28,13 @@ file_path: backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md
 - **Competitive advantage** in identifying value bets before the market corrects
 
 ## Acceptance Criteria
-- [ ] **Data Collection**: System collects public betting percentages from multiple sportsbooks
-- [ ] **Line Movement Tracking**: Historical line movement data for trend analysis
-- [ ] **Money Distribution**: Track money distribution across different bet types
-- [ ] **Data Standardization**: Process data into normalized format for feature engineering
-- [ ] **Historical Analysis**: Minimum 6 months of historical betting data available
-- [ ] **UI Integration**: Public betting information displayed alongside predictions
-- [ ] **LLM Context**: Public betting trends accessible to LLM for narrative generation
+- [x] **Data Collection**: System collects public betting percentages from multiple sportsbooks
+- [x] **Line Movement Tracking**: Historical line movement data for trend analysis
+- [x] **Money Distribution**: Track money distribution across different bet types
+- [x] **Data Standardization**: Process data into normalized format for feature engineering
+- [x] **Historical Analysis**: Minimum 6 months of historical betting data available
+- [x] **UI Integration**: Public betting information displayed alongside predictions
+- [ ] **LLM Context**: _MOVED TO SEPARATE PROPOSAL - AI_BETTING_NARRATIVE_GENERATION_
 
 ## Technical Requirements
 - **Data Sources**: Multiple sportsbook APIs for comprehensive coverage
@@ -61,19 +61,19 @@ None identified
 - **Mitigation**: Start with one reliable data source, expand gradually
 
 ## Definition of Done
-- [ ] All acceptance criteria met with comprehensive testing
-- [ ] Public betting data successfully collected from multiple sources
-- [ ] Historical analysis shows correlation with prediction accuracy
-- [ ] UI displays betting trends alongside predictions
-- [ ] LLM can reference public betting context in outputs
+- [x] All acceptance criteria met with comprehensive testing
+- [x] Public betting data successfully collected from multiple sources
+- [x] Historical analysis shows correlation with prediction accuracy
+- [x] UI displays betting trends alongside predictions
+- [ ] LLM can reference public betting context in outputs _MOVED TO SEPARATE PROPOSAL_
 
 ## Definition of Done
 - Public betting data is collected, processed, and available in the system
 - UI displays public betting percentages and line movement
 - Value bet identification considers divergence from public sentiment
-- LLM generates narratives that reference relevant public betting trends
+- _LLM narrative generation moved to separate AI_BETTING_NARRATIVE_GENERATION proposal_
 
 ## Related Features
 - Data Source Integration Framework (dependency)
 - UI Visualization Components (will be enhanced)
-- AI-Generated Sales Pitch (will be enhanced)
+- AI-Generated Sales Pitch (_MOVED TO SEPARATE PROPOSAL_)
