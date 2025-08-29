@@ -4,10 +4,10 @@
     "health_score": 100.0,
     "prioritized_stories": 97,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T00:16:46.972719"
+    "last_updated": "2025-08-29T00:16:37.956894"
   },
   "velocity": {
-    "generated_at": "2025-08-29T00:16:46.972081",
+    "generated_at": "2025-08-29T00:16:37.956104",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
@@ -246,7 +246,7 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T00:16:46.972160",
+    "generated_at": "2025-08-29T00:16:37.956233",
     "health_score": 100.0,
     "quality_issues": {
       "missing_estimates": 0,
@@ -276,7 +276,7 @@
     "recommendations": []
   },
   "priority": {
-    "generated_at": "2025-08-29T00:16:46.972202",
+    "generated_at": "2025-08-29T00:16:37.956322",
     "total_prioritized": 97,
     "total_unprocessed": 0,
     "priority_heatmap": {
@@ -336,7 +336,7 @@
     "priority_recommendations": []
   },
   "workflow": {
-    "generated_at": "2025-08-29T00:16:46.972714",
+    "generated_at": "2025-08-29T00:16:37.956885",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
