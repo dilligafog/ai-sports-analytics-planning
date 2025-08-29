@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 101,
+    "total_backlog_stories": 102,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime",
     "priority_assigned": true,
@@ -1302,6 +1302,28 @@
         "accepted"
       ],
       "owner": "AI Assistant",
+      "created": "2025-08-29",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "INF-012",
+      "title": "INF-012 - Production & Dev Environment Co-location Spike",
+      "branch_name": "inf-012-production-dev-environment-co-location-spike",
+      "file_path": "backlog/infrastructure/INF-012-production-dev-environment-co-location-spike.md",
+      "status": "ready",
+      "priority": 7,
+      "estimate": 3,
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "infrastructure",
+        "spike",
+        "research",
+        "environment",
+        "production",
+        "devops"
+      ],
+      "owner": "Neo Starlord of Thunder",
       "created": "2025-08-29",
       "last_updated": "2025-08-29"
     },
