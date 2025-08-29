@@ -569,8 +569,8 @@ class RealDataDashboardGenerator:
         # Analyze real data
         dashboard_data = self.analyze_real_data()
         
-        # Save real data file
-        data_path = self.docs_path / "real-dashboard-data.json"
+        # Save real data file (compatible with existing dashboard-data.json)
+        data_path = self.docs_path / "dashboard-data.json"
         with open(data_path, 'w', encoding='utf-8') as f:
             json.dump(dashboard_data, f, indent=2, ensure_ascii=False)
         
@@ -581,7 +581,7 @@ class RealDataDashboardGenerator:
             f.write(html_content)
         
         print(f"✅ Real data dashboard saved: {html_path}")
-        print(f"✅ Real dashboard data saved: {data_path}")
+        print(f"✅ Dashboard data saved: {data_path}")
         print(f"🌐 View dashboard at: file://{html_path.absolute()}")
         
         # Clean up any synthetic files

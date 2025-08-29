@@ -99,8 +99,8 @@ jobs:
     - name: 📈 Generate Dashboard
       if: contains(github.event.inputs.report_types, 'dashboard') || github.event.inputs.report_types == '' || github.event_name != 'workflow_dispatch'
       run: |
-        echo "📈 Generating interactive dashboard..."
-        python scripts/generate_dashboard.py --live
+        echo "📈 Generating enhanced dashboard..."
+        python scripts/generate_real_dashboard.py
         
     - name: 🏷️ Generate Markdown Reports
       if: github.event.inputs.output_format == 'both' || (github.event.inputs.output_format == '' && github.event_name == 'workflow_dispatch')
