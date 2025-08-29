@@ -1,0 +1,1800 @@
+{
+  "metadata": {
+    "last_updated": "2025-08-28",
+    "total_backlog_stories": 96,
+    "format_version": "2.0",
+    "generated_by": "Strategic Business Analysis",
+    "priority_method": "business_value_assessment",
+    "top_10_prioritized": true,
+    "prioritization_rationale": "Based on revenue impact, user confidence, and logical dependencies"
+  },
+  "backlog": [
+    {
+      "id": "ADH-001",
+      "title": "Update Busta for Adhoc Stories",
+      "branch_name": "adh-001-update-busta-for-adhoc-stories",
+      "file_path": "backlog/adhoc/ADH-001-Update_Busta_for_Adhoc_Stories.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "ad-hoc",
+        "maintenance"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-002",
+      "title": "Fix Inventory Sidebar",
+      "branch_name": "adh-002-fix-inventory-sidebar",
+      "file_path": "backlog/adhoc/ADH-002-Fix_Inventory_Sidebar.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "ad-hoc",
+        "maintenance"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-003",
+      "title": "Untrack Log Files",
+      "branch_name": "adh-003-untrack-log-files",
+      "file_path": "backlog/adhoc/ADH-003-Untrack_Log_Files.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "ad-hoc",
+        "maintenance"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-004",
+      "title": "Next Story Preview",
+      "branch_name": "adh-004-next-story-preview",
+      "file_path": "backlog/adhoc/ADH-004-Next-Story-Preview.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-008",
+      "title": "Advanced Nfl Statistics Integration",
+      "branch_name": "adh-008-advanced-nfl-statistics-integration",
+      "file_path": "backlog/adhoc/ADH-008-advanced-nfl-statistics-integration.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-009",
+      "title": "Ai Generated Sales Pitch",
+      "branch_name": "adh-009-ai-generated-sales-pitch",
+      "file_path": "backlog/adhoc/ADH-009-ai-generated-sales-pitch.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-010",
+      "title": "User Story: Backtesting & ROI Tracking",
+      "branch_name": "adh-010-user-story-backtesting-roi-tracking",
+      "file_path": "backlog/adhoc/ADH-010-backtesting-roi-tracking.md",
+      "status": "accepted",
+      "priority": 9,
+      "estimate": 8,
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "backtesting",
+        "roi"
+      ],
+      "owner": "ai-agent",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "ADH-011",
+      "title": "Code Style Inventory",
+      "branch_name": "adh-011-code-style-inventory",
+      "file_path": "backlog/adhoc/ADH-011-code-style-inventory.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-012",
+      "title": "Config Standards Yaml Pydantic",
+      "branch_name": "adh-012-config-standards-yaml-pydantic",
+      "file_path": "backlog/adhoc/ADH-012-config-standards-yaml-pydantic.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-013",
+      "title": "Data Catalog",
+      "branch_name": "adh-013-data-catalog",
+      "file_path": "backlog/adhoc/ADH-013-data-catalog.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-014",
+      "title": "Emit Metadata Doc",
+      "branch_name": "adh-014-emit-metadata-doc",
+      "file_path": "backlog/adhoc/ADH-014-emit-metadata-doc.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-015",
+      "title": "End To End Kaggle Nfl Scores",
+      "branch_name": "adh-015-end-to-end-kaggle-nfl-scores",
+      "file_path": "backlog/adhoc/ADH-015-end-to-end-kaggle-nfl-scores.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-016",
+      "title": "End To End Summary",
+      "branch_name": "adh-016-end-to-end-summary",
+      "file_path": "backlog/adhoc/ADH-016-end-to-end-summary.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-017",
+      "title": "Nfl Player Injury Data Integration",
+      "branch_name": "adh-017-nfl-player-injury-data-integration",
+      "file_path": "backlog/adhoc/ADH-017-nfl-player-injury-data-integration.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-018",
+      "title": "Performance Tracking Final",
+      "branch_name": "adh-018-performance-tracking-final",
+      "file_path": "backlog/adhoc/ADH-018-performance-tracking-final.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-019",
+      "title": "Playbook Performance Tracking",
+      "branch_name": "adh-019-playbook-performance-tracking",
+      "file_path": "backlog/adhoc/ADH-019-playbook-performance-tracking.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-020",
+      "title": "Playbook Project Setup",
+      "branch_name": "adh-020-playbook-project-setup",
+      "file_path": "backlog/adhoc/ADH-020-playbook-project-setup.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-021",
+      "title": "Playbook Unified Cli",
+      "branch_name": "adh-021-playbook-unified-cli",
+      "file_path": "backlog/adhoc/ADH-021-playbook-unified-cli.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-022",
+      "title": "PREDICTIONS_OUTPUTS: Predictions & Outputs ✅ ACCEPTED",
+      "branch_name": "adh-022-predictions_outputs-predictions-outputs-accepted",
+      "file_path": "backlog/adhoc/ADH-022-predictions-outputs.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": 5,
+      "epic": "adhoc",
+      "dependencies": [
+        "QLT-001"
+      ],
+      "labels": [
+        "outputs",
+        "infra"
+      ],
+      "owner": "implementation-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-25"
+    },
+    {
+      "id": "ADH-023",
+      "title": "Session Summary",
+      "branch_name": "adh-023-session-summary",
+      "file_path": "backlog/adhoc/ADH-023-session-summary.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "LLM-008",
+      "title": "Offline evaluation harness & metrics tracking",
+      "branch_name": "llm-008-offline-evaluation-harness-metrics-tracking",
+      "file_path": "backlog/core/LLM-008-eval-001-offline-eval-metrics.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "evaluation",
+        "metrics"
+      ],
+      "owner": "evaluation-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-009",
+      "title": "Ablation studies for LLM feature lift",
+      "branch_name": "llm-009-ablation-studies-for-llm-feature-lift",
+      "file_path": "backlog/core/LLM-009-eval-002.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "core",
+      "dependencies": [
+        "EVAL-001"
+      ],
+      "labels": [
+        "evaluation",
+        "ablation",
+        "accepted"
+      ],
+      "owner": "evaluation-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-010",
+      "title": "Task runner integration (busta/CLI from repo root) - COMPLETED ✅",
+      "branch_name": "llm-010-task-runner-integration-bustacli-from-repo-root---",
+      "file_path": "backlog/core/LLM-010-task-runner-busta.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "1sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "cli",
+        "busta",
+        "accepted"
+      ],
+      "owner": "infra-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-011",
+      "title": "Secrets management & key rotation",
+      "branch_name": "llm-011-secrets-management-key-rotation",
+      "file_path": "backlog/core/LLM-011-inf-004.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "secrets",
+        "security",
+        "accepted"
+      ],
+      "owner": "AI Assistant",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-012",
+      "title": "Enhanced Multi-Format News RSS Collection System",
+      "branch_name": "llm-012-enhanced-multi-format-news-rss-collection-system",
+      "file_path": "backlog/core/LLM-012-ing-001-news-rss-sources.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "ingestion",
+        "rss",
+        "accepted"
+      ],
+      "owner": "team-data",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-013",
+      "title": "Odds API integration (moneyline, spread, totals, props) ✅ COMPLETED",
+      "branch_name": "llm-013-odds-api-integration-moneyline-spread-totals-props",
+      "file_path": "backlog/core/LLM-013-ing-003-odds-api-integration.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "ingestion",
+        "odds",
+        "accepted"
+      ],
+      "owner": "team-data",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-014",
+      "title": "Llm Feature Extraction From News",
+      "branch_name": "llm-014-llm-feature-extraction-from-news",
+      "file_path": "backlog/core/LLM-014-llm-feature-extraction-from-news.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "LLM-015",
+      "title": "Feature store schema & lineage ✅ COMPLETED",
+      "branch_name": "llm-015-feature-store-schema-lineage-completed",
+      "file_path": "backlog/core/LLM-015-feature-store-schema.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "4sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "feature-store",
+        "schema",
+        "accepted"
+      ],
+      "owner": "feature-store-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-016",
+      "title": "News Rss Sources Integration",
+      "branch_name": "llm-016-news-rss-sources-integration",
+      "file_path": "backlog/core/LLM-016-news-rss-sources-integration.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "LLM-017",
+      "title": "Data quality checks on joins and keys ✅ ACCEPTED",
+      "branch_name": "llm-017-data-quality-checks-on-joins-and-keys-accepted",
+      "file_path": "backlog/core/LLM-017-qlt-001-data-quality-checks.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "quality",
+        "data"
+      ],
+      "owner": "qa-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-25"
+    },
+    {
+      "id": "LLM-018",
+      "title": "S01 Social News Schema And Abstraction",
+      "branch_name": "llm-018-s01-social-news-schema-and-abstraction",
+      "file_path": "backlog/core/LLM-018-s01-social-news-schema-and-abstraction.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "KAGGLE_DATA_UTILIZATION",
+      "title": "User Story: Kaggle Data Utilization",
+      "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
+      "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
+      "status": "draft",
+      "priority": 6,
+      "estimate": 3,
+      "epic": "data_sources",
+      "dependencies": [],
+      "labels": [
+        "external-data"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "INF-006-ai-inference-monitoring",
+      "title": "AI Inference Performance Monitoring & Cost Optimization",
+      "branch_name": "inf-006-ai-inference-monitoring-ai-inference-performance-monitoring-cost-optimizat",
+      "file_path": "backlog/infrastructure/INF-006-ai-inference-monitoring.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "infra",
+      "dependencies": [
+        "AI_GENERATED_SALES_PITCH"
+      ],
+      "labels": [
+        "infrastructure",
+        "ai",
+        "monitoring",
+        "cost-optimization"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "SCHEDULING_AUTOMATION",
+      "title": "User Story: Scheduling & Automation",
+      "branch_name": "scheduling_automation-user-story-scheduling-automation",
+      "file_path": "backlog/infrastructure/SCHEDULING_AUTOMATION.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": 5,
+      "epic": "infra",
+      "dependencies": [],
+      "labels": [
+        "scheduling",
+        "automation"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "INF-007",
+      "title": "INF-007 - Parallel Data Collection Engine",
+      "branch_name": "inf-007-inf-007---parallel-data-collection-engine",
+      "file_path": "backlog/infrastructure/INF-007-parallel-data-collection.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "infrastructure",
+        "data"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "INF-008",
+      "title": "INF-008 - Data Source Health Monitoring & Alerting",
+      "branch_name": "inf-008-inf-008---data-source-health-monitoring-alerting",
+      "file_path": "backlog/infrastructure/INF-008-data-source-health-monitoring.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "infrastructure",
+        "data",
+        "monitoring"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "INF-009",
+      "title": "ADH Story File Storage System",
+      "branch_name": "inf-009-adhoc-story-file-storage",
+      "file_path": "backlog/infrastructure/INF-009-adhoc-story-file-storage.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "1sp",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "adhoc",
+        "workflow",
+        "infrastructure",
+        "process-improvement"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "INF-010",
+      "title": "Data Source Integration Framework",
+      "branch_name": "inf-010-data-source-integration-framework",
+      "file_path": "backlog/infrastructure/INF-010-data-source-integration-framework.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "INF-011",
+      "title": "User Story: Gold Feature Store ✅ COMPLETED",
+      "branch_name": "inf-011-user-story-gold-feature-store-completed",
+      "file_path": "backlog/infrastructure/INF-011-gold-feature-store.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": 8,
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "feature-store",
+        "schema",
+        "accepted"
+      ],
+      "owner": "AI Assistant",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "ING-004",
+      "title": "Playbook Data Sources",
+      "branch_name": "ing-004-playbook-data-sources",
+      "file_path": "backlog/ingestion/ING-004-playbook-data-sources.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "PUBLIC_BETTING_DATA_INTEGRATION",
+      "title": "User Story: Public Betting Data Integration",
+      "branch_name": "public_betting_data_integration-user-story-public-betting-data-integration",
+      "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
+      "status": "draft",
+      "priority": 7,
+      "estimate": 5,
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "betting",
+        "trends"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "WEATHER_DATA_INTEGRATION",
+      "title": "User Story: Weather Data Integration",
+      "branch_name": "weather_data_integration-user-story-weather-data-integration",
+      "file_path": "backlog/models/WEATHER_DATA_INTEGRATION.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": 3,
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "weather",
+        "external-data"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "EXP-001",
+      "title": "Grounded explanation cards for picks",
+      "branch_name": "exp-001-grounded-explanation-cards-for-picks",
+      "file_path": "backlog/explain/EXP-001-grounded-explanations.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-002"
+      ],
+      "labels": [
+        "explainability",
+        "ui"
+      ],
+      "owner": "explainability-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "INF-001",
+      "title": "Configuration standards (YAML + pydantic)",
+      "branch_name": "inf-001-configuration-standards-yaml-pydantic",
+      "file_path": "backlog/infra/INF-001-config-standards-yaml.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "config",
+        "yaml",
+        "pydantic"
+      ],
+      "owner": "infra-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "INF-003",
+      "title": "Caching & TTL for time-sensitive signals",
+      "branch_name": "inf-003-caching-ttl-for-time-sensitive-signals",
+      "file_path": "backlog/infra/INF-002-caching-ttl.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "caching",
+        "ttl"
+      ],
+      "owner": "infra-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "INF-005",
+      "title": "LLM provider failover and model versioning",
+      "branch_name": "inf-005-llm-provider-failover-and-model-versioning",
+      "file_path": "backlog/infra/INF-003-llm-provider-failover.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001"
+      ],
+      "labels": [
+        "llm",
+        "failover",
+        "versioning"
+      ],
+      "owner": "infra-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "ING-002",
+      "title": "Article deduplication & enrichment pipeline",
+      "branch_name": "ing-002-article-deduplication-enrichment-pipeline",
+      "file_path": "backlog/ingestion/ING-001-article-dedup-enrich.md",
+      "status": "draft",
+      "priority": 10,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "ingestion",
+        "dedup",
+        "enrichment"
+      ],
+      "owner": "team-data",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ING-004",
+      "title": "PFR weekly schedule & team stats scraper",
+      "branch_name": "ing-004-pfr-weekly-schedule-team-stats-scraper",
+      "file_path": "backlog/ingestion/ING-002-pfr-scraper-week.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "ingestion",
+        "pfr"
+      ],
+      "owner": "team-data",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "ING-005",
+      "title": "Content quality scoring and filtering",
+      "branch_name": "ing-005-content-quality-scoring-and-filtering",
+      "file_path": "backlog/ingestion/ING-003-content-quality-filtering.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "ING-001",
+        "ING-002"
+      ],
+      "labels": [
+        "ingestion",
+        "quality",
+        "filtering"
+      ],
+      "owner": "team-data",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-001",
+      "title": "LLM extraction of game signals from news",
+      "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
+      "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
+      "status": "completed",
+      "priority": 4,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "ING-002"
+      ],
+      "labels": [
+        "llm",
+        "features",
+        "news"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-002",
+      "title": "Evidence citation & traceability for LLM outputs",
+      "branch_name": "llm-002-evidence-citation-traceability-for-llm-outputs",
+      "file_path": "backlog/core/LLM-002-evidence-citation-traceability.md",
+      "status": "active",
+      "priority": 5,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001"
+      ],
+      "labels": [
+        "llm",
+        "traceability",
+        "evidence"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-003",
+      "title": "Entity resolution for teams and players",
+      "branch_name": "llm-003-entity-resolution-for-teams-and-players",
+      "file_path": "backlog/core/LLM-003-entity-resolution.md",
+      "status": "draft",
+      "priority": 8,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "llm",
+        "entity-resolution"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "LLM-004",
+      "title": "Regime-change detection from weekly summaries",
+      "branch_name": "llm-004-regime-change-detection-from-weekly-summaries",
+      "file_path": "backlog/core/LLM-004-regime-change-detection.md",
+      "status": "draft",
+      "priority": 13,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001",
+        "LLM-003"
+      ],
+      "labels": [
+        "llm",
+        "regime-detection"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-005",
+      "title": "Injury override & starter availability signal",
+      "branch_name": "llm-005-injury-override-starter-availability-signal",
+      "file_path": "backlog/core/LLM-005-injury-override-signal.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "llm",
+        "injuries"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "LLM-006",
+      "title": "Batch processing optimization for LLM features",
+      "branch_name": "llm-006-batch-processing-optimization-for-llm-features",
+      "file_path": "backlog/core/LLM-006-batch-processing-optimization.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001",
+        "INF-003"
+      ],
+      "labels": [
+        "llm",
+        "optimization",
+        "batch"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-007-sales-pitch-personalization",
+      "title": "Personalized AI Sales Pitch Generation",
+      "branch_name": "llm-007-sales-pitch-personalization-personalized-ai-sales-pitch-generation",
+      "file_path": "backlog/core/LLM-007-sales-pitch-personalization.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "AI_GENERATED_SALES_PITCH",
+        "UI-002-sales-pitch-integration"
+      ],
+      "labels": [
+        "llm",
+        "personalization",
+        "ai",
+        "user-experience"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "MOD-001",
+      "title": "Rebaseline ATS/ML/Total models with clean features",
+      "branch_name": "mod-001-rebaseline-atsmltotal-models-with-clean-features",
+      "file_path": "backlog/modeling/MOD-001-base-ats-model.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "5sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001",
+        "ING-002"
+      ],
+      "labels": [
+        "modeling",
+        "ats"
+      ],
+      "owner": "modeling-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "MOD-002",
+      "title": "Meta-model stacker with LLM-aware weighting",
+      "branch_name": "mod-002-meta-model-stacker-with-llm-aware-weighting",
+      "file_path": "backlog/modeling/MOD-002-stacker-meta-model.md",
+      "status": "draft",
+      "priority": 12,
+      "estimate": "5sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "MOD-001"
+      ],
+      "labels": [
+        "modeling",
+        "stacking"
+      ],
+      "owner": "modeling-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "MOD-003",
+      "title": "Probability calibration & reliability curves",
+      "branch_name": "mod-003-probability-calibration-reliability-curves",
+      "file_path": "backlog/modeling/MOD-003-probability-calibration.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "MOD-001"
+      ],
+      "labels": [
+        "modeling",
+        "calibration"
+      ],
+      "owner": "modeling-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "MOD-004",
+      "title": "Abstention and do-not-bet logic",
+      "branch_name": "mod-004-abstention-and-do-not-bet-logic",
+      "file_path": "backlog/modeling/MOD-004-abstention-logic.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "MOD-003"
+      ],
+      "labels": [
+        "modeling",
+        "abstention"
+      ],
+      "owner": "modeling-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "MOD-006",
+      "title": "Production model calibration monitoring",
+      "branch_name": "mod-006-production-model-calibration-monitoring",
+      "file_path": "backlog/modeling/MOD-005-calibration-monitoring.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "MOD-001",
+        "MOD-002"
+      ],
+      "labels": [
+        "modeling",
+        "monitoring",
+        "calibration"
+      ],
+      "owner": "modeling-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "QLT-002",
+      "title": "Structured logging & lightweight monitoring",
+      "branch_name": "qlt-002-structured-logging-lightweight-monitoring",
+      "file_path": "backlog/quality/QLT-001-logging-monitoring.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "logging",
+        "monitoring"
+      ],
+      "owner": "qa-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "QLT-003",
+      "title": "Feature store monitoring and drift detection",
+      "branch_name": "qlt-003-feature-store-monitoring-and-drift-detection",
+      "file_path": "backlog/quality/QLT-002-feature-monitoring-drift.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "quality",
+        "monitoring",
+        "drift"
+      ],
+      "owner": "qa-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "QLT-004",
+      "title": "Production Data Quality Monitoring",
+      "branch_name": "qlt-004-production-data-quality-monitoring",
+      "file_path": "backlog/quality/QLT-003-production-data-quality-monitoring.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "QLT-001"
+      ],
+      "labels": [
+        "quality",
+        "data",
+        "production"
+      ],
+      "owner": "qa-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-25"
+    },
+    {
+      "id": "UI-001",
+      "title": "Landing page with daily games & confidence",
+      "branch_name": "ui-001-landing-page-with-daily-games-confidence",
+      "file_path": "backlog/ui/UI-004-landing-page-cards.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001"
+      ],
+      "labels": [
+        "ui",
+        "landing"
+      ],
+      "owner": "ui-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "UI-002",
+      "title": "Game detail page with rationale and signals",
+      "branch_name": "ui-002-game-detail-page-with-rationale-and-signals",
+      "file_path": "backlog/ui/UI-005-game-detail-page.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-002",
+        "UI-001"
+      ],
+      "labels": [
+        "ui",
+        "game-detail"
+      ],
+      "owner": "ui-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "MOD-006",
+      "title": "User Story: Model Training & Evaluation",
+      "branch_name": "mod-006-user-story-model-training-evaluation",
+      "file_path": "backlog/modeling/MOD-006-model-training-evaluation.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": 8,
+      "epic": "modeling",
+      "dependencies": [],
+      "labels": [
+        "modeling",
+        "evaluation",
+        "training"
+      ],
+      "owner": "AI Assistant",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-25"
+    },
+    {
+      "id": "MOD-007",
+      "title": "Predictions Outputs-enhanced-formatting",
+      "branch_name": "mod-007-predictions-outputs-enhanced-formatting",
+      "file_path": "backlog/modeling/MOD-007-predictions-outputs-enhanced-formatting.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "modeling",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S02",
+      "title": "Story S02 — Twitter/X: Curated Accounts Ingestion",
+      "branch_name": "s02-story-s02-twitterx-curated-accounts-ingestion",
+      "file_path": "backlog/social_media/S02_x_curated_accounts_ingestion.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S03",
+      "title": "Story S03 — Twitter/X: Keyword & List Search",
+      "branch_name": "s03-story-s03-twitterx-keyword-list-search",
+      "file_path": "backlog/social_media/S03_x_keyword_and_list_search.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S04",
+      "title": "Story S04 — Bluesky: Curated Handles Ingestion",
+      "branch_name": "s04-story-s04-bluesky-curated-handles-ingestion",
+      "file_path": "backlog/social_media/S04_bluesky_curated_handles_ingestion.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S05",
+      "title": "Story S05 — Bluesky: Keyword/Graph Search",
+      "branch_name": "s05-story-s05-bluesky-keywordgraph-search",
+      "file_path": "backlog/social_media/S05_bluesky_keyword_and_graph_search.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S06",
+      "title": "Story S06 — Relevance Filter & Entity Linking for Social",
+      "branch_name": "s06-story-s06-relevance-filter-entity-linking-for-soci",
+      "file_path": "backlog/social_media/S06_relevance_filter_and_entity_linking.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S08",
+      "title": "Story S08 — Scheduling, Rate-Limits, Secrets & Checkpointing",
+      "branch_name": "s08-story-s08-scheduling-rate-limits-secrets-checkpoin",
+      "file_path": "backlog/social_media/S08_scheduling_ratelimits_secrets_checkpointing.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S09",
+      "title": "Story S09 — Feed Health, Metrics & Alerting for Social",
+      "branch_name": "s09-story-s09-feed-health-metrics-alerting-for-social",
+      "file_path": "backlog/social_media/S09_feed_health_metrics_alerting.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S10",
+      "title": "Story S10 — Compliance, Config Gating & Kill-Switch",
+      "branch_name": "s10-story-s10-compliance-config-gating-kill-switch",
+      "file_path": "backlog/social_media/S10_compliance_config_gating_killswitch.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S11",
+      "title": "Story S11 — UI/CLI Surfacing & Source Configuration",
+      "branch_name": "s11-story-s11-uicli-surfacing-source-configuration",
+      "file_path": "backlog/social_media/S11_ui_cli_source_configuration.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "S12",
+      "title": "Story S12 — Evaluation: Does Social Improve Predictions?",
+      "branch_name": "s12-story-s12-evaluation-does-social-improve-predictio",
+      "file_path": "backlog/social_media/S12_evaluation_social_signal_lift.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "social-media"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "SOC-001",
+      "title": "S07 Dedup And Crosspost Collapsing",
+      "branch_name": "soc-001-s07-dedup-and-crosspost-collapsing",
+      "file_path": "backlog/social_media/SOC-001-s07-dedup-and-crosspost-collapsing.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "social_media",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "MODEL_TRAINING_EVALUATION",
+      "title": "User Story: Model Training & Evaluation",
+      "branch_name": "model_training_evaluation-user-story-model-training-evaluation",
+      "file_path": "backlog/models/MODEL_TRAINING_EVALUATION.md",
+      "status": "draft",
+      "priority": 99,
+      "estimate": 8,
+      "epic": "training",
+      "dependencies": [],
+      "labels": [
+        "model",
+        "training",
+        "evaluation"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "UI-001",
+      "title": "Fix Inventory App Sidebar UI Layout Issues",
+      "branch_name": "ui-001-fix-inventory-app-sidebar-ui-layout-issues",
+      "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
+      "status": "ready",
+      "priority": 11,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "ui",
+        "frontend",
+        "inventory",
+        "streamlit"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "UI-003",
+      "title": "UI-003 - Data Source Management Web Interface",
+      "branch_name": "ui-003-ui-003---data-source-management-web-interface",
+      "file_path": "backlog/ui/UI-003-data-source-management-interface.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "ui",
+        "ui",
+        "data"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "UI-006",
+      "title": "Ui Architecture Quickstart",
+      "branch_name": "ui-006-ui-architecture-quickstart",
+      "file_path": "backlog/ui/UI-006-ui-architecture-quickstart.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "UI-007",
+      "title": "Ui Build Process Analysis",
+      "branch_name": "ui-007-ui-build-process-analysis",
+      "file_path": "backlog/ui/UI-007-ui-build-process-analysis.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "UI-008",
+      "title": "Web Build Process Update",
+      "branch_name": "ui-008-web-build-process-update",
+      "file_path": "backlog/ui/UI-008-web-build-process-update.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "UI-009",
+      "title": "Web Deployment Guide",
+      "branch_name": "ui-009-web-deployment-guide",
+      "file_path": "backlog/ui/UI-009-web-deployment-guide.md",
+      "status": "accepted",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-004",
+      "title": "ADH-004-Vite-Glassmorphism-Framework-Integration - Vite-Glassmorphism-Framework-Integration",
+      "branch_name": "adh-004-adh-004-vite-glassmorphism-framework-integration--",
+      "file_path": "backlog/adhoc/ADH-004-Vite-Glassmorphism-Framework-Integration.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "unknown",
+      "dependencies": [],
+      "labels": [
+        "unknown"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-005",
+      "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
+      "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
+      "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "unknown",
+      "dependencies": [],
+      "labels": [
+        "unknown"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-006",
+      "title": "ADH-006-Docker-Preview-Command - Docker-Preview-Command",
+      "branch_name": "adh-006-adh-006-docker-preview-command---docker-preview-co",
+      "file_path": "backlog/adhoc/ADH-006-Docker-Preview-Command.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "unknown",
+      "dependencies": [],
+      "labels": [
+        "unknown"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-007",
+      "title": "ADH-007-UI-Redesign-Ideas - UI-Redesign-Ideas",
+      "branch_name": "adh-007-adh-007-ui-redesign-ideas---ui-redesign-ideas",
+      "file_path": "backlog/adhoc/ADH-007-UI-Redesign-Ideas.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "unknown",
+      "dependencies": [],
+      "labels": [
+        "unknown"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "PRIORITIZATION",
+      "title": "Prioritization",
+      "branch_name": "prioritization-prioritization",
+      "file_path": "backlog/PRIORITIZATION.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "unknown",
+      "dependencies": [],
+      "labels": [
+        "unknown"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "INGESTION-046A",
+      "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
+      "branch_name": "ingestion-046a-rss-analytics-betting-core",
+      "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
+      "status": "completed",
+      "priority": 1,
+      "estimate": "5sp",
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "analytics",
+        "betting",
+        "phase1"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046B",
+      "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
+      "branch_name": "ingestion-046b-rss-team-coverage-expansion",
+      "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
+      "status": "completed",
+      "priority": 2,
+      "estimate": "3sp",
+      "epic": "ingestion",
+      "dependencies": [
+        "INGESTION-046A"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "team-coverage",
+        "sbnation",
+        "local-media",
+        "phase2"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046C",
+      "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
+      "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
+      "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
+      "status": "completed",
+      "priority": 3,
+      "estimate": "2sp",
+      "epic": "ingestion",
+      "dependencies": [
+        "INGESTION-046B"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "draft",
+        "statistics",
+        "international",
+        "specialized",
+        "phase3"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "title": "Real-time Performance Monitoring Dashboard",
+      "epic": "ui",
+      "priority": 99,
+      "estimate": "5sp",
+      "labels": [
+        "dashboard",
+        "monitoring",
+        "real-time"
+      ],
+      "author": "story-ingestor-demo",
+      "description": "Create a real-time dashboard to monitor model performance, data ingestion status, and system health.",
+      "user_story": "**As a** sports analytics platform administrator  \n**I want** a real-time dashboard showing system performance and health metrics  \n**So that** I can quickly identify and respond to issues before they impact users",
+      "acceptance_criteria": [
+        "Display live model accuracy metrics for active predictions",
+        "Show data ingestion pipeline status and lag times",
+        "Monitor system resource usage (CPU, memory, disk)",
+        "Alert on performance degradation or failures",
+        "Allow drill-down into specific metrics and time ranges",
+        "Update metrics in real-time (< 30 second refresh)",
+        "Dashboard displays all required metrics in real-time",
+        "Performance tests show minimal impact on system resources",
+        "Mobile-responsive design implemented",
+        "Unit and integration tests written",
+        "Documentation updated with configuration and usage instructions",
+        "Security review completed for admin access controls"
+      ],
+      "id": "UI-010",
+      "branch_name": "ui-010-real-time-performance-monitoring-dashboard",
+      "status": "backlog",
+      "dependencies": [],
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28",
+      "owner": "",
+      "file_path": "backlog/ui/UI-010-Real-time_Performance_Monitoring_Dashboard.md"
+    },
+    {
+      "id": "LLM-019",
+      "title": "Investigate GraphQL API Integration",
+      "epic": "core",
+      "status": "backlog",
+      "priority": "medium",
+      "estimate": "2sp",
+      "dependencies": [],
+      "labels": [
+        "spike",
+        "research"
+      ],
+      "created": 

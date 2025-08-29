@@ -2,7 +2,96 @@
 
 Automation scripts for maintaining the planning repository.
 
+## Prerequisites
+
+Install required dependencies:
+```bash
+pip install -r scripts/requirements.txt
+```
+
 ## Available Scripts
+
+### `ingest_stories.py`
+
+**Purpose**: Process new stories from staging area into the main backlog with proper ID assignment, validation, and epic placement.
+
+**Usage**:
+```bash
+# Process all staged stories (markdown and JSON)
+python scripts/ingest_stories.py
+
+# Interactive story creation
+python scripts/ingest_stories.py --interactive
+
+# Create story from template
+python scripts/ingest_stories.py --template basic --title "New Feature" --epic core
+python scripts/ingest_stories.py --template technical --title "Database Migration" --epic infra
+python scripts/ingest_stories.py --template spike --title "Research GraphQL" --epic core
+
+# Process specific file types only
+python scripts/ingest_stories.py --markdown-only
+python scripts/ingest_stories.py --json-only
+
+# Dry run to see what would be processed
+python scripts/ingest_stories.py --dry-run
+```
+
+**Features**:
+- Automatic story ID generation based on epic
+- Validation of required fields and epic mappings
+- Git branch name generation
+- Markdown frontmatter parsing
+- JSON bulk import support
+- Story archiving to processed/ directory
+- Integration with PRIORITIZATION.json
+
+### `manage_priorities.py`
+
+**Purpose**: Comprehensive priority management and backlog automation for strategic story refinement.
+
+**Usage**:
+```bash
+# View current priority structure
+python scripts/manage_priorities.py --list
+
+# View all stories including unprocessed (priority 99)
+python scripts/manage_priorities.py --list --all
+
+# Set specific story priority
+python scripts/manage_priorities.py --set LLM-001 --priority 5
+
+# Insert new stories at top priorities, shift others down
+python scripts/manage_priorities.py --insert RSS-001,RSS-002,RSS-003 --at 1 --shift
+
+# Shift priority range down (dry run first)
+python scripts/manage_priorities.py --shift-from 5 --positions 2 --dry-run
+python scripts/manage_priorities.py --shift-from 5 --positions 2
+
+# Auto-prioritize ready stories using business logic
+python scripts/manage_priorities.py --auto-prioritize --max-priority 10
+
+# Interactive mode for complex reordering
+python scripts/manage_priorities.py --interactive
+```
+
+**What it does**:
+- **Priority Visualization**: Shows current priority structure with status indicators
+- **Batch Reordering**: Insert multiple stories and automatically shift existing priorities
+- **Range Shifting**: Move entire priority ranges up or down
+- **Auto-Prioritization**: Intelligent scoring of ready stories based on epic, dependencies, and business value
+- **Interactive Mode**: Full-featured CLI for complex priority management
+- **Dry Run Support**: Preview changes before applying them
+
+**Business Logic Scoring**:
+- **Core LLM**: Highest priority (score +10)
+- **Modeling**: High priority (score +8)  
+- **Ingestion**: Medium-high priority (score +7)
+- **UI**: Medium priority (score +6)
+- **Quality**: Medium-low priority (score +5)
+- **Infrastructure**: Low priority (score +4)
+- **Adhoc**: Lowest priority (score +1)
+- **No Dependencies**: Easier to implement (+2 bonus)
+- **Assigned Owner**: Ready for work (+1 bonus)
 
 ### `update_story.py`
 

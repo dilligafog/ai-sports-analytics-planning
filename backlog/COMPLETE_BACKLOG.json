@@ -1,12 +1,9 @@
 {
   "metadata": {
     "last_updated": "2025-08-28",
-    "total_backlog_stories": 95,
+    "total_backlog_stories": 98,
     "format_version": "2.0",
-    "generated_by": "Strategic Business Analysis",
-    "priority_method": "business_value_assessment",
-    "top_10_prioritized": true,
-    "prioritization_rationale": "Based on revenue impact, user confidence, and logical dependencies"
+    "generated_by": "Strategic Nexus Prime"
   },
   "backlog": [
     {
@@ -27,7 +24,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-002",
@@ -45,7 +42,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-003",
@@ -63,7 +60,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-004",
@@ -80,7 +77,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-008",
@@ -97,7 +94,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-009",
@@ -114,7 +111,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-010",
@@ -122,7 +119,7 @@
       "branch_name": "adh-010-user-story-backtesting-roi-tracking",
       "file_path": "backlog/adhoc/ADH-010-backtesting-roi-tracking.md",
       "status": "accepted",
-      "priority": 9,
+      "priority": 99,
       "estimate": 8,
       "epic": "adhoc",
       "dependencies": [],
@@ -131,7 +128,7 @@
         "roi"
       ],
       "owner": "ai-agent",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -149,7 +146,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-012",
@@ -166,7 +163,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-013",
@@ -183,7 +180,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-014",
@@ -200,7 +197,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-015",
@@ -217,7 +214,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-016",
@@ -234,7 +231,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-017",
@@ -251,7 +248,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-018",
@@ -268,7 +265,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-019",
@@ -285,7 +282,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-020",
@@ -302,7 +299,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-021",
@@ -319,7 +316,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-022",
@@ -338,7 +335,7 @@
         "infra"
       ],
       "owner": "implementation-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-25"
     },
     {
@@ -356,7 +353,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "LLM-008",
@@ -373,7 +370,7 @@
         "metrics"
       ],
       "owner": "evaluation-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -394,7 +391,7 @@
         "accepted"
       ],
       "owner": "evaluation-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -413,7 +410,7 @@
         "accepted"
       ],
       "owner": "infra-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -432,7 +429,7 @@
         "accepted"
       ],
       "owner": "AI Assistant",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -451,7 +448,7 @@
         "accepted"
       ],
       "owner": "team-data",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -470,7 +467,7 @@
         "accepted"
       ],
       "owner": "team-data",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -488,7 +485,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "LLM-015",
@@ -506,7 +503,7 @@
         "accepted"
       ],
       "owner": "feature-store-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -524,7 +521,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "LLM-017",
@@ -541,7 +538,7 @@
         "data"
       ],
       "owner": "qa-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-25"
     },
     {
@@ -559,7 +556,113 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-019",
+      "title": "Advanced Player Tracking Integration",
+      "branch_name": "llm-019-advanced-player-tracking-integration",
+      "file_path": "backlog/core/LLM-019-Advanced_Player_Tracking_Integration.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "player-tracking",
+        "data-integration"
+      ],
+      "owner": "",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-019",
+      "title": "Investigate GraphQL API Integration",
+      "branch_name": "llm-019-investigate-graphql-api-integration",
+      "file_path": "backlog/core/LLM-019-Investigate_GraphQL_API_Integration.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "spike",
+        "research"
+      ],
+      "owner": "",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046A",
+      "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
+      "branch_name": "ingestion-046a-rss-analytics-betting-core",
+      "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "5sp",
+      "epic": "data_source_integration",
+      "dependencies": [],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "analytics",
+        "betting",
+        "phase1"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046B",
+      "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
+      "branch_name": "ingestion-046b-rss-team-coverage-expansion",
+      "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "3sp",
+      "epic": "data_source_integration",
+      "dependencies": [
+        "INGESTION-046A"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "team-coverage",
+        "sbnation",
+        "local-media",
+        "phase2"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046C",
+      "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
+      "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
+      "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "2sp",
+      "epic": "data_source_integration",
+      "dependencies": [
+        "INGESTION-046B"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "draft",
+        "statistics",
+        "international",
+        "specialized",
+        "phase3"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "KAGGLE_DATA_UTILIZATION",
@@ -567,7 +670,7 @@
       "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
       "status": "draft",
-      "priority": 6,
+      "priority": 99,
       "estimate": 3,
       "epic": "data_sources",
       "dependencies": [],
@@ -575,7 +678,7 @@
         "external-data"
       ],
       "owner": "TBD",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -598,7 +701,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "SCHEDULING_AUTOMATION",
@@ -615,7 +718,7 @@
         "automation"
       ],
       "owner": "TBD",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -633,8 +736,8 @@
         "data"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "INF-008",
@@ -652,8 +755,8 @@
         "monitoring"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "INF-009",
@@ -690,7 +793,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "INF-011",
@@ -708,7 +811,7 @@
         "accepted"
       ],
       "owner": "AI Assistant",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -726,7 +829,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "PUBLIC_BETTING_DATA_INTEGRATION",
@@ -734,7 +837,7 @@
       "branch_name": "public_betting_data_integration-user-story-public-betting-data-integration",
       "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
       "status": "draft",
-      "priority": 7,
+      "priority": 99,
       "estimate": 5,
       "epic": "ingestion",
       "dependencies": [],
@@ -743,7 +846,7 @@
         "trends"
       ],
       "owner": "TBD",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -761,7 +864,7 @@
         "external-data"
       ],
       "owner": "TBD",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -781,7 +884,7 @@
         "ui"
       ],
       "owner": "explainability-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -800,7 +903,7 @@
         "pydantic"
       ],
       "owner": "infra-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -818,7 +921,7 @@
         "ttl"
       ],
       "owner": "infra-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -839,7 +942,7 @@
         "versioning"
       ],
       "owner": "infra-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -848,7 +951,7 @@
       "branch_name": "ing-002-article-deduplication-enrichment-pipeline",
       "file_path": "backlog/ingestion/ING-001-article-dedup-enrich.md",
       "status": "draft",
-      "priority": 10,
+      "priority": 99,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [],
@@ -858,7 +961,7 @@
         "enrichment"
       ],
       "owner": "team-data",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-27"
     },
     {
@@ -876,7 +979,7 @@
         "pfr"
       ],
       "owner": "team-data",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -898,7 +1001,7 @@
         "filtering"
       ],
       "owner": "team-data",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -907,7 +1010,7 @@
       "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
       "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
       "status": "draft",
-      "priority": 4,
+      "priority": 99,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -919,7 +1022,7 @@
         "news"
       ],
       "owner": "team-llm",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-27"
     },
     {
@@ -928,7 +1031,7 @@
       "branch_name": "llm-002-evidence-citation-traceability-for-llm-outputs",
       "file_path": "backlog/core/LLM-002-evidence-citation-traceability.md",
       "status": "draft",
-      "priority": 5,
+      "priority": 99,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -940,7 +1043,7 @@
         "evidence"
       ],
       "owner": "team-llm",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -949,7 +1052,7 @@
       "branch_name": "llm-003-entity-resolution-for-teams-and-players",
       "file_path": "backlog/core/LLM-003-entity-resolution.md",
       "status": "draft",
-      "priority": 8,
+      "priority": 99,
       "estimate": "2sp",
       "epic": "llm_backlog",
       "dependencies": [],
@@ -958,7 +1061,7 @@
         "entity-resolution"
       ],
       "owner": "team-llm",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-27"
     },
     {
@@ -967,7 +1070,7 @@
       "branch_name": "llm-004-regime-change-detection-from-weekly-summaries",
       "file_path": "backlog/core/LLM-004-regime-change-detection.md",
       "status": "draft",
-      "priority": 13,
+      "priority": 99,
       "estimate": "3sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -979,7 +1082,7 @@
         "regime-detection"
       ],
       "owner": "team-llm",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -997,7 +1100,7 @@
         "injuries"
       ],
       "owner": "team-llm",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-27"
     },
     {
@@ -1019,7 +1122,7 @@
         "batch"
       ],
       "owner": "team-llm",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1043,7 +1146,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "MOD-001",
@@ -1063,7 +1166,7 @@
         "ats"
       ],
       "owner": "modeling-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1072,7 +1175,7 @@
       "branch_name": "mod-002-meta-model-stacker-with-llm-aware-weighting",
       "file_path": "backlog/modeling/MOD-002-stacker-meta-model.md",
       "status": "draft",
-      "priority": 12,
+      "priority": 99,
       "estimate": "5sp",
       "epic": "llm_backlog",
       "dependencies": [
@@ -1083,7 +1186,7 @@
         "stacking"
       ],
       "owner": "modeling-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1103,7 +1206,7 @@
         "calibration"
       ],
       "owner": "modeling-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1123,7 +1226,7 @@
         "abstention"
       ],
       "owner": "modeling-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1145,7 +1248,7 @@
         "calibration"
       ],
       "owner": "modeling-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-27"
     },
     {
@@ -1163,7 +1266,7 @@
         "monitoring"
       ],
       "owner": "qa-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1182,7 +1285,7 @@
         "drift"
       ],
       "owner": "qa-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-27"
     },
     {
@@ -1203,7 +1306,7 @@
         "production"
       ],
       "owner": "qa-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-25"
     },
     {
@@ -1223,7 +1326,7 @@
         "landing"
       ],
       "owner": "ui-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1244,7 +1347,7 @@
         "game-detail"
       ],
       "owner": "ui-team",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1263,7 +1366,7 @@
         "training"
       ],
       "owner": "AI Assistant",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-25"
     },
     {
@@ -1281,7 +1384,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S02",
@@ -1297,8 +1400,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S03",
@@ -1314,8 +1417,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S04",
@@ -1331,8 +1434,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S05",
@@ -1348,8 +1451,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S06",
@@ -1365,8 +1468,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S08",
@@ -1382,8 +1485,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S09",
@@ -1399,8 +1502,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S10",
@@ -1416,8 +1519,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S11",
@@ -1433,8 +1536,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "S12",
@@ -1450,8 +1553,8 @@
         "social-media"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "SOC-001",
@@ -1468,7 +1571,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "MODEL_TRAINING_EVALUATION",
@@ -1486,7 +1589,7 @@
         "evaluation"
       ],
       "owner": "TBD",
-      "created": "2025-08-27",
+      "created": "2025-08-28",
       "last_updated": "2025-08-24"
     },
     {
@@ -1495,7 +1598,7 @@
       "branch_name": "ui-001-fix-inventory-app-sidebar-ui-layout-issues",
       "file_path": "backlog/ui/UI-001-fix-inventory-sidebar-layout.md",
       "status": "ready",
-      "priority": 11,
+      "priority": 99,
       "estimate": "TBD",
       "epic": "ui",
       "dependencies": [],
@@ -1507,7 +1610,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-26",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "UI-002",
@@ -1524,8 +1627,8 @@
         "ui"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "UI-003",
@@ -1543,8 +1646,8 @@
         "data"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "UI-006",
@@ -1561,7 +1664,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "UI-007",
@@ -1578,7 +1681,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "UI-008",
@@ -1595,7 +1698,7 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "UI-009",
@@ -1612,7 +1715,26 @@
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "UI-010",
+      "title": "Real-time Performance Monitoring Dashboard",
+      "branch_name": "ui-010-real-time-performance-monitoring-dashboard",
+      "file_path": "backlog/ui/UI-010-Real-time_Performance_Monitoring_Dashboard.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "5sp",
+      "epic": "ui",
+      "dependencies": [],
+      "labels": [
+        "dashboard",
+        "monitoring",
+        "real-time"
+      ],
+      "owner": "",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-004",
@@ -1628,8 +1750,8 @@
         "unknown"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-005",
@@ -1645,8 +1767,8 @@
         "unknown"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-006",
@@ -1662,8 +1784,8 @@
         "unknown"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "ADH-007",
@@ -1679,13 +1801,13 @@
         "unknown"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     },
     {
       "id": "PRIORITIZATION",
-      "title": "Prioritization",
-      "branch_name": "prioritization-prioritization",
+      "title": "Strategic Backlog Prioritization",
+      "branch_name": "prioritization-strategic-backlog-prioritization",
       "file_path": "backlog/PRIORITIZATION.md",
       "status": "backlog",
       "priority": 99,
@@ -1696,76 +1818,6 @@
         "unknown"
       ],
       "owner": "Neo Starlord of Thunder",
-      "created": "2025-08-27",
-      "last_updated": "2025-08-27"
-    },
-    {
-      "id": "INGESTION-046A",
-      "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
-      "branch_name": "ingestion-046a-rss-analytics-betting-core",
-      "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
-      "status": "backlog",
-      "priority": 1,
-      "estimate": "5sp",
-      "epic": "ingestion",
-      "dependencies": [],
-      "labels": [
-        "rss",
-        "data-ingestion",
-        "analytics",
-        "betting",
-        "phase1"
-      ],
-      "owner": "data-team",
-      "created": "2025-08-28",
-      "last_updated": "2025-08-28"
-    },
-    {
-      "id": "INGESTION-046B",
-      "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
-      "branch_name": "ingestion-046b-rss-team-coverage-expansion",
-      "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
-      "status": "backlog",
-      "priority": 2,
-      "estimate": "3sp",
-      "epic": "ingestion",
-      "dependencies": [
-        "INGESTION-046A"
-      ],
-      "labels": [
-        "rss",
-        "data-ingestion",
-        "team-coverage",
-        "sbnation",
-        "local-media",
-        "phase2"
-      ],
-      "owner": "data-team",
-      "created": "2025-08-28",
-      "last_updated": "2025-08-28"
-    },
-    {
-      "id": "INGESTION-046C",
-      "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
-      "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
-      "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
-      "status": "backlog",
-      "priority": 3,
-      "estimate": "2sp",
-      "epic": "ingestion",
-      "dependencies": [
-        "INGESTION-046B"
-      ],
-      "labels": [
-        "rss",
-        "data-ingestion",
-        "draft",
-        "statistics",
-        "international",
-        "specialized",
-        "phase3"
-      ],
-      "owner": "data-team",
       "created": "2025-08-28",
       "last_updated": "2025-08-28"
     }
