@@ -86,7 +86,7 @@
       "title": "FastAPI service framework with basic CRUD endpoints",
       "branch_name": "inf-012-fastapi-service-framework-basic-crud-endpoints",
       "file_path": "backlog/infrastructure/INF-012-fastapi-service-framework-basic-crud-endpoints.md",
-      "status": "backlog",
+      "status": "active",
       "priority": 3,
       "estimate": "5sp",
       "epic": "infrastructure",
