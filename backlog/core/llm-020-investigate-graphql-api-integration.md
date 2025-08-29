@@ -1,23 +1,23 @@
 ---
 author: planning-agent
-branch_name: llm-019-investigate-graphql-api-integration
+branch_name: llm-020-investigate-graphql-api-integration
 created: 2025-08-28
 dependencies: []
 epic: core
 estimate: 2sp
-file_path: backlog/core/LLM-019-Investigate_GraphQL_API_Integration.md
-id: LLM-019
+file_path: backlog/core/LLM-020-Investigate_GraphQL_API_Integration.md
+id: LLM-020
 labels:
 - spike
 - research
-last_updated: '2025-08-28'
+last_updated: '2025-08-29'
 owner: ''
 priority: medium
 status: backlog
 title: Investigate GraphQL API Integration
 ---
 
-# LLM-019: Investigate GraphQL API Integration
+# LLM-020: Investigate GraphQL API Integration
 
 ## User Story
 **As a** [user role]  
