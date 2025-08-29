@@ -32,10 +32,12 @@ emit_metadata:
 Enables automated story management workflows, CI/CD integration, and external tool development while maintaining data consistency and validation.
 
 ## Acceptance Criteria
-- [ ] GET /api/v1/stories - List stories with optional filtering (epic, status, priority)
-- [ ] POST /api/v1/stories - Create new story with validation
-- [ ] GET /api/v1/stories/{id} - Get specific story details
-- [ ] PUT /api/v1/stories/{id} - Update existing story
+- [ ] GET /api/v1/stories - List stories with optional filtering (backlog, epic, status, priority)
+- [ ] GET /api/v1/stories?backlog_id={id} - List stories in specific backlog
+- [ ] POST /api/v1/stories - Create new story with validation (supports backlog assignment)
+- [ ] GET /api/v1/stories/{id} - Get specific story details with backlog context
+- [ ] PUT /api/v1/stories/{id} - Update existing story (can move between backlogs)
+- [ ] POST /api/v1/stories/{id}/move - Move story to different backlog
 - [ ] DELETE /api/v1/stories/{id} - Delete story (with safety checks)
 - [ ] Request/response validation using Pydantic models
 - [ ] Proper HTTP status codes for all scenarios (200, 201, 400, 404, 422)
@@ -46,11 +48,11 @@ Enables automated story management workflows, CI/CD integration, and external to
 
 ## Technical Notes
 - Follow RESTful API design principles
-- Include proper input validation for all story fields
+- Include proper input validation for all story fields including backlog_id
 - Implement soft delete for stories to maintain audit trail
-- Support partial updates using PATCH method if needed
-- Include created/updated timestamps in responses
-- Consider using HTTP ETags for optimistic concurrency control
+- Support story movement between backlogs with validation
+- Include backlog context in story responses
+- Implement proper foreign key constraints for backlog relationships
 
 ## Definition of Done
 - [ ] All acceptance criteria met

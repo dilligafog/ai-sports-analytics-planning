@@ -8,57 +8,57 @@
 - **Priority**: Medium
 
 ## Technical Approach
-- **Architecture**: PostgreSQL-powered advanced querying with full-text search and aggregation capabilities
+- **Architecture**: PostgreSQL-powered advanced querying with full-text search, multi-backlog support, and aggregation capabilities
 - **Technology Stack**:
-  - FastAPI with advanced query parameter handling
-  - PostgreSQL full-text search with GIN indexes
-  - SQLAlchemy with complex query building
-  - Pydantic models for query validation
-  - Redis for query result caching
-  - Elasticsearch (optional) for advanced search features
+  - FastAPI with advanced query parameter handling for multi-backlog filtering
+  - PostgreSQL full-text search with GIN indexes optimized for cross-backlog queries
+  - SQLAlchemy with complex query building supporting backlog joins
+  - Pydantic models for query validation including backlog parameters
+  - Redis for query result caching with backlog-aware cache keys
+  - Elasticsearch (optional) for advanced search features across multiple backlogs
 - **Integration Points**:
-  - Story management endpoints (API-001)
-  - PostgreSQL database with search indexes
-  - Caching layer for performance optimization
-- **Data Flow**: Query parameters → Validation → Query builder → Database → Caching → Response formatting
+  - Story management endpoints (API-001) with multi-backlog support
+  - PostgreSQL database with search indexes optimized for backlog queries
+  - Caching layer for performance optimization with backlog segmentation
+- **Data Flow**: Query parameters → Validation → Query builder → Database joins → Caching → Response formatting
 
 ## Implementation Phases
 
 ### Phase 1: Core Filtering and Search Foundation
 **Deliverables:**
-- Advanced filtering query parameter system
-- PostgreSQL full-text search implementation
-- Database indexes for query optimization
-- Query builder with complex filter combinations
-- Basic caching for frequently accessed queries
+- Advanced filtering query parameter system with multi-backlog support
+- PostgreSQL full-text search implementation across backlogs
+- Database indexes for query optimization including backlog joins
+- Query builder with complex filter combinations and backlog filtering
+- Basic caching for frequently accessed queries with backlog segmentation
 
 **Story Points**: 3.5
-**Dependencies**: API-001 (basic story endpoints)
+**Dependencies**: API-001 (basic story endpoints with multi-backlog support)
 **Technical Tasks:**
-- Design flexible query parameter schema with Pydantic
-- Implement PostgreSQL full-text search with tsvector columns
-- Create database indexes for common filter fields
-- Build dynamic query constructor for multiple filter combinations
-- Add basic Redis caching for search results
-- Implement pagination with cursor-based and offset options
+- Design flexible query parameter schema with Pydantic including backlog filtering
+- Implement PostgreSQL full-text search with tsvector columns optimized for multi-backlog queries
+- Create database indexes for common filter fields including backlog relationships
+- Build dynamic query constructor for multiple filter combinations across backlogs
+- Add basic Redis caching for search results with backlog-aware cache invalidation
+- Implement pagination with cursor-based and offset options for large multi-backlog result sets
 
 ### Phase 2: Advanced Analytics and Performance Optimization
 **Deliverables:**
-- Aggregation endpoints with grouping capabilities
-- Date range filtering and temporal queries
-- Dependency relationship queries
-- Performance optimization and advanced caching
-- Export capabilities for query results
+- Aggregation endpoints with grouping capabilities including multi-backlog analytics
+- Date range filtering and temporal queries across backlogs
+- Cross-backlog dependency relationship queries
+- Performance optimization and advanced caching with backlog segmentation
+- Export capabilities for query results with backlog filtering
 
 **Story Points**: 2.5
 **Dependencies**: Phase 1 completion
 **Technical Tasks:**
-- Implement aggregation queries with GROUP BY and statistical functions
-- Add date range filtering with timezone support
-- Build recursive dependency relationship queries
-- Optimize query performance with explain analysis
-- Implement advanced caching strategies with cache invalidation
-- Add query result export in JSON and CSV formats
+- Implement aggregation queries with GROUP BY and statistical functions across backlogs
+- Add date range filtering with timezone support for multi-backlog analysis
+- Build recursive dependency relationship queries spanning multiple backlogs
+- Optimize query performance with explain analysis for complex backlog joins
+- Implement advanced caching strategies with cache invalidation based on backlog changes
+- Add query result export in JSON and CSV formats with backlog metadata
 
 ## Technical Decisions
 

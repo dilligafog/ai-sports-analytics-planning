@@ -21,22 +21,26 @@ emit_metadata:
   notes: null
 ---
 
-# INF-013: Docker PostgreSQL database setup with story schema
+# INF-013: Docker PostgreSQL database setup with multi-project story schema
 
 ## User Story
 **As a** system administrator  
-**I want** a containerized PostgreSQL database with a proper schema for story management  
-**So that** the API service can store and query story data efficiently for reporting and analytics
+**I want** a containerized PostgreSQL database with a proper schema for multi-project story management  
+**So that** the plan_pipe API service can store and query story data efficiently across multiple projects for reporting and analytics
 
 ## Value Proposition
-Provides the persistent data layer required for advanced querying, reporting, and analytics capabilities while maintaining data integrity and performance.
+Provides the persistent data layer required for advanced querying, reporting, and analytics capabilities across multiple projects while maintaining data integrity and performance in a multi-project environment.
 
 ## Acceptance Criteria
 - [ ] PostgreSQL Docker container configured with proper initialization scripts
-- [ ] Database schema includes stories table with all required fields
-- [ ] story_dependencies table for managing story relationships
+- [ ] Database schema includes projects table for multi-project support
+- [ ] Database schema includes backlogs table for multi-backlog support within projects
+- [ ] Stories table with project_id and backlog_id foreign key references
+- [ ] story_dependencies table for managing story relationships (including cross-project)
+- [ ] project_dependencies table for cross-project relationships
+- [ ] project_members table for access control and team management
 - [ ] status_history table for audit trail of status changes
-- [ ] Database indexes optimized for common query patterns
+- [ ] Database indexes optimized for common query patterns including multi-project queries
 - [ ] Database migrations system set up for schema evolution
 - [ ] Connection pooling configured for API service
 - [ ] Database backup and restore procedures documented
@@ -45,10 +49,12 @@ Provides the persistent data layer required for advanced querying, reporting, an
 
 ## Technical Notes
 - PostgreSQL chosen for JSONB support for metadata and robust ACID compliance
-- Schema should support both current story structure and future enhancements
-- Consider partitioning for status_history table if high volume expected
-- Include proper foreign key constraints and data validation
+- Schema should support multi-project architecture with proper foreign key relationships
+- Consider partitioning for status_history table if high volume expected across projects
+- Include proper foreign key constraints and data validation for project and backlog relationships
 - Use database-level defaults where appropriate
+- Implement efficient indexes for cross-project queries and dependency analysis
+- Support git submodule integration through project metadata fields
 
 ## Definition of Done
 - [ ] All acceptance criteria met

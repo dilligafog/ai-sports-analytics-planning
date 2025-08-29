@@ -32,22 +32,26 @@ emit_metadata:
 Provides strategic insights into story portfolio health, epic progress, and cross-cutting patterns that support data-driven planning and resource allocation decisions.
 
 ## Acceptance Criteria
-- [ ] GET /api/v1/reports/epic-summary - Stories by epic and status with counts
-- [ ] Epic completion percentages and progress tracking
-- [ ] Story distribution analysis across priorities and estimates
-- [ ] Cross-epic dependency analysis and impact assessment
-- [ ] Timeline analysis showing epic velocity and completion trends
-- [ ] Resource allocation reporting by epic and team
-- [ ] Story aging analysis (time in each status)
-- [ ] Epic health scoring based on completion rate and dependencies
-- [ ] Comparative epic performance metrics
-- [ ] Customizable date ranges for all analytics
+- [ ] GET /api/v1/reports/epic-summary - Stories by epic and status with counts across backlogs
+- [ ] Epic completion percentages and progress tracking with backlog segmentation
+- [ ] Story distribution analysis across priorities, estimates, and backlogs
+- [ ] Cross-epic and cross-backlog dependency analysis and impact assessment
+- [ ] Timeline analysis showing epic velocity and completion trends by backlog
+- [ ] Resource allocation reporting by epic, team, and backlog
+- [ ] Story aging analysis (time in each status) with backlog context
+- [ ] Epic health scoring based on completion rate and cross-backlog dependencies
+- [ ] Comparative epic performance metrics across different backlogs
+- [ ] Customizable date ranges for all analytics with backlog filtering
+- [ ] JSON export for simple GitHub Pages dashboard consumption
+- [ ] Static dashboard data generation for minimal UI dependencies
 
 ## Technical Notes
-- Leverage PostgreSQL analytical functions for complex queries
-- Implement caching for expensive analytical queries
-- Create materialized views for frequently accessed metrics
-- Support real-time analytics with WebSocket updates
+- Leverage PostgreSQL analytical functions for complex queries across backlogs
+- Implement caching for expensive analytical queries with backlog-aware cache keys
+- Create materialized views for frequently accessed metrics with backlog segmentation
+- Support real-time analytics with WebSocket updates including cross-backlog events
+- Generate static JSON files for simple GitHub Pages dashboard consumption
+- Minimize UI dependencies by focusing on data export rather than complex visualizations
 - Include data visualization recommendations in API responses
 - Consider pre-computed metrics for common dashboard views
 

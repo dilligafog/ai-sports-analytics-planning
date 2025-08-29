@@ -34,14 +34,14 @@ Ensures story status changes follow business rules and provides audit trail for 
 ## Acceptance Criteria
 - [ ] POST /api/v1/stories/{id}/transition - Change story status with validation
 - [ ] Valid transition rules enforced (backlog → active → completed → accepted)
-- [ ] Transition validation includes dependency checks
-- [ ] Status history automatically recorded for all transitions
+- [ ] Transition validation includes dependency checks across backlogs
+- [ ] Status history automatically recorded for all transitions with backlog context
 - [ ] Transition reasons and notes can be included in requests
-- [ ] Bulk status transitions supported for multiple stories
+- [ ] Bulk status transitions supported for multiple stories within/across backlogs
 - [ ] Rollback capability for recent status changes
 - [ ] Validation prevents invalid transitions (e.g., backlog → completed)
-- [ ] Dependency validation (can't complete if dependencies not done)
-- [ ] Notification system for status change events
+- [ ] Cross-backlog dependency validation (can't complete if dependencies in other backlogs not done)
+- [ ] Notification system for status change events with backlog awareness
 
 ## Technical Notes
 - Implement state machine pattern for status transitions

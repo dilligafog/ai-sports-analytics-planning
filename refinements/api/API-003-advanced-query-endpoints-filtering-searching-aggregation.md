@@ -32,9 +32,11 @@ emit_metadata:
 Enables sophisticated story analysis and reporting capabilities, allowing for complex queries that support strategic planning and portfolio management decisions.
 
 ## Acceptance Criteria
-- [ ] Advanced filtering by multiple criteria (epic, status, priority, estimates, dates)
+- [ ] Advanced filtering by multiple criteria (backlog, epic, status, priority, estimates, dates)
+- [ ] Multi-backlog search capabilities across multiple backlogs simultaneously
 - [ ] Full-text search across story titles, descriptions, and content
-- [ ] Aggregation endpoints for story counts by epic, status, and priority
+- [ ] Aggregation endpoints for story counts by backlog, epic, status, and priority
+- [ ] Cross-backlog dependency analysis and reporting
 - [ ] Date range filtering for created, updated, and completion dates
 - [ ] Dependency relationship queries (stories blocking/blocked by others)
 - [ ] Tag-based filtering and search capabilities
@@ -45,11 +47,12 @@ Enables sophisticated story analysis and reporting capabilities, allowing for co
 
 ## Technical Notes
 - Leverage PostgreSQL full-text search capabilities
-- Implement query builder pattern for complex filtering
-- Use database indexes to optimize search performance
+- Implement query builder pattern for complex filtering including multi-backlog queries
+- Use database indexes to optimize search performance across backlogs
 - Consider implementing query result caching with Redis
 - Support for compound queries with AND/OR logic
 - Include query execution time in response headers for monitoring
+- Implement efficient cross-backlog joins for dependency analysis
 
 ## Definition of Done
 - [ ] All acceptance criteria met

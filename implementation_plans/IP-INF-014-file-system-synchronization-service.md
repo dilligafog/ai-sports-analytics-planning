@@ -8,39 +8,39 @@
 - **Priority**: High
 
 ## Technical Approach
-- **Architecture**: Event-driven bidirectional synchronization between file system and PostgreSQL database
+- **Architecture**: Event-driven bidirectional synchronization between file system and PostgreSQL database with multi-backlog support
 - **Technology Stack**:
-  - Python watchdog for file system monitoring
-  - PostgreSQL with JSONB for metadata storage
-  - SQLAlchemy ORM for database operations
-  - asyncio for concurrent processing
-  - APScheduler for periodic sync jobs
-  - PyYAML for frontmatter parsing
+  - Python watchdog for file system monitoring across backlog directories
+  - PostgreSQL with JSONB for metadata storage including backlog relationships
+  - SQLAlchemy ORM for database operations with backlog joins
+  - asyncio for concurrent processing across multiple backlogs
+  - APScheduler for periodic sync jobs with backlog segmentation
+  - PyYAML for frontmatter parsing with backlog metadata
 - **Integration Points**:
-  - Story management API (INF-012)
-  - PostgreSQL database (INF-013)
-  - Markdown file structure in refinements/, backlog/, active/, completed/
-- **Data Flow**: File changes → Event queue → Database sync ← API changes → File generation
+  - Story management API (INF-012) with multi-backlog endpoints
+  - PostgreSQL database (INF-013) with backlog schema
+  - Markdown file structure in refinements/, backlog/, active/, completed/ with backlog organization
+- **Data Flow**: File changes → Event queue → Database sync with backlog context ← API changes → File generation with backlog metadata
 
 ## Implementation Phases
 
 ### Phase 1: Core Synchronization Framework
 **Deliverables:**
-- File system event monitoring with watchdog
-- Database models and ORM setup
-- Basic file-to-database sync capability
-- Markdown frontmatter parser with YAML validation
-- Initial conflict detection logic
+- File system event monitoring with watchdog across backlog directories
+- Database models and ORM setup with backlog relationships
+- Basic file-to-database sync capability with backlog context
+- Markdown frontmatter parser with YAML validation including backlog metadata
+- Initial conflict detection logic for cross-backlog operations
 
 **Story Points**: 3
-**Dependencies**: INF-013 (database setup completed)
+**Dependencies**: INF-013 (database setup with multi-backlog schema completed)
 **Technical Tasks:**
-- Set up watchdog file system observer for story directories
-- Implement database models matching story structure
-- Create markdown parser for YAML frontmatter extraction
-- Build basic sync engine for file → database direction
-- Implement file validation and error handling
-- Add logging and event tracking for sync operations
+- Set up watchdog file system observer for story directories organized by backlog
+- Implement database models matching story structure with backlog foreign keys
+- Create markdown parser for YAML frontmatter extraction including backlog_id
+- Build basic sync engine for file → database direction with backlog validation
+- Implement file validation and error handling for multi-backlog scenarios
+- Add logging and event tracking for sync operations with backlog context
 
 ### Phase 2: Bidirectional Sync and Conflict Resolution
 **Deliverables:**

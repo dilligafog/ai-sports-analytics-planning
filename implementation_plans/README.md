@@ -140,6 +140,42 @@ When a story is completed:
 3. **Extract Patterns**: Use learnings to improve future planning
 4. **Reference**: Keep as example for similar future work
 
+## TOOL-001 Story Cross-Reference
+
+### API Stories → Implementation Plans
+| Story ID | Story Title | Implementation Plan | Status |
+|----------|-------------|-------------------|---------|
+| **API-001** | Story management endpoints (CRUD operations) | *Not yet created* | Draft |
+| **API-002** | Status transition endpoints with validation | *Not yet created* | Draft |
+| **API-003** | Advanced query endpoints (filtering, searching, aggregation) | [IP-API-003](IP-API-003-advanced-query-endpoints.md) | Enhanced |
+| **API-004** | Bulk operations endpoints (import/export) | *Not yet created* | Draft |
+
+### Infrastructure Stories → Implementation Plans
+| Story ID | Story Title | Implementation Plan | Status |
+|----------|-------------|-------------------|---------|
+| **INF-012** | FastAPI service framework with basic CRUD endpoints | *Not yet created* | Draft |
+| **INF-013** | Docker PostgreSQL database setup with story schema | *Not yet created* | Draft |
+| **INF-014** | File system synchronization service | [IP-INF-014](IP-INF-014-file-system-synchronization-service.md) | Enhanced |
+| **INF-015** | Authentication and API key management | *Not yet created* | Draft |
+
+### Reporting Stories → Implementation Plans
+| Story ID | Story Title | Implementation Plan | Status |
+|----------|-------------|-------------------|---------|
+| **RPT-001** | Epic analytics and cross-story reporting | *Not yet created* | Draft |
+| **RPT-002** | Velocity tracking and sprint metrics | *Not yet created* | Draft |
+| **RPT-003** | Dependency visualization and impact analysis | [IP-RPT-003](IP-RPT-003-dependency-visualization-impact-analysis.md) | Existing |
+| **RPT-004** | Export tools (JSON, CSV, markdown bulk operations) | *Not yet created* | Draft |
+| **RPT-005** | Simple GitHub Pages dashboard template | *Not yet created* | Draft |
+| **RPT-006** | Automated JSON export for GitHub Pages dashboards | *Not yet created* | Draft |
+
+### Integration Stories → Implementation Plans
+| Story ID | Story Title | Implementation Plan | Status |
+|----------|-------------|-------------------|---------|
+| **INT-001** | Docker compose production configuration | *Not yet created* | Draft |
+| **INT-002** | WebSocket real-time update system | *Not yet created* | Draft |
+| **INT-003** | CI/CD integration endpoints | *Not yet created* | Draft |
+| **INT-004** | Monitoring and health check endpoints | *Not yet created* | Draft |
+
 ## Quality Gates
 
 Before implementation begins:

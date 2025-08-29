@@ -33,10 +33,10 @@ Provides the foundational API framework that enables programmatic story manageme
 
 ## Acceptance Criteria
 - [ ] FastAPI application framework set up with proper project structure
-- [ ] Pydantic models defined for story data structure matching markdown frontmatter
-- [ ] Basic CRUD endpoints implemented: GET, POST, PUT, DELETE for stories
+- [ ] Pydantic models defined for story data structure including backlog relationships
+- [ ] Basic CRUD endpoints implemented: GET, POST, PUT, DELETE for stories with backlog support
 - [ ] OpenAPI documentation automatically generated and accessible
-- [ ] Request/response validation using Pydantic models
+- [ ] Request/response validation using Pydantic models including backlog validation
 - [ ] Error handling with appropriate HTTP status codes
 - [ ] Health check endpoint for service monitoring
 - [ ] Docker container configuration for the API service

@@ -32,16 +32,17 @@ emit_metadata:
 Enables efficient data migration, backup/restore operations, and bulk story management, reducing time required for large-scale story operations and enabling integration with external systems.
 
 ## Acceptance Criteria
-- [ ] POST /api/v1/export/stories - Export stories to JSON or CSV format
-- [ ] POST /api/v1/import/stories - Import stories from JSON or CSV
+- [ ] POST /api/v1/export/stories - Export stories to JSON or CSV format with backlog filtering
+- [ ] POST /api/v1/import/stories - Import stories from JSON or CSV with backlog assignment
 - [ ] GET /api/v1/export/markdown/{epic} - Export epic stories as markdown files
+- [ ] POST /api/v1/stories/bulk-move - Move multiple stories between backlogs
 - [ ] Bulk validation during import with detailed error reporting
 - [ ] Import conflict resolution (skip, overwrite, or merge options)
 - [ ] Progress tracking for long-running bulk operations
 - [ ] Asynchronous processing for large datasets
-- [ ] Export filtering options (by epic, status, date range)
+- [ ] Export filtering options (by backlog, epic, status, date range)
 - [ ] Import preview mode to validate data before actual import
-- [ ] Bulk status updates and field modifications
+- [ ] Bulk status updates and field modifications across backlogs
 
 ## Technical Notes
 - Use asynchronous task queue (Celery) for large operations

@@ -21,27 +21,29 @@ emit_metadata:
   notes: null
 ---
 
-# INF-014: File system synchronization service
+# INF-014: Multi-project file system synchronization service
 
 ## User Story
-**As a** stakeholder using the file-based workflow  
-**I want** automatic two-way synchronization between database and markdown files  
-**So that** I can continue using the folder structure while benefiting from API automation capabilities
+**As a** stakeholder using the file-based workflow across multiple projects  
+**I want** automatic two-way synchronization between database and markdown files across all managed projects  
+**So that** each project can continue using their preferred folder structure while benefiting from plan_pipe's API automation capabilities
 
 ## Value Proposition
-Maintains the preferred folder-based organization while enabling database-driven features. Ensures data consistency between file system and database without requiring workflow changes.
+Maintains each project's preferred folder-based organization while enabling cross-project database-driven features. Ensures data consistency between file systems and database across multiple project repositories without requiring workflow changes.
 
 ## Acceptance Criteria
-- [ ] File system watcher detects changes to markdown files in real-time
-- [ ] Database changes automatically generate corresponding markdown file updates
-- [ ] Conflict resolution strategy handles simultaneous file/database changes
+- [ ] File system watcher detects changes to markdown files in real-time across all project submodules
+- [ ] Database changes automatically generate corresponding markdown file updates with project context
+- [ ] Git submodule integration manages multiple project planning repositories
+- [ ] Conflict resolution strategy handles simultaneous file/database changes across projects
 - [ ] Synchronization completes within 30 seconds for individual story changes
-- [ ] Bulk operations efficiently synchronize multiple stories
+- [ ] Bulk operations efficiently synchronize multiple stories across projects
 - [ ] Error handling and retry logic for failed synchronization attempts
-- [ ] Logging system tracks all synchronization events and conflicts
-- [ ] Manual sync command available for troubleshooting
-- [ ] Validation ensures data integrity during sync operations
-- [ ] Service handles markdown frontmatter parsing and generation correctly
+- [ ] Logging system tracks all synchronization events and conflicts with project information
+- [ ] Manual sync command available for troubleshooting specific projects
+- [ ] Validation ensures data integrity during sync operations across project boundaries
+- [ ] Service handles markdown frontmatter parsing and generation correctly with project metadata
+- [ ] Git submodule status monitoring and automatic updates when configured
 
 ## Technical Notes
 - Use Python's watchdog library for file system monitoring
