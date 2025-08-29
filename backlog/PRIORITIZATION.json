@@ -1837,7 +1837,7 @@
       "id": "ADH-026",
       "title": "Feature Pipeline Fix",
       "epic": "adhoc",
-      "status": "active",
+      "status": "completed",
       "priority": 99,
       "estimate": "ad-hoc",
       "effort": "1d",
