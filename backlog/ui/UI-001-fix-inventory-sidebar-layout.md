@@ -1,45 +1,41 @@
 ---
 id: UI-001
 title: Fix Inventory App Sidebar UI Layout Issues
-type: user-story
+epic: ui
 status: ready
-priority: medium
-effort: small
-labels: [ui, frontend, inventory, streamlit]
+owner: 'Neo Starlord of Thunder'
+priority: 8
+estimate: 2
+dependencies: []
+labels: [ui, frontend, inventory, streamlit, layout]
 created: 2025-08-26
 author: planning-agent
-related_prs: 
-  - implementation: https://github.com/dilligafog/ai-sports-analytics/pull/32
-  - implementation: https://github.com/dilligafog/ai-sports-analytics/pull/33
-dependencies: []
+last_updated: 2025-08-29
+branch_name: ui-001-fix-inventory-app-sidebar-ui-layout-issues
+file_path: backlog/ui/UI-001-fix-inventory-sidebar-layout.md
 ---
 
-# Fix Inventory App Sidebar UI Layout Issues
+# UI-001: Fix Inventory App Sidebar UI Layout Issues
 
 ## User Story
-
-**As a** data engineer or analyst using the inventory app  
+**As a** Data Engineer or Analyst using the inventory app  
 **I want** a clean, well-organized sidebar interface  
 **So that** I can easily navigate filters and settings without visual clutter
 
+## Business Value
+- **Improved user experience** for data engineers using the inventory app
+- **Professional appearance** that reflects well on the platform
+- **Better productivity** through cleaner, more intuitive navigation
+- **Reduced user frustration** with cluttered interface elements
+
 ## Problem Statement
+The current inventory app sidebar has several visual and usability issues:
 
-The current inventory app sidebar (`apps/inventory/app.py`) has several visual and usability issues that make it look "janky":
-
-1. **Long path display** - The processed directory path takes up excessive vertical space
-2. **Cramped layout** - Three columns squeezed into narrow sidebar space  
+1. **Long path display** - Processed directory path takes up excessive vertical space
+2. **Cramped layout** - Three columns squeezed into narrow sidebar space
 3. **Mixed content hierarchy** - Settings, filters, and jobs mixed without clear separation
 4. **Verbose job listings** - Long job descriptions and paths cluttering the interface
-5. **Poor visual hierarchy** - No clear grouping or spacing between different sections
-
-## Current Issues in Code
-
-```python
-# Problematic layout patterns:
-st.sidebar.code(str(PROCESSED_DIR), language="bash")  # Very long path display
-colA, colB, colC = st.sidebar.columns(3)  # Too cramped in narrow sidebar
-# Verbose job listings without size limits
-```
+5. **Poor visual hierarchy** - No clear grouping or spacing between sections
 
 ## Acceptance Criteria
 
@@ -48,6 +44,37 @@ colA, colB, colC = st.sidebar.columns(3)  # Too cramped in narrow sidebar
 - [ ] Remove cramped 3-column layout, use vertical stacking instead
 - [ ] Add clear visual separators between major sidebar sections
 - [ ] Limit job listings to most recent 3 jobs with compact display
+- [ ] Implement consistent spacing and visual hierarchy throughout sidebar
+
+### Should Have
+- [ ] Add collapsible sections for different sidebar areas
+- [ ] Improve typography and color contrast for better readability
+- [ ] Add hover states and visual feedback for interactive elements
+
+### Nice to Have
+- [ ] Add search/filter functionality for job listings
+- [ ] Implement responsive design for different screen sizes
+
+## Technical Approach
+- **Layout Refactoring**: Replace column-based layout with vertical stacking
+- **Path Display**: Create utility function to show compact path representation
+- **Visual Hierarchy**: Use Streamlit's spacing and separator components
+- **Job Management**: Implement job history with size limits and formatting
+
+## Dependencies
+None identified
+
+## Risk Assessment
+- **Low Risk**: UI-only changes with no backend impact
+- **Timeline**: 2 story points (1-2 weeks)
+- **Resources**: 1 frontend developer familiar with Streamlit
+- **Mitigation**: Test changes in development environment first
+
+## Definition of Done
+- [ ] All acceptance criteria met and tested
+- [ ] Visual inspection confirms clean, professional appearance
+- [ ] User feedback collected and incorporated
+- [ ] No regressions in existing functionality
 - [ ] Use consistent header styles with visual hierarchy
 
 ### Should Have  

@@ -68,7 +68,7 @@
       "title": "User Story: Kaggle Data Utilization",
       "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-      "status": "draft",
+      "status": "backlog",
       "priority": 5,
       "estimate": 3,
       "epic": "data_sources",
@@ -311,27 +311,8 @@
       "last_updated": "2025-08-29"
     },
     {
-      "id": "UI-011",
-      "title": "Real-time Performance Monitoring Dashboard",
-      "branch_name": "ui-011-real-time-performance-monitoring-dashboard",
-      "file_path": "backlog/ui/ui-011-real-time-performance-monitoring-dashboard.md",
-      "status": "backlog",
-      "priority": 9,
-      "estimate": "5sp",
-      "epic": "ui",
-      "dependencies": [],
-      "labels": [
-        "dashboard",
-        "monitoring",
-        "real-time"
-      ],
-      "owner": "",
-      "created": "2025-08-29",
-      "last_updated": "2025-08-29"
-    },
-    {
       "id": "S10",
-      "title": "Story S10 — Compliance, Config Gating & Kill-Switch",
+      "title": "Story S10 â€” Compliance, Config Gating & Kill-Switch",
       "branch_name": "s10-story-s10-compliance-config-gating-kill-switch",
       "file_path": "backlog/social_media/S10_compliance_config_gating_killswitch.md",
       "status": "backlog",
@@ -348,7 +329,7 @@
     },
     {
       "id": "S11",
-      "title": "Story S11 — UI/CLI Surfacing & Source Configuration",
+      "title": "Story S11 â€” UI/CLI Surfacing & Source Configuration",
       "branch_name": "s11-story-s11-uicli-surfacing-source-configuration",
       "file_path": "backlog/social_media/S11_ui_cli_source_configuration.md",
       "status": "backlog",
@@ -404,7 +385,7 @@
     },
     {
       "id": "LLM-010",
-      "title": "Task runner integration (busta/CLI from repo root) - COMPLETED ✅",
+      "title": "Task runner integration (busta/CLI from repo root) - COMPLETED âœ…",
       "branch_name": "llm-010-task-runner-integration-bustacli-from-repo-root---",
       "file_path": "backlog/core/LLM-010-task-runner-busta.md",
       "status": "accepted",
@@ -461,7 +442,7 @@
     },
     {
       "id": "LLM-013",
-      "title": "Odds API integration (moneyline, spread, totals, props) ✅ COMPLETED",
+      "title": "Odds API integration (moneyline, spread, totals, props) âœ… COMPLETED",
       "branch_name": "llm-013-odds-api-integration-moneyline-spread-totals-props",
       "file_path": "backlog/core/LLM-013-ing-003-odds-api-integration.md",
       "status": "accepted",
@@ -497,7 +478,7 @@
     },
     {
       "id": "LLM-015",
-      "title": "Feature store schema & lineage ✅ COMPLETED",
+      "title": "Feature store schema & lineage âœ… COMPLETED",
       "branch_name": "llm-015-feature-store-schema-lineage-completed",
       "file_path": "backlog/core/LLM-015-feature-store-schema.md",
       "status": "accepted",
@@ -533,7 +514,7 @@
     },
     {
       "id": "LLM-017",
-      "title": "Data quality checks on joins and keys ✅ ACCEPTED",
+      "title": "Data quality checks on joins and keys âœ… ACCEPTED",
       "branch_name": "llm-017-data-quality-checks-on-joins-and-keys-accepted",
       "file_path": "backlog/core/LLM-017-qlt-001-data-quality-checks.md",
       "status": "accepted",
@@ -636,7 +617,7 @@
     },
     {
       "id": "S02",
-      "title": "Story S02 — Twitter/X: Curated Accounts Ingestion",
+      "title": "Story S02 â€” Twitter/X: Curated Accounts Ingestion",
       "branch_name": "s02-story-s02-twitterx-curated-accounts-ingestion",
       "file_path": "backlog/social_media/S02_x_curated_accounts_ingestion.md",
       "status": "backlog",
@@ -653,7 +634,7 @@
     },
     {
       "id": "S03",
-      "title": "Story S03 — Twitter/X: Keyword & List Search",
+      "title": "Story S03 â€” Twitter/X: Keyword & List Search",
       "branch_name": "s03-story-s03-twitterx-keyword-list-search",
       "file_path": "backlog/social_media/S03_x_keyword_and_list_search.md",
       "status": "backlog",
@@ -670,7 +651,7 @@
     },
     {
       "id": "S04",
-      "title": "Story S04 — Bluesky: Curated Handles Ingestion",
+      "title": "Story S04 â€” Bluesky: Curated Handles Ingestion",
       "branch_name": "s04-story-s04-bluesky-curated-handles-ingestion",
       "file_path": "backlog/social_media/S04_bluesky_curated_handles_ingestion.md",
       "status": "backlog",
@@ -687,7 +668,7 @@
     },
     {
       "id": "S05",
-      "title": "Story S05 — Bluesky: Keyword/Graph Search",
+      "title": "Story S05 â€” Bluesky: Keyword/Graph Search",
       "branch_name": "s05-story-s05-bluesky-keywordgraph-search",
       "file_path": "backlog/social_media/S05_bluesky_keyword_and_graph_search.md",
       "status": "backlog",
@@ -704,7 +685,7 @@
     },
     {
       "id": "S06",
-      "title": "Story S06 — Relevance Filter & Entity Linking for Social",
+      "title": "Story S06 â€” Relevance Filter & Entity Linking for Social",
       "branch_name": "s06-story-s06-relevance-filter-entity-linking-for-soci",
       "file_path": "backlog/social_media/S06_relevance_filter_and_entity_linking.md",
       "status": "backlog",
@@ -721,7 +702,7 @@
     },
     {
       "id": "S08",
-      "title": "Story S08 — Scheduling, Rate-Limits, Secrets & Checkpointing",
+      "title": "Story S08 â€” Scheduling, Rate-Limits, Secrets & Checkpointing",
       "branch_name": "s08-story-s08-scheduling-rate-limits-secrets-checkpoin",
       "file_path": "backlog/social_media/S08_scheduling_ratelimits_secrets_checkpointing.md",
       "status": "backlog",
@@ -738,7 +719,7 @@
     },
     {
       "id": "S09",
-      "title": "Story S09 — Feed Health, Metrics & Alerting for Social",
+      "title": "Story S09 â€” Feed Health, Metrics & Alerting for Social",
       "branch_name": "s09-story-s09-feed-health-metrics-alerting-for-social",
       "file_path": "backlog/social_media/S09_feed_health_metrics_alerting.md",
       "status": "backlog",
@@ -755,7 +736,7 @@
     },
     {
       "id": "S12",
-      "title": "Story S12 — Evaluation: Does Social Improve Predictions?",
+      "title": "Story S12 â€” Evaluation: Does Social Improve Predictions?",
       "branch_name": "s12-story-s12-evaluation-does-social-improve-predictio",
       "file_path": "backlog/social_media/S12_evaluation_social_signal_lift.md",
       "status": "backlog",
@@ -775,7 +756,7 @@
       "title": "User Story: Model Training & Evaluation",
       "branch_name": "model_training_evaluation-user-story-model-training-evaluation",
       "file_path": "backlog/models/MODEL_TRAINING_EVALUATION.md",
-      "status": "draft",
+      "status": "completed",
       "priority": 11,
       "estimate": 8,
       "epic": "training",
@@ -1324,7 +1305,7 @@
     },
     {
       "id": "INF-011",
-      "title": "User Story: Gold Feature Store ✅ COMPLETED",
+      "title": "User Story: Gold Feature Store âœ… COMPLETED",
       "branch_name": "inf-011-user-story-gold-feature-store-completed",
       "file_path": "backlog/infrastructure/INF-011-gold-feature-store.md",
       "status": "accepted",
@@ -1843,7 +1824,7 @@
     },
     {
       "id": "ADH-022",
-      "title": "PREDICTIONS_OUTPUTS: Predictions & Outputs ✅ ACCEPTED",
+      "title": "PREDICTIONS_OUTPUTS: Predictions & Outputs âœ… ACCEPTED",
       "branch_name": "adh-022-predictions_outputs-predictions-outputs-accepted",
       "file_path": "backlog/adhoc/ADH-022-predictions-outputs.md",
       "status": "accepted",

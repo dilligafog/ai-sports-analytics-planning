@@ -1,43 +1,77 @@
-# INF-008 - Data Source Health Monitoring & Alerting
+---
+id: INF-008
+title: INF-008 - Data Source Health Monitoring & Alerting
+epic: infrastructure
+status: ready
+owner: 'Neo Starlord of Thunder'
+priority: 5
+estimate: 3
+dependencies: [DATA_SOURCE_INTEGRATION_FRAMEWORK]
+labels: [infrastructure, monitoring, alerting, data-quality]
+created: 2025-08-29
+last_updated: 2025-08-29
+branch_name: inf-008-inf-008---data-source-health-monitoring-alerting
+file_path: backlog/infrastructure/INF-008-data-source-health-monitoring.md
+---
 
-**Status**: New  
-**Epic**: infrastructure  
-**Story Points**: 3  
-**Priority**: Medium  
-**Dependencies**: DATA_SOURCE_INTEGRATION_FRAMEWORK  
+# INF-008: Data Source Health Monitoring & Alerting
 
 ## User Story
-**As a** data platform operator  
+**As a** Data Platform Operator  
 **I want** real-time monitoring and alerting for data source health  
 **So that** I can quickly respond to data quality issues and source outages
 
-## Background
-The DATA_SOURCE_INTEGRATION_FRAMEWORK provides quality metrics (92% overall score), but these are calculated during collection. We need continuous monitoring to detect issues proactively and alert on degraded performance.
+## Business Value
+- **Proactive issue detection** before they impact betting decisions
+- **Reduced downtime** through early warning systems
+- **Improved data quality** with continuous monitoring
+- **Better operational visibility** into data pipeline health
 
 ## Acceptance Criteria
 
 ### Health Monitoring
-- [ ] **Real-time Health Checks**: Periodic connectivity and response time monitoring
-- [ ] **Quality Trend Analysis**: Track data quality metrics over time
-- [ ] **Performance Baselines**: Establish normal operating ranges for each data source
-- [ ] **Anomaly Detection**: Identify unusual patterns in data collection or quality
+- [ ] **Real-time Health Checks**: 5-minute interval connectivity and response time monitoring
+- [ ] **Quality Trend Analysis**: Track data quality metrics over 30-day rolling windows
+- [ ] **Performance Baselines**: Establish normal operating ranges for each data source type
+- [ ] **Anomaly Detection**: Statistical analysis to identify unusual patterns in collection or quality
 
 ### Alerting System
-- [ ] **Configurable Alerts**: Set thresholds for quality scores, response times, failure rates
-- [ ] **Multi-channel Notifications**: Email, Slack, webhook support for different alert types
-- [ ] **Alert Escalation**: Progressive escalation for critical issues
-- [ ] **Alert Suppression**: Prevent alert spam during known maintenance windows
+- [ ] **Configurable Thresholds**: Quality scores (<90%), response times (>5s), failure rates (>5%)
+- [ ] **Multi-channel Notifications**: Email, Slack, and webhook support for different alert severities
+- [ ] **Smart Escalation**: Progressive escalation (warning → critical) for unresolved issues
+- [ ] **Maintenance Windows**: Alert suppression during scheduled maintenance periods
 
 ### Dashboard & Reporting
-- [ ] **Health Dashboard**: Visual overview of all data source status
-- [ ] **Historical Reports**: Quality and performance trends over time
-- [ ] **SLA Tracking**: Monitor data source uptime and quality SLAs
-- [ ] **Issue Resolution Tracking**: Log and track resolution of data source issues
+- [ ] **Health Dashboard**: Real-time visual overview of all data source statuses
+- [ ] **Historical Reports**: Weekly quality and performance trend analysis
+- [ ] **SLA Tracking**: Monitor 99.5% uptime and quality SLA compliance
+- [ ] **Issue Resolution Tracking**: Log and track mean time to resolution (MTTR)
 
-### Integration
-- [ ] **CLI Commands**: `busta sources health` and `busta sources alerts` for monitoring
-- [ ] **API Integration**: REST endpoints for external monitoring systems
-- [ ] **Configuration Management**: YAML-based alert configuration following framework standards
+### Integration & Operations
+- [ ] **CLI Commands**: `busta sources health --watch` and `busta alerts list` for monitoring
+- [ ] **REST API**: Endpoints for external monitoring system integration
+- [ ] **YAML Configuration**: Alert rules following existing framework standards
+
+## Technical Approach
+- **Health Check Framework**: Lightweight async health checks every 5 minutes
+- **Metrics Collection**: Prometheus-style metrics for monitoring integration
+- **Alert Engine**: Rule-based alerting with configurable thresholds
+- **Dashboard**: Web-based dashboard using existing UI framework
+
+## Dependencies
+- [ ] DATA_SOURCE_INTEGRATION_FRAMEWORK (provides baseline quality metrics)
+
+## Risk Assessment
+- **Low Risk**: Monitoring-only functionality with no production impact
+- **Timeline**: 3 story points (2-3 weeks)
+- **Resources**: 1 backend engineer for implementation and testing
+- **Mitigation**: Start with basic alerting, add sophistication iteratively
+
+## Definition of Done
+- [ ] All acceptance criteria met with comprehensive testing
+- [ ] Health dashboard shows real-time status for all data sources
+- [ ] Alert system successfully detects and notifies on simulated failures
+- [ ] Documentation updated for new CLI commands and API endpoints
 - [ ] **Framework Integration**: Leverage existing DataSourceValidator and quality metrics
 
 ## Technical Approach

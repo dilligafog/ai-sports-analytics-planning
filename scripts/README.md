@@ -141,16 +141,40 @@ python scripts/generate_complete_backlog.py
 - After major backlog restructuring
 - Weekly backlog synchronization
 
-### `migrate_backlog_structure.py`
+### `backlog_groomer.py`
 
-**Purpose**: One-time migration tool for folder structure reorganization.
+**Purpose**: Comprehensive backlog grooming utility for systematic story refinement and validation.
 
-**Status**: ✅ **Completed** - Successfully migrated stories to clean epic-based folders
+**Usage**:
+```bash
+# Generate grooming report for top 20 stories
+python scripts/backlog_groomer.py
 
-**What it accomplished**:
-- Moved 24 LLM stories to functional folders (core, ingestion, modeling, quality, explain, infra)
-- Updated all file paths in PRIORITIZATION.json
-- Cleaned up old nested folder structure
+# Run from repository root (recommended)
+python backlog_groomer.py
+```
+
+**What it does**:
+- **Story Validation**: Validates story ID formats and suggests corrections
+- **Epic Standardization**: Ensures consistent epic naming across stories
+- **Duplicate Detection**: Identifies and reports duplicate story entries
+- **Priority Analysis**: Analyzes top-priority stories needing grooming
+- **Report Generation**: Creates comprehensive grooming reports with actionable insights
+
+**Features**:
+- Automatic story ID validation with format suggestions (LLM-###, INF-###, etc.)
+- Epic name standardization (infra → infrastructure, data_sources → ingestion)
+- Duplicate story detection and reporting
+- Top 20 priority story analysis
+- Markdown report generation for grooming sessions
+
+**When to run**:
+- Before major grooming sessions to identify issues
+- After bulk story imports to validate data quality
+- Weekly backlog health checks
+- When preparing stories for implementation handoff
+
+**Output**: Generates `backlog_grooming_report.md` with detailed findings and recommendations.
 
 ## ❌ Deprecated Scripts
 
