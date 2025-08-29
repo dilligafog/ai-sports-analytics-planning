@@ -2,12 +2,12 @@
 id: INF-008
 title: INF-008 - Data Source Health Monitoring & Alerting
 epic: infrastructure
-status: ready
+status: backlog
 owner: 'Neo Starlord of Thunder'
-priority: 5
+priority: 8
 estimate: 3
 dependencies: [DATA_SOURCE_INTEGRATION_FRAMEWORK]
-labels: [infrastructure, monitoring, alerting, data-quality]
+labels: [infrastructure, monitoring, alerting, data-quality, low-priority]
 created: 2025-08-29
 last_updated: 2025-08-29
 branch_name: inf-008-inf-008---data-source-health-monitoring-alerting
@@ -16,18 +16,27 @@ file_path: backlog/infrastructure/INF-008-data-source-health-monitoring.md
 
 # INF-008: Data Source Health Monitoring & Alerting
 
-## User Story
-**As a** Data Platform Operator  
-**I want** real-time monitoring and alerting for data source health  
+## Assessment: Low Priority Based on Current Data Source Health
+
+**Feed Health Analysis (2025-08-29):**
+- **Active Feeds**: 60+ RSS feeds working reliably (ESPN, BBC, CBS, Yahoo, etc.)
+- **Minor Issues**: ~10 feeds with intermittent problems (mostly 404s on old URLs)
+- **Disabled Feeds**: ~15 feeds with persistent failures (likely deprecated sources)
+- **Overall Health**: 70%+ of feeds functioning normally
+
+**Conclusion**: Most data sources are stable. Monitoring system can be deferred until we see more widespread issues or add new data sources that need monitoring.
+
+## User Story (Deferred)
+**As a** Data Platform Operator
+**I want** real-time monitoring and alerting for data source health
 **So that** I can quickly respond to data quality issues and source outages
 
-## Business Value
-- **Proactive issue detection** before they impact betting decisions
-- **Reduced downtime** through early warning systems
-- **Improved data quality** with continuous monitoring
-- **Better operational visibility** into data pipeline health
+## Current Status
+- **Priority**: Lowered to 8 (was 5) - not urgent based on current feed health
+- **Status**: Backlog - monitoring not needed at this time
+- **Next Review**: Reassess when adding new data sources or if feed failure rate exceeds 20%
 
-## Acceptance Criteria
+## Acceptance Criteria (Future Implementation)
 
 ### Health Monitoring
 - [ ] **Real-time Health Checks**: 5-minute interval connectivity and response time monitoring
@@ -52,7 +61,7 @@ file_path: backlog/infrastructure/INF-008-data-source-health-monitoring.md
 - [ ] **REST API**: Endpoints for external monitoring system integration
 - [ ] **YAML Configuration**: Alert rules following existing framework standards
 
-## Technical Approach
+## Technical Approach (Future)
 - **Health Check Framework**: Lightweight async health checks every 5 minutes
 - **Metrics Collection**: Prometheus-style metrics for monitoring integration
 - **Alert Engine**: Rule-based alerting with configurable thresholds
@@ -61,37 +70,34 @@ file_path: backlog/infrastructure/INF-008-data-source-health-monitoring.md
 ## Dependencies
 - [ ] DATA_SOURCE_INTEGRATION_FRAMEWORK (provides baseline quality metrics)
 
-## Risk Assessment
+## Risk Assessment (Future Implementation)
 - **Low Risk**: Monitoring-only functionality with no production impact
 - **Timeline**: 3 story points (2-3 weeks)
 - **Resources**: 1 backend engineer for implementation and testing
 - **Mitigation**: Start with basic alerting, add sophistication iteratively
 
-## Definition of Done
+## Definition of Done (Future)
 - [ ] All acceptance criteria met with comprehensive testing
 - [ ] Health dashboard shows real-time status for all data sources
 - [ ] Alert system successfully detects and notifies on simulated failures
 - [ ] Documentation updated for new CLI commands and API endpoints
 - [ ] **Framework Integration**: Leverage existing DataSourceValidator and quality metrics
 
-## Technical Approach
-- **Background Monitoring**: Scheduled health checks independent of data collection
-- **Time Series Storage**: Store health metrics for trend analysis
-- **Rule Engine**: Flexible alerting rules based on metrics thresholds and patterns
-- **Plugin Architecture**: Extensible notification channels (email, Slack, PagerDuty)
-
-## Business Value
+## Business Value (Future)
 - **Proactive Issue Detection**: Catch data source problems before they impact betting decisions
 - **Improved Reliability**: Faster response to outages and quality degradation
 - **SLA Compliance**: Monitor and maintain data quality agreements
 - **Operational Efficiency**: Reduce manual monitoring and investigation time
 
-## Risks
+## Risks (Future)
 - **Alert Fatigue**: Too many alerts could desensitize operators
 - **False Positives**: Incorrect alerts during normal variance in data quality
 - **Monitoring Overhead**: Additional system resources for continuous monitoring
 
 ## Notes
+- **Current Assessment**: 70%+ of RSS feeds working normally - monitoring not urgent
+- **Trigger for Re-prioritization**: When feed failure rate exceeds 20% or adding new data sources
+- **Existing Tools**: `busta pipeline report feeds` provides current health status
 - Build on existing DataSourceValidator quality metrics from the framework
 - Consider integration with external monitoring tools (Prometheus, Grafana)
 - Implement gradual rollout with conservative alert thresholds initially
