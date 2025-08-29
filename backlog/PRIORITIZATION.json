@@ -1865,7 +1865,7 @@
       "id": "ADH-028",
       "title": "Fix ADH Story Location Documentation",
       "epic": "adhoc",
-      "status": "active",
+      "status": "completed",
       "priority": 99,
       "estimate": "ad-hoc",
       "effort": "1d",
