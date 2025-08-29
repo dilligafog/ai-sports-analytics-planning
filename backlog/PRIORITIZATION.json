@@ -106,7 +106,7 @@
       "branch_name": "inf-009-adhoc-story-file-storage",
       "file_path": "backlog/infrastructure/INF-009-adhoc-story-file-storage.md",
       "status": "backlog",
-      "priority": 5,
+      "priority": 9,
       "estimate": "1sp",
       "epic": "infrastructure",
       "dependencies": [],
@@ -126,7 +126,7 @@
       "branch_name": "inf-006-ai-inference-monitoring-ai-inference-performance-monitoring-cost-optimizat",
       "file_path": "backlog/infrastructure/INF-006-ai-inference-monitoring.md",
       "status": "backlog",
-      "priority": 7,
+      "priority": 10,
       "estimate": "TBD",
       "epic": "infra",
       "dependencies": [
