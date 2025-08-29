@@ -1,0 +1,431 @@
+{
+  "generated_at": "2025-08-28T23:08:31.846767",
+  "velocity_analytics": {
+    "generated_at": "2025-08-28T23:08:31.847858",
+    "velocity_history": [
+      {
+        "week": "Week 1",
+        "stories_completed": 4.2,
+        "cumulative": 4.2
+      },
+      {
+        "week": "Week 2",
+        "stories_completed": 4.7,
+        "cumulative": 8.9
+      },
+      {
+        "week": "Week 3",
+        "stories_completed": 5.2,
+        "cumulative": 14.1
+      },
+      {
+        "week": "Week 4",
+        "stories_completed": 5.4,
+        "cumulative": 19.5
+      },
+      {
+        "week": "Week 5",
+        "stories_completed": 5.5,
+        "cumulative": 25.0
+      },
+      {
+        "week": "Week 6",
+        "stories_completed": 5.4,
+        "cumulative": 30.4
+      },
+      {
+        "week": "Week 7",
+        "stories_completed": 5.2,
+        "cumulative": 35.6
+      },
+      {
+        "week": "Week 8",
+        "stories_completed": 5.0,
+        "cumulative": 40.6
+      },
+      {
+        "week": "Week 9",
+        "stories_completed": 4.8,
+        "cumulative": 45.4
+      },
+      {
+        "week": "Week 10",
+        "stories_completed": 4.8,
+        "cumulative": 50.2
+      },
+      {
+        "week": "Week 11",
+        "stories_completed": 4.9,
+        "cumulative": 55.1
+      },
+      {
+        "week": "Week 12",
+        "stories_completed": 5.3,
+        "cumulative": 60.4
+      }
+    ],
+    "current_velocity": 5.3,
+    "epic_performance": {
+      "adhoc": {
+        "total_stories": 27,
+        "completed_stories": 21,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 77.8,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "core": {
+        "total_stories": 11,
+        "completed_stories": 11,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 100.0,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "data-sources": {
+        "total_stories": 1,
+        "completed_stories": 1,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 100.0,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "infrastructure": {
+        "total_stories": 7,
+        "completed_stories": 2,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 28.6,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "ingestion": {
+        "total_stories": 6,
+        "completed_stories": 4,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 66.7,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "llm": {
+        "total_stories": 24,
+        "completed_stories": 2,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 8.3,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "modeling": {
+        "total_stories": 2,
+        "completed_stories": 2,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 100.0,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "social": {
+        "total_stories": 11,
+        "completed_stories": 1,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 9.1,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "training": {
+        "total_stories": 1,
+        "completed_stories": 0,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 0.0,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      },
+      "ui": {
+        "total_stories": 7,
+        "completed_stories": 4,
+        "total_effort": 0,
+        "completed_effort": 0,
+        "avg_cycle_time": 0,
+        "velocity_trend": "stable",
+        "completion_rate": 57.1,
+        "effort_efficiency": 0,
+        "avg_story_size": 0.0
+      }
+    },
+    "forecast": {
+      "weeks_to_completion": 10,
+      "confidence_level": 70,
+      "remaining_stories": 49
+    },
+    "trends": {
+      "velocity_trend": "increasing",
+      "acceleration": 26.2
+    }
+  },
+  "resource_optimization": {
+    "generated_at": "2025-08-28T23:08:31.847906",
+    "epic_workload": {
+      "infrastructure": {
+        "stories": 5,
+        "effort": 0,
+        "critical_items": 0
+      },
+      "ingestion": {
+        "stories": 2,
+        "effort": 0,
+        "critical_items": 1
+      },
+      "llm": {
+        "stories": 22,
+        "effort": 0,
+        "critical_items": 0
+      },
+      "social": {
+        "stories": 10,
+        "effort": 0,
+        "critical_items": 0
+      },
+      "training": {
+        "stories": 1,
+        "effort": 0,
+        "critical_items": 0
+      },
+      "ui": {
+        "stories": 3,
+        "effort": 0,
+        "critical_items": 0
+      },
+      "adhoc": {
+        "stories": 6,
+        "effort": 0,
+        "critical_items": 3
+      }
+    },
+    "priority_workload": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "resource_recommendations": [],
+    "team_optimization": {
+      "current_workload": 49,
+      "optimal_team_size": 4,
+      "workload_per_person": 12.2
+    },
+    "allocation_efficiency": 0
+  },
+  "risk_analysis": {
+    "generated_at": "2025-08-28T23:08:31.847970",
+    "risk_assessment": {
+      "overall_risk_level": "low",
+      "risk_score": 0.0,
+      "success_probability": 100.0
+    },
+    "identified_risks": [],
+    "success_factors": {
+      "planning_quality": 100.0,
+      "resource_availability": 100.0,
+      "complexity_management": 100.0
+    },
+    "mitigation_priority": [],
+    "recommendations": [
+      "Implement regular risk review sessions",
+      "Establish clear escalation procedures",
+      "Monitor velocity trends for early warning signs",
+      "Maintain stakeholder communication cadence"
+    ]
+  },
+  "burndown_analysis": {
+    "generated_at": "2025-08-28T23:08:31.848018",
+    "current_state": {
+      "total_stories": 97,
+      "completed_stories": 48,
+      "remaining_stories": 49,
+      "completion_percentage": 49.5
+    },
+    "effort_tracking": {
+      "total_effort": 0,
+      "completed_effort": 0,
+      "remaining_effort": 0,
+      "effort_completion_percentage": 0
+    },
+    "burndown_history": [
+      {
+        "week": 0,
+        "remaining_stories": 97.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 0.0
+      },
+      {
+        "week": 1,
+        "remaining_stories": 93.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 4.123711340206185
+      },
+      {
+        "week": 2,
+        "remaining_stories": 89.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 8.24742268041237
+      },
+      {
+        "week": 3,
+        "remaining_stories": 85.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 12.371134020618557
+      },
+      {
+        "week": 4,
+        "remaining_stories": 81.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 16.49484536082474
+      },
+      {
+        "week": 5,
+        "remaining_stories": 77.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 20.618556701030926
+      },
+      {
+        "week": 6,
+        "remaining_stories": 73.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 24.742268041237114
+      },
+      {
+        "week": 7,
+        "remaining_stories": 69.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 28.865979381443296
+      },
+      {
+        "week": 8,
+        "remaining_stories": 65.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 32.98969072164948
+      },
+      {
+        "week": 9,
+        "remaining_stories": 61.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 37.11340206185567
+      },
+      {
+        "week": 10,
+        "remaining_stories": 57.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 41.23711340206185
+      },
+      {
+        "week": 11,
+        "remaining_stories": 53.0,
+        "remaining_effort": 0.0,
+        "completion_percentage": 45.36082474226804
+      },
+      {
+        "week": 12,
+        "remaining_stories": 49,
+        "remaining_effort": 0.0,
+        "completion_percentage": 49.48453608247423
+      }
+    ],
+    "future_projection": [
+      {
+        "week": 13,
+        "projected_stories": 52.0,
+        "completion_percentage": 53.608247422680414
+      },
+      {
+        "week": 14,
+        "projected_stories": 56.0,
+        "completion_percentage": 57.73195876288659
+      },
+      {
+        "week": 15,
+        "projected_stories": 60.0,
+        "completion_percentage": 61.855670103092784
+      },
+      {
+        "week": 16,
+        "projected_stories": 64.0,
+        "completion_percentage": 65.97938144329896
+      },
+      {
+        "week": 17,
+        "projected_stories": 68.0,
+        "completion_percentage": 70.10309278350515
+      },
+      {
+        "week": 18,
+        "projected_stories": 72.0,
+        "completion_percentage": 74.22680412371135
+      },
+      {
+        "week": 19,
+        "projected_stories": 76.0,
+        "completion_percentage": 78.35051546391753
+      },
+      {
+        "week": 20,
+        "projected_stories": 80.0,
+        "completion_percentage": 82.4742268041237
+      },
+      {
+        "week": 21,
+        "projected_stories": 84.0,
+        "completion_percentage": 86.5979381443299
+      },
+      {
+        "week": 22,
+        "projected_stories": 88.0,
+        "completion_percentage": 90.72164948453609
+      },
+      {
+        "week": 23,
+        "projected_stories": 92.0,
+        "completion_percentage": 94.84536082474226
+      },
+      {
+        "week": 24,
+        "projected_stories": 96.0,
+        "completion_percentage": 98.96907216494846
+      },
+      {
+        "week": 25,
+        "projected_stories": 97,
+        "completion_percentage": 100.0
+      }
+    ],
+    "completion_forecast": {
+      "estimated_weeks": 13,
+      "target_date": "2025-11-27",
+      "velocity": 4.0
+    }
+  }
+}
