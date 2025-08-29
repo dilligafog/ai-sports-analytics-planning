@@ -1784,6 +1784,20 @@
       "last_updated": "2025-08-28",
       "owner": "",
       "file_path": "backlog/ui/UI-010-Real-time_Performance_Monitoring_Dashboard.md"
+    },
+    {
+      "id": "ADH-024",
+      "title": "Planning Bot Integration Test",
+      "epic": "adhoc",
+      "status": "active",
+      "priority": 99,
+      "estimate": "ad-hoc",
+      "effort": "1d",
+      "dependencies": [],
+      "branch_name": "feature/adh-024-planning-bot-integration-test",
+      "file_path": "active/ADH-024.md",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
     }
   ]
 }
