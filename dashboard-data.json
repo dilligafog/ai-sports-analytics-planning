@@ -4,18 +4,18 @@
     "health_score": 100.0,
     "prioritized_stories": 97,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T02:46:01.732524"
+    "last_updated": "2025-08-29T03:05:34.326420"
   },
   "velocity": {
-    "generated_at": "2025-08-29T02:46:01.731839",
+    "generated_at": "2025-08-29T03:05:34.325728",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
       "completed": 7,
-      "backlog": 22,
+      "backlog": 21,
       "draft": 25,
       "ready": 1,
-      "active": 1
+      "active": 2
     },
     "epic_breakdown": {
       "adhoc": 27,
@@ -115,7 +115,7 @@
         "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
         "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
         "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
-        "status": "backlog",
+        "status": "active",
         "priority": 3,
         "estimate": "2sp",
         "epic": "adhoc",
@@ -125,7 +125,7 @@
         ],
         "owner": "Neo Starlord of Thunder",
         "created": "2025-08-27",
-        "last_updated": "2025-08-27"
+        "last_updated": "2025-08-28"
       },
       {
         "id": "INGESTION-046C",
@@ -246,7 +246,7 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T02:46:01.731961",
+    "generated_at": "2025-08-29T03:05:34.325835",
     "health_score": 100.0,
     "quality_issues": {
       "missing_estimates": 0,
@@ -276,7 +276,7 @@
     "recommendations": []
   },
   "priority": {
-    "generated_at": "2025-08-29T02:46:01.732033",
+    "generated_at": "2025-08-29T03:05:34.325908",
     "total_prioritized": 97,
     "total_unprocessed": 0,
     "priority_heatmap": {
@@ -336,7 +336,7 @@
     "priority_recommendations": []
   },
   "workflow": {
-    "generated_at": "2025-08-29T02:46:01.732516",
+    "generated_at": "2025-08-29T03:05:34.326410",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
@@ -344,9 +344,9 @@
     },
     "status_progression": {
       "draft": 25,
-      "backlog": 22,
+      "backlog": 21,
       "ready": 1,
-      "active": 1,
+      "active": 2,
       "completed": 7,
       "accepted": 41
     },
@@ -356,6 +356,6 @@
       "large": 9,
       "unknown": 2
     },
-    "workflow_efficiency": 60.1
+    "workflow_efficiency": 60.5
   }
 }
