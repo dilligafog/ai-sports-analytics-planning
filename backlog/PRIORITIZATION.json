@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 98,
+    "total_backlog_stories": 99,
     "format_version": "2.0",
     "generated_by": "Strategic Business Analysis",
     "priority_method": "business_value_assessment",
@@ -1844,6 +1844,20 @@
       "dependencies": [],
       "branch_name": "feature/adh-026-feature-pipeline-fix",
       "file_path": "active/ADH-026.md",
+      "created": "2025-08-29",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "ADH-027",
+      "title": "Test ADH Story Location Fix",
+      "epic": "adhoc",
+      "status": "active",
+      "priority": 99,
+      "estimate": "ad-hoc",
+      "effort": "1d",
+      "dependencies": [],
+      "branch_name": "feature/adh-027-test-adh-story-location-fix",
+      "file_path": "backlog/adhoc/ADH-027.md",
       "created": "2025-08-29",
       "last_updated": "2025-08-29"
     }
