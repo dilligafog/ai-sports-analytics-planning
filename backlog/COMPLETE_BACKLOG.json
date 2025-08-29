@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 100,
+    "total_backlog_stories": 104,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime"
   },
@@ -810,8 +810,50 @@
     },
     {
       "id": "INF-012",
-      "title": "INF-012 - Production & Dev Environment Co-location Spike",
-      "branch_name": "inf-012-production-dev-environment-co-location-spike",
+      "title": "FastAPI service framework with basic CRUD endpoints",
+      "branch_name": "inf-012-fastapi-service-framework-basic-crud-endpoints",
+      "file_path": "backlog/infrastructure/INF-012-fastapi-service-framework-basic-crud-endpoints.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "5sp",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "api",
+        "infrastructure",
+        "fastapi",
+        "crud"
+      ],
+      "owner": "implementation-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INF-013",
+      "title": "INF-013 - Production & Dev Environment Co-location Spike",
+      "branch_name": "inf-013-production-dev-environment-co-location-spike",
+      "file_path": "backlog/infrastructure/INF-013-production-dev-environment-co-location-spike.md",
+      "status": "ready",
+      "priority": 99,
+      "estimate": 3,
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "infrastructure",
+        "spike",
+        "research",
+        "environment",
+        "production",
+        "devops"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-29",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "INF-013",
+      "title": "INF-013 - Production & Dev Environment Co-location Spike",
+      "branch_name": "inf-013-production-dev-environment-co-location-spike",
       "file_path": "backlog/infrastructure/INF-012-production-dev-environment-co-location-spike.md",
       "status": "ready",
       "priority": 99,
@@ -825,6 +867,23 @@
         "environment",
         "production",
         "devops"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-29",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "INF-014",
+      "title": "INF-014 - Cronicle Scheduler Integration for NFL Prediction Pipeline",
+      "branch_name": "inf-014-inf-014---cronicle-scheduler-integration-for-nfl-p",
+      "file_path": "backlog/infrastructure/INF-014-cronicle-scheduler-integration.md",
+      "status": "backlog",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "infrastructure"
       ],
       "owner": "Neo Starlord of Thunder",
       "created": "2025-08-29",
@@ -1848,6 +1907,24 @@
       "title": "Fix ADH Story Location Documentation",
       "branch_name": "adh-028-fix-adh-story-location-documentation",
       "file_path": "backlog/adhoc/ADH-028.md",
+      "status": "in-progress",
+      "priority": 99,
+      "estimate": "TBD",
+      "epic": "unknown",
+      "dependencies": [],
+      "labels": [
+        "ad-hoc",
+        "maintenance"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-29",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "ADH-029",
+      "title": "Fix duplicated IDs in PRIORITIZATION.json",
+      "branch_name": "feature/adh-029-fix-duplicated-ids-in-prioritiz",
+      "file_path": "backlog/adhoc/adh-029-fix-duplicated-ids-in-prioritiz.md",
       "status": "in-progress",
       "priority": 99,
       "estimate": "TBD",
