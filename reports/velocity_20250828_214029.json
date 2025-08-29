@@ -1,0 +1,248 @@
+{
+  "generated_at": "2025-08-28T21:40:29.728489",
+  "total_stories": 95,
+  "status_breakdown": {
+    "accepted": 41,
+    "draft": 26,
+    "backlog": 22,
+    "completed": 5,
+    "ready": 1
+  },
+  "epic_breakdown": {
+    "adhoc": 20,
+    "core": 11,
+    "data_sources": 1,
+    "infra": 2,
+    "infrastructure": 5,
+    "ingestion": 6,
+    "llm_backlog": 24,
+    "modeling": 2,
+    "social_media": 11,
+    "training": 1,
+    "ui": 7,
+    "unknown": 5
+  },
+  "epic_completion_rates": {
+    "adhoc": 100.0,
+    "core": 100.0,
+    "data_sources": 0.0,
+    "infra": 0.0,
+    "infrastructure": 40.0,
+    "ingestion": 66.7,
+    "llm_backlog": 8.3,
+    "modeling": 100.0,
+    "social_media": 9.1,
+    "training": 0.0,
+    "ui": 57.1,
+    "unknown": 0.0
+  },
+  "priority_distribution": {
+    "High (6-10)": 5,
+    "Critical (1-5)": 5,
+    "Medium (11-20)": 3
+  },
+  "top_priorities": [
+    {
+      "id": "INGESTION-046A",
+      "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
+      "branch_name": "ingestion-046a-rss-analytics-betting-core",
+      "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
+      "status": "completed",
+      "priority": 1,
+      "estimate": "5sp",
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "analytics",
+        "betting",
+        "phase1"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046B",
+      "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
+      "branch_name": "ingestion-046b-rss-team-coverage-expansion",
+      "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
+      "status": "completed",
+      "priority": 2,
+      "estimate": "3sp",
+      "epic": "ingestion",
+      "dependencies": [
+        "INGESTION-046A"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "team-coverage",
+        "sbnation",
+        "local-media",
+        "phase2"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046C",
+      "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
+      "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
+      "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
+      "status": "completed",
+      "priority": 3,
+      "estimate": "2sp",
+      "epic": "ingestion",
+      "dependencies": [
+        "INGESTION-046B"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "draft",
+        "statistics",
+        "international",
+        "specialized",
+        "phase3"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-001",
+      "title": "LLM extraction of game signals from news",
+      "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
+      "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
+      "status": "completed",
+      "priority": 4,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "ING-002"
+      ],
+      "labels": [
+        "llm",
+        "features",
+        "news"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-002",
+      "title": "Evidence citation & traceability for LLM outputs",
+      "branch_name": "llm-002-evidence-citation-traceability-for-llm-outputs",
+      "file_path": "backlog/core/LLM-002-evidence-citation-traceability.md",
+      "status": "completed",
+      "priority": 5,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [
+        "LLM-001"
+      ],
+      "labels": [
+        "llm",
+        "traceability",
+        "evidence"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "KAGGLE_DATA_UTILIZATION",
+      "title": "User Story: Kaggle Data Utilization",
+      "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
+      "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
+      "status": "draft",
+      "priority": 6,
+      "estimate": 3,
+      "epic": "data_sources",
+      "dependencies": [],
+      "labels": [
+        "external-data"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "PUBLIC_BETTING_DATA_INTEGRATION",
+      "title": "User Story: Public Betting Data Integration",
+      "branch_name": "public_betting_data_integration-user-story-public-betting-data-integration",
+      "file_path": "backlog/models/PUBLIC_BETTING_DATA_INTEGRATION.md",
+      "status": "draft",
+      "priority": 7,
+      "estimate": 5,
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "betting",
+        "trends"
+      ],
+      "owner": "TBD",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "LLM-003",
+      "title": "Entity resolution for teams and players",
+      "branch_name": "llm-003-entity-resolution-for-teams-and-players",
+      "file_path": "backlog/core/LLM-003-entity-resolution.md",
+      "status": "draft",
+      "priority": 8,
+      "estimate": "2sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "llm",
+        "entity-resolution"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-010",
+      "title": "User Story: Backtesting & ROI Tracking",
+      "branch_name": "adh-010-user-story-backtesting-roi-tracking",
+      "file_path": "backlog/adhoc/ADH-010-backtesting-roi-tracking.md",
+      "status": "accepted",
+      "priority": 9,
+      "estimate": 8,
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "backtesting",
+        "roi"
+      ],
+      "owner": "ai-agent",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    },
+    {
+      "id": "ING-002",
+      "title": "Article deduplication & enrichment pipeline",
+      "branch_name": "ing-002-article-deduplication-enrichment-pipeline",
+      "file_path": "backlog/ingestion/ING-001-article-dedup-enrich.md",
+      "status": "draft",
+      "priority": 10,
+      "estimate": "3sp",
+      "epic": "llm_backlog",
+      "dependencies": [],
+      "labels": [
+        "ingestion",
+        "dedup",
+        "enrichment"
+      ],
+      "owner": "team-data",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    }
+  ]
+}
