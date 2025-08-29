@@ -1,0 +1,239 @@
+{
+  "generated_at": "2025-08-29T03:05:34.110667",
+  "total_stories": 97,
+  "status_breakdown": {
+    "accepted": 41,
+    "completed": 7,
+    "backlog": 21,
+    "draft": 25,
+    "ready": 1,
+    "active": 2
+  },
+  "epic_breakdown": {
+    "adhoc": 27,
+    "core": 11,
+    "data-sources": 1,
+    "infrastructure": 7,
+    "ingestion": 6,
+    "llm": 24,
+    "modeling": 2,
+    "social": 11,
+    "training": 1,
+    "ui": 7
+  },
+  "epic_completion_rates": {
+    "adhoc": 77.8,
+    "core": 100.0,
+    "data-sources": 100.0,
+    "infrastructure": 28.6,
+    "ingestion": 66.7,
+    "llm": 8.3,
+    "modeling": 100.0,
+    "social": 9.1,
+    "training": 0.0,
+    "ui": 57.1
+  },
+  "priority_distribution": {
+    "Medium (11-20)": 39,
+    "Critical (1-5)": 18,
+    "High (6-10)": 40
+  },
+  "top_priorities": [
+    {
+      "id": "INGESTION-046A",
+      "title": "RSS Feed Enhancement Phase 1 - Analytics & Betting Core",
+      "branch_name": "ingestion-046a-rss-analytics-betting-core",
+      "file_path": "backlog/ingestion/INGESTION-046A-rss-enhancement-phase1.md",
+      "status": "completed",
+      "priority": 1,
+      "estimate": "5sp",
+      "epic": "ingestion",
+      "dependencies": [],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "analytics",
+        "betting",
+        "phase1"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046B",
+      "title": "RSS Feed Enhancement Phase 2 - Team Coverage Expansion",
+      "branch_name": "ingestion-046b-rss-team-coverage-expansion",
+      "file_path": "backlog/ingestion/INGESTION-046B-rss-enhancement-phase2.md",
+      "status": "completed",
+      "priority": 2,
+      "estimate": "3sp",
+      "epic": "ingestion",
+      "dependencies": [
+        "INGESTION-046A"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "team-coverage",
+        "sbnation",
+        "local-media",
+        "phase2"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "ADH-002",
+      "title": "Fix Inventory Sidebar",
+      "branch_name": "adh-002-fix-inventory-sidebar",
+      "file_path": "backlog/adhoc/ADH-002-Fix_Inventory_Sidebar.md",
+      "status": "accepted",
+      "priority": 3,
+      "estimate": "2sp",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "ad-hoc",
+        "maintenance"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-26",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-005",
+      "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
+      "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
+      "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
+      "status": "active",
+      "priority": 3,
+      "estimate": "2sp",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "unknown"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "INGESTION-046C",
+      "title": "RSS Feed Enhancement Phase 3 - Specialized Coverage Complete",
+      "branch_name": "ingestion-046c-rss-specialized-coverage-complete",
+      "file_path": "backlog/ingestion/INGESTION-046C-rss-enhancement-phase3.md",
+      "status": "completed",
+      "priority": 3,
+      "estimate": "2sp",
+      "epic": "ingestion",
+      "dependencies": [
+        "INGESTION-046B"
+      ],
+      "labels": [
+        "rss",
+        "data-ingestion",
+        "draft",
+        "statistics",
+        "international",
+        "specialized",
+        "phase3"
+      ],
+      "owner": "data-team",
+      "created": "2025-08-28",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "LLM-001",
+      "title": "LLM extraction of game signals from news",
+      "branch_name": "llm-001-llm-extraction-of-game-signals-from-news",
+      "file_path": "backlog/core/LLM-001-feature-extraction-from-news.md",
+      "status": "completed",
+      "priority": 4,
+      "estimate": "3sp",
+      "epic": "llm",
+      "dependencies": [
+        "ING-002"
+      ],
+      "labels": [
+        "llm",
+        "features",
+        "news"
+      ],
+      "owner": "team-llm",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-28"
+    },
+    {
+      "id": "ADH-008",
+      "title": "Advanced Nfl Statistics Integration",
+      "branch_name": "adh-008-advanced-nfl-statistics-integration",
+      "file_path": "backlog/adhoc/ADH-008-advanced-nfl-statistics-integration.md",
+      "status": "accepted",
+      "priority": 5,
+      "estimate": "8sp",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-015",
+      "title": "End To End Kaggle Nfl Scores",
+      "branch_name": "adh-015-end-to-end-kaggle-nfl-scores",
+      "file_path": "backlog/adhoc/ADH-015-end-to-end-kaggle-nfl-scores.md",
+      "status": "accepted",
+      "priority": 5,
+      "estimate": "3sp",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "ADH-017",
+      "title": "Nfl Player Injury Data Integration",
+      "branch_name": "adh-017-nfl-player-injury-data-integration",
+      "file_path": "backlog/adhoc/ADH-017-nfl-player-injury-data-integration.md",
+      "status": "accepted",
+      "priority": 5,
+      "estimate": "8sp",
+      "epic": "adhoc",
+      "dependencies": [],
+      "labels": [
+        "accepted"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-27"
+    },
+    {
+      "id": "LLM-010",
+      "title": "Task runner integration (busta/CLI from repo root) - COMPLETED ✅",
+      "branch_name": "llm-010-task-runner-integration-bustacli-from-repo-root---",
+      "file_path": "backlog/core/LLM-010-task-runner-busta.md",
+      "status": "accepted",
+      "priority": 5,
+      "estimate": "1sp",
+      "epic": "core",
+      "dependencies": [],
+      "labels": [
+        "cli",
+        "busta",
+        "accepted"
+      ],
+      "owner": "infra-team",
+      "created": "2025-08-27",
+      "last_updated": "2025-08-24"
+    }
+  ]
+}

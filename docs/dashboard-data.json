@@ -4,18 +4,25 @@
     "health_score": 100.0,
     "prioritized_stories": 97,
     "automation_rate": 0.0,
+<<<<<<< HEAD
     "last_updated": "2025-08-28T23:07:09.517415"
   },
   "velocity": {
     "generated_at": "2025-08-28T23:07:09.516589",
+=======
+    "last_updated": "2025-08-29T03:05:34.326420"
+  },
+  "velocity": {
+    "generated_at": "2025-08-29T03:05:34.325728",
+>>>>>>> 0f940e8b4f296b67e19282a8305efc21c9e7367e
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
       "completed": 7,
-      "backlog": 22,
+      "backlog": 21,
       "draft": 25,
       "ready": 1,
-      "active": 1
+      "active": 2
     },
     "epic_breakdown": {
       "adhoc": 27,
@@ -115,7 +122,7 @@
         "title": "ADH-005-AI-Sales-Pitch-Integration-Fix - AI-Sales-Pitch-Integration-Fix",
         "branch_name": "adh-005-adh-005-ai-sales-pitch-integration-fix---ai-sales-",
         "file_path": "backlog/adhoc/ADH-005-AI-Sales-Pitch-Integration-Fix.md",
-        "status": "backlog",
+        "status": "active",
         "priority": 3,
         "estimate": "2sp",
         "epic": "adhoc",
@@ -125,7 +132,7 @@
         ],
         "owner": "Neo Starlord of Thunder",
         "created": "2025-08-27",
-        "last_updated": "2025-08-27"
+        "last_updated": "2025-08-28"
       },
       {
         "id": "INGESTION-046C",
@@ -246,7 +253,11 @@
     ]
   },
   "health": {
+<<<<<<< HEAD
     "generated_at": "2025-08-28T23:07:09.516803",
+=======
+    "generated_at": "2025-08-29T03:05:34.325835",
+>>>>>>> 0f940e8b4f296b67e19282a8305efc21c9e7367e
     "health_score": 100.0,
     "quality_issues": {
       "missing_estimates": 0,
@@ -276,7 +287,11 @@
     "recommendations": []
   },
   "priority": {
+<<<<<<< HEAD
     "generated_at": "2025-08-28T23:07:09.516859",
+=======
+    "generated_at": "2025-08-29T03:05:34.325908",
+>>>>>>> 0f940e8b4f296b67e19282a8305efc21c9e7367e
     "total_prioritized": 97,
     "total_unprocessed": 0,
     "priority_heatmap": {
@@ -336,7 +351,11 @@
     "priority_recommendations": []
   },
   "workflow": {
+<<<<<<< HEAD
     "generated_at": "2025-08-28T23:07:09.517410",
+=======
+    "generated_at": "2025-08-29T03:05:34.326410",
+>>>>>>> 0f940e8b4f296b67e19282a8305efc21c9e7367e
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,
@@ -344,9 +363,9 @@
     },
     "status_progression": {
       "draft": 25,
-      "backlog": 22,
+      "backlog": 21,
       "ready": 1,
-      "active": 1,
+      "active": 2,
       "completed": 7,
       "accepted": 41
     },
@@ -356,6 +375,7 @@
       "large": 9,
       "unknown": 2
     },
+<<<<<<< HEAD
     "workflow_efficiency": 60.1,
     "velocity_trends": {
       "weekly_completion_rate": 4.0,
@@ -688,5 +708,8 @@
         "Prioritize user experience improvements for Q4"
       ]
     }
+=======
+    "workflow_efficiency": 60.5
+>>>>>>> 0f940e8b4f296b67e19282a8305efc21c9e7367e
   }
 }
