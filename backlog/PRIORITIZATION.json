@@ -564,7 +564,7 @@
       "title": "User Story: Kaggle Data Utilization",
       "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-      "status": "draft",
+      "status": "active",
       "priority": 6,
       "estimate": 3,
       "epic": "data_sources",
@@ -574,7 +574,7 @@
       ],
       "owner": "TBD",
       "created": "2025-08-27",
-      "last_updated": "2025-08-24"
+      "last_updated": "2025-08-28"
     },
     {
       "id": "INF-006-ai-inference-monitoring",
