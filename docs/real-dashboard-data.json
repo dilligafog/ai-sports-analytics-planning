@@ -1,24 +1,24 @@
 {
   "summary": {
     "total_stories": 97,
-    "health_score": 49.5,
+    "health_score": 50.5,
     "prioritized_stories": 97,
-    "last_updated": "2025-08-28",
-    "completed_count": 48,
+    "last_updated": "2025-08-29",
+    "completed_count": 49,
     "active_count": 2,
     "ready_count": 1,
     "backlog_count": 21
   },
   "velocity": {
-    "generated_at": "2025-08-29T00:00:49.552586",
+    "generated_at": "2025-08-29T00:12:16.738576",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
-      "completed": 7,
+      "completed": 8,
       "backlog": 21,
-      "draft": 25,
-      "ready": 1,
-      "active": 2
+      "draft": 24,
+      "active": 2,
+      "ready": 1
     },
     "epic_breakdown": {
       "adhoc": 27,
@@ -33,7 +33,7 @@
       "ui": 7
     },
     "epic_completion_rates": {
-      "adhoc": 77.8,
+      "adhoc": 81.5,
       "core": 100.0,
       "data-sources": 100.0,
       "infrastructure": 28.6,
