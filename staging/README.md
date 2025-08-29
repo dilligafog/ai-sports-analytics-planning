@@ -1,6 +1,14 @@
 # Story Staging Area
 
-This directory serves as a staging area for new stories before they are processed and moved to the appropriate epic folders in the backlog.
+⚠️ **DEPRECATED WORKFLOW**: This staging process is from the old file-moving workflow and is no longer used.
+
+**Current approach**: Stories are created directly in their appropriate `backlog/` subdirectories with status managed through JSON updates in `PRIORITIZATION.json`.
+
+---
+
+## Historical Information (Deprecated)
+
+This directory previously served as a staging area for new stories before they were processed and organized into backlog folders.
 
 ## Directory Structure
 
@@ -13,7 +21,7 @@ staging/
 └── processed/            # Archive of recently processed stories
 ```
 
-## Workflow
+## Old Workflow (No Longer Used)
 
 ### 1. Story Creation
 - Place new story files in `staging/new/`
@@ -22,12 +30,12 @@ staging/
 
 ### 2. Processing
 - Run `python scripts/ingest_stories.py` to process staged stories
-- Stories are validated, assigned proper IDs, and moved to correct epic folders
-- Backlog JSON files are automatically updated
+- Stories were validated, assigned proper IDs, and placed in correct epic folders
+- Backlog JSON files were automatically updated
 
 ### 3. Archive
-- Processed stories are moved to `staging/processed/` for reference
-- Original staging files are kept for audit trail
+- Processed stories were archived in `staging/processed/` for reference
+- Original staging files were kept for audit trail
 
 ## Input Formats
 

@@ -17,11 +17,11 @@ Stories are organized by epic:
 1. **Draft Creation**: Stories created from proposals with initial acceptance criteria
 2. **Review & Refinement**: Stories reviewed for completeness, sizing, and dependencies
 3. **Implementation Planning**: Complex stories get implementation plans created
-4. **Ready for Backlog**: Refined stories moved to appropriate backlog epic folder
+4. **Ready for Backlog**: Refined stories updated to `backlog` status in JSON and remain in place
 
 ## Story Status
 
-Stories in refinements are in `draft` status and will be moved to `backlog` status when ready for implementation.
+Stories in refinements are in `draft` status and will be updated to `backlog` status when ready for implementation. Story files remain in the `refinements/` directory with status managed through `PRIORITIZATION.json`.
 
 ## Epic Organization
 

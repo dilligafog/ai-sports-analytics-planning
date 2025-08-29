@@ -112,7 +112,7 @@ This planning repository works seamlessly with the [implementation repository](h
 1. **Planning Agent** creates stories with acceptance criteria
 2. **Implementation Agent** references story IDs in commits/PRs  
 3. **Feedback Loop** refines future stories based on implementation learnings
-4. **Completion Tracking** moves stories through lifecycle stages
+4. **Completion Tracking** updates story status through JSON lifecycle management
 
 **Synchronization Points**:
 - 📅 **Daily**: Implementation checks prioritization list

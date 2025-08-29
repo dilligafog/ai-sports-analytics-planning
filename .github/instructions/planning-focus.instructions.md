@@ -25,10 +25,10 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 ```
 
 ## Story Lifecycle
-1. **Creation** → `backlog/` - New story with basic structure
-2. **Refinement** → Stay in `backlog/` until ready
-3. **Ready** → Move to `active/` when implementation starts
-4. **Completion** → Move to `completed/` with outcome notes
+1. **Creation** → `backlog/` subdirectory - New story with basic structure
+2. **Refinement** → Status remains in JSON until ready
+3. **Ready** → Update status to `active` in JSON when implementation starts
+4. **Completion** → Update status to `completed` in JSON with outcome notes
 
 ## Coordination Patterns
 

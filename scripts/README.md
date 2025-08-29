@@ -2,6 +2,10 @@
 
 Automation scripts for maintaining the planning repository.
 
+## 📋 Current Workflow
+
+Stories are managed through JSON-based status updates. Files stay in their original `backlog/` subdirectories and status changes happen through `PRIORITIZATION.json` updates. **No file moving is required.**
+
 ## Prerequisites
 
 Install required dependencies:
@@ -9,7 +13,7 @@ Install required dependencies:
 pip install -r scripts/requirements.txt
 ```
 
-## Available Scripts
+## ✅ Active Scripts
 
 ### `ingest_stories.py`
 
@@ -148,9 +152,19 @@ python scripts/generate_complete_backlog.py
 - Updated all file paths in PRIORITIZATION.json
 - Cleaned up old nested folder structure
 
+## ❌ Deprecated Scripts
+
+The following scripts are from the old file-moving workflow and are **no longer used**:
+
+- `migrate_accepted_stories.py` - ❌ **Deprecated**: Stories no longer move between directories
+- `migrate_backlog_structure.py` - ❌ **Deprecated**: Backlog structure is now stable
+
+**Current approach**: Status management happens through JSON updates in `PRIORITIZATION.json`. Story files remain in their original `backlog/` subdirectories.
+
 ## Script Development Guidelines
 
 - **Keep scripts simple**: Focus on single, clear purposes
+- **Use JSON-based updates**: Modify status through PRIORITIZATION.json, not file movement
 - **Use standard libraries**: Avoid external dependencies where possible
 - **Include error handling**: Gracefully handle missing files or invalid data
 - **Log meaningful output**: Help users understand what happened

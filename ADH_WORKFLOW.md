@@ -25,8 +25,8 @@ ADH stories are ad-hoc bug fixes, maintenance tasks, and quick improvements that
 - Minimal documentation requirements
 
 ### 3. Completion
-- Move from `active/` to `completed/` when work is done
-- Eventually moves to `accepted/` like other stories
+- Update status to `completed` in PRIORITIZATION.json when work is done
+- Eventually update status to `accepted` like other stories
 - Track completion for metrics but don't block other work
 
 ## When to Use ADH Stories
@@ -116,7 +116,7 @@ Any additional context or considerations.
 ## Guidelines
 
 1. **Keep them small** - If it takes more than 4 hours, consider making it a regular story
-2. **Act fast** - Don't let ADH stories linger in active/ for days
+2. **Act fast** - Don't let ADH stories linger in `active` status for days
 3. **Document briefly** - Just enough to understand what was done and why
 4. **Test quickly** - Ensure changes work but don't over-engineer the testing
-5. **Clean up** - Move completed ADH stories to staging regularly
+5. **Clean up** - Update completed ADH story status in JSON regularly

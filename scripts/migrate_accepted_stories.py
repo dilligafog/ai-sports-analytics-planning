@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
 """
-Migrate Accepted Stories to Standardized Backlog
+❌ DEPRECATED: Migrate Accepted Stories to Standardized Backlog
 
-This script migrates accepted stories to proper backlog structure with:
+This script is deprecated as the workflow has changed to JSON-based status management.
+Stories no longer move between directories - their status is updated in PRIORITIZATION.json.
+
+DEPRECATED FUNCTIONALITY:
+This script previously migrated accepted stories to proper backlog structure with:
 - Standardized filenames (EPIC-001-title-format.md)
 - YAML frontmatter for stories that lack it
 - Proper epic folder placement
 - Updated JSON tracking
 
 Usage: python scripts/migrate_accepted_stories.py [--dry-run]
+
+⚠️  DO NOT USE: This script is preserved for historical reference only.
+    Use scripts/update_story.py for JSON-based status updates instead.
 """
 
 import sys

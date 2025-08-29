@@ -32,7 +32,7 @@ Ad-hoc bug fixes and maintenance tasks that go directly to `active/`:
 - See [`../ADH_WORKFLOW.md`](../ADH_WORKFLOW.md) for details
 
 ## Organization
-Stories are organized by functional area and priority, migrated from implementation repository and reorganized into planning-focused themes:
+Stories are organized by functional area and priority, originally sourced from implementation repository and reorganized into planning-focused themes:
 
 ### Themed Directories
 - `llm/` - LLM pipeline and feature stories (~30 stories across ingestion, modeling, evaluation, UI)

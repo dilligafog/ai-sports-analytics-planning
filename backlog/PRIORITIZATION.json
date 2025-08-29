@@ -575,7 +575,7 @@
       "title": "User Story: Kaggle Data Utilization",
       "branch_name": "kaggle_data_utilization-user-story-kaggle-data-utilization",
       "file_path": "backlog/models/KAGGLE_DATA_UTILIZATION.md",
-      "status": "active",
+      "status": "completed",
       "priority": 6,
       "estimate": "3sp",
       "epic": "data-sources",

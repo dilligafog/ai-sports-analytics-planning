@@ -11,27 +11,27 @@ Primary responsibilities
 - Update roadmaps, stories and priorities
 - Maintain the story prioritization list (`backlog/PRIORITIZATION.md`) for implementation agents
 - Groom the backlog and prepare stories for implementation
-- Move stories from `completed/` to `accepted/` when they meet acceptance criteria and update related docs
-- Never modify files inside `active/` (stories currently being implemented)
+- Update story status from `completed` to `accepted` in JSON when they meet acceptance criteria
+- Never modify files - all status management happens through JSON updates
 - Manage PRs for the planning repository (author, review, merge as needed)
 
 Story lifecycle actions (Planning Agent)
 1. New proposals: create a file under `proposals/` using the proposal template. Assign an owner and priority.
 2. When a proposal is approved: create or update related stories in `backlog/` and the `roadmaps/` mapping.
 3. Backlog grooming: reorder and split/merge backlog items, add acceptance criteria and estimates. Update prioritization list as needed.
-4. Acceptance: when an implementation completes and the Implementation Agent signals success, move the story from `completed/` to `accepted/`. Update the story with outcome notes and references to implementation PRs and release notes.
+4. Acceptance: when an implementation completes and the Implementation Agent signals success, update the story status from `completed` to `accepted` in the JSON. Update the story with outcome notes and references to implementation PRs and release notes.
 
 Rules and constraints
-- The Planning Agent must never edit or move files within `active/` — active stories are under the control of the Implementation Agent while work is in progress.
+- The Planning Agent must never modify story files in `backlog/` — all status management happens through JSON updates in PRIORITIZATION.json
 - All planning changes must be committed and opened as PRs in the planning repository so they are auditable.
-- Keep a clear changelog entry in story frontmatter when moving a story between folders (status, date, author).
+- Keep a clear changelog entry in story JSON metadata when updating status (date, author, outcome).
 
 PR management
-- Create clear PR titles like `planning: move STORY-ID to accepted (outcome)` or `planning: add proposal PROPOSAL-ID - <short title>`
+- Create clear PR titles like `planning: update STORY-ID status to accepted (outcome)` or `planning: add proposal PROPOSAL-ID - <short title>`
 - In PR body: include links to implementation PRs, outcomes, verification steps, and any follow-ups for the backlog
 
 Coordination with Implementation Agent
-- When moving a story to `accepted/`, include a link to the implementation PR and a short note describing verification steps and any unresolved follow-ups.
+- When updating a story status to `accepted`, include a link to the implementation PR and a short note describing verification steps and any unresolved follow-ups.
 - When new dependencies or scope change are discovered, create a proposal (in `proposals/`) and notify the Implementation Agent via the PR or by referencing the implementation PR in the proposal.
 
 Operational notes

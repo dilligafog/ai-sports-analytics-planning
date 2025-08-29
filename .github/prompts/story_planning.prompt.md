@@ -75,9 +75,9 @@ As a [user type], I want [functionality] so that [benefit].
 4. **Update estimates** based on actual implementation time
 
 ### Workflow Rules (enforced by Planning Agent)
-- The Planning Agent will use `proposals/`, `backlog/`, `active/`, `completed/`, and `accepted/` directories to manage story lifecycle.
-- The Planning Agent may move stories from `completed/` to `accepted/` only after receiving verification from the Implementation Agent.
-- The Planning Agent must not edit files inside `active/`.
+- The Planning Agent will use JSON status management through `PRIORITIZATION.json` to manage story lifecycle.
+- The Planning Agent may update story status from `completed` to `accepted` only after receiving verification from the Implementation Agent.
+- Story files remain in their original `backlog/` subdirectories throughout their lifecycle.
 - All planning repo changes must be done via PR with clear changelog frontmatter in the story files.
 
 ### Roadmap Evolution
