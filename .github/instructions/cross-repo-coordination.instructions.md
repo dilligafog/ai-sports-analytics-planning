@@ -47,7 +47,7 @@ Planning Repo                    Implementation Repo
 - Any questions or clarifications handled in story comments
 
 #### Implementation Progress (Implementation → Planning)
-- Commit messages reference story IDs: `feat(AUTH-001): implement OAuth flow`
+- Commit messages reference story IDs: `feat(ADH-001): implement OAuth flow`
 - PR descriptions link to planning stories
 - Implementation discoveries noted for planning refinement
 
@@ -62,8 +62,8 @@ Planning Repo                    Implementation Repo
 ```
 <type>(story-id): <description>
 
-Implements story AUTH-001 from planning repository.
-See: https://github.com/dilligafog/ai-sports-analytics-planning/blob/main/active/auth-001.md
+Implements story ADH-001 from planning repository.
+See: https://github.com/dilligafog/ai-sports-analytics-planning/blob/main/backlog/adhoc/adh-001-update-busta-adhoc-stories.md
 
 - Specific implementation details
 - Technical decisions made
@@ -78,7 +78,7 @@ Planning feedback:
 ### PR Descriptions
 ```markdown
 ## Story Context
-**Planning Story**: [AUTH-001](link-to-planning-story)
+**Planning Story**: [ADH-001](link-to-planning-story)
 **Status**: Ready for Review / Completed
 **Acceptance Criteria**: List status of each criterion
 

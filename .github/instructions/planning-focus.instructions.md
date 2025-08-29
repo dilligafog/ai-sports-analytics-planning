@@ -38,7 +38,7 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 - **Status Sync**: Keep story status aligned with implementation progress
 
 ### Communication Format
-- **Story IDs**: Use format `CATEGORY-###` (e.g., AUTH-001, DATA-042)
+- **Story IDs**: Use format `ADH-###` (e.g., ADH-001, ADH-042)
 - **Status Updates**: Clear progression through lifecycle stages
 - **Implementation Links**: Reference PRs, commits, and issues from implementation repo
 

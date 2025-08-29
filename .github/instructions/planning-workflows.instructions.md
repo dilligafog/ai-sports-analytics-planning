@@ -35,5 +35,5 @@ Coordination with Implementation Agent
 - When new dependencies or scope change are discovered, create a proposal (in `proposals/`) and notify the Implementation Agent via the PR or by referencing the implementation PR in the proposal.
 
 Operational notes
-- Use descriptive commit messages and include story IDs (format: `CATEGORY-###`) in commits and PRs.
+- Use descriptive commit messages and include story IDs (format: `ADH-###`) in commits and PRs.
 - Keep proposals and stories small and testable. Split large items into smaller follow-ups.

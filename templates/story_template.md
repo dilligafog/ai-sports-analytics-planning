@@ -1,7 +1,7 @@
 ---
-id: CATEGORY-###
+id: ADH-###
 title: Short descriptive title
-branch_name: category-###-short-descriptive-kebab-case
+branch_name: adh-###-short-descriptive-kebab-case
 epic: epic-name
 status: backlog              # backlog | active | completed | accepted | blocked
 priority: medium             # low | medium | high | critical
@@ -21,7 +21,7 @@ emit_metadata:               # Data pipeline metadata (if applicable)
   notes: null
 ---
 
-# CATEGORY-###: Short descriptive title
+# ADH-###: Short descriptive title
 
 ## User Story
 **As a** [user role]  
