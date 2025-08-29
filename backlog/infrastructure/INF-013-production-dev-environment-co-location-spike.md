@@ -1,6 +1,6 @@
 ---
-id: INF-012
-title: INF-012 - Production & Dev Environment Co-location Spike
+id: INF-013
+title: INF-013 - Production & Dev Environment Co-location Spike
 epic: infrastructure
 status: ready
 owner: 'Neo Starlord of Thunder'
@@ -10,11 +10,11 @@ dependencies: []
 labels: [infrastructure, spike, research, environment, production, devops]
 created: 2025-08-29
 last_updated: 2025-08-29
-branch_name: inf-012-production-dev-environment-co-location-spike
-file_path: backlog/infrastructure/INF-012-production-dev-environment-co-location-spike.md
+branch_name: inf-013-production-dev-environment-co-location-spike
+file_path: backlog/infrastructure/INF-013-production-dev-environment-co-location-spike.md
 ---
 
-# INF-012: Production & Dev Environment Co-location Spike
+# INF-013: Production & Dev Environment Co-location Spike
 
 ## User Story
 **As a** DevOps Engineer  

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "last_updated": "2025-08-29",
-    "total_backlog_stories": 102,
+    "total_backlog_stories": 103,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime",
     "priority_assigned": true,
@@ -86,7 +86,7 @@
       "title": "FastAPI service framework with basic CRUD endpoints",
       "branch_name": "inf-012-fastapi-service-framework-basic-crud-endpoints",
       "file_path": "backlog/infrastructure/INF-012-fastapi-service-framework-basic-crud-endpoints.md",
-      "status": "active",
+      "status": "completed",
       "priority": 3,
       "estimate": "5sp",
       "epic": "infrastructure",
@@ -99,6 +99,28 @@
       ],
       "owner": "implementation-team",
       "created": "2025-08-28",
+      "last_updated": "2025-08-29"
+    },
+    {
+      "id": "INF-013",
+      "title": "INF-013 - Production & Dev Environment Co-location Spike",
+      "branch_name": "inf-013-production-dev-environment-co-location-spike",
+      "file_path": "backlog/infrastructure/INF-013-production-dev-environment-co-location-spike.md",
+      "status": "backlog",
+      "priority": 7,
+      "estimate": "3sp",
+      "epic": "infrastructure",
+      "dependencies": [],
+      "labels": [
+        "infrastructure",
+        "spike",
+        "research",
+        "environment",
+        "production",
+        "devops"
+      ],
+      "owner": "Neo Starlord of Thunder",
+      "created": "2025-08-29",
       "last_updated": "2025-08-29"
     },
     {
