@@ -106,7 +106,7 @@
       "title": "INF-014 - Cronicle Scheduler Integration for NFL Prediction Pipeline",
       "branch_name": "inf-014-cronicle-scheduler-integration",
       "file_path": "backlog/infrastructure/INF-014-cronicle-scheduler-integration.md",
-      "status": "backlog",
+      "status": "active",
       "priority": 4,
       "estimate": "5sp",
       "epic": "infrastructure",
