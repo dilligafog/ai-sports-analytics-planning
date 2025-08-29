@@ -145,6 +145,8 @@ class DashboardGenerator:
             border-radius: 16px;
             padding: 24px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            position: relative;
+            height: 400px;
         }}
         
         .chart-title {{
@@ -153,6 +155,17 @@ class DashboardGenerator:
             margin-bottom: 20px;
             color: #374151;
             text-align: center;
+        }}
+        
+        .chart-wrapper {{
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }}
+        
+        canvas {{
+            max-width: 100% !important;
+            height: auto !important;
         }}
         
         .status-grid {{
@@ -281,12 +294,16 @@ class DashboardGenerator:
         <div class="charts-grid">
             <div class="chart-container">
                 <div class="chart-title">Epic Completion Progress</div>
-                <canvas id="epicChart" width="400" height="300"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="epicChart"></canvas>
+                </div>
             </div>
             
             <div class="chart-container">
                 <div class="chart-title">Priority Distribution</div>
-                <canvas id="priorityChart" width="400" height="300"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="priorityChart"></canvas>
+                </div>
             </div>
         </div>
         
@@ -300,7 +317,9 @@ class DashboardGenerator:
             
             <div class="chart-container">
                 <div class="chart-title">Workflow Efficiency</div>
-                <canvas id="workflowChart" width="400" height="300"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="workflowChart"></canvas>
+                </div>
             </div>
         </div>
         
@@ -329,6 +348,10 @@ class DashboardGenerator:
                             padding: 15
                         }}
                     }}
+                }},
+                animation: {{
+                    animateRotate: true,
+                    duration: 1000
                 }}
             }}
         }});
@@ -353,6 +376,9 @@ class DashboardGenerator:
                     legend: {{
                         display: false
                     }}
+                }},
+                animation: {{
+                    duration: 1000
                 }}
             }}
         }});
@@ -380,6 +406,15 @@ class DashboardGenerator:
                     legend: {{
                         display: false
                     }}
+                }},
+                elements: {{
+                    point: {{
+                        radius: 6,
+                        hoverRadius: 8
+                    }}
+                }},
+                animation: {{
+                    duration: 1000
                 }}
             }}
         }});
@@ -444,10 +479,27 @@ class DashboardGenerator:
         completion_rates = velocity.get("epic_completion_rates", {})
         
         if not completion_rates:
-            return {"labels": [], "datasets": []}
+            return {
+                "labels": ["No Epic Data"],
+                "datasets": [{
+                    "data": [1],
+                    "backgroundColor": ['#e5e7eb'],
+                    "borderWidth": 0
+                }]
+            }
         
         # Sort by completion rate and take top 8
         sorted_epics = sorted(completion_rates.items(), key=lambda x: x[1], reverse=True)[:8]
+        
+        if not sorted_epics:
+            return {
+                "labels": ["No Data"],
+                "datasets": [{
+                    "data": [1],
+                    "backgroundColor": ['#e5e7eb'],
+                    "borderWidth": 0
+                }]
+            }
         
         labels = [epic.replace("_", " ").title() for epic, _ in sorted_epics]
         data = [rate for _, rate in sorted_epics]
@@ -472,7 +524,15 @@ class DashboardGenerator:
         distribution = priority.get("priority_distribution", {})
         
         if not distribution:
-            return {"labels": [], "datasets": []}
+            # Return placeholder data when no priority distribution exists
+            return {
+                "labels": ["No Priority Data"],
+                "datasets": [{
+                    "data": [1],
+                    "backgroundColor": ['#e5e7eb'],
+                    "borderWidth": 0
+                }]
+            }
         
         # Define order for priority ranges
         priority_order = ["Critical (1-5)", "High (6-10)", "Medium (11-20)", "Low (21+)"]
@@ -487,6 +547,17 @@ class DashboardGenerator:
                 labels.append(priority_range)
                 data.append(distribution[priority_range])
                 backgroundColor.append(colors[i])
+        
+        # If still no data, return placeholder
+        if not labels:
+            return {
+                "labels": ["Unprocessed Stories"],
+                "datasets": [{
+                    "data": [priority.get("total_unprocessed", 0) or 1],
+                    "backgroundColor": ['#9ca3af'],
+                    "borderWidth": 0
+                }]
+            }
         
         return {
             "labels": labels,

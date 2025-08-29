@@ -4,10 +4,10 @@
     "health_score": 89.2,
     "prioritized_stories": 13,
     "automation_rate": 0.0,
-    "last_updated": "2025-08-29T01:44:44.497287"
+    "last_updated": "2025-08-28T22:17:00.537899"
   },
   "velocity": {
-    "generated_at": "2025-08-29T01:44:44.496797",
+    "generated_at": "2025-08-28T22:17:00.537524",
     "total_stories": 97,
     "status_breakdown": {
       "accepted": 41,
@@ -256,7 +256,7 @@
     ]
   },
   "health": {
-    "generated_at": "2025-08-29T01:44:44.496906",
+    "generated_at": "2025-08-28T22:17:00.537609",
     "health_score": 89.2,
     "quality_issues": {
       "missing_estimates": 50,
@@ -290,7 +290,7 @@
     ]
   },
   "priority": {
-    "generated_at": "2025-08-29T01:44:44.496951",
+    "generated_at": "2025-08-28T22:17:00.537648",
     "total_prioritized": 13,
     "total_unprocessed": 84,
     "priority_heatmap": {
@@ -320,6 +320,11 @@
       },
       "unknown": {}
     },
+    "priority_distribution": {
+      "High (6-10)": 5,
+      "Critical (1-5)": 5,
+      "Medium (11-20)": 3
+    },
     "high_priority_distribution": {
       "adhoc": 1,
       "data_sources": 1,
@@ -345,7 +350,7 @@
     ]
   },
   "workflow": {
-    "generated_at": "2025-08-29T01:44:44.497279",
+    "generated_at": "2025-08-28T22:17:00.537892",
     "automation_adoption": {
       "auto_created_stories": 0,
       "template_usage": 0,

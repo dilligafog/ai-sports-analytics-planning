@@ -192,11 +192,20 @@ class ReportGenerator:
             epic = story.get("epic", "unknown")
             unprocessed_by_epic[epic] = unprocessed_by_epic.get(epic, 0) + 1
         
+        # Priority distribution
+        priority_distribution = {}
+        for story in stories:
+            priority = story.get("priority", 99)
+            if priority != 99:  # Exclude unprocessed
+                priority_range = self._get_priority_range(priority)
+                priority_distribution[priority_range] = priority_distribution.get(priority_range, 0) + 1
+        
         return {
             "generated_at": datetime.now().isoformat(),
             "total_prioritized": len(stories) - len(unprocessed),
             "total_unprocessed": len(unprocessed),
             "priority_heatmap": priority_heatmap,
+            "priority_distribution": priority_distribution,
             "high_priority_distribution": high_priority_epics,
             "unprocessed_by_epic": unprocessed_by_epic,
             "priority_recommendations": self._generate_priority_recommendations(unprocessed_by_epic)
