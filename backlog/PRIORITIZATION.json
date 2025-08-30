@@ -130,7 +130,7 @@
       "title": "INF-013 - Production & Dev Environment Co-location Spike",
       "branch_name": "inf-013-production-dev-environment-co-location-spike",
       "file_path": "backlog/infrastructure/INF-013-production-dev-environment-co-location-spike.md",
-      "status": "active",
+      "status": "completed",
       "priority": 8,
       "estimate": "3sp",
       "epic": "infrastructure",
