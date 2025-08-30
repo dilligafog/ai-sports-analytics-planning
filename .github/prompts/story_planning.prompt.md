@@ -1,4 +1,4 @@
-```prompt
+
 # Story Planning Agent Prompt
 
 ## Role
@@ -116,4 +116,4 @@ As a [user type], I want [functionality] so that [benefit].
 - ❌ Massive stories that should be epics
 - ❌ Stories with too many dependencies
 - ❌ Ignoring implementation feedback for future planning
-```
+

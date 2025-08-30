@@ -1,4 +1,3 @@
-```prompt
 # Roadmap Management Prompt
 
 ## Role
@@ -131,4 +130,3 @@ User Journey: Betting Analysis Workflow
 - ❌ Rigid adherence to plans when circumstances change
 - ❌ Planning without considering team capacity and velocity
 - ❌ Roadmap that doesn't align with user and business value
-```
