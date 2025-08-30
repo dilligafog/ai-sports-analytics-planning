@@ -231,7 +231,7 @@
       "title": "User Story: Weather Data Integration",
       "branch_name": "weather_data_integration-user-story-weather-data-integration",
       "file_path": "backlog/models/WEATHER_DATA_INTEGRATION.md",
-      "status": "active",
+      "status": "completed",
       "priority": 8,
       "estimate": 3,
       "epic": "ingestion",
