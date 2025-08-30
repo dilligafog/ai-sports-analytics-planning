@@ -11,6 +11,132 @@ Analyze backlog stories against existing implementation to determine if they:
 4. **Obsolete** - No longer needed due to architectural or business changes
 5. **Still valid** - Genuinely needed and not yet implemented
 
+## Single Story Validation
+
+### Usage
+When you want to validate a specific story, provide the **Story ID** (e.g., ADH-042, LLM-001) and this prompt will guide focused investigation.
+
+### Target Story Setup
+```bash
+# Input: Story ID to validate
+STORY_ID="[PROVIDED_STORY_ID]"  # e.g., "ADH-042"
+
+# Get story details
+python scripts/update_story.py --list | grep $STORY_ID
+python scripts/manage_priorities.py --list | grep $STORY_ID
+```
+
+### Focused Investigation Workflow
+
+#### 1. Extract Story Context
+```bash
+# Find the story file
+find backlog/ -name "*${STORY_ID}*" -o -name "*$(echo $STORY_ID | tr '[:upper:]' '[:lower:]')*"
+```
+- Read story file to understand requirements
+- Extract key functionality keywords
+- Note acceptance criteria and technical details
+- Identify epic category and dependencies
+
+#### 2. Targeted Code Search
+```bash
+# Search implementation repo for story-specific patterns
+cd ../nfl-predictions-dev/
+
+# Search for story ID references
+grep -r "$STORY_ID" . --include="*.py" --include="*.md" --include="*.yml"
+
+# Search for story keywords (extract from story content)
+grep -r "keyword1\|keyword2\|keyword3" src/ --include="*.py"
+
+# Search for related function/class names mentioned in story
+find . -name "*.py" -exec grep -l "specific_function_name" {} \;
+```
+
+#### 3. Story-Specific Git Investigation
+```bash
+# Search commits for story ID
+git log --grep="$STORY_ID" --oneline
+
+# Search commits for story keywords
+git log --grep="story_keyword" --since="1 week ago" --oneline
+
+# Check for story-related branch names
+git branch -a | grep -i "$(echo $STORY_ID | tr '[:upper:]' '[:lower:]')"
+git branch -a | grep -i "story_keyword"
+```
+
+#### 4. PR Analysis for Target Story
+```bash
+# Search PRs for story ID
+gh pr list --state=all --search="$STORY_ID"
+
+# Search PRs for story keywords
+gh pr list --state=all --search="story_keyword"
+
+# Check recent closed PRs that might implement the functionality
+gh pr list --state=closed --limit=10 --search="keyword"
+```
+
+### Single Story Investigation Template
+
+```markdown
+# Story Validation: ${STORY_ID}
+
+## Target Story Analysis
+**Story ID**: ${STORY_ID}
+**Title**: [Story title from file]
+**Epic**: [Epic category]
+**Status**: [Current status from scripts]
+**Priority**: [Current priority]
+
+### Story Requirements
+**User Story**: [As a... I want... so that...]
+**Key Acceptance Criteria**:
+- [ ] [Criterion 1]
+- [ ] [Criterion 2]
+- [ ] [Criterion 3]
+
+**Keywords for Search**: [keyword1, keyword2, keyword3]
+
+### Investigation Results
+
+#### Direct Story References
+**Story ID Found In**:
+- [ ] Code: [File paths where story ID appears]
+- [ ] Commits: [Commit hashes mentioning story ID]
+- [ ] PRs: [PR numbers referencing story ID]
+
+#### Functionality Implementation
+**Related Code Found**:
+- [ ] File: `path/file.py` - Function: `function()` - Match: [Full/Partial/None]
+- [ ] File: `path/other.py` - Class: `Class` - Match: [Full/Partial/None]
+
+#### Git Evidence
+**Related Commits**:
+- [ ] `hash` - "message" - [Date] - Relevance: [High/Medium/Low]
+
+#### PR Evidence  
+**Related PRs**:
+- [ ] PR #N - "Title" - Status: [Merged/Closed] - Match: [Full/Partial/None]
+
+### Validation Decision for ${STORY_ID}
+**Status**: [Already Implemented/Partially Implemented/Duplicate/Obsolete/Still Valid]
+**Confidence**: [High/Medium/Low]
+**Evidence Summary**: [Brief summary of findings]
+
+### Recommended Action for ${STORY_ID}
+**Action**: [Mark Completed/Refine/Archive/Keep in Backlog]
+**Rationale**: [Why this decision]
+**Script Command**: 
+```bash
+python scripts/update_story.py ${STORY_ID} --status [new_status]
+```
+
+**Implementation Reference**: [Specific files/PRs/commits that implement this]
+**Notes**: [Additional context or follow-up needed]
+```
+
 ## Investigation Process
 
 ### 1. Story Analysis
