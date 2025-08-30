@@ -12,7 +12,7 @@
 - **Technology Stack**:
   - Python requests/aiohttp for API data collection
   - pandas/numpy for line movement analysis
-  - SQLite/PostgreSQL for historical betting trend storage
+  - SQLite for historical betting trend storage
   - FastAPI for betting data API endpoints
   - Chart.js/D3.js for line movement visualizations
 - **Integration Points**:

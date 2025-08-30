@@ -8,17 +8,17 @@
 - **Priority**: Medium
 
 ## Technical Approach
-- **Architecture**: PostgreSQL-powered advanced querying with full-text search, multi-backlog support, and aggregation capabilities
+- **Architecture**: SQLite-powered advanced querying with FTS (Full-Text Search), multi-backlog support, and aggregation capabilities
 - **Technology Stack**:
   - FastAPI with advanced query parameter handling for multi-backlog filtering
-  - PostgreSQL full-text search with GIN indexes optimized for cross-backlog queries
+  - SQLite FTS (Full-Text Search) with virtual tables optimized for cross-backlog queries
   - SQLAlchemy with complex query building supporting backlog joins
   - Pydantic models for query validation including backlog parameters
-  - Redis for query result caching with backlog-aware cache keys
-  - Elasticsearch (optional) for advanced search features across multiple backlogs
+  - In-memory caching for query result caching with backlog-aware cache keys
+  - Optional Elasticsearch integration for advanced search features across multiple backlogs
 - **Integration Points**:
   - Story management endpoints (API-001) with multi-backlog support
-  - PostgreSQL database with search indexes optimized for backlog queries
+  - SQLite database with FTS virtual tables optimized for backlog queries
   - Caching layer for performance optimization with backlog segmentation
 - **Data Flow**: Query parameters → Validation → Query builder → Database joins → Caching → Response formatting
 
@@ -36,10 +36,10 @@
 **Dependencies**: API-001 (basic story endpoints with multi-backlog support)
 **Technical Tasks:**
 - Design flexible query parameter schema with Pydantic including backlog filtering
-- Implement PostgreSQL full-text search with tsvector columns optimized for multi-backlog queries
+- Implement SQLite FTS virtual tables optimized for multi-backlog queries
 - Create database indexes for common filter fields including backlog relationships
 - Build dynamic query constructor for multiple filter combinations across backlogs
-- Add basic Redis caching for search results with backlog-aware cache invalidation
+- Add basic in-memory caching for search results with backlog-aware cache invalidation
 - Implement pagination with cursor-based and offset options for large multi-backlog result sets
 
 ### Phase 2: Advanced Analytics and Performance Optimization
@@ -63,10 +63,10 @@
 ## Technical Decisions
 
 ### Search Technology Choice
-**Choice**: PostgreSQL full-text search with optional Elasticsearch integration
+**Choice**: SQLite FTS (Full-Text Search) with optional Elasticsearch integration
 **Rationale**:
-- PostgreSQL FTS sufficient for current scale and requirements
-- Avoids additional infrastructure complexity
+- SQLite FTS sufficient for current scale and requirements
+- Zero configuration and built-in Python support
 - Elasticsearch as future enhancement for advanced features
 **Alternatives Considered**: Elasticsearch (overkill for current scale), Simple LIKE queries (poor performance), Apache Solr (additional complexity)
 

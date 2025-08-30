@@ -24,7 +24,7 @@ This design represents **enterprise-grade architecture patterns** that distingui
 
 #### **Database-Backed Intelligence**
 - **Amateur Approach**: Grep through files, hope for the best
-- **Boss Level**: PostgreSQL with JSONB for complex analytics and relationship mapping
+- **Boss Level**: SQLite with JSON support for complex analytics and relationship mapping
 - **Result**: Sub-second queries across thousands of stories with dependency analysis
 
 ### 🔥 **This is What Engineering Excellence Looks Like**
@@ -158,7 +158,7 @@ This platform would provide these capabilities while preserving each project's e
 ### Phase 1: Plan_Pipe Repository Setup (Week 1-2)
 - **TOOL-INFRA-001**: Create plan_pipe repository with multi-project structure
 - **TOOL-INFRA-002**: Set up git submodule system for project management
-- **TOOL-INFRA-003**: Implement basic Docker environment with PostgreSQL and FastAPI
+- **TOOL-INFRA-003**: Implement basic Docker environment with SQLite and FastAPI
 - **TOOL-INFRA-004**: Create multi-project database schema and migrations
 
 ### Phase 2: Core API Foundation (Week 3-4)
@@ -216,7 +216,7 @@ This API service with MCP integration would provide these capabilities while pre
 ### Core Architecture
 - **Containerized FastAPI Service**: Python-based REST API with automatic OpenAPI documentation (local development only)
 - **Integrated MCP Server**: Model Context Protocol server for AI assistant integration
-- **PostgreSQL Database**: Synchronized with file systems for performance and advanced queries
+- **SQLite Database**: Synchronized with file systems for performance and advanced queries
 - **Multi-Project File System**: Hierarchical organization supporting multiple project contexts via git submodules
 - **File System Sync**: Two-way synchronization between database and markdown files across projects
 - **Event-Driven Workflow Engine**: Configurable triggers and actions for story lifecycle automation
@@ -252,7 +252,7 @@ This API service with MCP integration would provide these capabilities while pre
 
 ## Acceptance Criteria
 - [ ] Plan_pipe repository created with proper multi-project structure
-- [ ] Docker container runs PostgreSQL database with multi-project story schema
+- [ ] Docker container runs with embedded SQLite database and multi-project story schema
 - [ ] FastAPI service exposes REST endpoints for all story operations across projects (local only)
 - [ ] Git submodule system manages multiple project planning repositories
 - [ ] Two-way sync between database and markdown files across all projects (max 30 second delay)
@@ -288,7 +288,7 @@ This API service with MCP integration would provide these capabilities while pre
 ## Suggested Stories
 
 ### Core Infrastructure (Epic: infrastructure)
-- **INF-011**: Docker PostgreSQL database setup with story schema
+- **INF-011**: SQLite database setup with story schema
 - **INF-012**: FastAPI service framework with basic CRUD endpoints
 - **INF-013**: File system synchronization service
 - **INF-014**: Authentication and API key management
@@ -533,7 +533,7 @@ actions:
 ## Impact
 
 ### Areas Affected
-- **Database**: New PostgreSQL container with story management schema and workflow automation tables
+- **Database**: SQLite database file with story management schema and workflow automation tables
 - **API Layer**: Complete REST API service for story operations and workflow management
 - **MCP Server**: AI assistant integration for accelerated story iteration and workflow optimization
 - **File System**: Enhanced with two-way synchronization capability
@@ -568,127 +568,127 @@ actions:
 ```sql
 -- Projects table for multi-project support
 CREATE TABLE projects (
-    id VARCHAR(50) PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
     description TEXT,
-    repository_url VARCHAR(500),
-    submodule_path VARCHAR(255),
-    status VARCHAR(50) DEFAULT 'active', -- active, archived, maintenance
-    owner VARCHAR(100),
+    repository_url TEXT,
+    submodule_path TEXT,
+    status TEXT DEFAULT 'active', -- active, archived, maintenance
+    owner TEXT,
     created_date DATE,
-    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    metadata JSONB,
-    settings JSONB -- project-specific configuration
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP,
+    metadata TEXT, -- JSON stored as text
+    settings TEXT -- project-specific configuration as JSON
 );
 
 -- Backlogs table for multi-backlog support within projects
 CREATE TABLE backlogs (
-    id VARCHAR(50) PRIMARY KEY,
-    project_id VARCHAR(50) REFERENCES projects(id),
-    name VARCHAR(255) NOT NULL,
+    id TEXT PRIMARY KEY,
+    project_id TEXT REFERENCES projects(id),
+    name TEXT NOT NULL,
     description TEXT,
-    type VARCHAR(50) DEFAULT 'standard', -- standard, sprint, team, archive, personal
-    status VARCHAR(50) DEFAULT 'active', -- active, archived, template
-    owner VARCHAR(100),
+    type TEXT DEFAULT 'standard', -- standard, sprint, team, archive, personal
+    status TEXT DEFAULT 'active', -- active, archived, template
+    owner TEXT,
     created_date DATE,
-    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    metadata JSONB,
-    settings JSONB -- backlog-specific configuration
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP,
+    metadata TEXT, -- JSON stored as text
+    settings TEXT -- backlog-specific configuration as JSON
 );
 
 -- Core story table with project and backlog references
 CREATE TABLE stories (
-    id VARCHAR(50) PRIMARY KEY,
-    project_id VARCHAR(50) REFERENCES projects(id),
-    backlog_id VARCHAR(50) REFERENCES backlogs(id),
-    title VARCHAR(255) NOT NULL,
-    epic VARCHAR(100),
-    status VARCHAR(50) DEFAULT 'backlog',
+    id TEXT PRIMARY KEY,
+    project_id TEXT REFERENCES projects(id),
+    backlog_id TEXT REFERENCES backlogs(id),
+    title TEXT NOT NULL,
+    epic TEXT,
+    status TEXT DEFAULT 'backlog',
     priority INTEGER DEFAULT 99,
-    estimate VARCHAR(20),
-    branch_name VARCHAR(255),
-    file_path VARCHAR(500),
-    owner VARCHAR(100),
+    estimate TEXT,
+    branch_name TEXT,
+    file_path TEXT,
+    owner TEXT,
     created_date DATE,
-    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    metadata JSONB
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP,
+    metadata TEXT -- JSON stored as text
 );
 
 -- Dependencies relationship table (supports cross-project dependencies)
 CREATE TABLE story_dependencies (
-    story_id VARCHAR(50) REFERENCES stories(id),
-    depends_on VARCHAR(50) REFERENCES stories(id),
-    dependency_type VARCHAR(50) DEFAULT 'blocks', -- blocks, relates, duplicates
+    story_id TEXT REFERENCES stories(id),
+    depends_on TEXT REFERENCES stories(id),
+    dependency_type TEXT DEFAULT 'blocks', -- blocks, relates, duplicates
     description TEXT,
     PRIMARY KEY (story_id, depends_on)
 );
 
 -- Cross-project dependencies
 CREATE TABLE project_dependencies (
-    from_project_id VARCHAR(50) REFERENCES projects(id),
-    to_project_id VARCHAR(50) REFERENCES projects(id),
-    dependency_type VARCHAR(50) DEFAULT 'integrates', -- integrates, shares, depends
+    from_project_id TEXT REFERENCES projects(id),
+    to_project_id TEXT REFERENCES projects(id),
+    dependency_type TEXT DEFAULT 'integrates', -- integrates, shares, depends
     description TEXT,
     PRIMARY KEY (from_project_id, to_project_id, dependency_type)
 );
 
 -- Status history for audit trail
 CREATE TABLE status_history (
-    id SERIAL PRIMARY KEY,
-    story_id VARCHAR(50) REFERENCES stories(id),
-    old_status VARCHAR(50),
-    new_status VARCHAR(50),
-    changed_by VARCHAR(100),
-    changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    story_id TEXT REFERENCES stories(id),
+    old_status TEXT,
+    new_status TEXT,
+    changed_by TEXT,
+    changed_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     notes TEXT
 );
 
 -- Workflow triggers and actions configuration
 CREATE TABLE workflow_triggers (
-    id SERIAL PRIMARY KEY,
-    project_id VARCHAR(50) REFERENCES projects(id),
-    name VARCHAR(255) NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id TEXT REFERENCES projects(id),
+    name TEXT NOT NULL,
     description TEXT,
-    trigger_type VARCHAR(50) NOT NULL, -- status_change, dependency_resolved, time_based, manual
-    trigger_condition JSONB, -- conditions that must be met
-    is_active BOOLEAN DEFAULT true,
-    created_by VARCHAR(100),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    trigger_type TEXT NOT NULL, -- status_change, dependency_resolved, time_based, manual
+    trigger_condition TEXT, -- conditions that must be met (JSON as text)
+    is_active INTEGER DEFAULT 1, -- SQLite uses 0/1 for boolean
+    created_by TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Actions to execute when triggers fire
 CREATE TABLE workflow_actions (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     trigger_id INTEGER REFERENCES workflow_triggers(id),
-    action_type VARCHAR(50) NOT NULL, -- update_status, create_story, send_notification, run_script, mcp_call
-    action_config JSONB, -- action-specific configuration
+    action_type TEXT NOT NULL, -- update_status, create_story, send_notification, run_script, mcp_call
+    action_config TEXT, -- action-specific configuration (JSON as text)
     execution_order INTEGER DEFAULT 0,
-    is_active BOOLEAN DEFAULT true,
+    is_active INTEGER DEFAULT 1, -- SQLite uses 0/1 for boolean
     timeout_seconds INTEGER DEFAULT 300,
     retry_count INTEGER DEFAULT 3
 );
 
 -- Execution log for workflow actions
 CREATE TABLE workflow_executions (
-    id SERIAL PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     trigger_id INTEGER REFERENCES workflow_triggers(id),
     action_id INTEGER REFERENCES workflow_actions(id),
-    story_id VARCHAR(50) REFERENCES stories(id),
-    execution_status VARCHAR(50) DEFAULT 'pending', -- pending, running, completed, failed, timeout
-    started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    completed_at TIMESTAMP,
-    result_data JSONB,
+    story_id TEXT REFERENCES stories(id),
+    execution_status TEXT DEFAULT 'pending', -- pending, running, completed, failed, timeout
+    started_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    completed_at DATETIME,
+    result_data TEXT, -- JSON as text
     error_message TEXT,
     execution_time_ms INTEGER
 );
 
 -- Project membership for users/teams
 CREATE TABLE project_members (
-    project_id VARCHAR(50) REFERENCES projects(id),
-    member_id VARCHAR(100), -- user or team identifier
-    member_type VARCHAR(50) DEFAULT 'user', -- user, team, role
-    role VARCHAR(50) DEFAULT 'member', -- owner, admin, member, viewer
+    project_id TEXT REFERENCES projects(id),
+    member_id TEXT, -- user or team identifier
+    member_type TEXT DEFAULT 'user', -- user, team, role
+    role TEXT DEFAULT 'member', -- owner, admin, member, viewer
     joined_date DATE,
     PRIMARY KEY (project_id, member_id, member_type)
 );
@@ -836,9 +836,8 @@ analyze_automation_opportunities(project_id) # Identify workflow automation pote
 ```
 
 ### Docker Services
-- **api**: FastAPI application server with REST endpoints
+- **api**: FastAPI application server with REST endpoints and embedded SQLite database
 - **mcp**: Model Context Protocol server for AI integration
-- **db**: PostgreSQL database
 - **sync**: File system synchronization service
 - **workflow**: Workflow engine for automated triggers and actions
 - **nginx**: Reverse proxy for production deployment
@@ -854,10 +853,14 @@ analyze_automation_opportunities(project_id) # Identify workflow automation pote
 ## Implementation Considerations
 
 ### Database Choice Rationale
-- **PostgreSQL**: Robust ACID compliance, excellent JSON support for metadata
-- **Docker Native**: Official PostgreSQL Docker images with proven reliability
-- **JSON Queries**: JSONB support enables flexible metadata querying
-- **Performance**: Optimized for complex reporting queries and analytics
+- **SQLite**: Lightweight, file-based database with excellent JSON support for metadata
+- **Zero Configuration**: No separate database server required, perfect for local development
+- **JSON Support**: Native JSON functions enable flexible metadata querying
+- **Performance**: Excellent performance for local applications with complex queries
+- **Portability**: Single file database that's easy to backup and version control
+- **Simplicity**: No database server management, reduced complexity for local development
+- **ACID Compliance**: Full ACID compliance for data integrity
+- **Concurrent Access**: Supports multiple readers with single writer (perfect for local usage)
 
 ### Synchronization Strategy
 - **Event-driven Sync**: File system watchers trigger database updates
@@ -890,7 +893,7 @@ analyze_automation_opportunities(project_id) # Identify workflow automation pote
 ## Dependencies
 - Docker and Docker Compose for containerization
 - FastAPI framework for REST API development
-- PostgreSQL for data storage and analytics
+- SQLite for data storage and analytics (built-in Python support)
 - SQLAlchemy for database ORM and migrations
 - Watchdog for file system monitoring
 - AsyncIO for real-time WebSocket updates

@@ -8,17 +8,17 @@
 - **Priority**: High
 
 ## Technical Approach
-- **Architecture**: Event-driven bidirectional synchronization between file system and PostgreSQL database with multi-backlog support
+- **Architecture**: Event-driven bidirectional synchronization between file system and SQLite database with multi-backlog support
 - **Technology Stack**:
   - Python watchdog for file system monitoring across backlog directories
-  - PostgreSQL with JSONB for metadata storage including backlog relationships
+  - SQLite with JSON support for metadata storage including backlog relationships
   - SQLAlchemy ORM for database operations with backlog joins
   - asyncio for concurrent processing across multiple backlogs
   - APScheduler for periodic sync jobs with backlog segmentation
   - PyYAML for frontmatter parsing with backlog metadata
 - **Integration Points**:
   - Story management API (INF-012) with multi-backlog endpoints
-  - PostgreSQL database (INF-013) with backlog schema
+  - SQLite database (INF-013) with backlog schema
   - Markdown file structure in refinements/, backlog/, active/, completed/ with backlog organization
 - **Data Flow**: File changes → Event queue → Database sync with backlog context ← API changes → File generation with backlog metadata
 
@@ -177,7 +177,7 @@
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   File System  │    │   Sync Service   │    │   PostgreSQL   │
+│   File System  │    │   Sync Service   │    │    SQLite      │
 │                 │    │                  │    │                 │
 │ *.md files      │◄──►│ Watchdog Monitor │◄──►│ Stories Table   │
 │ frontmatter     │    │ YAML Parser      │    │ Status History  │

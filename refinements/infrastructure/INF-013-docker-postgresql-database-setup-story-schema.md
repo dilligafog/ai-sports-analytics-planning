@@ -1,13 +1,13 @@
 ---
 id: INF-013
-title: Docker PostgreSQL database setup with story schema
-branch_name: inf-013-docker-postgresql-database-setup-story-schema
+title: SQLite database setup with story schema
+branch_name: inf-013-sqlite-database-setup-story-schema
 epic: infrastructure
 status: draft
 priority: high
-estimate: "3sp"
+estimate: "2sp"
 dependencies: []
-labels: [database, postgresql, docker, schema]
+labels: [database, sqlite, schema]
 created: 2025-08-28
 author: planning-agent
 owner: implementation-team
@@ -21,18 +21,18 @@ emit_metadata:
   notes: null
 ---
 
-# INF-013: Docker PostgreSQL database setup with multi-project story schema
+# INF-013: SQLite database setup with multi-project story schema
 
 ## User Story
 **As a** system administrator  
-**I want** a containerized PostgreSQL database with a proper schema for multi-project story management  
+**I want** an embedded SQLite database with a proper schema for multi-project story management  
 **So that** the plan_pipe API service can store and query story data efficiently across multiple projects for reporting and analytics
 
 ## Value Proposition
-Provides the persistent data layer required for advanced querying, reporting, and analytics capabilities across multiple projects while maintaining data integrity and performance in a multi-project environment.
+Provides the persistent data layer required for advanced querying, reporting, and analytics capabilities across multiple projects while maintaining data integrity and performance in a multi-project environment using a lightweight, file-based database.
 
 ## Acceptance Criteria
-- [ ] PostgreSQL Docker container configured with proper initialization scripts
+- [ ] SQLite database file configured with proper initialization scripts
 - [ ] Database schema includes projects table for multi-project support
 - [ ] Database schema includes backlogs table for multi-backlog support within projects
 - [ ] Stories table with project_id and backlog_id foreign key references
@@ -48,17 +48,17 @@ Provides the persistent data layer required for advanced querying, reporting, an
 - [ ] Health check queries for monitoring database status
 
 ## Technical Notes
-- PostgreSQL chosen for JSONB support for metadata and robust ACID compliance
+- SQLite chosen for lightweight file-based storage with excellent JSON support and zero configuration
 - Schema should support multi-project architecture with proper foreign key relationships
-- Consider partitioning for status_history table if high volume expected across projects
 - Include proper foreign key constraints and data validation for project and backlog relationships
 - Use database-level defaults where appropriate
 - Implement efficient indexes for cross-project queries and dependency analysis
 - Support git submodule integration through project metadata fields
+- SQLite's WAL mode for better concurrent access in local development
 
 ## Definition of Done
 - [ ] All acceptance criteria met
-- [ ] Database container starts successfully in Docker Compose
+- [ ] SQLite database file created successfully with schema
 - [ ] Schema migration scripts tested and documented
 - [ ] Connection from API service verified
 - [ ] Database performance benchmarked for expected load
@@ -66,7 +66,7 @@ Provides the persistent data layer required for advanced querying, reporting, an
 
 ## References
 - [TOOL-001 Proposal](../../proposals/TOOL-001-dockerized-story-workflow-api.md)
-- [PostgreSQL Docker Documentation](https://hub.docker.com/_/postgres)
+- [SQLite Documentation](https://www.sqlite.org/docs.html)
 - [Database Schema from Proposal](../../proposals/TOOL-001-dockerized-story-workflow-api.md#database-schema)
 
 ---

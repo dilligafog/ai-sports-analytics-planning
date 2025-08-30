@@ -154,7 +154,7 @@ When a story is completed:
 | Story ID | Story Title | Implementation Plan | Status |
 |----------|-------------|-------------------|---------|
 | **INF-012** | FastAPI service framework with basic CRUD endpoints | *Not yet created* | Draft |
-| **INF-013** | Docker PostgreSQL database setup with story schema | *Not yet created* | Draft |
+| **INF-013** | SQLite database setup with story schema | *Not yet created* | Draft |
 | **INF-014** | File system synchronization service | [IP-INF-014](IP-INF-014-file-system-synchronization-service.md) | Enhanced |
 | **INF-015** | Authentication and API key management | *Not yet created* | Draft |
 

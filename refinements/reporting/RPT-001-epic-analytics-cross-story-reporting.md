@@ -46,9 +46,9 @@ Provides strategic insights into story portfolio health, epic progress, and cros
 - [ ] Static dashboard data generation for minimal UI dependencies
 
 ## Technical Notes
-- Leverage PostgreSQL analytical functions for complex queries across backlogs
+- Leverage SQLite analytical functions and window functions for complex queries across backlogs
 - Implement caching for expensive analytical queries with backlog-aware cache keys
-- Create materialized views for frequently accessed metrics with backlog segmentation
+- Create views for frequently accessed metrics with backlog segmentation
 - Support real-time analytics with WebSocket updates including cross-backlog events
 - Generate static JSON files for simple GitHub Pages dashboard consumption
 - Minimize UI dependencies by focusing on data export rather than complex visualizations

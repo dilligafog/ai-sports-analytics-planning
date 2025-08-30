@@ -8,17 +8,17 @@
 - **Priority**: Medium
 
 ## Technical Approach
-- **Architecture**: Graph-based dependency analysis with PostgreSQL recursive queries and network analysis algorithms
+- **Architecture**: Graph-based dependency analysis with SQLite recursive queries and network analysis algorithms
 - **Technology Stack**:
-  - PostgreSQL with recursive CTEs for graph traversal
+  - SQLite with recursive CTEs for graph traversal
   - NetworkX Python library for complex graph analysis
   - FastAPI with graph data serialization
   - Graphviz for graph layout algorithms
-  - Redis for caching complex dependency calculations
+  - In-memory caching for complex dependency calculations
   - D3.js compatible data formats for visualization
 - **Integration Points**:
   - Story management API (API-001)
-  - PostgreSQL story and dependency tables
+  - SQLite story and dependency tables
   - Export capabilities for visualization tools
 - **Data Flow**: Dependency data → Graph analysis → Critical path calculation → Visualization data → API response
 
@@ -36,7 +36,7 @@
 **Dependencies**: API-001, database with story_dependencies table
 **Technical Tasks:**
 - Enhance dependency table with relationship types and weights
-- Implement PostgreSQL recursive queries for dependency traversal
+- Implement SQLite recursive queries for dependency traversal
 - Create basic graph representation and traversal algorithms
 - Add cycle detection using depth-first search
 - Build API endpoints for dependency graph data
@@ -81,10 +81,10 @@
 ## Technical Decisions
 
 ### Graph Analysis Library Choice
-**Choice**: NetworkX for complex analysis, PostgreSQL for basic traversal
+**Choice**: NetworkX for complex analysis, SQLite for basic traversal
 **Rationale**:
 - NetworkX provides proven graph algorithms for complex analysis
-- PostgreSQL recursive queries efficient for simple traversal
+- SQLite recursive queries efficient for simple traversal
 - Hybrid approach balances performance and capability
 **Alternatives Considered**: Pure SQL (limited algorithms), Neo4j (overkill for current scale), Custom implementation (reinventing wheel)
 

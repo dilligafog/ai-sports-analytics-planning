@@ -46,10 +46,10 @@ Enables sophisticated story analysis and reporting capabilities, allowing for co
 - [ ] Export query results in multiple formats (JSON, CSV)
 
 ## Technical Notes
-- Leverage PostgreSQL full-text search capabilities
+- Leverage SQLite FTS (Full-Text Search) capabilities for efficient text searching
 - Implement query builder pattern for complex filtering including multi-backlog queries
 - Use database indexes to optimize search performance across backlogs
-- Consider implementing query result caching with Redis
+- Consider implementing query result caching with in-memory storage
 - Support for compound queries with AND/OR logic
 - Include query execution time in response headers for monitoring
 - Implement efficient cross-backlog joins for dependency analysis
@@ -64,7 +64,7 @@ Enables sophisticated story analysis and reporting capabilities, allowing for co
 
 ## References
 - [TOOL-001 Proposal](../../proposals/TOOL-001-dockerized-story-workflow-api.md)
-- [PostgreSQL Full-Text Search Documentation](https://www.postgresql.org/docs/current/textsearch.html)
+- [SQLite FTS Documentation](https://www.sqlite.org/fts5.html)
 - [Advanced Query Endpoints from Proposal](../../proposals/TOOL-001-dockerized-story-workflow-api.md#rest-api-endpoints)
 
 ---
