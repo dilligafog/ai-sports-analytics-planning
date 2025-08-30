@@ -176,13 +176,6 @@ python backlog_groomer.py
 
 **Output**: Generates `backlog_grooming_report.md` with detailed findings and recommendations.
 
-## ❌ Deprecated Scripts
-
-The following scripts are from the old file-moving workflow and are **no longer used**:
-
-- `migrate_accepted_stories.py` - ❌ **Deprecated**: Stories no longer move between directories
-- `migrate_backlog_structure.py` - ❌ **Deprecated**: Backlog structure is now stable
-
 **Current approach**: Status management happens through JSON updates in `PRIORITIZATION.json`. Story files remain in their original `backlog/` subdirectories.
 
 ## Script Development Guidelines
