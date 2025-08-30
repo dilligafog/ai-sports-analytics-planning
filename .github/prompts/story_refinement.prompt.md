@@ -1,4 +1,3 @@
-```prompt
 # Story Refinement Prompt
 
 ## Role
@@ -15,7 +14,8 @@ Help refine existing stories based on implementation feedback, changing requirem
 
 ### 1. Analyze Current State
 - Review original story and acceptance criteria
-- Check implementation progress and feedback
+- Check implementation progress by reviewing PRs and commits
+- Check for existing code that may provide the same functionality
 - Identify what's changed since story creation
 
 ### 2. Determine Refinement Type
@@ -85,4 +85,3 @@ Help refine existing stories based on implementation feedback, changing requirem
 - Link to related implementation PRs or issues
 - Update story status and timeline if needed
 - Preserve history of changes for future reference
-```
