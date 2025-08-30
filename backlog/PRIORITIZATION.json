@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2025-08-29",
+    "last_updated": "2025-08-30",
     "total_backlog_stories": 103,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime",
@@ -231,7 +231,7 @@
       "title": "User Story: Weather Data Integration",
       "branch_name": "weather_data_integration-user-story-weather-data-integration",
       "file_path": "backlog/models/WEATHER_DATA_INTEGRATION.md",
-      "status": "draft",
+      "status": "active",
       "priority": 8,
       "estimate": 3,
       "epic": "ingestion",
@@ -242,7 +242,7 @@
       ],
       "owner": "TBD",
       "created": "2025-08-29",
-      "last_updated": "2025-08-29"
+      "last_updated": "2025-08-30"
     },
     {
       "id": "INGESTION-046A",
