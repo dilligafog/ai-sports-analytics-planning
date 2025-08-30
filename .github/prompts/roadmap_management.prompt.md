@@ -94,16 +94,16 @@ User Journey: Betting Analysis Workflow
 ## Roadmap Maintenance
 
 ### Weekly Review
-1. **Story Progress**: Track completion rates and blockers
-2. **Scope Adjustments**: Handle discovered work or scope changes
-3. **Risk Assessment**: Identify risks to sprint or release goals
-4. **Stakeholder Updates**: Communicate progress and changes
+1. **Story Progress**: Use `python scripts/update_story.py --list` to track ready stories
+2. **Priority Analysis**: Run `python scripts/manage_priorities.py --list` for current structure
+3. **Quality Validation**: Generate `python scripts/backlog_groomer.py` reports for health checks
+4. **Stakeholder Updates**: Use script outputs to communicate progress and data-driven changes
 
 ### Monthly Planning
-1. **Epic Progress**: Assess progress toward epic completion
-2. **Theme Alignment**: Ensure work aligns with strategic themes
-3. **Capacity Planning**: Adjust future sprint loads based on team velocity
-4. **Dependency Management**: Resolve or mitigate story dependencies
+1. **Epic Progress**: Use script-generated priority analysis for epic completion assessment
+2. **Strategic Alignment**: Run `python scripts/manage_priorities.py --auto-prioritize` for business logic scoring
+3. **Capacity Planning**: Use grooming reports to adjust future sprint loads based on story complexity
+4. **Dependency Management**: Use validation scripts to identify and resolve story dependencies
 
 ### Quarterly Strategy
 1. **Theme Evolution**: Adjust strategic themes based on learning

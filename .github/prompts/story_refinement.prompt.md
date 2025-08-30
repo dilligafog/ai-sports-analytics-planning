@@ -13,10 +13,10 @@ Help refine existing stories based on implementation feedback, changing requirem
 ## Refinement Process
 
 ### 1. Analyze Current State
-- Review original story and acceptance criteria
-- Check implementation progress by reviewing PRs and commits
-- Check for existing code that may provide the same functionality
-- Identify what's changed since story creation
+- **Generate grooming report**: `python scripts/backlog_groomer.py` for validation issues
+- **Review priority structure**: `python scripts/manage_priorities.py --list`
+- **Check implementation progress** by reviewing PRs and commits
+- **Validate story structure** through automated grooming analysis
 
 ### 2. Determine Refinement Type
 - **Split**: Story too large, break into smaller pieces
@@ -26,10 +26,10 @@ Help refine existing stories based on implementation feedback, changing requirem
 - **Archive**: Story no longer needed
 
 ### 3. Update Story Structure
-- Revise user story statement if needed
-- Update acceptance criteria based on learnings
-- Adjust technical notes and dependencies
-- Update estimates based on implementation feedback
+- **Create refined stories**: Use `python scripts/ingest_stories.py --template` for new splits
+- **Update priority order**: Use `python scripts/manage_priorities.py --set` or `--interactive`
+- **Status transitions**: Use `python scripts/update_story.py STORY-ID --status`
+- **Validate changes**: Run `python scripts/backlog_groomer.py` to verify updates
 
 ### 4. Communicate Changes
 - Note refinement rationale in story comments

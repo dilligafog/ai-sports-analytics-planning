@@ -8,20 +8,48 @@ applyTo: '**'
 This repository serves as the strategic planning hub for the AI Sports Analytics project. Focus on story creation, refinement, and roadmap management rather than technical implementation.
 
 ## Core Responsibilities
-1. **Story Management** - Create, refine, and organize user stories
-2. **Roadmap Planning** - Organize stories into themes, epics, and iterations
-3. **Cross-Repository Coordination** - Sync with implementation repository
-4. **Stakeholder Communication** - Maintain clear progress visibility
+1. **Story Management** - Create, refine, and organize user stories across epic categories
+2. **Proposal Management** - Review and process high-level feature proposals through approval workflow
+3. **Roadmap Planning** - Organize stories into themes, epics, and quarterly iterations
+4. **Implementation Planning** - Create detailed technical implementation guides
+5. **Story Refinement** - Continuously improve story quality and acceptance criteria
+6. **Analytics & Reporting** - Generate automated health, velocity, and priority reports
+7. **Cross-Repository Coordination** - Sync with implementation repository via script-based workflows
+8. **Stakeholder Communication** - Maintain clear progress visibility through reports and roadmaps
 
 ## Repository Structure
 ```
 .
-├── backlog/          # New stories awaiting refinement
-├── active/           # Stories currently in development
-├── completed/        # Finished stories with outcomes
-├── epics/           # Collections of related stories
-├── roadmap/         # Strategic planning documents
-└── templates/       # Story and epic templates
+├── .github/          # GitHub workflows, templates, and agent instructions
+├── backlog/          # Story inventory organized by epic
+│   ├── adhoc/        # Ad-hoc fixes and maintenance stories
+│   ├── core/         # Core platform functionality stories
+│   ├── infra/        # Infrastructure and deployment stories
+│   ├── ingestion/    # Data ingestion and pipeline stories
+│   ├── llm/          # LLM integration and AI features
+│   ├── modeling/     # Prediction model stories
+│   ├── quality/      # Testing and quality assurance stories
+│   ├── social_media/ # Social media integration stories
+│   ├── ui/           # User interface and experience stories
+│   └── *.json        # Priority and status management files
+├── implementation_plans/ # Detailed technical implementation guides
+├── proposals/        # High-level feature and architecture proposals
+│   └── processed/    # Completed proposals by status
+│       ├── accepted/ # Approved proposals ready for story creation
+│       ├── declined/ # Rejected proposals with rationale
+│       └── deferred/ # Proposals postponed for future consideration
+├── refinements/      # Story refinement documentation by category
+│   ├── api/          # API-related refinements
+│   ├── infrastructure/ # Infrastructure refinements
+│   ├── integration/  # Integration refinements
+│   └── reporting/    # Reporting refinements
+├── reports/          # Automated analytics and health reports
+├── roadmaps/         # Strategic planning documents and quarterly roadmaps
+├── scripts/          # Automation scripts for story and priority management
+├── staging/          # Temporary area for story creation and processing
+│   ├── processed/    # Stories that have been ingested into backlog
+│   └── templates/    # Template files for story staging
+└── templates/        # Master templates for stories and proposals
 ```
 
 ## Story Lifecycle
@@ -52,6 +80,14 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 - **Iterative**: Plans evolve based on learning and feedback
 - **Realistic**: Estimates should reflect team capacity and historical velocity
 - **Transparent**: Progress and changes should be visible to all stakeholders
+- **Documentation Hygiene**: Only create reports and summaries when explicitly requested
+
+## Documentation Guidelines
+- **Script outputs only**: Use script-generated reports for status and analytics
+- **No unsolicited summaries**: Do not create summary documents unless specifically asked
+- **Existing reports**: Reference automated reports in `/reports/` directory rather than creating new ones
+- **Keep it lean**: Focus on actionable planning work rather than documentation overhead
+- **Clean as you go**: Use existing structures and avoid creating redundant documentation
 
 ## Anti-Patterns to Avoid
 - ❌ Technical implementation details in planning documents
@@ -61,3 +97,6 @@ This repository serves as the strategic planning hub for the AI Sports Analytics
 - ❌ Planning in isolation from implementation realities
 - ❌ Bypassing story workflow automation for manual operations
 - ❌ Starting implementation without using `busta story start` workflow
+- ❌ Creating summary reports or documentation unless explicitly requested
+- ❌ Duplicating information that already exists in automated reports
+- ❌ Adding documentation overhead that requires later cleanup

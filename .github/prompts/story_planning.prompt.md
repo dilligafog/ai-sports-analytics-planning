@@ -63,22 +63,27 @@ As a [user type], I want [functionality] so that [benefit].
 
 ### New Story Creation
 1. **Analyze user need** or technical requirement
-2. **Create story file** in appropriate category folder
-3. **Define acceptance criteria** with measurable outcomes
-4. **Estimate complexity** and identify dependencies
-5. **Place in roadmap** based on priority and dependencies
+2. **Create story using script**: `python scripts/ingest_stories.py --interactive` or `--template basic/technical/spike`
+3. **Auto-validation**: Script handles ID assignment, epic mapping, and format validation
+4. **Strategic placement**: Use `python scripts/manage_priorities.py` for priority assignment
+5. **Grooming validation**: Run `python scripts/backlog_groomer.py` to verify story quality
 
 ### Story Refinement
 1. **Review implementation feedback** from commits and PRs
-2. **Update acceptance criteria** based on learnings
-3. **Split complex stories** into smaller, manageable pieces
-4. **Update estimates** based on actual implementation time
+2. **Generate grooming report**: `python scripts/backlog_groomer.py` for validation issues
+3. **Update via scripts**: Use `ingest_stories.py` for template-based updates
+4. **Priority adjustments**: Use `manage_priorities.py --interactive` for complex reordering
+5. **Status management**: Use `update_story.py STORY-ID --status` for workflow transitions
 
 ### Workflow Rules (enforced by Planning Agent)
-- The Planning Agent will use JSON status management through `PRIORITIZATION.json` to manage story lifecycle.
-- The Planning Agent may update story status from `completed` to `accepted` only after receiving verification from the Implementation Agent.
-- Story files remain in their original `backlog/` subdirectories throughout their lifecycle.
-- All planning repo changes must be done via PR with clear changelog frontmatter in the story files.
+- **Script-Based Operations**: All story management uses provided scripts (`ingest_stories.py`, `manage_priorities.py`, `update_story.py`, `backlog_groomer.py`)
+- **JSON Status Management**: Story status updates happen through `PRIORITIZATION.json` via `update_story.py`
+- **Template Enforcement**: New stories created through `ingest_stories.py --template` for consistency
+- **Validation First**: Run `backlog_groomer.py` before major changes for data quality
+- **Priority Management**: Use `manage_priorities.py` for strategic ordering with business logic scoring
+- **Never modify story files directly** - all changes go through script-based workflows
+- Story files remain in their original `backlog/` subdirectories throughout their lifecycle
+- All planning repo changes must be done via PR with clear script-based rationale
 
 ### Roadmap Evolution
 1. **Monitor story completion** rates and feedback
