@@ -39,10 +39,14 @@ class PriorityManager:
             json.dump(self.data, f, indent=2, ensure_ascii=False)
         print(f"✅ Updated {self.json_file}")
     
-    def get_stories_by_priority(self) -> Dict[int, List[Dict[str, Any]]]:
+    def get_stories_by_priority(self, include_completed: bool = False) -> Dict[int, List[Dict[str, Any]]]:
         """Group stories by priority level."""
         priority_groups = {}
         for story in self.data["backlog"]:
+            # Skip completed and accepted stories unless explicitly requested
+            if not include_completed and story.get("status") in ["completed", "accepted"]:
+                continue
+                
             priority = story.get("priority", 99)
             if priority not in priority_groups:
                 priority_groups[priority] = []
@@ -51,10 +55,21 @@ class PriorityManager:
     
     def list_priorities(self, show_all: bool = False):
         """Display current priority structure."""
-        priority_groups = self.get_stories_by_priority()
+        priority_groups = self.get_stories_by_priority(include_completed=show_all)
+        
+        # Count completed stories for summary
+        completed_count = len([
+            story for story in self.data["backlog"] 
+            if story.get("status") in ["completed", "accepted"]
+        ])
         
         print("\n📋 Current Priority Structure")
         print("=" * 50)
+        if not show_all and completed_count > 0:
+            print(f"ℹ️  {completed_count} completed stories hidden (use --all to see everything)")
+        elif show_all and completed_count > 0:
+            print(f"ℹ️  Showing all stories including {completed_count} completed")
+        print()
         
         # Show strategic priorities (1-20) or top priorities based on flag
         max_priority = 99 if show_all else 20

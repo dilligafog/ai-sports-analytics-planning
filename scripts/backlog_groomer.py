@@ -17,7 +17,7 @@ class BacklogGroomer:
         self.prioritization_file = self.backlog_dir / "PRIORITIZATION.json"
 
         # Load current data
-        with open(self.prioritization_file, 'r') as f:
+        with open(self.prioritization_file, 'r', encoding='utf-8') as f:
             self.data = json.load(f)
 
         # ID format patterns
@@ -43,10 +43,10 @@ class BacklogGroomer:
         }
 
     def get_top_stories_to_groom(self, count: int = 20) -> List[Dict]:
-        """Get the top N stories that need grooming."""
+        """Get the top N stories that need grooming, excluding completed ones."""
         stories = [
             s for s in self.data['backlog']
-            if s['priority'] <= 20 and s['status'] in ['backlog', 'draft']
+            if s['priority'] <= 20 and s['status'] in ['backlog', 'draft', 'ready', 'active', 'blocked']
         ]
         return sorted(stories, key=lambda x: x['priority'])[:count]
 
@@ -99,11 +99,15 @@ class BacklogGroomer:
         return self.epic_mapping.get(epic, epic)
 
     def find_duplicates(self) -> List[Tuple[str, List[Dict]]]:
-        """Find stories with duplicate titles or similar content."""
+        """Find stories with duplicate titles or similar content, excluding completed ones."""
         duplicates = []
         seen_titles = {}
 
         for story in self.data['backlog']:
+            # Skip completed and accepted stories
+            if story.get('status') in ['completed', 'accepted']:
+                continue
+                
             title = story['title'].lower().strip()
             if title in seen_titles:
                 if seen_titles[title] not in duplicates:
@@ -148,12 +152,13 @@ class BacklogGroomer:
         report = []
         report.append("# Backlog Grooming Report")
         report.append(f"**Generated:** {self.data['metadata']['last_updated']}")
+        report.append("**Note:** Completed and accepted stories are excluded from grooming")
         report.append("")
 
         # Get top stories
         top_stories = self.get_top_stories_to_groom(20)
 
-        report.append("## Top 20 Stories Ready for Grooming")
+        report.append("## Top 20 Active Stories Ready for Grooming")
         report.append("")
         report.append("| # | Story ID | Epic | Status | Priority | Issues |")
         report.append("|---|----------|------|--------|----------|--------|")
@@ -192,12 +197,15 @@ class BacklogGroomer:
                 report.append("")
 
         # Summary
-        total_stories = len([s for s in self.data['backlog'] if s['status'] in ['backlog', 'draft']])
+        total_stories = len([s for s in self.data['backlog'] if s['status'] in ['backlog', 'draft', 'ready', 'active', 'blocked']])
         ready_stories = len([s for s in self.data['backlog'] if s['status'] == 'ready'])
+        completed_stories = len([s for s in self.data['backlog'] if s['status'] in ['completed', 'accepted']])
 
         report.append("## Summary")
-        report.append(f"- **Total stories needing grooming:** {total_stories}")
+        report.append(f"- **Total active stories needing grooming:** {total_stories}")
         report.append(f"- **Stories marked as ready:** {ready_stories}")
+        if completed_stories > 0:
+            report.append(f"- **Completed stories (excluded from grooming):** {completed_stories}")
         report.append(f"- **Top 20 priorities covered:** Yes")
         report.append(f"- **Duplicate stories found:** {len(duplicates)}")
 

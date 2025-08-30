@@ -51,14 +51,14 @@ python scripts/ingest_stories.py --dry-run
 
 ### `manage_priorities.py`
 
-**Purpose**: Comprehensive priority management and backlog automation for strategic story refinement.
+**Purpose**: Comprehensive priority management and backlog automation for strategic story refinement. Focuses on active stories by excluding completed ones from main views.
 
 **Usage**:
 ```bash
-# View current priority structure
+# View current priority structure (excludes completed stories)
 python scripts/manage_priorities.py --list
 
-# View all stories including unprocessed (priority 99)
+# View all stories including completed ones
 python scripts/manage_priorities.py --list --all
 
 # Set specific story priority
@@ -79,12 +79,13 @@ python scripts/manage_priorities.py --interactive
 ```
 
 **What it does**:
-- **Priority Visualization**: Shows current priority structure with status indicators
+- **Priority Visualization**: Shows current priority structure with status indicators (excludes completed stories by default)
 - **Batch Reordering**: Insert multiple stories and automatically shift existing priorities
 - **Range Shifting**: Move entire priority ranges up or down
 - **Auto-Prioritization**: Intelligent scoring of ready stories based on epic, dependencies, and business value
 - **Interactive Mode**: Full-featured CLI for complex priority management
 - **Dry Run Support**: Preview changes before applying them
+- **Completed Story Handling**: Completed/accepted stories are hidden by default but accessible with --all flag
 
 **Business Logic Scoring**:
 - **Core LLM**: Highest priority (score +10)
@@ -143,11 +144,11 @@ python scripts/generate_complete_backlog.py
 
 ### `backlog_groomer.py`
 
-**Purpose**: Comprehensive backlog grooming utility for systematic story refinement and validation.
+**Purpose**: Comprehensive backlog grooming utility for systematic story refinement and validation. Focuses on active stories by excluding completed ones from grooming reports.
 
 **Usage**:
 ```bash
-# Generate grooming report for top 20 stories
+# Generate grooming report for top 20 active stories
 python scripts/backlog_groomer.py
 
 # Run from repository root (recommended)
@@ -155,28 +156,201 @@ python backlog_groomer.py
 ```
 
 **What it does**:
-- **Story Validation**: Validates story ID formats and suggests corrections
-- **Epic Standardization**: Ensures consistent epic naming across stories
-- **Duplicate Detection**: Identifies and reports duplicate story entries
-- **Priority Analysis**: Analyzes top-priority stories needing grooming
+- **Story Validation**: Validates story ID formats and suggests corrections for active stories only
+- **Epic Standardization**: Ensures consistent epic naming across active stories
+- **Duplicate Detection**: Identifies and reports duplicate story entries among active stories
+- **Priority Analysis**: Analyzes top-priority active stories needing grooming
 - **Report Generation**: Creates comprehensive grooming reports with actionable insights
+- **Completed Story Exclusion**: Completed and accepted stories are excluded from all grooming activities
 
 **Features**:
 - Automatic story ID validation with format suggestions (LLM-###, INF-###, etc.)
 - Epic name standardization (infra → infrastructure, data_sources → ingestion)
-- Duplicate story detection and reporting
-- Top 20 priority story analysis
+- Duplicate story detection and reporting (active stories only)
+- Top 20 priority active story analysis
 - Markdown report generation for grooming sessions
+- Clear indication of excluded completed stories in reports
 
 **When to run**:
-- Before major grooming sessions to identify issues
-- After bulk story imports to validate data quality
-- Weekly backlog health checks
-- When preparing stories for implementation handoff
+- Before major grooming sessions to identify issues in active stories
+- After bulk story imports to validate data quality of new stories
+- Weekly backlog health checks for active work
+- When preparing active stories for implementation handoff
 
-**Output**: Generates `backlog_grooming_report.md` with detailed findings and recommendations.
+**Output**: Generates `backlog_grooming_report.md` with detailed findings and recommendations for active stories only.
 
 **Current approach**: Status management happens through JSON updates in `PRIORITIZATION.json`. Story files remain in their original `backlog/` subdirectories.
+
+### `assign_priorities.py`
+
+**Purpose**: Assigns strategic priorities to all backlog stories based on epic importance, business value, dependencies, and implementation readiness.
+
+**Usage**:
+```bash
+# Assign priorities to all stories
+python scripts/assign_priorities.py
+```
+
+**What it does**:
+- Analyzes epic importance and business value
+- Considers dependencies and implementation readiness
+- Generates prioritization markdown and updates JSON files
+- Provides priority distribution analysis by epic
+
+### `cleanup_data.py`
+
+**Purpose**: Cleans up data quality issues, standardizes formats, and improves consistency of the story backlog data.
+
+**Usage**:
+```bash
+# Perform data cleanup
+python scripts/cleanup_data.py
+
+# Generate cleanup report without making changes
+python scripts/cleanup_data.py --report
+
+# Show what would be cleaned without applying changes
+python scripts/cleanup_data.py --dry-run
+```
+
+**What it does**:
+- Standardizes epic names and estimate values
+- Assigns default owners for epics
+- Cleans up titles and adds missing labels
+- Generates cleanup reports with improvement summaries
+
+### `fix_prioritization_format.py`
+
+**Purpose**: Placeholder script for fixing prioritization format issues (currently empty).
+
+### `generate_performance_analytics.py`
+
+**Purpose**: Generates advanced performance insights including team velocity trends, epic performance comparisons, resource allocation optimization, burndown projections, and risk probability modeling.
+
+**Usage**:
+```bash
+# Generate comprehensive performance analytics
+python scripts/generate_performance_analytics.py --type comprehensive
+
+# Generate specific analytics type
+python scripts/generate_performance_analytics.py --type velocity
+python scripts/generate_performance_analytics.py --type resource
+python scripts/generate_performance_analytics.py --type risk
+python scripts/generate_performance_analytics.py --type burndown
+
+# Specify output file
+python scripts/generate_performance_analytics.py --output custom_report.json
+```
+
+**What it does**:
+- Analyzes team velocity trends and patterns
+- Compares epic performance and resource allocation
+- Generates burndown projections and risk assessments
+- Saves reports to the reports directory
+
+### `generate_real_dashboard.py`
+
+**Purpose**: Generates a professional dashboard using ONLY real project data, no synthetic data or fake metrics.
+
+**Usage**:
+```bash
+# Generate real data dashboard
+python scripts/generate_real_dashboard.py
+```
+
+**What it does**:
+- Analyzes actual project stories and metadata
+- Creates dashboard with real status counts and epic breakdowns
+- Tracks actual completion rates and priorities
+- Generates dashboard files in the reports directory
+
+### `generate_reports.py`
+
+**Purpose**: Comprehensive reporting engine that generates metrics, analytics, and dashboards for story management, velocity tracking, and strategic planning insights.
+
+**Usage**:
+```bash
+# Generate all reports in JSON format
+python scripts/generate_reports.py
+
+# Generate specific report type
+python scripts/generate_reports.py --type velocity
+python scripts/generate_reports.py --type health
+python scripts/generate_reports.py --type priority
+python scripts/generate_reports.py --type workflow
+
+# Generate reports in markdown format
+python scripts/generate_reports.py --format markdown
+
+# Generate dashboard data only
+python scripts/generate_reports.py --dashboard
+
+# Specify output directory
+python scripts/generate_reports.py --output /path/to/output
+```
+
+**What it does**:
+- Generates velocity and throughput metrics
+- Creates backlog health reports
+- Analyzes priority distributions
+- Tracks workflow metrics and dashboard data
+- Supports both JSON and markdown output formats
+
+### `rename_story_files.py`
+
+**Purpose**: Renames existing story files to use branch_name-based naming convention and updates file path references.
+
+**Usage**:
+```bash
+# Rename story files to branch_name.md format
+python scripts/rename_story_files.py
+```
+
+**What it does**:
+- Scans all story files in the backlog directory
+- Extracts branch_name from YAML frontmatter
+- Renames files to match their branch_name
+- Updates file_path references in PRIORITIZATION.json
+- Automatically regenerates COMPLETE_BACKLOG.json
+
+### `test_reporting_system.py`
+
+**Purpose**: Tests and validates the AI Sports Analytics reporting system, running comprehensive tests on data integrity, report generation, and dashboard functionality.
+
+**Usage**:
+```bash
+# Run comprehensive tests
+python scripts/test_reporting_system.py
+
+# Save test results to file
+python scripts/test_reporting_system.py --save-results
+
+# Exit with error code if tests fail
+python scripts/test_reporting_system.py --exit-on-failure
+```
+
+**What it does**:
+- Validates required data files exist and are valid
+- Tests report generation functionality
+- Checks dashboard data integrity
+- Generates test result summaries
+- Supports saving results to JSON files
+
+### `update_prioritization_paths.py`
+
+**Purpose**: Updates PRIORITIZATION.json file paths to match renamed files by syncing with COMPLETE_BACKLOG.json.
+
+**Usage**:
+```bash
+# Update file paths in PRIORITIZATION.json
+python scripts/update_prioritization_paths.py
+```
+
+**What it does**:
+- Loads both PRIORITIZATION.json and COMPLETE_BACKLOG.json
+- Creates mapping from story ID to correct file path
+- Updates file paths in PRIORITIZATION.json
+- Reports number of paths updated
 
 ## Script Development Guidelines
 
