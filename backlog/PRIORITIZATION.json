@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2025-08-30",
+    "last_updated": "2025-09-01",
     "total_backlog_stories": 103,
     "format_version": "2.0",
     "generated_by": "Strategic Nexus Prime",
@@ -1823,6 +1823,174 @@
       "file_path": "backlog/adhoc/adh-029-fix-duplicated-ids-in-prioritiz.md",
       "created": "2025-08-29",
       "last_updated": "2025-08-29"
+    },
+    {
+      "id": "CCU-003",
+      "title": "Complete Future Annotations Implementation",
+      "epic": "infrastructure",
+      "status": "backlog",
+      "priority": 3,
+      "estimate": "1sp",
+      "dependencies": [
+        "CCU-002"
+      ],
+      "labels": [
+        "code-cleanup",
+        "annotations",
+        "simple"
+      ],
+      "created": "2025-09-01",
+      "author": "planning-agent",
+      "owner": "",
+      "layer": null,
+      "acceptance_criteria": [
+        "Identify all Python files missing future annotations import",
+        "Add `from __future__ import annotations` as first line to all identified files",
+        "Preserve existing import structure and spacing",
+        "Validate syntax for all modified files",
+        "Follow established pattern from CDR-001 implementation",
+        "No functional changes to existing code logic",
+        "Remaining test files not covered in CDR-001",
+        "Core package files not covered in CDR-004",
+        "Script files and utilities",
+        "Any new files added since CDR-001 completion",
+        "Syntax validation with `python -m py_compile`",
+        "AST parsing confirms valid Python syntax",
+        "Future annotations import detected as first import (line 1)",
+        "Import order follows project standards"
+      ],
+      "branch_name": "ccu-003-complete-future-annotations-implementation",
+      "last_updated": "2025-09-01",
+      "file_path": "backlog/infrastructure/ccu-003-complete-future-annotations-implementation.md"
+    },
+    {
+      "id": "CCU-004",
+      "title": "Implement Package-by-Package Config Migration",
+      "epic": "infrastructure",
+      "status": "backlog",
+      "priority": 4,
+      "estimate": "8sp",
+      "dependencies": [
+        "CCU-003"
+      ],
+      "labels": [
+        "code-cleanup",
+        "migration",
+        "high-risk"
+      ],
+      "created": "2025-09-01",
+      "author": "planning-agent",
+      "owner": "",
+      "layer": null,
+      "acceptance_criteria": [
+        "Core config package migrated and validated",
+        "Data pipeline packages migrated and validated",
+        "Models packages migrated and validated",
+        "Scripts and utilities migrated and validated",
+        "All migrations follow dependency order from CDR-005 analysis",
+        "Package-specific smoke tests pass for each migrated package",
+        "Dual repo sync validation completed"
+      ],
+      "branch_name": "ccu-004-implement-package-by-package-config-mig...",
+      "last_updated": "2025-09-01",
+      "file_path": "backlog/infrastructure/ccu-004-implement-package-by-package-config-mig....md"
+    },
+    {
+      "id": "CCU-005",
+      "title": "Address Remaining Code Drift Issues",
+      "epic": "infrastructure",
+      "status": "backlog",
+      "priority": 5,
+      "estimate": "5sp",
+      "dependencies": [
+        "CCU-004"
+      ],
+      "labels": [
+        "code-cleanup",
+        "technical-debt",
+        "final"
+      ],
+      "created": "2025-09-01",
+      "author": "planning-agent",
+      "owner": "",
+      "layer": null,
+      "acceptance_criteria": [
+        "Address logging config duplication (CDR-007)",
+        "Clean up unused script functionality (CDR-009)",
+        "Resolve any remaining import inconsistencies",
+        "Update performance baselines (CDR-013)",
+        "Validate package dependencies (CDR-011)",
+        "Address AI config duplication (CDR-012)",
+        "Document any architectural decisions made",
+        "Review CDR-005 through CDR-013 findings",
+        "Prioritize based on risk and impact assessment",
+        "Implement changes following established patterns",
+        "Add appropriate logging and validation",
+        "Document any architectural decisions"
+      ],
+      "branch_name": "ccu-005-address-remaining-code-drift-issues",
+      "last_updated": "2025-09-01",
+      "file_path": "backlog/infrastructure/ccu-005-address-remaining-code-drift-issues.md"
+    },
+    {
+      "id": "CCU-002",
+      "title": "Add Critical Path Tests for Config Migration",
+      "epic": "infrastructure",
+      "status": "backlog",
+      "priority": 2,
+      "estimate": "3sp",
+      "dependencies": [
+        "CCU-001"
+      ],
+      "labels": [
+        "code-cleanup",
+        "testing",
+        "technical"
+      ],
+      "created": "2025-09-01",
+      "author": "planning-agent",
+      "owner": "",
+      "layer": null,
+      "acceptance_criteria": [
+        "Config loading/validation tests for migrated files",
+        "Import compatibility tests between config systems",
+        "Basic smoke tests for critical migration paths",
+        "Tests focused on 26 config migration files (highest risk)",
+        "Test failures provide clear error context",
+        "Tests integrate with existing test infrastructure"
+      ],
+      "branch_name": "ccu-002-add-critical-path-tests-for-config-migr...",
+      "last_updated": "2025-09-01",
+      "file_path": "backlog/infrastructure/ccu-002-add-critical-path-tests-for-config-migr....md"
+    },
+    {
+      "id": "CCU-001",
+      "title": "Implement Enhanced Logging for Migration Audit Trail",
+      "epic": "infrastructure",
+      "status": "backlog",
+      "priority": 1,
+      "estimate": "2sp",
+      "dependencies": [],
+      "labels": [
+        "code-cleanup",
+        "logging",
+        "technical"
+      ],
+      "created": "2025-09-01",
+      "author": "planning-agent",
+      "owner": "",
+      "layer": null,
+      "acceptance_criteria": [
+        "REFACTOR_AUDIT logging pattern implemented in migration scripts",
+        "Config migration start/complete events logged",
+        "Package-level migration status logged",
+        "Import validation success/failure logged",
+        "Enhanced error context during refactoring",
+        "Audit trail easily grep-able for review"
+      ],
+      "branch_name": "ccu-001-implement-enhanced-logging-for-migratio...",
+      "last_updated": "2025-09-01",
+      "file_path": "backlog/infrastructure/ccu-001-implement-enhanced-logging-for-migratio....md"
     }
   ]
 }
