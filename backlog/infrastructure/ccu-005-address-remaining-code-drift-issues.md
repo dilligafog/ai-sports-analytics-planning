@@ -1,23 +1,24 @@
 ---
-author: planning-agent
-branch_name: ccu-005-address-remaining-code-drift-issues
-created: 2025-09-01
-dependencies:
-- CCU-004
-epic: infrastructure
-estimate: 5sp
-file_path: backlog/infrastructure/ccu-005-address-remaining-code-drift-issues.md
 id: CCU-005
-labels:
-- code-cleanup
-- technical-debt
-- final
-last_updated: '2025-09-01'
-layer: null
-owner: ''
-priority: medium
-status: backlog
 title: Address Remaining Code Drift Issues
+branch_name: ccu-005-address-remaining-code-drift-issues
+epic: infrastructure
+status: backlog
+priority: medium
+estimate: "5sp"
+dependencies: [CCU-004]
+labels: [code-cleanup, technical-debt, final]
+created: "2025-09-01"
+author: planning-agent
+owner: ""
+market: null
+layer: null
+last_updated: "2025-09-01"
+emit_metadata:
+  source_id: null
+  layer: null
+  input_path: null
+  notes: null
 ---
 
 # CCU-005: Address Remaining Code Drift Issues

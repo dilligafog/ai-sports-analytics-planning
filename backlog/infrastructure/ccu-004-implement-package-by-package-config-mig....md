@@ -1,23 +1,24 @@
 ---
-author: planning-agent
-branch_name: ccu-004-implement-package-by-package-config-mig...
-created: 2025-09-01
-dependencies:
-- CCU-003
-epic: infrastructure
-estimate: 8sp
-file_path: backlog/infrastructure/ccu-004-implement-package-by-package-config-mig....md
 id: CCU-004
-labels:
-- code-cleanup
-- migration
-- high-risk
-last_updated: '2025-09-01'
-layer: null
-owner: ''
-priority: high
-status: backlog
 title: Implement Package-by-Package Config Migration
+branch_name: ccu-004-implement-package-by-package-config-migration
+epic: infrastructure
+status: backlog
+priority: high
+estimate: "8sp"
+dependencies: [CCU-003]
+labels: [code-cleanup, migration, high-risk]
+created: "2025-09-01"
+author: planning-agent
+owner: ""
+market: null
+layer: null
+last_updated: "2025-09-01"
+emit_metadata:
+  source_id: null
+  layer: null
+  input_path: null
+  notes: null
 ---
 
 # CCU-004: Implement Package-by-Package Config Migration

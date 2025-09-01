@@ -1,23 +1,24 @@
 ---
-author: planning-agent
-branch_name: ccu-002-add-critical-path-tests-for-config-migr...
-created: 2025-09-01
-dependencies:
-- CCU-001
-epic: infrastructure
-estimate: 3sp
-file_path: backlog/infrastructure/ccu-002-add-critical-path-tests-for-config-migr....md
 id: CCU-002
-labels:
-- code-cleanup
-- testing
-- technical
-last_updated: '2025-09-01'
-layer: null
-owner: ''
-priority: high
-status: backlog
 title: Add Critical Path Tests for Config Migration
+branch_name: ccu-002-add-critical-path-tests-for-config-migration
+epic: infrastructure
+status: backlog
+priority: high
+estimate: "3sp"
+dependencies: [CCU-001]
+labels: [code-cleanup, testing, technical]
+created: "2025-09-01"
+author: planning-agent
+owner: ""
+market: null
+layer: null
+last_updated: "2025-09-01"
+emit_metadata:
+  source_id: null
+  layer: null
+  input_path: null
+  notes: null
 ---
 
 # CCU-002: Add Critical Path Tests for Config Migration

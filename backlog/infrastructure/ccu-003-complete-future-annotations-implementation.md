@@ -1,23 +1,24 @@
 ---
-author: planning-agent
-branch_name: ccu-003-complete-future-annotations-implementation
-created: 2025-09-01
-dependencies:
-- CCU-002
-epic: infrastructure
-estimate: 1sp
-file_path: backlog/infrastructure/ccu-003-complete-future-annotations-implementation.md
 id: CCU-003
-labels:
-- code-cleanup
-- annotations
-- simple
-last_updated: '2025-09-01'
-layer: null
-owner: ''
-priority: high
-status: backlog
 title: Complete Future Annotations Implementation
+branch_name: ccu-003-complete-future-annotations-implementation
+epic: infrastructure
+status: backlog
+priority: high
+estimate: "1sp"
+dependencies: [CCU-002]
+labels: [code-cleanup, annotations, simple]
+created: "2025-09-01"
+author: planning-agent
+owner: ""
+market: null
+layer: null
+last_updated: "2025-09-01"
+emit_metadata:
+  source_id: null
+  layer: null
+  input_path: null
+  notes: null
 ---
 
 # CCU-003: Complete Future Annotations Implementation

@@ -1,22 +1,24 @@
 ---
-author: planning-agent
-branch_name: ccu-001-implement-enhanced-logging-for-migratio...
-created: 2025-09-01
-dependencies: []
-epic: infrastructure
-estimate: 2sp
-file_path: backlog/infrastructure/ccu-001-implement-enhanced-logging-for-migratio....md
 id: CCU-001
-labels:
-- code-cleanup
-- logging
-- technical
-last_updated: '2025-09-01'
-layer: null
-owner: ''
-priority: high
-status: backlog
 title: Implement Enhanced Logging for Migration Audit Trail
+branch_name: ccu-001-implement-enhanced-logging-for-migration-audit-trail
+epic: infrastructure
+status: backlog
+priority: high
+estimate: "2sp"
+dependencies: []
+labels: [code-cleanup, logging, technical]
+created: "2025-09-01"
+author: planning-agent
+owner: ""
+market: null
+layer: null
+last_updated: "2025-09-01"
+emit_metadata:
+  source_id: null
+  layer: null
+  input_path: null
+  notes: null
 ---
 
 # CCU-001: Implement Enhanced Logging for Migration Audit Trail
