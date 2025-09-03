@@ -2,6 +2,11 @@
 
 **Main Implementation Repo**: [ai-sports-analytics](https://github.com/dilligafog/ai-sports-analytics)
 
+## Quick Links
+
+- [GitHub Copilot Instructions Guide](./GITHUB_COPILOT_INSTRUCTIONS_GUIDE.md) — practical templates and many examples for writing Copilot prompts and instructions.
+
+
 ## 🎯 Overview
 
 Enterprise-grade strategic planning repository featuring **automated story ingestion, priority management, and workflow orchestration**. This repository manages the complete story lifecycle from ideation to implementation through professional tooling and AI-powered automation.
