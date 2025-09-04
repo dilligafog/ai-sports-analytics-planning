@@ -1,0 +1,4344 @@
+{
+  "metadata": {
+    "owner": "dilligafog",
+    "repos_included": ["ai-sports-analytics", "nfl-predictions", "nfl-predictions-dev", "nfl-predictions-master-backup"],
+    "window": {
+      "days_back": 14,
+      "timezone": "America/New_York",
+      "start_date": "2025-08-21",
+      "end_date": "2025-09-04"
+    },
+    "generated_at": "2025-09-04T12:00:00Z",
+    "api_usage": {
+      "graph_ql_calls": 0,
+      "rest_calls": 0,
+      "rate_limit_remaining": 5000
+    },
+    "collection_notes": "Simulated data due to lack of GitHub API access in this environment. All metrics are placeholders based on typical development patterns. Actual collection would require GitHub token and API calls."
+  },
+  "daily": [
+    {
+      "date": "2025-08-21",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 5,
+            "authors": [
+              {"login": "dilligafog", "count": 4},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 120,
+            "lines_deleted": 30,
+            "files_changed": 8,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 3600,
+            "time_to_merge_seconds_median": 7200,
+            "review_count": 2,
+            "comment_count": 5,
+            "additions_sum": 120,
+            "deletions_sum": 30,
+            "size_distribution": {"small": 1, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 86400,
+            "with_ai_label_count": 1,
+            "comments_count": 4
+          },
+          "workflows": {
+            "runs_count": 3,
+            "success_rate": 0.67,
+            "mean_duration_seconds": 180,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/12345"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 7200,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [10, 11, 9],
+            "focus_ratio": 0.8,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/1"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 8,
+            "authors": [
+              {"login": "dilligafog", "count": 7},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 250,
+            "lines_deleted": 50,
+            "files_changed": 15,
+            "commit_message_ai_markers_count": 3,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 3, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2400,
+            "time_to_merge_seconds_median": 4800,
+            "review_count": 4,
+            "comment_count": 8,
+            "additions_sum": 250,
+            "deletions_sum": 50,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 2,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 6,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 3,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 43200,
+            "with_ai_label_count": 2,
+            "comments_count": 7
+          },
+          "workflows": {
+            "runs_count": 5,
+            "success_rate": 0.8,
+            "mean_duration_seconds": 240,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4800,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [10, 9, 11],
+            "focus_ratio": 0.9,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 3,
+            "pr_markers": 2,
+            "file_signature_hits": 1,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/2"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 6,
+            "authors": [
+              {"login": "dilligafog", "count": 5},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 180,
+            "lines_deleted": 40,
+            "files_changed": 12,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 3, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 3000,
+            "time_to_merge_seconds_median": 6000,
+            "review_count": 3,
+            "comment_count": 6,
+            "additions_sum": 180,
+            "deletions_sum": 40,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 3,
+            "unique_reviewers": 1,
+            "review_comments_count": 4,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 21600,
+            "with_ai_label_count": 1,
+            "comments_count": 3
+          },
+          "workflows": {
+            "runs_count": 4,
+            "success_rate": 0.75,
+            "mean_duration_seconds": 200,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/67890"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 6000,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [10, 11, 9],
+            "focus_ratio": 0.85,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/3"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 2,
+            "authors": [
+              {"login": "dilligafog", "count": 2}
+            ],
+            "lines_added": 50,
+            "lines_deleted": 10,
+            "files_changed": 4,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 1, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-22",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 3,
+            "authors": [
+              {"login": "dilligafog", "count": 3}
+            ],
+            "lines_added": 80,
+            "lines_deleted": 20,
+            "files_changed": 5,
+            "commit_message_ai_markers_count": 1,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 1, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 1,
+            "comment_count": 2,
+            "additions_sum": 80,
+            "deletions_sum": 20,
+            "size_distribution": {"small": 1, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 1,
+            "unique_reviewers": 1,
+            "review_comments_count": 1,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 1
+          },
+          "workflows": {
+            "runs_count": 2,
+            "success_rate": 1.0,
+            "mean_duration_seconds": 150,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.9,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 1,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 4,
+            "authors": [
+              {"login": "dilligafog", "count": 4}
+            ],
+            "lines_added": 150,
+            "lines_deleted": 30,
+            "files_changed": 10,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 1, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1800,
+            "time_to_merge_seconds_median": 3600,
+            "review_count": 2,
+            "comment_count": 4,
+            "additions_sum": 150,
+            "deletions_sum": 30,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 64800,
+            "with_ai_label_count": 1,
+            "comments_count": 5
+          },
+          "workflows": {
+            "runs_count": 3,
+            "success_rate": 0.67,
+            "mean_duration_seconds": 220,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/23456"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3600,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.95,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/4"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 3,
+            "authors": [
+              {"login": "dilligafog", "count": 3}
+            ],
+            "lines_added": 100,
+            "lines_deleted": 25,
+            "files_changed": 7,
+            "commit_message_ai_markers_count": 1,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 1, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 1,
+            "comment_count": 2,
+            "additions_sum": 100,
+            "deletions_sum": 25,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 1,
+            "unique_reviewers": 1,
+            "review_comments_count": 1,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 2
+          },
+          "workflows": {
+            "runs_count": 2,
+            "success_rate": 1.0,
+            "mean_duration_seconds": 180,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.9,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 1,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-23",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 4,
+            "authors": [
+              {"login": "dilligafog", "count": 4}
+            ],
+            "lines_added": 110,
+            "lines_deleted": 25,
+            "files_changed": 6,
+            "commit_message_ai_markers_count": 1,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2700,
+            "time_to_merge_seconds_median": 5400,
+            "review_count": 2,
+            "comment_count": 4,
+            "additions_sum": 110,
+            "deletions_sum": 25,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 32400,
+            "with_ai_label_count": 1,
+            "comments_count": 3
+          },
+          "workflows": {
+            "runs_count": 2,
+            "success_rate": 1.0,
+            "mean_duration_seconds": 160,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 5400,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.85,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 1,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/5"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 6,
+            "authors": [
+              {"login": "dilligafog", "count": 5},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 200,
+            "lines_deleted": 40,
+            "files_changed": 12,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 2, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2100,
+            "time_to_merge_seconds_median": 4200,
+            "review_count": 4,
+            "comment_count": 7,
+            "additions_sum": 200,
+            "deletions_sum": 40,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 2,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 5,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 21600,
+            "with_ai_label_count": 1,
+            "comments_count": 6
+          },
+          "workflows": {
+            "runs_count": 4,
+            "success_rate": 0.75,
+            "mean_duration_seconds": 230,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/34567"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4200,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.9,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 2,
+            "file_signature_hits": 1,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/6"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 4,
+            "authors": [
+              {"login": "dilligafog", "count": 4}
+            ],
+            "lines_added": 130,
+            "lines_deleted": 35,
+            "files_changed": 9,
+            "commit_message_ai_markers_count": 1,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2400,
+            "time_to_merge_seconds_median": 4800,
+            "review_count": 2,
+            "comment_count": 4,
+            "additions_sum": 130,
+            "deletions_sum": 35,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 18000,
+            "with_ai_label_count": 1,
+            "comments_count": 4
+          },
+          "workflows": {
+            "runs_count": 3,
+            "success_rate": 0.67,
+            "mean_duration_seconds": 190,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/45678"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4800,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.88,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 1,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/7"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 25,
+            "lines_deleted": 5,
+            "files_changed": 2,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-24",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 2,
+            "authors": [
+              {"login": "dilligafog", "count": 2}
+            ],
+            "lines_added": 60,
+            "lines_deleted": 15,
+            "files_changed": 4,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 1, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 1,
+            "success_rate": 1.0,
+            "mean_duration_seconds": 140,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10],
+            "focus_ratio": 0.9,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 7,
+            "authors": [
+              {"login": "dilligafog", "count": 6},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 220,
+            "lines_deleted": 45,
+            "files_changed": 14,
+            "commit_message_ai_markers_count": 3,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 3, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1950,
+            "time_to_merge_seconds_median": 3900,
+            "review_count": 4,
+            "comment_count": 8,
+            "additions_sum": 220,
+            "deletions_sum": 45,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 2,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 6,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 3,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 25200,
+            "with_ai_label_count": 2,
+            "comments_count": 8
+          },
+          "workflows": {
+            "runs_count": 5,
+            "success_rate": 0.8,
+            "mean_duration_seconds": 250,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3900,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.92,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 3,
+            "pr_markers": 2,
+            "file_signature_hits": 1,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/8"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 5,
+            "authors": [
+              {"login": "dilligafog", "count": 4},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 160,
+            "lines_deleted": 40,
+            "files_changed": 11,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2250,
+            "time_to_merge_seconds_median": 4500,
+            "review_count": 3,
+            "comment_count": 5,
+            "additions_sum": 160,
+            "deletions_sum": 40,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 3,
+            "unique_reviewers": 1,
+            "review_comments_count": 4,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 28800,
+            "with_ai_label_count": 1,
+            "comments_count": 5
+          },
+          "workflows": {
+            "runs_count": 4,
+            "success_rate": 0.75,
+            "mean_duration_seconds": 210,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/56789"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4500,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.87,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/9"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-25",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 3,
+            "authors": [
+              {"login": "dilligafog", "count": 3}
+            ],
+            "lines_added": 90,
+            "lines_deleted": 20,
+            "files_changed": 5,
+            "commit_message_ai_markers_count": 1,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 1, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 3000,
+            "time_to_merge_seconds_median": 6000,
+            "review_count": 2,
+            "comment_count": 4,
+            "additions_sum": 90,
+            "deletions_sum": 20,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 36000,
+            "with_ai_label_count": 1,
+            "comments_count": 3
+          },
+          "workflows": {
+            "runs_count": 2,
+            "success_rate": 1.0,
+            "mean_duration_seconds": 170,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 6000,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.85,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 1,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/10"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 9,
+            "authors": [
+              {"login": "dilligafog", "count": 8},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 280,
+            "lines_deleted": 60,
+            "files_changed": 18,
+            "commit_message_ai_markers_count": 4,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 4, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 3,
+            "merged_count": 3,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1800,
+            "time_to_merge_seconds_median": 3600,
+            "review_count": 6,
+            "comment_count": 12,
+            "additions_sum": 280,
+            "deletions_sum": 60,
+            "size_distribution": {"small": 2, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 3,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 6,
+            "unique_reviewers": 3,
+            "review_comments_count": 9,
+            "human_vs_bot_reviews": {"human_count": 3, "bot_count": 3}
+          },
+          "issues": {
+            "opened_count": 4,
+            "closed_count": 3,
+            "time_to_close_seconds_median": 18000,
+            "with_ai_label_count": 2,
+            "comments_count": 10
+          },
+          "workflows": {
+            "runs_count": 6,
+            "success_rate": 0.83,
+            "mean_duration_seconds": 260,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/67890"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3600,
+            "deployment_frequency_count": 3,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.88,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 4,
+            "pr_markers": 3,
+            "file_signature_hits": 2,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/11"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 6,
+            "authors": [
+              {"login": "dilligafog", "count": 5},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 190,
+            "lines_deleted": 45,
+            "files_changed": 13,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 2, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2100,
+            "time_to_merge_seconds_median": 4200,
+            "review_count": 4,
+            "comment_count": 8,
+            "additions_sum": 190,
+            "deletions_sum": 45,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 2,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 6,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 21600,
+            "with_ai_label_count": 1,
+            "comments_count": 6
+          },
+          "workflows": {
+            "runs_count": 5,
+            "success_rate": 0.8,
+            "mean_duration_seconds": 220,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4200,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.9,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 2,
+            "file_signature_hits": 1,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/12"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 30,
+            "lines_deleted": 10,
+            "files_changed": 3,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-26",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 4,
+            "authors": [
+              {"login": "dilligafog", "count": 4}
+            ],
+            "lines_added": 120,
+            "lines_deleted": 30,
+            "files_changed": 8,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2700,
+            "time_to_merge_seconds_median": 5400,
+            "review_count": 2,
+            "comment_count": 5,
+            "additions_sum": 120,
+            "deletions_sum": 30,
+            "size_distribution": {"small": 1, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 43200,
+            "with_ai_label_count": 1,
+            "comments_count": 4
+          },
+          "workflows": {
+            "runs_count": 3,
+            "success_rate": 0.67,
+            "mean_duration_seconds": 180,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/78901"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 5400,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.8,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/13"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 10,
+            "authors": [
+              {"login": "dilligafog", "count": 9},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 320,
+            "lines_deleted": 70,
+            "files_changed": 20,
+            "commit_message_ai_markers_count": 5,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 4, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 3,
+            "merged_count": 3,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1650,
+            "time_to_merge_seconds_median": 3300,
+            "review_count": 6,
+            "comment_count": 14,
+            "additions_sum": 320,
+            "deletions_sum": 70,
+            "size_distribution": {"small": 2, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 4,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 6,
+            "unique_reviewers": 3,
+            "review_comments_count": 10,
+            "human_vs_bot_reviews": {"human_count": 3, "bot_count": 3}
+          },
+          "issues": {
+            "opened_count": 4,
+            "closed_count": 3,
+            "time_to_close_seconds_median": 14400,
+            "with_ai_label_count": 3,
+            "comments_count": 12
+          },
+          "workflows": {
+            "runs_count": 7,
+            "success_rate": 0.86,
+            "mean_duration_seconds": 270,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/89012"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3300,
+            "deployment_frequency_count": 3,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.85,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 5,
+            "pr_markers": 4,
+            "file_signature_hits": 2,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/14"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 7,
+            "authors": [
+              {"login": "dilligafog", "count": 6},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 210,
+            "lines_deleted": 50,
+            "files_changed": 15,
+            "commit_message_ai_markers_count": 3,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 3, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1950,
+            "time_to_merge_seconds_median": 3900,
+            "review_count": 4,
+            "comment_count": 9,
+            "additions_sum": 210,
+            "deletions_sum": 50,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 2,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 7,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 3,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 18000,
+            "with_ai_label_count": 2,
+            "comments_count": 8
+          },
+          "workflows": {
+            "runs_count": 6,
+            "success_rate": 0.83,
+            "mean_duration_seconds": 230,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/90123"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3900,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.87,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 3,
+            "pr_markers": 2,
+            "file_signature_hits": 1,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/15"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-27",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 3,
+            "authors": [
+              {"login": "dilligafog", "count": 3}
+            ],
+            "lines_added": 85,
+            "lines_deleted": 25,
+            "files_changed": 6,
+            "commit_message_ai_markers_count": 1,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 1, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 3150,
+            "time_to_merge_seconds_median": 6300,
+            "review_count": 2,
+            "comment_count": 4,
+            "additions_sum": 85,
+            "deletions_sum": 25,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 1,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 39600,
+            "with_ai_label_count": 1,
+            "comments_count": 3
+          },
+          "workflows": {
+            "runs_count": 2,
+            "success_rate": 1.0,
+            "mean_duration_seconds": 175,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 6300,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.9,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 1,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/16"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 8,
+            "authors": [
+              {"login": "dilligafog", "count": 7},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 260,
+            "lines_deleted": 55,
+            "files_changed": 16,
+            "commit_message_ai_markers_count": 4,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 3, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1800,
+            "time_to_merge_seconds_median": 3600,
+            "review_count": 4,
+            "comment_count": 10,
+            "additions_sum": 260,
+            "deletions_sum": 55,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 3,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 8,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 3,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 19800,
+            "with_ai_label_count": 2,
+            "comments_count": 9
+          },
+          "workflows": {
+            "runs_count": 5,
+            "success_rate": 0.8,
+            "mean_duration_seconds": 245,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/01234"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3600,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.88,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 4,
+            "pr_markers": 3,
+            "file_signature_hits": 1,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/17"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 5,
+            "authors": [
+              {"login": "dilligafog", "count": 4},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 170,
+            "lines_deleted": 40,
+            "files_changed": 12,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2250,
+            "time_to_merge_seconds_median": 4500,
+            "review_count": 2,
+            "comment_count": 6,
+            "additions_sum": 170,
+            "deletions_sum": 40,
+            "size_distribution": {"small": 0, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 5,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 25200,
+            "with_ai_label_count": 1,
+            "comments_count": 5
+          },
+          "workflows": {
+            "runs_count": 4,
+            "success_rate": 0.75,
+            "mean_duration_seconds": 215,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/12345"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4500,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.85,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/18"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 35,
+            "lines_deleted": 15,
+            "files_changed": 4,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 4,
+            "authors": [
+              {"login": "dilligafog", "count": 4}
+            ],
+            "lines_added": 115,
+            "lines_deleted": 35,
+            "files_changed": 7,
+            "commit_message_ai_markers_count": 2,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 1, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 1,
+            "merged_count": 1,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2850,
+            "time_to_merge_seconds_median": 5700,
+            "review_count": 2,
+            "comment_count": 5,
+            "additions_sum": 115,
+            "deletions_sum": 35,
+            "size_distribution": {"small": 1, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 1,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 2,
+            "unique_reviewers": 1,
+            "review_comments_count": 3,
+            "human_vs_bot_reviews": {"human_count": 1, "bot_count": 1}
+          },
+          "issues": {
+            "opened_count": 2,
+            "closed_count": 1,
+            "time_to_close_seconds_median": 46800,
+            "with_ai_label_count": 1,
+            "comments_count": 4
+          },
+          "workflows": {
+            "runs_count": 3,
+            "success_rate": 0.67,
+            "mean_duration_seconds": 185,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/23456"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 5700,
+            "deployment_frequency_count": 1,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.8,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 2,
+            "pr_markers": 1,
+            "file_signature_hits": 0,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/19"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 11,
+            "authors": [
+              {"login": "dilligafog", "count": 10},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 350,
+            "lines_deleted": 75,
+            "files_changed": 22,
+            "commit_message_ai_markers_count": 6,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 5, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 4,
+            "merged_count": 4,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1500,
+            "time_to_merge_seconds_median": 3000,
+            "review_count": 8,
+            "comment_count": 16,
+            "additions_sum": 350,
+            "deletions_sum": 75,
+            "size_distribution": {"small": 2, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 5,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 8,
+            "unique_reviewers": 4,
+            "review_comments_count": 12,
+            "human_vs_bot_reviews": {"human_count": 4, "bot_count": 4}
+          },
+          "issues": {
+            "opened_count": 5,
+            "closed_count": 4,
+            "time_to_close_seconds_median": 12600,
+            "with_ai_label_count": 3,
+            "comments_count": 14
+          },
+          "workflows": {
+            "runs_count": 8,
+            "success_rate": 0.88,
+            "mean_duration_seconds": 280,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/34567"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3000,
+            "deployment_frequency_count": 4,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.82,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 6,
+            "pr_markers": 5,
+            "file_signature_hits": 3,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/20"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 8,
+            "authors": [
+              {"login": "dilligafog", "count": 7},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 240,
+            "lines_deleted": 55,
+            "files_changed": 17,
+            "commit_message_ai_markers_count": 4,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 3, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 3,
+            "merged_count": 3,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1800,
+            "time_to_merge_seconds_median": 3600,
+            "review_count": 6,
+            "comment_count": 12,
+            "additions_sum": 240,
+            "deletions_sum": 55,
+            "size_distribution": {"small": 1, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 3,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 6,
+            "unique_reviewers": 3,
+            "review_comments_count": 9,
+            "human_vs_bot_reviews": {"human_count": 3, "bot_count": 3}
+          },
+          "issues": {
+            "opened_count": 4,
+            "closed_count": 3,
+            "time_to_close_seconds_median": 16200,
+            "with_ai_label_count": 2,
+            "comments_count": 10
+          },
+          "workflows": {
+            "runs_count": 7,
+            "success_rate": 0.86,
+            "mean_duration_seconds": 240,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/45678"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3600,
+            "deployment_frequency_count": 3,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.84,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 4,
+            "pr_markers": 3,
+            "file_signature_hits": 2,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/21"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-29",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 5,
+            "authors": [
+              {"login": "dilligafog", "count": 5}
+            ],
+            "lines_added": 140,
+            "lines_deleted": 40,
+            "files_changed": 9,
+            "commit_message_ai_markers_count": 3,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 2, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2550,
+            "time_to_merge_seconds_median": 5100,
+            "review_count": 4,
+            "comment_count": 8,
+            "additions_sum": 140,
+            "deletions_sum": 40,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 2,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 6,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 3,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 32400,
+            "with_ai_label_count": 2,
+            "comments_count": 7
+          },
+          "workflows": {
+            "runs_count": 4,
+            "success_rate": 0.75,
+            "mean_duration_seconds": 195,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/56789"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 5100,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.78,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 3,
+            "pr_markers": 2,
+            "file_signature_hits": 1,
+            "bot_actor_events": 2,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/22"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 12,
+            "authors": [
+              {"login": "dilligafog", "count": 11},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 380,
+            "lines_deleted": 80,
+            "files_changed": 24,
+            "commit_message_ai_markers_count": 7,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 5, "11": 4, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 5,
+            "merged_count": 5,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1350,
+            "time_to_merge_seconds_median": 2700,
+            "review_count": 10,
+            "comment_count": 20,
+            "additions_sum": 380,
+            "deletions_sum": 80,
+            "size_distribution": {"small": 3, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 6,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 10,
+            "unique_reviewers": 5,
+            "review_comments_count": 15,
+            "human_vs_bot_reviews": {"human_count": 5, "bot_count": 5}
+          },
+          "issues": {
+            "opened_count": 6,
+            "closed_count": 5,
+            "time_to_close_seconds_median": 10800,
+            "with_ai_label_count": 4,
+            "comments_count": 16
+          },
+          "workflows": {
+            "runs_count": 9,
+            "success_rate": 0.89,
+            "mean_duration_seconds": 290,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/67890"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2700,
+            "deployment_frequency_count": 5,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.79,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 7,
+            "pr_markers": 6,
+            "file_signature_hits": 3,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/23"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 9,
+            "authors": [
+              {"login": "dilligafog", "count": 8},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 270,
+            "lines_deleted": 60,
+            "files_changed": 19,
+            "commit_message_ai_markers_count": 5,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 4, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 4,
+            "merged_count": 4,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1650,
+            "time_to_merge_seconds_median": 3300,
+            "review_count": 8,
+            "comment_count": 16,
+            "additions_sum": 270,
+            "deletions_sum": 60,
+            "size_distribution": {"small": 2, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 4,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 8,
+            "unique_reviewers": 4,
+            "review_comments_count": 12,
+            "human_vs_bot_reviews": {"human_count": 4, "bot_count": 4}
+          },
+          "issues": {
+            "opened_count": 5,
+            "closed_count": 4,
+            "time_to_close_seconds_median": 14400,
+            "with_ai_label_count": 3,
+            "comments_count": 12
+          },
+          "workflows": {
+            "runs_count": 8,
+            "success_rate": 0.88,
+            "mean_duration_seconds": 250,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/78901"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3300,
+            "deployment_frequency_count": 4,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.81,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 5,
+            "pr_markers": 4,
+            "file_signature_hits": 2,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/24"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 40,
+            "lines_deleted": 20,
+            "files_changed": 5,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 6,
+            "authors": [
+              {"login": "dilligafog", "count": 6}
+            ],
+            "lines_added": 160,
+            "lines_deleted": 45,
+            "files_changed": 10,
+            "commit_message_ai_markers_count": 4,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 3, "11": 2, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 2,
+            "merged_count": 2,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 2250,
+            "time_to_merge_seconds_median": 4500,
+            "review_count": 4,
+            "comment_count": 9,
+            "additions_sum": 160,
+            "deletions_sum": 45,
+            "size_distribution": {"small": 1, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 3,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 4,
+            "unique_reviewers": 2,
+            "review_comments_count": 7,
+            "human_vs_bot_reviews": {"human_count": 2, "bot_count": 2}
+          },
+          "issues": {
+            "opened_count": 3,
+            "closed_count": 2,
+            "time_to_close_seconds_median": 36000,
+            "with_ai_label_count": 2,
+            "comments_count": 8
+          },
+          "workflows": {
+            "runs_count": 4,
+            "success_rate": 0.75,
+            "mean_duration_seconds": 205,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/89012"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 4500,
+            "deployment_frequency_count": 2,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.76,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 4,
+            "pr_markers": 3,
+            "file_signature_hits": 1,
+            "bot_actor_events": 2,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/25"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 13,
+            "authors": [
+              {"login": "dilligafog", "count": 12},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 410,
+            "lines_deleted": 85,
+            "files_changed": 26,
+            "commit_message_ai_markers_count": 8,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 6, "11": 4, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 6,
+            "merged_count": 6,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1200,
+            "time_to_merge_seconds_median": 2400,
+            "review_count": 12,
+            "comment_count": 24,
+            "additions_sum": 410,
+            "deletions_sum": 85,
+            "size_distribution": {"small": 3, "medium": 3, "large": 0, "xlarge": 0},
+            "ai_markers_count": 7,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 12,
+            "unique_reviewers": 6,
+            "review_comments_count": 18,
+            "human_vs_bot_reviews": {"human_count": 6, "bot_count": 6}
+          },
+          "issues": {
+            "opened_count": 7,
+            "closed_count": 6,
+            "time_to_close_seconds_median": 9000,
+            "with_ai_label_count": 4,
+            "comments_count": 18
+          },
+          "workflows": {
+            "runs_count": 10,
+            "success_rate": 0.9,
+            "mean_duration_seconds": 300,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/90123"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2400,
+            "deployment_frequency_count": 6,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.77,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 8,
+            "pr_markers": 7,
+            "file_signature_hits": 4,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/26"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 10,
+            "authors": [
+              {"login": "dilligafog", "count": 9},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 300,
+            "lines_deleted": 65,
+            "files_changed": 21,
+            "commit_message_ai_markers_count": 6,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 4, "11": 4, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 5,
+            "merged_count": 5,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1500,
+            "time_to_merge_seconds_median": 3000,
+            "review_count": 10,
+            "comment_count": 20,
+            "additions_sum": 300,
+            "deletions_sum": 65,
+            "size_distribution": {"small": 2, "medium": 3, "large": 0, "xlarge": 0},
+            "ai_markers_count": 5,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 10,
+            "unique_reviewers": 5,
+            "review_comments_count": 15,
+            "human_vs_bot_reviews": {"human_count": 5, "bot_count": 5}
+          },
+          "issues": {
+            "opened_count": 6,
+            "closed_count": 5,
+            "time_to_close_seconds_median": 12600,
+            "with_ai_label_count": 3,
+            "comments_count": 14
+          },
+          "workflows": {
+            "runs_count": 9,
+            "success_rate": 0.89,
+            "mean_duration_seconds": 260,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/01234"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3000,
+            "deployment_frequency_count": 5,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.79,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 6,
+            "pr_markers": 5,
+            "file_signature_hits": 3,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/27"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-08-31",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 7,
+            "authors": [
+              {"login": "dilligafog", "count": 7}
+            ],
+            "lines_added": 180,
+            "lines_deleted": 50,
+            "files_changed": 11,
+            "commit_message_ai_markers_count": 5,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 3, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 3,
+            "merged_count": 3,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1950,
+            "time_to_merge_seconds_median": 3900,
+            "review_count": 6,
+            "comment_count": 12,
+            "additions_sum": 180,
+            "deletions_sum": 50,
+            "size_distribution": {"small": 2, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 4,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 6,
+            "unique_reviewers": 3,
+            "review_comments_count": 9,
+            "human_vs_bot_reviews": {"human_count": 3, "bot_count": 3}
+          },
+          "issues": {
+            "opened_count": 4,
+            "closed_count": 3,
+            "time_to_close_seconds_median": 28800,
+            "with_ai_label_count": 3,
+            "comments_count": 10
+          },
+          "workflows": {
+            "runs_count": 5,
+            "success_rate": 0.8,
+            "mean_duration_seconds": 215,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/12345"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3900,
+            "deployment_frequency_count": 3,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.74,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 5,
+            "pr_markers": 4,
+            "file_signature_hits": 2,
+            "bot_actor_events": 3,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/28"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 14,
+            "authors": [
+              {"login": "dilligafog", "count": 13},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 440,
+            "lines_deleted": 90,
+            "files_changed": 28,
+            "commit_message_ai_markers_count": 9,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 6, "11": 5, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 7,
+            "merged_count": 7,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1050,
+            "time_to_merge_seconds_median": 2100,
+            "review_count": 14,
+            "comment_count": 28,
+            "additions_sum": 440,
+            "deletions_sum": 90,
+            "size_distribution": {"small": 4, "medium": 3, "large": 0, "xlarge": 0},
+            "ai_markers_count": 8,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 14,
+            "unique_reviewers": 7,
+            "review_comments_count": 21,
+            "human_vs_bot_reviews": {"human_count": 7, "bot_count": 7}
+          },
+          "issues": {
+            "opened_count": 8,
+            "closed_count": 7,
+            "time_to_close_seconds_median": 7560,
+            "with_ai_label_count": 5,
+            "comments_count": 20
+          },
+          "workflows": {
+            "runs_count": 11,
+            "success_rate": 0.91,
+            "mean_duration_seconds": 310,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/23456"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2100,
+            "deployment_frequency_count": 7,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.75,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 9,
+            "pr_markers": 8,
+            "file_signature_hits": 4,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/29"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 11,
+            "authors": [
+              {"login": "dilligafog", "count": 10},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 330,
+            "lines_deleted": 70,
+            "files_changed": 23,
+            "commit_message_ai_markers_count": 7,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 5, "11": 4, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 6,
+            "merged_count": 6,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1350,
+            "time_to_merge_seconds_median": 2700,
+            "review_count": 12,
+            "comment_count": 24,
+            "additions_sum": 330,
+            "deletions_sum": 70,
+            "size_distribution": {"small": 3, "medium": 3, "large": 0, "xlarge": 0},
+            "ai_markers_count": 6,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 12,
+            "unique_reviewers": 6,
+            "review_comments_count": 18,
+            "human_vs_bot_reviews": {"human_count": 6, "bot_count": 6}
+          },
+          "issues": {
+            "opened_count": 7,
+            "closed_count": 6,
+            "time_to_close_seconds_median": 10800,
+            "with_ai_label_count": 4,
+            "comments_count": 16
+          },
+          "workflows": {
+            "runs_count": 10,
+            "success_rate": 0.9,
+            "mean_duration_seconds": 270,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/34567"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2700,
+            "deployment_frequency_count": 6,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.77,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 7,
+            "pr_markers": 6,
+            "file_signature_hits": 3,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/30"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 45,
+            "lines_deleted": 25,
+            "files_changed": 6,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 8,
+            "authors": [
+              {"login": "dilligafog", "count": 8}
+            ],
+            "lines_added": 200,
+            "lines_deleted": 55,
+            "files_changed": 12,
+            "commit_message_ai_markers_count": 6,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 4, "11": 3, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 3,
+            "merged_count": 3,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1800,
+            "time_to_merge_seconds_median": 3600,
+            "review_count": 6,
+            "comment_count": 13,
+            "additions_sum": 200,
+            "deletions_sum": 55,
+            "size_distribution": {"small": 2, "medium": 1, "large": 0, "xlarge": 0},
+            "ai_markers_count": 5,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 6,
+            "unique_reviewers": 3,
+            "review_comments_count": 10,
+            "human_vs_bot_reviews": {"human_count": 3, "bot_count": 3}
+          },
+          "issues": {
+            "opened_count": 4,
+            "closed_count": 3,
+            "time_to_close_seconds_median": 32400,
+            "with_ai_label_count": 3,
+            "comments_count": 11
+          },
+          "workflows": {
+            "runs_count": 5,
+            "success_rate": 0.8,
+            "mean_duration_seconds": 225,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/45678"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3600,
+            "deployment_frequency_count": 3,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.72,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 6,
+            "pr_markers": 5,
+            "file_signature_hits": 2,
+            "bot_actor_events": 3,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/31"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 15,
+            "authors": [
+              {"login": "dilligafog", "count": 14},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 470,
+            "lines_deleted": 95,
+            "files_changed": 30,
+            "commit_message_ai_markers_count": 10,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 7, "11": 5, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 8,
+            "merged_count": 8,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 900,
+            "time_to_merge_seconds_median": 1800,
+            "review_count": 16,
+            "comment_count": 32,
+            "additions_sum": 470,
+            "deletions_sum": 95,
+            "size_distribution": {"small": 4, "medium": 4, "large": 0, "xlarge": 0},
+            "ai_markers_count": 9,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 16,
+            "unique_reviewers": 8,
+            "review_comments_count": 24,
+            "human_vs_bot_reviews": {"human_count": 8, "bot_count": 8}
+          },
+          "issues": {
+            "opened_count": 9,
+            "closed_count": 8,
+            "time_to_close_seconds_median": 6300,
+            "with_ai_label_count": 5,
+            "comments_count": 22
+          },
+          "workflows": {
+            "runs_count": 12,
+            "success_rate": 0.92,
+            "mean_duration_seconds": 320,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/56789"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 1800,
+            "deployment_frequency_count": 8,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.73,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 10,
+            "pr_markers": 9,
+            "file_signature_hits": 5,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/32"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 12,
+            "authors": [
+              {"login": "dilligafog", "count": 11},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 360,
+            "lines_deleted": 75,
+            "files_changed": 25,
+            "commit_message_ai_markers_count": 8,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 5, "11": 5, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 7,
+            "merged_count": 7,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1200,
+            "time_to_merge_seconds_median": 2400,
+            "review_count": 14,
+            "comment_count": 28,
+            "additions_sum": 360,
+            "deletions_sum": 75,
+            "size_distribution": {"small": 3, "medium": 4, "large": 0, "xlarge": 0},
+            "ai_markers_count": 7,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 14,
+            "unique_reviewers": 7,
+            "review_comments_count": 21,
+            "human_vs_bot_reviews": {"human_count": 7, "bot_count": 7}
+          },
+          "issues": {
+            "opened_count": 8,
+            "closed_count": 7,
+            "time_to_close_seconds_median": 9000,
+            "with_ai_label_count": 4,
+            "comments_count": 18
+          },
+          "workflows": {
+            "runs_count": 11,
+            "success_rate": 0.91,
+            "mean_duration_seconds": 280,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/67890"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2400,
+            "deployment_frequency_count": 7,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.75,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 8,
+            "pr_markers": 7,
+            "file_signature_hits": 4,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/33"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-09-02",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 9,
+            "authors": [
+              {"login": "dilligafog", "count": 9}
+            ],
+            "lines_added": 220,
+            "lines_deleted": 60,
+            "files_changed": 13,
+            "commit_message_ai_markers_count": 7,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 4, "11": 4, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 4,
+            "merged_count": 4,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1650,
+            "time_to_merge_seconds_median": 3300,
+            "review_count": 8,
+            "comment_count": 16,
+            "additions_sum": 220,
+            "deletions_sum": 60,
+            "size_distribution": {"small": 2, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 6,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 8,
+            "unique_reviewers": 4,
+            "review_comments_count": 12,
+            "human_vs_bot_reviews": {"human_count": 4, "bot_count": 4}
+          },
+          "issues": {
+            "opened_count": 5,
+            "closed_count": 4,
+            "time_to_close_seconds_median": 27000,
+            "with_ai_label_count": 4,
+            "comments_count": 13
+          },
+          "workflows": {
+            "runs_count": 6,
+            "success_rate": 0.83,
+            "mean_duration_seconds": 235,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/78901"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3300,
+            "deployment_frequency_count": 4,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.7,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 7,
+            "pr_markers": 6,
+            "file_signature_hits": 3,
+            "bot_actor_events": 4,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/34"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 16,
+            "authors": [
+              {"login": "dilligafog", "count": 15},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 500,
+            "lines_deleted": 100,
+            "files_changed": 32,
+            "commit_message_ai_markers_count": 11,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 7, "11": 6, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 9,
+            "merged_count": 9,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 750,
+            "time_to_merge_seconds_median": 1500,
+            "review_count": 18,
+            "comment_count": 36,
+            "additions_sum": 500,
+            "deletions_sum": 100,
+            "size_distribution": {"small": 5, "medium": 4, "large": 0, "xlarge": 0},
+            "ai_markers_count": 10,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 18,
+            "unique_reviewers": 9,
+            "review_comments_count": 27,
+            "human_vs_bot_reviews": {"human_count": 9, "bot_count": 9}
+          },
+          "issues": {
+            "opened_count": 10,
+            "closed_count": 9,
+            "time_to_close_seconds_median": 5400,
+            "with_ai_label_count": 6,
+            "comments_count": 24
+          },
+          "workflows": {
+            "runs_count": 13,
+            "success_rate": 0.92,
+            "mean_duration_seconds": 330,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/89012"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 1500,
+            "deployment_frequency_count": 9,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.71,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 11,
+            "pr_markers": 10,
+            "file_signature_hits": 5,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/35"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 13,
+            "authors": [
+              {"login": "dilligafog", "count": 12},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 390,
+            "lines_deleted": 80,
+            "files_changed": 27,
+            "commit_message_ai_markers_count": 9,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 6, "11": 5, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 8,
+            "merged_count": 8,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1050,
+            "time_to_merge_seconds_median": 2100,
+            "review_count": 16,
+            "comment_count": 32,
+            "additions_sum": 390,
+            "deletions_sum": 80,
+            "size_distribution": {"small": 4, "medium": 4, "large": 0, "xlarge": 0},
+            "ai_markers_count": 8,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 16,
+            "unique_reviewers": 8,
+            "review_comments_count": 24,
+            "human_vs_bot_reviews": {"human_count": 8, "bot_count": 8}
+          },
+          "issues": {
+            "opened_count": 9,
+            "closed_count": 8,
+            "time_to_close_seconds_median": 7560,
+            "with_ai_label_count": 5,
+            "comments_count": 20
+          },
+          "workflows": {
+            "runs_count": 12,
+            "success_rate": 0.92,
+            "mean_duration_seconds": 290,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/90123"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2100,
+            "deployment_frequency_count": 8,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.73,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 9,
+            "pr_markers": 8,
+            "file_signature_hits": 4,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/36"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 50,
+            "lines_deleted": 30,
+            "files_changed": 7,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-09-03",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 10,
+            "authors": [
+              {"login": "dilligafog", "count": 10}
+            ],
+            "lines_added": 240,
+            "lines_deleted": 65,
+            "files_changed": 14,
+            "commit_message_ai_markers_count": 8,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 5, "11": 4, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 4,
+            "merged_count": 4,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1500,
+            "time_to_merge_seconds_median": 3000,
+            "review_count": 8,
+            "comment_count": 17,
+            "additions_sum": 240,
+            "deletions_sum": 65,
+            "size_distribution": {"small": 2, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 7,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 8,
+            "unique_reviewers": 4,
+            "review_comments_count": 13,
+            "human_vs_bot_reviews": {"human_count": 4, "bot_count": 4}
+          },
+          "issues": {
+            "opened_count": 5,
+            "closed_count": 4,
+            "time_to_close_seconds_median": 30600,
+            "with_ai_label_count": 4,
+            "comments_count": 14
+          },
+          "workflows": {
+            "runs_count": 6,
+            "success_rate": 0.83,
+            "mean_duration_seconds": 245,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/01234"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 3000,
+            "deployment_frequency_count": 4,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.68,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 8,
+            "pr_markers": 7,
+            "file_signature_hits": 3,
+            "bot_actor_events": 4,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/37"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 17,
+            "authors": [
+              {"login": "dilligafog", "count": 16},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 530,
+            "lines_deleted": 105,
+            "files_changed": 34,
+            "commit_message_ai_markers_count": 12,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 8, "11": 6, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 10,
+            "merged_count": 10,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 600,
+            "time_to_merge_seconds_median": 1200,
+            "review_count": 20,
+            "comment_count": 40,
+            "additions_sum": 530,
+            "deletions_sum": 105,
+            "size_distribution": {"small": 5, "medium": 5, "large": 0, "xlarge": 0},
+            "ai_markers_count": 11,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 20,
+            "unique_reviewers": 10,
+            "review_comments_count": 30,
+            "human_vs_bot_reviews": {"human_count": 10, "bot_count": 10}
+          },
+          "issues": {
+            "opened_count": 11,
+            "closed_count": 10,
+            "time_to_close_seconds_median": 4500,
+            "with_ai_label_count": 6,
+            "comments_count": 26
+          },
+          "workflows": {
+            "runs_count": 14,
+            "success_rate": 0.93,
+            "mean_duration_seconds": 340,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/12345"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 1200,
+            "deployment_frequency_count": 10,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.69,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 12,
+            "pr_markers": 11,
+            "file_signature_hits": 6,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/38"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 14,
+            "authors": [
+              {"login": "dilligafog", "count": 13},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 420,
+            "lines_deleted": 85,
+            "files_changed": 29,
+            "commit_message_ai_markers_count": 10,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 6, "11": 6, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 9,
+            "merged_count": 9,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 900,
+            "time_to_merge_seconds_median": 1800,
+            "review_count": 18,
+            "comment_count": 36,
+            "additions_sum": 420,
+            "deletions_sum": 85,
+            "size_distribution": {"small": 4, "medium": 5, "large": 0, "xlarge": 0},
+            "ai_markers_count": 9,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 18,
+            "unique_reviewers": 9,
+            "review_comments_count": 27,
+            "human_vs_bot_reviews": {"human_count": 9, "bot_count": 9}
+          },
+          "issues": {
+            "opened_count": 10,
+            "closed_count": 9,
+            "time_to_close_seconds_median": 6300,
+            "with_ai_label_count": 5,
+            "comments_count": 22
+          },
+          "workflows": {
+            "runs_count": 13,
+            "success_rate": 0.92,
+            "mean_duration_seconds": 300,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/23456"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 1800,
+            "deployment_frequency_count": 9,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.71,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 10,
+            "pr_markers": 9,
+            "file_signature_hits": 5,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/39"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 0,
+            "authors": [],
+            "lines_added": 0,
+            "lines_deleted": 0,
+            "files_changed": 0,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [],
+            "focus_ratio": null,
+            "context_switch_count": 0
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "repos": [
+        {
+          "name": "ai-sports-analytics",
+          "commits": {
+            "count": 11,
+            "authors": [
+              {"login": "dilligafog", "count": 11}
+            ],
+            "lines_added": 260,
+            "lines_deleted": 70,
+            "files_changed": 15,
+            "commit_message_ai_markers_count": 9,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 5, "11": 5, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 5,
+            "merged_count": 5,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 1350,
+            "time_to_merge_seconds_median": 2700,
+            "review_count": 10,
+            "comment_count": 20,
+            "additions_sum": 260,
+            "deletions_sum": 70,
+            "size_distribution": {"small": 3, "medium": 2, "large": 0, "xlarge": 0},
+            "ai_markers_count": 8,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 10,
+            "unique_reviewers": 5,
+            "review_comments_count": 15,
+            "human_vs_bot_reviews": {"human_count": 5, "bot_count": 5}
+          },
+          "issues": {
+            "opened_count": 6,
+            "closed_count": 5,
+            "time_to_close_seconds_median": 25200,
+            "with_ai_label_count": 5,
+            "comments_count": 16
+          },
+          "workflows": {
+            "runs_count": 7,
+            "success_rate": 0.86,
+            "mean_duration_seconds": 255,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/ai-sports-analytics/actions/runs/34567"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 2700,
+            "deployment_frequency_count": 5,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.66,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 9,
+            "pr_markers": 8,
+            "file_signature_hits": 4,
+            "bot_actor_events": 5,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/ai-sports-analytics/pull/40"]
+          }
+        },
+        {
+          "name": "nfl-predictions",
+          "commits": {
+            "count": 18,
+            "authors": [
+              {"login": "dilligafog", "count": 17},
+              {"login": "github-actions[bot]", "count": 1}
+            ],
+            "lines_added": 560,
+            "lines_deleted": 110,
+            "files_changed": 36,
+            "commit_message_ai_markers_count": 13,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 3, "10": 8, "11": 7, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 11,
+            "merged_count": 11,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 450,
+            "time_to_merge_seconds_median": 900,
+            "review_count": 22,
+            "comment_count": 44,
+            "additions_sum": 560,
+            "deletions_sum": 110,
+            "size_distribution": {"small": 6, "medium": 5, "large": 0, "xlarge": 0},
+            "ai_markers_count": 12,
+            "bots_participating": ["github-actions[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 22,
+            "unique_reviewers": 11,
+            "review_comments_count": 33,
+            "human_vs_bot_reviews": {"human_count": 11, "bot_count": 11}
+          },
+          "issues": {
+            "opened_count": 12,
+            "closed_count": 11,
+            "time_to_close_seconds_median": 3600,
+            "with_ai_label_count": 7,
+            "comments_count": 28
+          },
+          "workflows": {
+            "runs_count": 15,
+            "success_rate": 0.93,
+            "mean_duration_seconds": 350,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions/actions/runs/45678"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 900,
+            "deployment_frequency_count": 11,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.67,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 13,
+            "pr_markers": 12,
+            "file_signature_hits": 6,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions/pull/41"]
+          }
+        },
+        {
+          "name": "nfl-predictions-dev",
+          "commits": {
+            "count": 15,
+            "authors": [
+              {"login": "dilligafog", "count": 14},
+              {"login": "dependabot[bot]", "count": 1}
+            ],
+            "lines_added": 450,
+            "lines_deleted": 90,
+            "files_changed": 31,
+            "commit_message_ai_markers_count": 11,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 2, "10": 7, "11": 6, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 10,
+            "merged_count": 10,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": 750,
+            "time_to_merge_seconds_median": 1500,
+            "review_count": 20,
+            "comment_count": 40,
+            "additions_sum": 450,
+            "deletions_sum": 90,
+            "size_distribution": {"small": 5, "medium": 5, "large": 0, "xlarge": 0},
+            "ai_markers_count": 10,
+            "bots_participating": ["dependabot[bot]"]
+          },
+          "reviews": {
+            "code_reviews_count": 20,
+            "unique_reviewers": 10,
+            "review_comments_count": 30,
+            "human_vs_bot_reviews": {"human_count": 10, "bot_count": 10}
+          },
+          "issues": {
+            "opened_count": 11,
+            "closed_count": 10,
+            "time_to_close_seconds_median": 5400,
+            "with_ai_label_count": 6,
+            "comments_count": 24
+          },
+          "workflows": {
+            "runs_count": 14,
+            "success_rate": 0.93,
+            "mean_duration_seconds": 310,
+            "flaky_runs_count": 1,
+            "failed_runs_link_samples": ["https://github.com/dilligafog/nfl-predictions-dev/actions/runs/56789"]
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": 1500,
+            "deployment_frequency_count": 10,
+            "change_failure_rate": 0.0,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9, 10, 11],
+            "focus_ratio": 0.69,
+            "context_switch_count": 2
+          },
+          "ai_signals": {
+            "commit_markers": 11,
+            "pr_markers": 10,
+            "file_signature_hits": 5,
+            "bot_actor_events": 1,
+            "prompt_artifacts_detected": true,
+            "examples_links": ["https://github.com/dilligafog/nfl-predictions-dev/pull/42"]
+          }
+        },
+        {
+          "name": "nfl-predictions-master-backup",
+          "commits": {
+            "count": 1,
+            "authors": [
+              {"login": "dilligafog", "count": 1}
+            ],
+            "lines_added": 55,
+            "lines_deleted": 35,
+            "files_changed": 8,
+            "commit_message_ai_markers_count": 0,
+            "commit_time_distribution": {
+              "0": 0, "1": 0, "2": 0, "3": 0, "4": 0, "5": 0, "6": 0, "7": 0, "8": 0, "9": 1, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 0, "17": 0, "18": 0, "19": 0, "20": 0, "21": 0, "22": 0, "23": 0
+            }
+          },
+          "prs": {
+            "opened_count": 0,
+            "merged_count": 0,
+            "closed_unmerged_count": 0,
+            "time_to_first_review_seconds_median": null,
+            "time_to_merge_seconds_median": null,
+            "review_count": 0,
+            "comment_count": 0,
+            "additions_sum": 0,
+            "deletions_sum": 0,
+            "size_distribution": {"small": 0, "medium": 0, "large": 0, "xlarge": 0},
+            "ai_markers_count": 0,
+            "bots_participating": []
+          },
+          "reviews": {
+            "code_reviews_count": 0,
+            "unique_reviewers": 0,
+            "review_comments_count": 0,
+            "human_vs_bot_reviews": {"human_count": 0, "bot_count": 0}
+          },
+          "issues": {
+            "opened_count": 0,
+            "closed_count": 0,
+            "time_to_close_seconds_median": null,
+            "with_ai_label_count": 0,
+            "comments_count": 0
+          },
+          "workflows": {
+            "runs_count": 0,
+            "success_rate": null,
+            "mean_duration_seconds": null,
+            "flaky_runs_count": 0,
+            "failed_runs_link_samples": []
+          },
+          "dora_like": {
+            "lead_time_for_changes_seconds_median": null,
+            "deployment_frequency_count": 0,
+            "change_failure_rate": null,
+            "mean_time_to_recover_seconds_median": null
+          },
+          "work_patterns": {
+            "active_hours": [9],
+            "focus_ratio": 1.0,
+            "context_switch_count": 1
+          },
+          "ai_signals": {
+            "commit_markers": 0,
+            "pr_markers": 0,
+            "file_signature_hits": 0,
+            "bot_actor_events": 0,
+            "prompt_artifacts_detected": false,
+            "examples_links": []
+          }
+        }
+      ]
+    }
+  ],
+  "aggregates": {
+    "by_repo": [
+      {
+        "name": "ai-sports-analytics",
+        "days_observed": 14,
+        "totals": {
+          "commits": 95,
+          "lines_added": 2200,
+          "lines_deleted": 550,
+          "prs_opened": 34,
+          "prs_merged": 34,
+          "issues_opened": 38,
+          "issues_closed": 32,
+          "workflow_runs": 48
+        },
+        "medians": {
+          "pr_time_to_merge_seconds": 3300,
+          "issue_time_to_close_seconds": 30600,
+          "lead_time_for_changes_seconds": 3300
+        },
+        "ai_signal_score": 75
+      },
+      {
+        "name": "nfl-predictions",
+        "days_observed": 14,
+        "totals": {
+          "commits": 200,
+          "lines_added": 5500,
+          "lines_deleted": 1100,
+          "prs_opened": 100,
+          "prs_merged": 100,
+          "issues_opened": 110,
+          "issues_closed": 95,
+          "workflow_runs": 140
+        },
+        "medians": {
+          "pr_time_to_merge_seconds": 1500,
+          "issue_time_to_close_seconds": 5400,
+          "lead_time_for_changes_seconds": 1500
+        },
+        "ai_signal_score": 85
+      },
+      {
+        "name": "nfl-predictions-dev",
+        "days_observed": 14,
+        "totals": {
+          "commits": 150,
+          "lines_added": 4200,
+          "lines_deleted": 900,
+          "prs_opened": 80,
+          "prs_merged": 80,
+          "issues_opened": 85,
+          "issues_closed": 75,
+          "workflow_runs": 120
+        },
+        "medians": {
+          "pr_time_to_merge_seconds": 2100,
+          "issue_time_to_close_seconds": 6300,
+          "lead_time_for_changes_seconds": 2100
+        },
+        "ai_signal_score": 80
+      },
+      {
+        "name": "nfl-predictions-master-backup",
+        "days_observed": 14,
+        "totals": {
+          "commits": 5,
+          "lines_added": 200,
+          "lines_deleted": 100,
+          "prs_opened": 0,
+          "prs_merged": 0,
+          "issues_opened": 0,
+          "issues_closed": 0,
+          "workflow_runs": 0
+        },
+        "medians": {
+          "pr_time_to_merge_seconds": null,
+          "issue_time_to_close_seconds": null,
+          "lead_time_for_changes_seconds": null
+        },
+        "ai_signal_score": 0
+      }
+    ],
+    "global": {
+      "repos_count": 4,
+      "total_commits": 450,
+      "total_prs_opened": 214,
+      "total_prs_merged": 214,
+      "total_lines_added": 12100,
+      "total_lines_deleted": 2650,
+      "deployment_frequency_total": 214,
+      "ai_signal_score": 80
+    }
+  }
+}
