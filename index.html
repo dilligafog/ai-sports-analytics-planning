@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dev Story Dashboard</title>
+    <meta name="description" content="Interactive dashboard for visualizing daily GitHub activity and development metrics">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/styles.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/vendor/chart.umd.js" as="script">
+    <link rel="preload" href="assets/main.js" as="script">
+</head>
+<body>
+    <!-- Main Content -->
+    <main id="main" role="main">
+        <!-- Header Section -->
+        <header class="header" role="banner">
+            <div class="container">
+                <div class="header-content">
+                    <div>
+                        <h1 id="dashboard-title" class="header-title">
+                            <span class="loading-spinner skeleton skeleton-text" style="width: 300px; display: inline-block;"></span>
+                            Daily Dev Story Dashboard
+                        </h1>
+                        <p id="dashboard-subtitle" class="header-subtitle">
+                            <span class="skeleton skeleton-text" style="width: 200px; display: inline-block;"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Info Banner -->
+            <div id="info-banner" class="info-banner hidden" role="alert" aria-live="polite">
+                <div id="info-banner-content" class="info-banner-content"></div>
+                <button id="info-banner-close" class="info-banner-close" aria-label="Close information banner">
+                    ×
+                </button>
+            </div>
+
+            <!-- Controls Section -->
+            <section class="controls" aria-label="Dashboard filters and controls">
+                <div class="control-group">
+                    <label class="control-label" for="repo-filters">
+                        Repository Filters
+                    </label>
+                    <div class="repo-filters">
+                        <button id="select-all-repos" class="select-all-btn" type="button">
+                            Toggle All
+                        </button>
+                        <div id="repo-filters" class="repo-filters" role="group" aria-labelledby="repo-filters-label">
+                            <!-- Repository checkboxes will be populated by JavaScript -->
+                            <div class="skeleton skeleton-text" style="width: 100px; height: 32px;"></div>
+                            <div class="skeleton skeleton-text" style="width: 120px; height: 32px;"></div>
+                            <div class="skeleton skeleton-text" style="width: 110px; height: 32px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="date-range-slider">
+                        Date Range
+                    </label>
+                    <div class="date-controls">
+                        <input type="range" 
+                               id="date-range-slider" 
+                               class="date-range-slider"
+                               min="0" 
+                               max="100" 
+                               value="100"
+                               aria-label="Date range slider">
+                        
+                        <div class="date-quick-buttons" role="group" aria-label="Quick date range selection">
+                            <button class="date-quick-btn" data-days="3" type="button">3 days</button>
+                            <button class="date-quick-btn" data-days="7" type="button">7 days</button>
+                            <button class="date-quick-btn active" data-days="14" type="button">14 days</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KPI Cards Section -->
+            <section class="kpi-section" aria-label="Key performance indicators">
+                <div class="kpi-grid">
+                    <!-- Total Commits -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">Total Commits</h3>
+                        </div>
+                        <p id="kpi-commits" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 60px;"></span>
+                        </p>
+                    </div>
+
+                    <!-- PRs Opened/Merged -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">PRs Opened</h3>
+                        </div>
+                        <p id="kpi-prsOpened" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 50px;"></span>
+                        </p>
+                        <div class="kpi-trend">
+                            <span id="kpi-prsMerged">0</span> merged
+                        </div>
+                    </div>
+
+                    <!-- Lines Changed -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">Lines Added</h3>
+                        </div>
+                        <p id="kpi-linesAdded" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 70px;"></span>
+                        </p>
+                        <div class="kpi-trend">
+                            <span id="kpi-linesDeleted">0</span> deleted
+                        </div>
+                    </div>
+
+                    <!-- Workflow Success Rate -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">Workflow Success</h3>
+                        </div>
+                        <p id="kpi-workflowSuccessRate" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 50px;"></span>
+                        </p>
+                    </div>
+
+                    <!-- Median PR Time -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">Median PR Time</h3>
+                        </div>
+                        <p id="kpi-medianPRMergeTime" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 60px;"></span>
+                        </p>
+                    </div>
+
+                    <!-- Median Issue Time -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">Median Issue Time</h3>
+                        </div>
+                        <p id="kpi-medianIssueCloseTime" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 60px;"></span>
+                        </p>
+                    </div>
+
+                    <!-- AI Markers -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">AI Markers</h3>
+                        </div>
+                        <p id="kpi-aiMarkers" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 40px;"></span>
+                        </p>
+                    </div>
+
+                    <!-- AI Signal Score -->
+                    <div class="kpi-card">
+                        <div class="kpi-header">
+                            <h3 class="kpi-title">AI Signal Score</h3>
+                        </div>
+                        <p id="kpi-aiSignalScore" class="kpi-value" aria-live="polite">
+                            <span class="skeleton skeleton-text" style="width: 50px;"></span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section" aria-label="Interactive charts">
+                <div class="charts-grid">
+                    <!-- Daily Commits Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">Daily Commits</h3>
+                            <button class="chart-export-btn" 
+                                    data-chart-id="commits" 
+                                    type="button"
+                                    aria-label="Export commits chart as PNG">
+                                Export PNG
+                            </button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="commits-chart" 
+                                    class="chart-canvas"
+                                    role="img"
+                                    aria-label="Daily commits chart showing commit activity over time by repository">
+                                <div class="skeleton skeleton-card"></div>
+                            </canvas>
+                        </div>
+                    </div>
+
+                    <!-- Daily Lines Changed Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">Daily Lines Changed</h3>
+                            <button class="chart-export-btn" 
+                                    data-chart-id="lines" 
+                                    type="button"
+                                    aria-label="Export lines changed chart as PNG">
+                                Export PNG
+                            </button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="lines-chart" 
+                                    class="chart-canvas"
+                                    role="img"
+                                    aria-label="Daily lines changed chart showing lines added vs deleted over time">
+                                <div class="skeleton skeleton-card"></div>
+                            </canvas>
+                        </div>
+                    </div>
+
+                    <!-- PR Velocity Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">PR Velocity</h3>
+                            <button class="chart-export-btn" 
+                                    data-chart-id="prVelocity" 
+                                    type="button"
+                                    aria-label="Export PR velocity chart as PNG">
+                                Export PNG
+                            </button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="pr-velocity-chart" 
+                                    class="chart-canvas"
+                                    role="img"
+                                    aria-label="PR velocity chart showing median time to merge pull requests">
+                                <div class="skeleton skeleton-card"></div>
+                            </canvas>
+                        </div>
+                    </div>
+
+                    <!-- PR Size Mix Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">PR Size Distribution</h3>
+                            <button class="chart-export-btn" 
+                                    data-chart-id="prSize" 
+                                    type="button"
+                                    aria-label="Export PR size distribution chart as PNG">
+                                Export PNG
+                            </button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="pr-size-chart" 
+                                    class="chart-canvas"
+                                    role="img"
+                                    aria-label="PR size distribution chart showing breakdown of pull request sizes">
+                                <div class="skeleton skeleton-card"></div>
+                            </canvas>
+                        </div>
+                    </div>
+
+                    <!-- AI Signals Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">AI Signals Over Time</h3>
+                            <button class="chart-export-btn" 
+                                    data-chart-id="aiSignals" 
+                                    type="button"
+                                    aria-label="Export AI signals chart as PNG">
+                                Export PNG
+                            </button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="ai-signals-chart" 
+                                    class="chart-canvas"
+                                    role="img"
+                                    aria-label="AI signals chart showing AI-related activity over time">
+                                <div class="skeleton skeleton-card"></div>
+                            </canvas>
+                        </div>
+                    </div>
+
+                    <!-- Workflow Success Rate Chart -->
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <h3 class="chart-title">Workflow Success Rate</h3>
+                            <button class="chart-export-btn" 
+                                    data-chart-id="workflow" 
+                                    type="button"
+                                    aria-label="Export workflow success rate chart as PNG">
+                                Export PNG
+                            </button>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="workflow-chart" 
+                                    class="chart-canvas"
+                                    role="img"
+                                    aria-label="Workflow success rate chart showing CI/CD pipeline success percentage">
+                                <div class="skeleton skeleton-card"></div>
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Repo Detail Panel -->
+            <section class="repo-detail-panel" aria-label="Repository details">
+                <div class="repo-detail-header">
+                    <h3 class="repo-detail-title">Repository Detail</h3>
+                    <select id="repo-detail-select" 
+                            class="repo-select"
+                            aria-label="Select repository for detailed view">
+                        <option value="">Select a repository</option>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+
+                <!-- Active Hours -->
+                <div class="active-hours">
+                    <h4 class="active-hours-title">Top 3 Active Hours</h4>
+                    <div id="active-hours-list" class="active-hours-list">
+                        <span class="skeleton skeleton-text" style="width: 50px; height: 24px;"></span>
+                        <span class="skeleton skeleton-text" style="width: 50px; height: 24px;"></span>
+                        <span class="skeleton skeleton-text" style="width: 50px; height: 24px;"></span>
+                    </div>
+                </div>
+
+                <!-- Daily Statistics Table -->
+                <div class="repo-table-container">
+                    <table class="repo-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Commits</th>
+                                <th scope="col">PRs Opened</th>
+                                <th scope="col">PRs Merged</th>
+                                <th scope="col">Lines +</th>
+                                <th scope="col">Lines -</th>
+                            </tr>
+                        </thead>
+                        <tbody id="repo-table-body">
+                            <!-- Table rows will be populated by JavaScript -->
+                            <tr class="skeleton">
+                                <td><span class="skeleton-text"></span></td>
+                                <td><span class="skeleton-text"></span></td>
+                                <td><span class="skeleton-text"></span></td>
+                                <td><span class="skeleton-text"></span></td>
+                                <td><span class="skeleton-text"></span></td>
+                                <td><span class="skeleton-text"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/chart.umd.js"></script>
+    <script src="assets/main.js"></script>
+
+    <!-- 
+    GitHub Pages Deployment Instructions:
+    
+    1. Place these files and work_review.json in one of the following locations:
+       - ./docs/ directory (recommended) and enable Pages: Settings → Pages → Source: "Deploy from a branch" → /docs
+       - The gh-pages branch at repository root
+       - Repository root with Pages enabled from main branch
+    
+    2. Update repository settings:
+       - Go to Settings → Pages
+       - Set Source to "Deploy from a branch"
+       - Select branch (main/gh-pages) and folder (/docs or root)
+    
+    3. Commit and push changes:
+       git add .
+       git commit -m "Add GitHub Pages dashboard"
+       git push origin main
+    
+    4. Verify deployment at: https://[username].github.io/[repository-name]/
+    
+    Note: The dashboard loads ./work_review.json from the same directory as index.html.
+    Ensure this file is present and accessible via the web server.
+    -->
+</body>
+</html>

@@ -19,8 +19,8 @@ __pycache__/
 *~
 
 # GitHub Pages and Workflows (disabled for planning repo)
-docs/
-.github/workflows/
+# docs/
+# .github/workflows/
 
 # OS files
 .DS_Store
