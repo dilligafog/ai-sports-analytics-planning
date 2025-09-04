@@ -157,13 +157,14 @@ class DashboardApp {
     const subtitle = document.getElementById('dashboard-subtitle');
     
     if (title && this.data.metadata) {
-      title.textContent = `Daily Dev Story — ${this.data.metadata.owner}`;
+      title.innerHTML = `🏈 NFL AI Prediction System — ${this.data.metadata.owner}`;
     }
     
     if (subtitle && this.data.metadata?.window) {
       const startDate = new Date(this.data.metadata.window.start_date).toLocaleDateString();
       const endDate = new Date(this.data.metadata.window.end_date).toLocaleDateString();
-      subtitle.textContent = `${startDate} → ${endDate}`;
+      const context = this.data.metadata.project_context;
+      subtitle.innerHTML = `${startDate} → ${endDate} | ${context?.business_goal || 'AI-Enhanced Sports Analytics'}`;
     }
   }
   
@@ -239,8 +240,14 @@ class DashboardApp {
     const banner = document.getElementById('info-banner');
     const content = document.getElementById('info-banner-content');
     
-    if (banner && content && this.data.metadata?.collection_notes) {
-      content.textContent = this.data.metadata.collection_notes;
+    if (banner && content && this.data.metadata?.project_context) {
+      const ctx = this.data.metadata.project_context;
+      content.innerHTML = `
+        <strong>🚀 ${ctx.type}</strong> | 
+        ${ctx.tech_stack?.join(' • ')} | 
+        <strong>Goal:</strong> ${ctx.business_goal} | 
+        <strong>Scale:</strong> ${ctx.system_scale}
+      `;
       banner.classList.remove('hidden');
     }
   }

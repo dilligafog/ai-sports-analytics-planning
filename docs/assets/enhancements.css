@@ -1,0 +1,60 @@
+/* Enhanced styles for NFL AI Prediction System Dashboard */
+
+/* Add pulsing effect for exciting metrics */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.4); }
+  100% { box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); }
+}
+
+/* Special styling for high-impact KPIs */
+.kpi-card.highlight {
+  animation: pulse-glow 2s infinite;
+  border: 2px solid #00ff00;
+}
+
+/* NFL team colors for visual impact */
+.nfl-theme {
+  background: linear-gradient(135deg, #013369 0%, #d50a0a 100%);
+  color: white;
+}
+
+/* Profit indicator styling */
+.profit-positive {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.profit-negative {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+/* AI-assistance indicator */
+.ai-badge {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-left: 8px;
+}
+
+/* Season countdown timer */
+.season-timer {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid gold;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Performance multiplier display */
+.performance-boost {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 1.2em;
+}
